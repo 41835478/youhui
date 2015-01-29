@@ -702,3 +702,263 @@ $_SERVER = [
     'REQUEST_TIME' => 1422503070
 >>>>>>> 1908a10f2359f82645c01b1e9cf2a06cab594ed7
 ]
+2015-01-29 07:25:39 [127.0.0.1][][a8f6sbrpk83g9l9fh1nm2k6ei4][warning][yii\log\Dispatcher::dispatch] Unable to send log via yii\debug\LogTarget: PHP Notice 'yii\base\ErrorException' with message 'unserialize(): Error at offset 0 of 48887 bytes' 
+
+in D:\youhui\vendor\yiisoft\yii2-debug\LogTarget.php:86
+
+Stack trace:
+#0 [internal function]: yii\base\ErrorHandler->handleError(8, 'unserialize(): ...', 'D:\youhui\vendo...', 86, Array)
+#1 D:\youhui\vendor\yiisoft\yii2-debug\LogTarget.php(86): unserialize('<<<<<<< HEAD??a...')
+#2 D:\youhui\vendor\yiisoft\yii2-debug\LogTarget.php(61): yii\debug\LogTarget->updateIndexFile('D:\youhui\front...', Array)
+#3 D:\youhui\vendor\yiisoft\yii2-debug\LogTarget.php(112): yii\debug\LogTarget->export(Array)
+#4 D:\youhui\vendor\yiisoft\yii2\log\Dispatcher.php(183): yii\debug\LogTarget->collect(Array, true)
+#5 D:\youhui\vendor\yiisoft\yii2\log\Logger.php(166): yii\log\Dispatcher->dispatch(Array, true)
+#6 [internal function]: yii\log\Logger->flush(true)
+#7 {main}
+2015-01-29 07:25:38 [127.0.0.1][][a8f6sbrpk83g9l9fh1nm2k6ei4][info][application] $_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'MIBDIRS' => 'D:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'D:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'www.youhui.com'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/39.0.2171.95 Safari/537.36'
+    'HTTP_REFERER' => 'http://www.youhui.com/frontend/'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8'
+    'PATH' => 'C:\\Program Files\\360\\360Desktop;C:\\Program Files\\Common Files\\NetSarang;C:\\ProgramData\\Oracle\\Java\\javapath;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;D:\\Git\\bin;%JAVA_HOME%\\bin;D:\\node\\;C:\\Users\\Administrator\\AppData\\Roaming\\npm'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.7 (Win32) OpenSSL/1.0.1e PHP/5.5.9 Server at www.youhui.com Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.7 (Win32) OpenSSL/1.0.1e PHP/5.5.9'
+    'SERVER_NAME' => 'www.youhui.com'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'D:/youhui/'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'D:/youhui/'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'D:/youhui/frontend/web/index.php'
+    'REMOTE_PORT' => '61387'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/frontend/web/'
+    'SCRIPT_NAME' => '/frontend/web/index.php'
+    'PHP_SELF' => '/frontend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1422512738.918
+    'REQUEST_TIME' => 1422512738
+]
+2015-01-29 07:25:48 [127.0.0.1][][a8f6sbrpk83g9l9fh1nm2k6ei4][error][yii\web\HttpException:404] exception 'yii\base\InvalidRouteException' with message 'Unable to resolve the request "index".' in D:\youhui\vendor\yiisoft\yii2\base\Module.php:461
+Stack trace:
+#0 D:\youhui\vendor\yiisoft\yii2\web\Application.php(83): yii\base\Module->runAction('index', Array)
+#1 D:\youhui\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 D:\youhui\frontend\web\index.php(18): yii\base\Application->run()
+#3 {main}
+
+Next exception 'yii\web\NotFoundHttpException' with message 'Unable to resolve the request "index".' in D:\youhui\vendor\yiisoft\yii2\web\Application.php:95
+Stack trace:
+#0 D:\youhui\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 D:\youhui\frontend\web\index.php(18): yii\base\Application->run()
+#2 {main}
+2015-01-29 07:25:48 [127.0.0.1][][a8f6sbrpk83g9l9fh1nm2k6ei4][info][application] $_GET = [
+    'r' => 'index'
+]
+
+$_COOKIE = [
+    'PHPSESSID' => 'a8f6sbrpk83g9l9fh1nm2k6ei4'
+    'bdshare_firstime' => '1422512739434'
+]
+
+$_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'MIBDIRS' => 'D:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'D:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'www.youhui.com'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/39.0.2171.95 Safari/537.36'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8'
+    'HTTP_COOKIE' => 'PHPSESSID=a8f6sbrpk83g9l9fh1nm2k6ei4; bdshare_firstime=1422512739434'
+    'PATH' => 'C:\\Program Files\\360\\360Desktop;C:\\Program Files\\Common Files\\NetSarang;C:\\ProgramData\\Oracle\\Java\\javapath;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;D:\\Git\\bin;%JAVA_HOME%\\bin;D:\\node\\;C:\\Users\\Administrator\\AppData\\Roaming\\npm'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.7 (Win32) OpenSSL/1.0.1e PHP/5.5.9 Server at www.youhui.com Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.7 (Win32) OpenSSL/1.0.1e PHP/5.5.9'
+    'SERVER_NAME' => 'www.youhui.com'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'D:/youhui/'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'D:/youhui/'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'D:/youhui/frontend/web/index.php'
+    'REMOTE_PORT' => '61421'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=index'
+    'REQUEST_URI' => '/frontend/web/index.php?r=index'
+    'SCRIPT_NAME' => '/frontend/web/index.php'
+    'PHP_SELF' => '/frontend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1422512748.901
+    'REQUEST_TIME' => 1422512748
+]
+2015-01-29 07:25:52 [127.0.0.1][][a8f6sbrpk83g9l9fh1nm2k6ei4][error][yii\web\HttpException:404] exception 'yii\base\InvalidRouteException' with message 'Unable to resolve the request "index/index".' in D:\youhui\vendor\yiisoft\yii2\base\Module.php:461
+Stack trace:
+#0 D:\youhui\vendor\yiisoft\yii2\web\Application.php(83): yii\base\Module->runAction('index/index', Array)
+#1 D:\youhui\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 D:\youhui\frontend\web\index.php(18): yii\base\Application->run()
+#3 {main}
+
+Next exception 'yii\web\NotFoundHttpException' with message 'Unable to resolve the request "index/index".' in D:\youhui\vendor\yiisoft\yii2\web\Application.php:95
+Stack trace:
+#0 D:\youhui\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 D:\youhui\frontend\web\index.php(18): yii\base\Application->run()
+#2 {main}
+2015-01-29 07:25:52 [127.0.0.1][][a8f6sbrpk83g9l9fh1nm2k6ei4][info][application] $_GET = [
+    'r' => 'index/index'
+]
+
+$_COOKIE = [
+    'PHPSESSID' => 'a8f6sbrpk83g9l9fh1nm2k6ei4'
+    'bdshare_firstime' => '1422512739434'
+]
+
+$_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'MIBDIRS' => 'D:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'D:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'www.youhui.com'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/39.0.2171.95 Safari/537.36'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8'
+    'HTTP_COOKIE' => 'PHPSESSID=a8f6sbrpk83g9l9fh1nm2k6ei4; bdshare_firstime=1422512739434'
+    'PATH' => 'C:\\Program Files\\360\\360Desktop;C:\\Program Files\\Common Files\\NetSarang;C:\\ProgramData\\Oracle\\Java\\javapath;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;D:\\Git\\bin;%JAVA_HOME%\\bin;D:\\node\\;C:\\Users\\Administrator\\AppData\\Roaming\\npm'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.7 (Win32) OpenSSL/1.0.1e PHP/5.5.9 Server at www.youhui.com Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.7 (Win32) OpenSSL/1.0.1e PHP/5.5.9'
+    'SERVER_NAME' => 'www.youhui.com'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'D:/youhui/'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'D:/youhui/'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'D:/youhui/frontend/web/index.php'
+    'REMOTE_PORT' => '61421'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=index/index'
+    'REQUEST_URI' => '/frontend/web/index.php?r=index/index'
+    'SCRIPT_NAME' => '/frontend/web/index.php'
+    'PHP_SELF' => '/frontend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1422512752.703
+    'REQUEST_TIME' => 1422512752
+]
+2015-01-29 07:27:01 [127.0.0.1][-][-][error][yii\base\ErrorException:2] exception 'yii\base\ErrorException' with message 'Missing argument 1 for yii\base\Controller::render(), called in D:\youhui\frontend\controllers\ReceiveController.php on line 21 and defined' in D:\youhui\vendor\yiisoft\yii2\base\Controller.php:365
+Stack trace:
+#0 D:\youhui\vendor\yiisoft\yii2\base\Controller.php(365): yii\base\ErrorHandler->handleError(2, 'Missing argumen...', 'D:\youhui\vendo...', 365, Array)
+#1 D:\youhui\frontend\controllers\ReceiveController.php(21): yii\base\Controller->render()
+#2 [internal function]: frontend\controllers\ReceiveController->actionIndex()
+#3 D:\youhui\vendor\yiisoft\yii2\base\InlineAction.php(55): call_user_func_array(Array, Array)
+#4 D:\youhui\vendor\yiisoft\yii2\base\Controller.php(151): yii\base\InlineAction->runWithParams(Array)
+#5 D:\youhui\vendor\yiisoft\yii2\base\Module.php(455): yii\base\Controller->runAction('', Array)
+#6 D:\youhui\vendor\yiisoft\yii2\web\Application.php(83): yii\base\Module->runAction('receive', Array)
+#7 D:\youhui\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#8 D:\youhui\frontend\web\index.php(18): yii\base\Application->run()
+#9 {main}
+2015-01-29 07:27:01 [127.0.0.1][-][-][info][application] $_GET = [
+    'r' => 'receive'
+]
+
+$_COOKIE = [
+    'PHPSESSID' => 'a8f6sbrpk83g9l9fh1nm2k6ei4'
+    'bdshare_firstime' => '1422512739434'
+]
+
+$_SERVER = [
+    'MIBDIRS' => 'D:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'D:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'www.youhui.com'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/39.0.2171.95 Safari/537.36'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8'
+    'HTTP_COOKIE' => 'PHPSESSID=a8f6sbrpk83g9l9fh1nm2k6ei4; bdshare_firstime=1422512739434'
+    'PATH' => 'C:\\Program Files\\360\\360Desktop;C:\\Program Files\\Common Files\\NetSarang;C:\\ProgramData\\Oracle\\Java\\javapath;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;D:\\Git\\bin;%JAVA_HOME%\\bin;D:\\node\\;C:\\Users\\Administrator\\AppData\\Roaming\\npm'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.7 (Win32) OpenSSL/1.0.1e PHP/5.5.9 Server at www.youhui.com Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.7 (Win32) OpenSSL/1.0.1e PHP/5.5.9'
+    'SERVER_NAME' => 'www.youhui.com'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'D:/youhui/'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'D:/youhui/'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'D:/youhui/frontend/web/index.php'
+    'REMOTE_PORT' => '61481'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=receive'
+    'REQUEST_URI' => '/frontend/web/index.php?r=receive'
+    'SCRIPT_NAME' => '/frontend/web/index.php'
+    'PHP_SELF' => '/frontend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1422512821.055
+    'REQUEST_TIME' => 1422512821
+]
