@@ -73,7 +73,7 @@
             	<div class="fanwe-menu" valign="top">
         		<dl>
 			<dt><div><strong>会员管理</strong></div></dt>
-            			<dd><p><a href="?g=Admin&m=Member&a=index" target="mainFrame">会员列表</a></p></dd>
+            			<dd><p><a href="?r=huiyuan/index" target="mainFrame">会员列表</a></p></dd>
                      </dl>
          		<dl>
 			<dt><div><strong>充值管理</strong></div></dt>

@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<title>{$_CFG.site_name} — 后台管理系统</title>
+<title>后台管理系统</title>
 <link rel="shortcut icon" href="favicon.ico" />
 </head>
 <frameset rows="75,*,22" cols="*" frameborder="no" border="0" framespacing="0">
