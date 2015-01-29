@@ -3,7 +3,7 @@ return [
     'components' => [
         'db' => [
             'class' => 'yii\db\Connection',
-            'dsn' => 'mysql:host=192.168.1.93;dbname=tp_coupon',
+            'dsn' => 'mysql:host=192.168.1.92;dbname=sizu',
             'username' => 'root',
             'password' => 'root',
             'charset' => 'utf8',
