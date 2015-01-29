@@ -133,15 +133,16 @@ jQuery(function() {
         <div id="nav">
             <div class="w990">
                 <ul id="nav_l">
-                    <li><a href="index.php?r=show/index" class="active"><span></span>首页</a></li>
+                    <!--class="active"-->
+                    <li><a href="index.php?r=show/index" ><span></span>首页</a></li>
                     <li>|</li>
                     <li><a href="index.php?r=show/index" ><span></span>最新优惠券</a></li>
                     <li>|</li>
                     <li><a href="index.php?r=show/index" ><span></span>热门优惠券</a></li>
                     <li>|</li>
-                    <li><a href="index.php?r=show/index" ><span></span>最近被领取的优惠券</a></li>
+                    <li><a href="index.php?r=receive/index" ><span></span>最近被领取的优惠券</a></li>
                     <li>|</li>
-                    <li><a href="index.php?r=show/index" ><span></span>商家大全</a></li>
+                    <li><a href="index.php?r=mall/index" ><span></span>商家大全</a></li>
                     <li>|</li>
                     <li><a href="index.php?r=promotion/index" ><span></span>促销活动</a></li>
                     <li>|</li>
