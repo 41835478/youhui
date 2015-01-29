@@ -133,19 +133,19 @@ jQuery(function() {
         <div id="nav">
             <div class="w990">
                 <ul id="nav_l">
-                    <li><a href="/end/TP-COUPON/" class="active"><span></span>首页</a></li>
+                    <li><a href="index.php?r=show/index" class="active"><span></span>首页</a></li>
                     <li>|</li>
-                    <li><a href="/end/tp-coupon/index.php?a=latest&m=code" ><span></span>最新优惠券</a></li>
+                    <li><a href="index.php?r=show/index" ><span></span>最新优惠券</a></li>
                     <li>|</li>
-                    <li><a href="/end/tp-coupon/index.php?a=hot&m=code" ><span></span>热门优惠券</a></li>
+                    <li><a href="index.php?r=show/index" ><span></span>热门优惠券</a></li>
                     <li>|</li>
-                    <li><a href="/end/tp-coupon/index.php?a=lastestpulled&m=code" ><span></span>最近被领取的优惠券</a></li>
+                    <li><a href="index.php?r=show/index" ><span></span>最近被领取的优惠券</a></li>
                     <li>|</li>
-                    <li><a href="/end/tp-coupon/index.php?a=lists&m=mall" ><span></span>商家大全</a></li>
+                    <li><a href="index.php?r=show/index" ><span></span>商家大全</a></li>
                     <li>|</li>
-                    <li><a href="/end/tp-coupon/index.php?a=index&m=promotion" ><span></span>促销活动</a></li>
+                    <li><a href="index.php?r=promotion/index" ><span></span>促销活动</a></li>
                     <li>|</li>
-                    <li><a href="/end/tp-coupon/index.php?a=index&m=zhekou" ><span></span>超值折扣</a></li>
+                    <li><a href="index.php?r=zhekou/index" ><span></span>超值折扣</a></li>
                 </ul>
                 
 <ul id="nav_r">
