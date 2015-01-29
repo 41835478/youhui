@@ -15,69 +15,34 @@ class SiteController extends Controller
     /**
      * @inheritdoc
      */
-    public function behaviors()
-    {
-        return [
-            'access' => [
-                'class' => AccessControl::className(),
-                'rules' => [
-                    [
-                        'actions' => ['login', 'error'],
-                        'allow' => true,
-                    ],
-                    [
-                        'actions' => ['logout', 'index'],
-                        'allow' => true,
-                        'roles' => ['@'],
-                    ],
-                ],
-            ],
-            'verbs' => [
-                'class' => VerbFilter::className(),
-                'actions' => [
-                    'logout' => ['post'],
-                ],
-            ],
-        ];
-    }
-
-    /**
-     * @inheritdoc
-     */
-    public function actions()
-    {
-        return [
-            'error' => [
-                'class' => 'yii\web\ErrorAction',
-            ],
-        ];
-    }
-
-    public function actionIndex()
-    {
-        return $this->render('index');
-    }
-
-    public function actionLogin()
-    {
-        if (!\Yii::$app->user->isGuest) {
-            return $this->goHome();
+    public function actionIndex(){
+        //echo 1;
+        if(empty($_GET['act'])){
+            
+            $act=1;
+        }else{
+            $act=$_GET['act'];
         }
-
-        $model = new LoginForm();
-        if ($model->load(Yii::$app->request->post()) && $model->login()) {
-            return $this->goBack();
-        } else {
-            return $this->render('login', [
-                'model' => $model,
-            ]);
-        }
+         return $this->render('index',array('act'=>$act));
     }
-
-    public function actionLogout()
-    {
-        Yii::$app->user->logout();
-
-        return $this->goHome();
+     public function actionTop(){
+        //echo 1;
+         return $this->render('top');
+    }
+     public function actionLeft(){
+        //echo 1;
+         return $this->render('left',array('act'=>$_GET['act']));
+    }
+     public function actionMain(){
+        //echo 1;
+         return $this->render('main');
+    }
+      public function actionChange(){
+        //echo 1;
+         return $this->render('change');
+    }
+        public function actionFooter(){
+        //echo 1;
+         return $this->render('footer');
     }
 }

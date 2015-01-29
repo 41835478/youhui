@@ -1,0 +1,982 @@
+2015-01-29 03:48:38 [127.0.0.1][][hed4fej4jcc6on2fb3uai5t2b3][error][yii\web\HttpException:404] exception 'yii\base\InvalidRouteException' with message 'Unable to resolve the request "shou".' in D:\xampp\htdocs\youhui\vendor\yiisoft\yii2\base\Module.php:461
+Stack trace:
+#0 D:\xampp\htdocs\youhui\vendor\yiisoft\yii2\web\Application.php(83): yii\base\Module->runAction('shou', Array)
+#1 D:\xampp\htdocs\youhui\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 D:\xampp\htdocs\youhui\frontend\web\index.php(18): yii\base\Application->run()
+#3 {main}
+
+Next exception 'yii\web\NotFoundHttpException' with message 'Unable to resolve the request "shou".' in D:\xampp\htdocs\youhui\vendor\yiisoft\yii2\web\Application.php:95
+Stack trace:
+#0 D:\xampp\htdocs\youhui\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 D:\xampp\htdocs\youhui\frontend\web\index.php(18): yii\base\Application->run()
+#2 {main}
+2015-01-29 03:48:38 [127.0.0.1][][hed4fej4jcc6on2fb3uai5t2b3][info][application] $_GET = [
+    'r' => 'shou'
+]
+
+$_COOKIE = [
+    'AJSTAT_ok_times' => '1'
+    '_ga' => 'GA1.1.54924247.1416566351'
+    '__zpspc' => '9.2.1416813744.1416814460.10#4|||||#'
+    'bdshare_firstime' => '1418786158546'
+    'CNZZDATA4617777' => 'cnzz_eid=682052683-1418784431-&ntime=1418784197'
+    'CNZZDATA4617788' => 'cnzz_eid=431890627-1419157234-&ntime=1419203501'
+    'CNZZDATA4617784' => 'cnzz_eid=1410397910-1418812097-&ntime=1419983038'
+    'Jjzq_2132_saltkey' => 'wkOPSZrn'
+    'Jjzq_2132_lastvisit' => '1420423935'
+    'Jjzq_2132_ulastactivity' => '3cd47khBmEfAZuKV56v5xcereJG/Dl7C07x2T1XA2znHteTfL3el'
+    'RB5E_2132_saltkey' => 'YR3N3T3T'
+    'RB5E_2132_lastvisit' => '1420425536'
+    'RB5E_2132_ulastactivity' => '7a33yKqJzIUHWbK8a2g4rYyfLxZRCEFiozw4LjGbd97NwT8w9vkf'
+    'VOIr_2132_saltkey' => 'Ot1vtjL1'
+    'VOIr_2132_lastvisit' => '1420426036'
+    'VOIr_2132_ulastactivity' => '40a3geAD9hD7n9MsDQ4l4FnD7q3ymVwknLjv8+KttwvvmeBgf8zp'
+    'VOIr_2132_nofavfid' => '1'
+    'uchome_loginuser' => 'admin'
+    'CNZZDATA2924747' => 'cnzz_eid=1577273435-1420269582-&ntime=1420676356'
+    'CNZZDATA3668490' => 'cnzz_eid=405753816-1420849139-http%3A%2F%2Flocalhost%2F&ntime=1420849139'
+    'CNZZDATA3637100' => 'cnzz_eid=1250976432-1420847467-http%3A%2F%2Flocalhost%2F&ntime=1420847467'
+    'admin_think_language' => 'zh-CN'
+    'sid' => '5581iHsOCW5McFRYsx5i%2BRZkm6ESzH4wFOp%2B8dqIBW3lcUiALVNvuGwefDxiMjpKKfOm2rMjEnAQ%2Fw'
+    'PHPSESSID' => 'hed4fej4jcc6on2fb3uai5t2b3'
+    '_csrf' => 'ce9bff1ea68828228e18ecdd930a201059d5886c671410e80d4f579ac886db08s:32:\"4vVuXx0jpilgjYsmcWGE7wuDoL322AqQ\";'
+]
+
+$_SESSION = [
+    'admin_user_id' => '1'
+    'admin_user_name' => 'admin'
+    'admin_name' => ''
+    'admin_is_super' => '1'
+    'admin_user_roles' => []
+    'jihaoju__hash_' => 'c269dcea2eccecd086253eaad28dfcc7'
+    'jihaoju_hash' => '0d5076fc5c6478af28b82ca014c87447'
+    'admin_hash' => 'a38bd9d1f9b668765dbd7b003e4f9404'
+    'admin__hash_' => '466a9b940ee4062b2f4cc7e29abe9e16'
+    '__hash__' => [
+        '3aabb1128b2f26e739b3cbeaf08e1ed7' => '73b53e9e81405efeefbc692902666b43'
+    ]
+    '__flash' => []
+    '__returnUrl' => '/youhui/backend/web/'
+]
+
+$_SERVER = [
+    'MIBDIRS' => 'D:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'D:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.57 Safari/537.36'
+    'HTTP_ACCEPT_ENCODING' => 'gzip,deflate,sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8,en;q=0.6'
+    'HTTP_COOKIE' => 'AJSTAT_ok_times=1; _ga=GA1.1.54924247.1416566351; __zpspc=9.2.1416813744.1416814460.10%234%7C%7C%7C%7C%7C%23; bdshare_firstime=1418786158546; CNZZDATA4617777=cnzz_eid%3D682052683-1418784431-%26ntime%3D1418784197; CNZZDATA4617788=cnzz_eid%3D431890627-1419157234-%26ntime%3D1419203501; CNZZDATA4617784=cnzz_eid%3D1410397910-1418812097-%26ntime%3D1419983038; Jjzq_2132_saltkey=wkOPSZrn; Jjzq_2132_lastvisit=1420423935; Jjzq_2132_ulastactivity=3cd47khBmEfAZuKV56v5xcereJG%2FDl7C07x2T1XA2znHteTfL3el; RB5E_2132_saltkey=YR3N3T3T; RB5E_2132_lastvisit=1420425536; RB5E_2132_ulastactivity=7a33yKqJzIUHWbK8a2g4rYyfLxZRCEFiozw4LjGbd97NwT8w9vkf; VOIr_2132_saltkey=Ot1vtjL1; VOIr_2132_lastvisit=1420426036; VOIr_2132_ulastactivity=40a3geAD9hD7n9MsDQ4l4FnD7q3ymVwknLjv8%2BKttwvvmeBgf8zp; VOIr_2132_nofavfid=1; uchome_loginuser=admin; CNZZDATA2924747=cnzz_eid%3D1577273435-1420269582-%26ntime%3D1420676356; CNZZDATA3668490=cnzz_eid%3D405753816-1420849139-http%253A%252F%252Flocalhost%252F%26ntime%3D1420849139; CNZZDATA3637100=cnzz_eid%3D1250976432-1420847467-http%253A%252F%252Flocalhost%252F%26ntime%3D1420847467; admin_think_language=zh-CN; sid=5581iHsOCW5McFRYsx5i%252BRZkm6ESzH4wFOp%252B8dqIBW3lcUiALVNvuGwefDxiMjpKKfOm2rMjEnAQ%252Fw; PHPSESSID=hed4fej4jcc6on2fb3uai5t2b3; _csrf=ce9bff1ea68828228e18ecdd930a201059d5886c671410e80d4f579ac886db08s%3A32%3A%224vVuXx0jpilgjYsmcWGE7wuDoL322AqQ%22%3B'
+    'PATH' => 'C:\\Program Files (x86)\\Common Files\\NetSarang;C:\\ProgramData\\Oracle\\Java\\javapath;C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;D:\\xampp\\php\\php.exe;D:\\Program Files\\Java\\jdk1.8.0_25\\bin;D:\\Program Files\\Java\\jdk1.8.0_25\\jre\\bin;D:\\git\\bin;D:\\xampp\\php;C:\\ProgramData\\ComposerSetup\\bin;C:\\Windows\\system32'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.7 (Win32) OpenSSL/1.0.1e PHP/5.5.9 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.7 (Win32) OpenSSL/1.0.1e PHP/5.5.9'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'D:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'D:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'D:/xampp/htdocs/youhui/frontend/web/index.php'
+    'REMOTE_PORT' => '53067'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=shou'
+    'REQUEST_URI' => '/youhui/frontend/web/?r=shou'
+    'SCRIPT_NAME' => '/youhui/frontend/web/index.php'
+    'PHP_SELF' => '/youhui/frontend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1422499718.906
+    'REQUEST_TIME' => 1422499718
+]
+<<<<<<< HEAD
+2015-01-29 05:12:47 [127.0.0.1][][8jc2p823bbdeemq40iaim0jsu2][error][yii\web\HttpException:404] exception 'yii\base\InvalidRouteException' with message 'Unable to resolve the request "reginstered".' in E:\yiicoupons\vendor\yiisoft\yii2\base\Module.php:461
+Stack trace:
+#0 E:\yiicoupons\vendor\yiisoft\yii2\web\Application.php(83): yii\base\Module->runAction('reginstered', Array)
+#1 E:\yiicoupons\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 E:\yiicoupons\frontend\web\index.php(18): yii\base\Application->run()
+#3 {main}
+
+Next exception 'yii\web\NotFoundHttpException' with message 'Unable to resolve the request "reginstered".' in E:\yiicoupons\vendor\yiisoft\yii2\web\Application.php:95
+Stack trace:
+#0 E:\yiicoupons\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 E:\yiicoupons\frontend\web\index.php(18): yii\base\Application->run()
+#2 {main}
+2015-01-29 05:12:47 [127.0.0.1][][8jc2p823bbdeemq40iaim0jsu2][info][application] $_GET = [
+    'r' => 'reginstered'
+]
+
+$_COOKIE = [
+    'PHPSESSID' => '8jc2p823bbdeemq40iaim0jsu2'
+    'bdshare_firstime' => '1422504719907'
+]
+
+$_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'MIBDIRS' => 'D:/navcat/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'D:/navcat/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_ACCEPT' => 'text/html, application/xhtml+xml, */*'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.3; WOW64; Trident/7.0; LCJB; rv:11.0; QQBrowser/8.0.3197.400) like Gecko'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_HOST' => 'www.yiicoupons.com'
+    'HTTP_CONNECTION' => 'Keep-Alive'
+    'HTTP_COOKIE' => 'PHPSESSID=8jc2p823bbdeemq40iaim0jsu2; bdshare_firstime=1422504719907'
+    'PATH' => 'C:\\ProgramData\\Oracle\\Java\\javapath;C:\\Program Files (x86)\\Common Files\\NetSarang;C:\\Program Files (x86)\\Lenovo\\FusionEngine;C:\\Program Files (x86)\\Intel\\iCLS Client\\;C:\\Program Files\\Intel\\iCLS Client\\;C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;C:\\windows\\system32;C:\\windows;C:\\windows\\System32\\Wbem;C:\\windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\DAL;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\IPT;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\DAL;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\IPT;C:\\Program Files (x86)\\Common Files\\lenovo\\easyplussdk\\bin;C:\\Program Files (x86)\\iFLYTEK\\VoiceAssistant\\SpeechPlusRuntime;C:\\Program Files (x86)\\Lenovo\\Voice SDK;D:\\navcat\\git\\bin;D:\\navcat\\java\\bin;D:\\navcat\\xampp\\php;C:\\ProgramData\\ComposerSetup\\bin'
+    'SystemRoot' => 'C:\\windows'
+    'COMSPEC' => 'C:\\windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.4 (Win32) OpenSSL/1.0.1e PHP/5.5.1 Server at www.yiicoupons.com Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.4 (Win32) OpenSSL/1.0.1e PHP/5.5.1'
+    'SERVER_NAME' => 'www.yiicoupons.com'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'E:/yiicoupons'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'E:/yiicoupons'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'E:/yiicoupons/frontend/web/index.php'
+    'REMOTE_PORT' => '61550'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=reginstered'
+    'REQUEST_URI' => '/frontend/web/index.php?r=reginstered'
+    'SCRIPT_NAME' => '/frontend/web/index.php'
+    'PHP_SELF' => '/frontend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1422504767.211
+    'REQUEST_TIME' => 1422504767
+]
+2015-01-29 05:13:46 [127.0.0.1][][8jc2p823bbdeemq40iaim0jsu2][error][yii\web\HttpException:404] exception 'yii\base\InvalidRouteException' with message 'Unable to resolve the request "reginstered".' in E:\yiicoupons\vendor\yiisoft\yii2\base\Module.php:461
+Stack trace:
+#0 E:\yiicoupons\vendor\yiisoft\yii2\web\Application.php(83): yii\base\Module->runAction('reginstered', Array)
+#1 E:\yiicoupons\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 E:\yiicoupons\frontend\web\index.php(18): yii\base\Application->run()
+#3 {main}
+
+Next exception 'yii\web\NotFoundHttpException' with message 'Unable to resolve the request "reginstered".' in E:\yiicoupons\vendor\yiisoft\yii2\web\Application.php:95
+Stack trace:
+#0 E:\yiicoupons\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 E:\yiicoupons\frontend\web\index.php(18): yii\base\Application->run()
+#2 {main}
+2015-01-29 05:13:46 [127.0.0.1][][8jc2p823bbdeemq40iaim0jsu2][info][application] $_GET = [
+    'r' => 'reginstered'
+]
+
+$_COOKIE = [
+    'PHPSESSID' => '8jc2p823bbdeemq40iaim0jsu2'
+    'bdshare_firstime' => '1422504719907'
+]
+
+$_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'MIBDIRS' => 'D:/navcat/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'D:/navcat/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_ACCEPT' => 'text/html, application/xhtml+xml, */*'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.3; WOW64; Trident/7.0; LCJB; rv:11.0; QQBrowser/8.0.3197.400) like Gecko'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_HOST' => 'www.yiicoupons.com'
+    'HTTP_CONNECTION' => 'Keep-Alive'
+    'HTTP_CACHE_CONTROL' => 'no-cache'
+    'HTTP_COOKIE' => 'PHPSESSID=8jc2p823bbdeemq40iaim0jsu2; bdshare_firstime=1422504719907'
+    'PATH' => 'C:\\ProgramData\\Oracle\\Java\\javapath;C:\\Program Files (x86)\\Common Files\\NetSarang;C:\\Program Files (x86)\\Lenovo\\FusionEngine;C:\\Program Files (x86)\\Intel\\iCLS Client\\;C:\\Program Files\\Intel\\iCLS Client\\;C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;C:\\windows\\system32;C:\\windows;C:\\windows\\System32\\Wbem;C:\\windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\DAL;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\IPT;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\DAL;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\IPT;C:\\Program Files (x86)\\Common Files\\lenovo\\easyplussdk\\bin;C:\\Program Files (x86)\\iFLYTEK\\VoiceAssistant\\SpeechPlusRuntime;C:\\Program Files (x86)\\Lenovo\\Voice SDK;D:\\navcat\\git\\bin;D:\\navcat\\java\\bin;D:\\navcat\\xampp\\php;C:\\ProgramData\\ComposerSetup\\bin'
+    'SystemRoot' => 'C:\\windows'
+    'COMSPEC' => 'C:\\windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.4 (Win32) OpenSSL/1.0.1e PHP/5.5.1 Server at www.yiicoupons.com Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.4 (Win32) OpenSSL/1.0.1e PHP/5.5.1'
+    'SERVER_NAME' => 'www.yiicoupons.com'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'E:/yiicoupons'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'E:/yiicoupons'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'E:/yiicoupons/frontend/web/index.php'
+    'REMOTE_PORT' => '61806'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=reginstered'
+    'REQUEST_URI' => '/frontend/web/index.php?r=reginstered'
+    'SCRIPT_NAME' => '/frontend/web/index.php'
+    'PHP_SELF' => '/frontend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1422504826.72
+    'REQUEST_TIME' => 1422504826
+]
+2015-01-29 05:13:51 [127.0.0.1][][8jc2p823bbdeemq40iaim0jsu2][error][yii\web\HttpException:404] exception 'yii\base\InvalidRouteException' with message 'Unable to resolve the request "reginstered/index".' in E:\yiicoupons\vendor\yiisoft\yii2\base\Module.php:461
+Stack trace:
+#0 E:\yiicoupons\vendor\yiisoft\yii2\web\Application.php(83): yii\base\Module->runAction('reginstered/ind...', Array)
+#1 E:\yiicoupons\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 E:\yiicoupons\frontend\web\index.php(18): yii\base\Application->run()
+#3 {main}
+
+Next exception 'yii\web\NotFoundHttpException' with message 'Unable to resolve the request "reginstered/index".' in E:\yiicoupons\vendor\yiisoft\yii2\web\Application.php:95
+Stack trace:
+#0 E:\yiicoupons\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 E:\yiicoupons\frontend\web\index.php(18): yii\base\Application->run()
+#2 {main}
+2015-01-29 05:13:51 [127.0.0.1][][8jc2p823bbdeemq40iaim0jsu2][info][application] $_GET = [
+    'r' => 'reginstered/index'
+]
+
+$_COOKIE = [
+    'PHPSESSID' => '8jc2p823bbdeemq40iaim0jsu2'
+    'bdshare_firstime' => '1422504719907'
+]
+
+$_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'MIBDIRS' => 'D:/navcat/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'D:/navcat/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_ACCEPT' => 'text/html, application/xhtml+xml, */*'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.3; WOW64; Trident/7.0; LCJB; rv:11.0; QQBrowser/8.0.3197.400) like Gecko'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_HOST' => 'www.yiicoupons.com'
+    'HTTP_CONNECTION' => 'Keep-Alive'
+    'HTTP_COOKIE' => 'PHPSESSID=8jc2p823bbdeemq40iaim0jsu2; bdshare_firstime=1422504719907'
+    'PATH' => 'C:\\ProgramData\\Oracle\\Java\\javapath;C:\\Program Files (x86)\\Common Files\\NetSarang;C:\\Program Files (x86)\\Lenovo\\FusionEngine;C:\\Program Files (x86)\\Intel\\iCLS Client\\;C:\\Program Files\\Intel\\iCLS Client\\;C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;C:\\windows\\system32;C:\\windows;C:\\windows\\System32\\Wbem;C:\\windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\DAL;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\IPT;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\DAL;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\IPT;C:\\Program Files (x86)\\Common Files\\lenovo\\easyplussdk\\bin;C:\\Program Files (x86)\\iFLYTEK\\VoiceAssistant\\SpeechPlusRuntime;C:\\Program Files (x86)\\Lenovo\\Voice SDK;D:\\navcat\\git\\bin;D:\\navcat\\java\\bin;D:\\navcat\\xampp\\php;C:\\ProgramData\\ComposerSetup\\bin'
+    'SystemRoot' => 'C:\\windows'
+    'COMSPEC' => 'C:\\windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.4 (Win32) OpenSSL/1.0.1e PHP/5.5.1 Server at www.yiicoupons.com Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.4 (Win32) OpenSSL/1.0.1e PHP/5.5.1'
+    'SERVER_NAME' => 'www.yiicoupons.com'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'E:/yiicoupons'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'E:/yiicoupons'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'E:/yiicoupons/frontend/web/index.php'
+    'REMOTE_PORT' => '61809'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=reginstered/index'
+    'REQUEST_URI' => '/frontend/web/index.php?r=reginstered/index'
+    'SCRIPT_NAME' => '/frontend/web/index.php'
+    'PHP_SELF' => '/frontend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1422504830.963
+    'REQUEST_TIME' => 1422504830
+]
+2015-01-29 05:14:17 [127.0.0.1][][8jc2p823bbdeemq40iaim0jsu2][error][yii\web\HttpException:404] exception 'yii\base\InvalidRouteException' with message 'Unable to resolve the request "reginstered/index".' in E:\yiicoupons\vendor\yiisoft\yii2\base\Module.php:461
+Stack trace:
+#0 E:\yiicoupons\vendor\yiisoft\yii2\web\Application.php(83): yii\base\Module->runAction('reginstered/ind...', Array)
+#1 E:\yiicoupons\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 E:\yiicoupons\frontend\web\index.php(18): yii\base\Application->run()
+#3 {main}
+
+Next exception 'yii\web\NotFoundHttpException' with message 'Unable to resolve the request "reginstered/index".' in E:\yiicoupons\vendor\yiisoft\yii2\web\Application.php:95
+Stack trace:
+#0 E:\yiicoupons\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 E:\yiicoupons\frontend\web\index.php(18): yii\base\Application->run()
+#2 {main}
+2015-01-29 05:14:17 [127.0.0.1][][8jc2p823bbdeemq40iaim0jsu2][info][application] $_GET = [
+    'r' => 'reginstered/index'
+]
+
+$_COOKIE = [
+    'PHPSESSID' => '8jc2p823bbdeemq40iaim0jsu2'
+    'bdshare_firstime' => '1422504719907'
+]
+
+$_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'MIBDIRS' => 'D:/navcat/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'D:/navcat/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_ACCEPT' => 'text/html, application/xhtml+xml, */*'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.3; WOW64; Trident/7.0; LCJB; rv:11.0; QQBrowser/8.0.3197.400) like Gecko'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_HOST' => 'www.yiicoupons.com'
+    'HTTP_CONNECTION' => 'Keep-Alive'
+    'HTTP_CACHE_CONTROL' => 'no-cache'
+    'HTTP_COOKIE' => 'PHPSESSID=8jc2p823bbdeemq40iaim0jsu2; bdshare_firstime=1422504719907'
+    'PATH' => 'C:\\ProgramData\\Oracle\\Java\\javapath;C:\\Program Files (x86)\\Common Files\\NetSarang;C:\\Program Files (x86)\\Lenovo\\FusionEngine;C:\\Program Files (x86)\\Intel\\iCLS Client\\;C:\\Program Files\\Intel\\iCLS Client\\;C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;C:\\windows\\system32;C:\\windows;C:\\windows\\System32\\Wbem;C:\\windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\DAL;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\IPT;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\DAL;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\IPT;C:\\Program Files (x86)\\Common Files\\lenovo\\easyplussdk\\bin;C:\\Program Files (x86)\\iFLYTEK\\VoiceAssistant\\SpeechPlusRuntime;C:\\Program Files (x86)\\Lenovo\\Voice SDK;D:\\navcat\\git\\bin;D:\\navcat\\java\\bin;D:\\navcat\\xampp\\php;C:\\ProgramData\\ComposerSetup\\bin'
+    'SystemRoot' => 'C:\\windows'
+    'COMSPEC' => 'C:\\windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.4 (Win32) OpenSSL/1.0.1e PHP/5.5.1 Server at www.yiicoupons.com Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.4 (Win32) OpenSSL/1.0.1e PHP/5.5.1'
+    'SERVER_NAME' => 'www.yiicoupons.com'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'E:/yiicoupons'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'E:/yiicoupons'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'E:/yiicoupons/frontend/web/index.php'
+    'REMOTE_PORT' => '61951'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=reginstered/index'
+    'REQUEST_URI' => '/frontend/web/index.php?r=reginstered/index'
+    'SCRIPT_NAME' => '/frontend/web/index.php'
+    'PHP_SELF' => '/frontend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1422504857.382
+    'REQUEST_TIME' => 1422504857
+]
+2015-01-29 05:14:21 [127.0.0.1][][8jc2p823bbdeemq40iaim0jsu2][error][yii\web\HttpException:404] exception 'yii\base\InvalidRouteException' with message 'Unable to resolve the request "reginstered/regis".' in E:\yiicoupons\vendor\yiisoft\yii2\base\Module.php:461
+Stack trace:
+#0 E:\yiicoupons\vendor\yiisoft\yii2\web\Application.php(83): yii\base\Module->runAction('reginstered/reg...', Array)
+#1 E:\yiicoupons\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 E:\yiicoupons\frontend\web\index.php(18): yii\base\Application->run()
+#3 {main}
+
+Next exception 'yii\web\NotFoundHttpException' with message 'Unable to resolve the request "reginstered/regis".' in E:\yiicoupons\vendor\yiisoft\yii2\web\Application.php:95
+Stack trace:
+#0 E:\yiicoupons\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 E:\yiicoupons\frontend\web\index.php(18): yii\base\Application->run()
+#2 {main}
+2015-01-29 05:14:21 [127.0.0.1][][8jc2p823bbdeemq40iaim0jsu2][info][application] $_GET = [
+    'r' => 'reginstered/regis'
+]
+
+$_COOKIE = [
+    'PHPSESSID' => '8jc2p823bbdeemq40iaim0jsu2'
+    'bdshare_firstime' => '1422504719907'
+]
+
+$_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'MIBDIRS' => 'D:/navcat/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'D:/navcat/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_ACCEPT' => 'text/html, application/xhtml+xml, */*'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.3; WOW64; Trident/7.0; LCJB; rv:11.0; QQBrowser/8.0.3197.400) like Gecko'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_HOST' => 'www.yiicoupons.com'
+    'HTTP_CONNECTION' => 'Keep-Alive'
+    'HTTP_COOKIE' => 'PHPSESSID=8jc2p823bbdeemq40iaim0jsu2; bdshare_firstime=1422504719907'
+    'PATH' => 'C:\\ProgramData\\Oracle\\Java\\javapath;C:\\Program Files (x86)\\Common Files\\NetSarang;C:\\Program Files (x86)\\Lenovo\\FusionEngine;C:\\Program Files (x86)\\Intel\\iCLS Client\\;C:\\Program Files\\Intel\\iCLS Client\\;C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;C:\\windows\\system32;C:\\windows;C:\\windows\\System32\\Wbem;C:\\windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\DAL;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\IPT;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\DAL;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\IPT;C:\\Program Files (x86)\\Common Files\\lenovo\\easyplussdk\\bin;C:\\Program Files (x86)\\iFLYTEK\\VoiceAssistant\\SpeechPlusRuntime;C:\\Program Files (x86)\\Lenovo\\Voice SDK;D:\\navcat\\git\\bin;D:\\navcat\\java\\bin;D:\\navcat\\xampp\\php;C:\\ProgramData\\ComposerSetup\\bin'
+    'SystemRoot' => 'C:\\windows'
+    'COMSPEC' => 'C:\\windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.4 (Win32) OpenSSL/1.0.1e PHP/5.5.1 Server at www.yiicoupons.com Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.4 (Win32) OpenSSL/1.0.1e PHP/5.5.1'
+    'SERVER_NAME' => 'www.yiicoupons.com'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'E:/yiicoupons'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'E:/yiicoupons'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'E:/yiicoupons/frontend/web/index.php'
+    'REMOTE_PORT' => '61956'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=reginstered/regis'
+    'REQUEST_URI' => '/frontend/web/index.php?r=reginstered/regis'
+    'SCRIPT_NAME' => '/frontend/web/index.php'
+    'PHP_SELF' => '/frontend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1422504861.414
+    'REQUEST_TIME' => 1422504861
+]
+2015-01-29 06:26:35 [127.0.0.1][][8jc2p823bbdeemq40iaim0jsu2][error][yii\web\HttpException:404] exception 'yii\base\InvalidRouteException' with message 'Unable to resolve the request "reginstered/regis".' in E:\yiicoupons\vendor\yiisoft\yii2\base\Module.php:461
+Stack trace:
+#0 E:\yiicoupons\vendor\yiisoft\yii2\web\Application.php(83): yii\base\Module->runAction('reginstered/reg...', Array)
+#1 E:\yiicoupons\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 E:\yiicoupons\frontend\web\index.php(18): yii\base\Application->run()
+#3 {main}
+
+Next exception 'yii\web\NotFoundHttpException' with message 'Unable to resolve the request "reginstered/regis".' in E:\yiicoupons\vendor\yiisoft\yii2\web\Application.php:95
+Stack trace:
+#0 E:\yiicoupons\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 E:\yiicoupons\frontend\web\index.php(18): yii\base\Application->run()
+#2 {main}
+2015-01-29 06:26:35 [127.0.0.1][][8jc2p823bbdeemq40iaim0jsu2][info][application] $_GET = [
+    'r' => 'reginstered/regis'
+]
+
+$_COOKIE = [
+    'PHPSESSID' => '8jc2p823bbdeemq40iaim0jsu2'
+    'bdshare_firstime' => '1422504719907'
+]
+
+$_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'MIBDIRS' => 'D:/navcat/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'D:/navcat/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_ACCEPT' => 'text/html, application/xhtml+xml, */*'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.3; WOW64; Trident/7.0; LCJB; rv:11.0; QQBrowser/8.0.3197.400) like Gecko'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_HOST' => 'www.yiicoupons.com'
+    'HTTP_CONNECTION' => 'Keep-Alive'
+    'HTTP_COOKIE' => 'PHPSESSID=8jc2p823bbdeemq40iaim0jsu2; bdshare_firstime=1422504719907'
+    'PATH' => 'C:\\ProgramData\\Oracle\\Java\\javapath;C:\\Program Files (x86)\\Common Files\\NetSarang;C:\\Program Files (x86)\\Lenovo\\FusionEngine;C:\\Program Files (x86)\\Intel\\iCLS Client\\;C:\\Program Files\\Intel\\iCLS Client\\;C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;C:\\windows\\system32;C:\\windows;C:\\windows\\System32\\Wbem;C:\\windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\DAL;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\IPT;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\DAL;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\IPT;C:\\Program Files (x86)\\Common Files\\lenovo\\easyplussdk\\bin;C:\\Program Files (x86)\\iFLYTEK\\VoiceAssistant\\SpeechPlusRuntime;C:\\Program Files (x86)\\Lenovo\\Voice SDK;D:\\navcat\\git\\bin;D:\\navcat\\java\\bin;D:\\navcat\\xampp\\php;C:\\ProgramData\\ComposerSetup\\bin'
+    'SystemRoot' => 'C:\\windows'
+    'COMSPEC' => 'C:\\windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.4 (Win32) OpenSSL/1.0.1e PHP/5.5.1 Server at www.yiicoupons.com Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.4 (Win32) OpenSSL/1.0.1e PHP/5.5.1'
+    'SERVER_NAME' => 'www.yiicoupons.com'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'E:/yiicoupons'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'E:/yiicoupons'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'E:/yiicoupons/frontend/web/index.php'
+    'REMOTE_PORT' => '63278'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=reginstered/regis'
+    'REQUEST_URI' => '/frontend/web/index.php?r=reginstered/regis'
+    'SCRIPT_NAME' => '/frontend/web/index.php'
+    'PHP_SELF' => '/frontend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1422509195.663
+    'REQUEST_TIME' => 1422509195
+=======
+2015-01-29 04:21:02 [127.0.0.1][][hed4fej4jcc6on2fb3uai5t2b3][error][yii\web\HttpException:404] exception 'yii\base\InvalidRouteException' with message 'Unable to resolve the request "shou".' in D:\xampp\htdocs\youhui\vendor\yiisoft\yii2\base\Module.php:461
+Stack trace:
+#0 D:\xampp\htdocs\youhui\vendor\yiisoft\yii2\web\Application.php(83): yii\base\Module->runAction('shou', Array)
+#1 D:\xampp\htdocs\youhui\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 D:\xampp\htdocs\youhui\frontend\web\index.php(18): yii\base\Application->run()
+#3 {main}
+
+Next exception 'yii\web\NotFoundHttpException' with message 'Unable to resolve the request "shou".' in D:\xampp\htdocs\youhui\vendor\yiisoft\yii2\web\Application.php:95
+Stack trace:
+#0 D:\xampp\htdocs\youhui\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 D:\xampp\htdocs\youhui\frontend\web\index.php(18): yii\base\Application->run()
+#2 {main}
+2015-01-29 04:21:02 [127.0.0.1][][hed4fej4jcc6on2fb3uai5t2b3][info][application] $_GET = [
+    'r' => 'shou'
+]
+
+$_COOKIE = [
+    'AJSTAT_ok_times' => '1'
+    '_ga' => 'GA1.1.54924247.1416566351'
+    '__zpspc' => '9.2.1416813744.1416814460.10#4|||||#'
+    'bdshare_firstime' => '1418786158546'
+    'CNZZDATA4617777' => 'cnzz_eid=682052683-1418784431-&ntime=1418784197'
+    'CNZZDATA4617788' => 'cnzz_eid=431890627-1419157234-&ntime=1419203501'
+    'CNZZDATA4617784' => 'cnzz_eid=1410397910-1418812097-&ntime=1419983038'
+    'Jjzq_2132_saltkey' => 'wkOPSZrn'
+    'Jjzq_2132_lastvisit' => '1420423935'
+    'Jjzq_2132_ulastactivity' => '3cd47khBmEfAZuKV56v5xcereJG/Dl7C07x2T1XA2znHteTfL3el'
+    'RB5E_2132_saltkey' => 'YR3N3T3T'
+    'RB5E_2132_lastvisit' => '1420425536'
+    'RB5E_2132_ulastactivity' => '7a33yKqJzIUHWbK8a2g4rYyfLxZRCEFiozw4LjGbd97NwT8w9vkf'
+    'VOIr_2132_saltkey' => 'Ot1vtjL1'
+    'VOIr_2132_lastvisit' => '1420426036'
+    'VOIr_2132_ulastactivity' => '40a3geAD9hD7n9MsDQ4l4FnD7q3ymVwknLjv8+KttwvvmeBgf8zp'
+    'VOIr_2132_nofavfid' => '1'
+    'uchome_loginuser' => 'admin'
+    'CNZZDATA2924747' => 'cnzz_eid=1577273435-1420269582-&ntime=1420676356'
+    'CNZZDATA3668490' => 'cnzz_eid=405753816-1420849139-http%3A%2F%2Flocalhost%2F&ntime=1420849139'
+    'CNZZDATA3637100' => 'cnzz_eid=1250976432-1420847467-http%3A%2F%2Flocalhost%2F&ntime=1420847467'
+    'sid' => '5581iHsOCW5McFRYsx5i%2BRZkm6ESzH4wFOp%2B8dqIBW3lcUiALVNvuGwefDxiMjpKKfOm2rMjEnAQ%2Fw'
+    'PHPSESSID' => 'hed4fej4jcc6on2fb3uai5t2b3'
+    '_csrf' => 'ce9bff1ea68828228e18ecdd930a201059d5886c671410e80d4f579ac886db08s:32:\"4vVuXx0jpilgjYsmcWGE7wuDoL322AqQ\";'
+]
+
+$_SESSION = [
+    'admin_user_id' => '1'
+    'admin_user_name' => 'admin'
+    'admin_name' => ''
+    'admin_is_super' => '1'
+    'admin_user_roles' => []
+    'jihaoju__hash_' => 'c269dcea2eccecd086253eaad28dfcc7'
+    'jihaoju_hash' => '0d5076fc5c6478af28b82ca014c87447'
+    'admin_hash' => 'a38bd9d1f9b668765dbd7b003e4f9404'
+    'admin__hash_' => '466a9b940ee4062b2f4cc7e29abe9e16'
+    '__hash__' => [
+        '3aabb1128b2f26e739b3cbeaf08e1ed7' => '73b53e9e81405efeefbc692902666b43'
+    ]
+    '__flash' => []
+    '__returnUrl' => '/youhui/backend/web/'
+]
+
+$_SERVER = [
+    'MIBDIRS' => 'D:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'D:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.57 Safari/537.36'
+    'HTTP_ACCEPT_ENCODING' => 'gzip,deflate,sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8,en;q=0.6'
+    'HTTP_COOKIE' => 'AJSTAT_ok_times=1; _ga=GA1.1.54924247.1416566351; __zpspc=9.2.1416813744.1416814460.10%234%7C%7C%7C%7C%7C%23; bdshare_firstime=1418786158546; CNZZDATA4617777=cnzz_eid%3D682052683-1418784431-%26ntime%3D1418784197; CNZZDATA4617788=cnzz_eid%3D431890627-1419157234-%26ntime%3D1419203501; CNZZDATA4617784=cnzz_eid%3D1410397910-1418812097-%26ntime%3D1419983038; Jjzq_2132_saltkey=wkOPSZrn; Jjzq_2132_lastvisit=1420423935; Jjzq_2132_ulastactivity=3cd47khBmEfAZuKV56v5xcereJG%2FDl7C07x2T1XA2znHteTfL3el; RB5E_2132_saltkey=YR3N3T3T; RB5E_2132_lastvisit=1420425536; RB5E_2132_ulastactivity=7a33yKqJzIUHWbK8a2g4rYyfLxZRCEFiozw4LjGbd97NwT8w9vkf; VOIr_2132_saltkey=Ot1vtjL1; VOIr_2132_lastvisit=1420426036; VOIr_2132_ulastactivity=40a3geAD9hD7n9MsDQ4l4FnD7q3ymVwknLjv8%2BKttwvvmeBgf8zp; VOIr_2132_nofavfid=1; uchome_loginuser=admin; CNZZDATA2924747=cnzz_eid%3D1577273435-1420269582-%26ntime%3D1420676356; CNZZDATA3668490=cnzz_eid%3D405753816-1420849139-http%253A%252F%252Flocalhost%252F%26ntime%3D1420849139; CNZZDATA3637100=cnzz_eid%3D1250976432-1420847467-http%253A%252F%252Flocalhost%252F%26ntime%3D1420847467; sid=5581iHsOCW5McFRYsx5i%252BRZkm6ESzH4wFOp%252B8dqIBW3lcUiALVNvuGwefDxiMjpKKfOm2rMjEnAQ%252Fw; PHPSESSID=hed4fej4jcc6on2fb3uai5t2b3; _csrf=ce9bff1ea68828228e18ecdd930a201059d5886c671410e80d4f579ac886db08s%3A32%3A%224vVuXx0jpilgjYsmcWGE7wuDoL322AqQ%22%3B'
+    'PATH' => 'C:\\Program Files (x86)\\Common Files\\NetSarang;C:\\ProgramData\\Oracle\\Java\\javapath;C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;D:\\xampp\\php\\php.exe;D:\\Program Files\\Java\\jdk1.8.0_25\\bin;D:\\Program Files\\Java\\jdk1.8.0_25\\jre\\bin;D:\\git\\bin;D:\\xampp\\php;C:\\ProgramData\\ComposerSetup\\bin;C:\\Windows\\system32'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.7 (Win32) OpenSSL/1.0.1e PHP/5.5.9 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.7 (Win32) OpenSSL/1.0.1e PHP/5.5.9'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'D:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'D:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'D:/xampp/htdocs/youhui/frontend/web/index.php'
+    'REMOTE_PORT' => '53886'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=shou'
+    'REQUEST_URI' => '/youhui/frontend/web/?r=shou'
+    'SCRIPT_NAME' => '/youhui/frontend/web/index.php'
+    'PHP_SELF' => '/youhui/frontend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1422501662.226
+    'REQUEST_TIME' => 1422501662
+]
+2015-01-29 04:44:30 [127.0.0.1][-][-][error][yii\base\UnknownClassException] exception 'yii\base\UnknownClassException' with message 'Unable to find 'frontend\controllers\NewController' in file: D:\xampp\htdocs\youhui/frontend/controllers/NewController.php. Namespace missing?' in D:\xampp\htdocs\youhui\vendor\yiisoft\yii2\BaseYii.php:291
+Stack trace:
+#0 [internal function]: yii\BaseYii::autoload('frontend\contro...')
+#1 [internal function]: spl_autoload_call('frontend\contro...')
+#2 D:\xampp\htdocs\youhui\vendor\yiisoft\yii2\base\Module.php(563): class_exists('frontend\contro...')
+#3 D:\xampp\htdocs\youhui\vendor\yiisoft\yii2\base\Module.php(521): yii\base\Module->createControllerByID('new')
+#4 D:\xampp\htdocs\youhui\vendor\yiisoft\yii2\base\Module.php(449): yii\base\Module->createController('new')
+#5 D:\xampp\htdocs\youhui\vendor\yiisoft\yii2\web\Application.php(83): yii\base\Module->runAction('new', Array)
+#6 D:\xampp\htdocs\youhui\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#7 D:\xampp\htdocs\youhui\frontend\web\index.php(18): yii\base\Application->run()
+#8 {main}
+2015-01-29 04:44:30 [127.0.0.1][-][-][info][application] $_GET = [
+    'r' => 'new'
+]
+
+$_COOKIE = [
+    'AJSTAT_ok_times' => '1'
+    '_ga' => 'GA1.1.54924247.1416566351'
+    '__zpspc' => '9.2.1416813744.1416814460.10#4|||||#'
+    'bdshare_firstime' => '1418786158546'
+    'CNZZDATA4617777' => 'cnzz_eid=682052683-1418784431-&ntime=1418784197'
+    'CNZZDATA4617788' => 'cnzz_eid=431890627-1419157234-&ntime=1419203501'
+    'CNZZDATA4617784' => 'cnzz_eid=1410397910-1418812097-&ntime=1419983038'
+    'Jjzq_2132_saltkey' => 'wkOPSZrn'
+    'Jjzq_2132_lastvisit' => '1420423935'
+    'Jjzq_2132_ulastactivity' => '3cd47khBmEfAZuKV56v5xcereJG/Dl7C07x2T1XA2znHteTfL3el'
+    'RB5E_2132_saltkey' => 'YR3N3T3T'
+    'RB5E_2132_lastvisit' => '1420425536'
+    'RB5E_2132_ulastactivity' => '7a33yKqJzIUHWbK8a2g4rYyfLxZRCEFiozw4LjGbd97NwT8w9vkf'
+    'VOIr_2132_saltkey' => 'Ot1vtjL1'
+    'VOIr_2132_lastvisit' => '1420426036'
+    'VOIr_2132_ulastactivity' => '40a3geAD9hD7n9MsDQ4l4FnD7q3ymVwknLjv8+KttwvvmeBgf8zp'
+    'VOIr_2132_nofavfid' => '1'
+    'uchome_loginuser' => 'admin'
+    'CNZZDATA2924747' => 'cnzz_eid=1577273435-1420269582-&ntime=1420676356'
+    'CNZZDATA3668490' => 'cnzz_eid=405753816-1420849139-http%3A%2F%2Flocalhost%2F&ntime=1420849139'
+    'CNZZDATA3637100' => 'cnzz_eid=1250976432-1420847467-http%3A%2F%2Flocalhost%2F&ntime=1420847467'
+    'sid' => '5581iHsOCW5McFRYsx5i%2BRZkm6ESzH4wFOp%2B8dqIBW3lcUiALVNvuGwefDxiMjpKKfOm2rMjEnAQ%2Fw'
+    'admin_think_language' => 'zh-CN'
+    'PHPSESSID' => 'i0h8suf3tmf5rbapcgo2kpav04'
+]
+
+$_SERVER = [
+    'MIBDIRS' => 'D:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'D:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.57 Safari/537.36'
+    'HTTP_ACCEPT_ENCODING' => 'gzip,deflate,sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8,en;q=0.6'
+    'HTTP_COOKIE' => 'AJSTAT_ok_times=1; _ga=GA1.1.54924247.1416566351; __zpspc=9.2.1416813744.1416814460.10%234%7C%7C%7C%7C%7C%23; bdshare_firstime=1418786158546; CNZZDATA4617777=cnzz_eid%3D682052683-1418784431-%26ntime%3D1418784197; CNZZDATA4617788=cnzz_eid%3D431890627-1419157234-%26ntime%3D1419203501; CNZZDATA4617784=cnzz_eid%3D1410397910-1418812097-%26ntime%3D1419983038; Jjzq_2132_saltkey=wkOPSZrn; Jjzq_2132_lastvisit=1420423935; Jjzq_2132_ulastactivity=3cd47khBmEfAZuKV56v5xcereJG%2FDl7C07x2T1XA2znHteTfL3el; RB5E_2132_saltkey=YR3N3T3T; RB5E_2132_lastvisit=1420425536; RB5E_2132_ulastactivity=7a33yKqJzIUHWbK8a2g4rYyfLxZRCEFiozw4LjGbd97NwT8w9vkf; VOIr_2132_saltkey=Ot1vtjL1; VOIr_2132_lastvisit=1420426036; VOIr_2132_ulastactivity=40a3geAD9hD7n9MsDQ4l4FnD7q3ymVwknLjv8%2BKttwvvmeBgf8zp; VOIr_2132_nofavfid=1; uchome_loginuser=admin; CNZZDATA2924747=cnzz_eid%3D1577273435-1420269582-%26ntime%3D1420676356; CNZZDATA3668490=cnzz_eid%3D405753816-1420849139-http%253A%252F%252Flocalhost%252F%26ntime%3D1420849139; CNZZDATA3637100=cnzz_eid%3D1250976432-1420847467-http%253A%252F%252Flocalhost%252F%26ntime%3D1420847467; sid=5581iHsOCW5McFRYsx5i%252BRZkm6ESzH4wFOp%252B8dqIBW3lcUiALVNvuGwefDxiMjpKKfOm2rMjEnAQ%252Fw; admin_think_language=zh-CN; PHPSESSID=i0h8suf3tmf5rbapcgo2kpav04'
+    'PATH' => 'C:\\Program Files (x86)\\Common Files\\NetSarang;C:\\ProgramData\\Oracle\\Java\\javapath;C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;D:\\xampp\\php\\php.exe;D:\\Program Files\\Java\\jdk1.8.0_25\\bin;D:\\Program Files\\Java\\jdk1.8.0_25\\jre\\bin;D:\\git\\bin;D:\\xampp\\php;C:\\ProgramData\\ComposerSetup\\bin;C:\\Windows\\system32'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.7 (Win32) OpenSSL/1.0.1e PHP/5.5.9 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.7 (Win32) OpenSSL/1.0.1e PHP/5.5.9'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'D:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'D:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'D:/xampp/htdocs/youhui/frontend/web/index.php'
+    'REMOTE_PORT' => '54655'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=new'
+    'REQUEST_URI' => '/youhui/frontend/web/?r=new'
+    'SCRIPT_NAME' => '/youhui/frontend/web/index.php'
+    'PHP_SELF' => '/youhui/frontend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1422503070.298
+    'REQUEST_TIME' => 1422503070
+>>>>>>> 1908a10f2359f82645c01b1e9cf2a06cab594ed7
+]
+2015-01-29 14:11:34 [127.0.0.1][][qu5vicbhr1vnmocfkbbivnvob7][error][yii\web\HttpException:404] exception 'yii\base\InvalidRouteException' with message 'Unable to resolve the request: show/zhekou' in E:\end\vendor\yiisoft\yii2\base\Controller.php:122
+Stack trace:
+#0 E:\end\vendor\yiisoft\yii2\base\Module.php(455): yii\base\Controller->runAction('zhekou', Array)
+#1 E:\end\vendor\yiisoft\yii2\web\Application.php(83): yii\base\Module->runAction('show/zhekou', Array)
+#2 E:\end\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#3 E:\end\frontend\web\index.php(18): yii\base\Application->run()
+#4 {main}
+
+Next exception 'yii\web\NotFoundHttpException' with message 'Unable to resolve the request: show/zhekou' in E:\end\vendor\yiisoft\yii2\web\Application.php:95
+Stack trace:
+#0 E:\end\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 E:\end\frontend\web\index.php(18): yii\base\Application->run()
+#2 {main}
+2015-01-29 14:11:34 [127.0.0.1][][qu5vicbhr1vnmocfkbbivnvob7][info][application] $_GET = [
+    'r' => 'show/zhekou'
+]
+
+$_COOKIE = [
+    'bdshare_firstime' => '1422501544446'
+    'PHPSESSID' => 'qu5vicbhr1vnmocfkbbivnvob7'
+]
+
+$_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'MIBDIRS' => 'D:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'D:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'www.end.com'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/39.0.2171.95 Safari/537.36'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8,en;q=0.6'
+    'HTTP_COOKIE' => 'bdshare_firstime=1422501544446; PHPSESSID=qu5vicbhr1vnmocfkbbivnvob7'
+    'PATH' => 'C:\\Program Files (x86)\\Common Files\\NetSarang;C:\\ProgramData\\Oracle\\Java\\javapath;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;%;AVA_HOME%\\bin;D:\\install\\jdk\\jre\\bin;D:\\install\\xampp\\php;D:\\install\\jdk\\bin;D:\\xampp\\php;C:\\ProgramData\\ComposerSetup\\bin;C:\\Program Files\\TortoiseGit\\bin;.;;.;'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.7 (Win32) OpenSSL/1.0.1e PHP/5.5.9 Server at www.end.com Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.7 (Win32) OpenSSL/1.0.1e PHP/5.5.9'
+    'SERVER_NAME' => 'www.end.com'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'E:/end'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'E:/end'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'E:/end/frontend/web/index.php'
+    'REMOTE_PORT' => '50382'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=show/zhekou'
+    'REQUEST_URI' => '/frontend/web/index.php?r=show/zhekou'
+    'SCRIPT_NAME' => '/frontend/web/index.php'
+    'PHP_SELF' => '/frontend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1422511894.464
+    'REQUEST_TIME' => 1422511894
+]
+2015-01-29 14:17:47 [127.0.0.1][-][-][error][yii\base\ErrorException:4] exception 'yii\base\ErrorException' with message 'syntax error, unexpected end of file' in E:\end\frontend\controllers\PromotionController.php:29
+Stack trace:
+#0 [internal function]: yii\base\ErrorHandler->handleFatalError()
+#1 {main}
+2015-01-29 14:17:47 [127.0.0.1][-][-][info][application] $_GET = [
+    'r' => 'promotion/index'
+]
+
+$_COOKIE = [
+    'bdshare_firstime' => '1422501544446'
+    'PHPSESSID' => 'qu5vicbhr1vnmocfkbbivnvob7'
+]
+
+$_SERVER = [
+    'MIBDIRS' => 'D:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'D:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'www.end.com'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/39.0.2171.95 Safari/537.36'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8,en;q=0.6'
+    'HTTP_COOKIE' => 'bdshare_firstime=1422501544446; PHPSESSID=qu5vicbhr1vnmocfkbbivnvob7'
+    'PATH' => 'C:\\Program Files (x86)\\Common Files\\NetSarang;C:\\ProgramData\\Oracle\\Java\\javapath;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;%;AVA_HOME%\\bin;D:\\install\\jdk\\jre\\bin;D:\\install\\xampp\\php;D:\\install\\jdk\\bin;D:\\xampp\\php;C:\\ProgramData\\ComposerSetup\\bin;C:\\Program Files\\TortoiseGit\\bin;.;;.;'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.7 (Win32) OpenSSL/1.0.1e PHP/5.5.9 Server at www.end.com Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.7 (Win32) OpenSSL/1.0.1e PHP/5.5.9'
+    'SERVER_NAME' => 'www.end.com'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'E:/end'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'E:/end'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'E:/end/frontend/web/index.php'
+    'REMOTE_PORT' => '50508'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=promotion/index'
+    'REQUEST_URI' => '/frontend/web/index.php?r=promotion/index'
+    'SCRIPT_NAME' => '/frontend/web/index.php'
+    'PHP_SELF' => '/frontend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1422512267.431
+    'REQUEST_TIME' => 1422512267
+]
+2015-01-29 08:16:54 [127.0.0.1][-][-][error][yii\db\Exception] exception 'PDOException' with message 'SQLSTATE[HY000] [1049] Unknown database 'tp_couton'' in D:\xampp\htdocs\youhui\vendor\yiisoft\yii2\db\Connection.php:579
+Stack trace:
+#0 D:\xampp\htdocs\youhui\vendor\yiisoft\yii2\db\Connection.php(579): PDO->__construct('mysql:host=192....', 'root', 'root', NULL)
+#1 D:\xampp\htdocs\youhui\vendor\yiisoft\yii2\db\Connection.php(529): yii\db\Connection->createPdoInstance()
+#2 D:\xampp\htdocs\youhui\vendor\yiisoft\yii2\db\Connection.php(836): yii\db\Connection->open()
+#3 D:\xampp\htdocs\youhui\vendor\yiisoft\yii2\db\Connection.php(823): yii\db\Connection->getMasterPdo()
+#4 D:\xampp\htdocs\youhui\vendor\yiisoft\yii2\db\Command.php(208): yii\db\Connection->getSlavePdo()
+#5 D:\xampp\htdocs\youhui\vendor\yiisoft\yii2\db\Command.php(813): yii\db\Command->prepare(true)
+#6 D:\xampp\htdocs\youhui\vendor\yiisoft\yii2\db\Command.php(393): yii\db\Command->queryInternal('fetchAll', 7)
+#7 D:\xampp\htdocs\youhui\vendor\yiisoft\yii2\db\mysql\Schema.php(305): yii\db\Command->queryColumn()
+#8 D:\xampp\htdocs\youhui\vendor\yiisoft\yii2\db\Schema.php(205): yii\db\mysql\Schema->findTableNames('')
+#9 D:\xampp\htdocs\youhui\vendor\yiisoft\yii2-gii\generators\model\Generator.php(133): yii\db\Schema->getTableNames()
+#10 [internal function]: yii\gii\generators\model\Generator->yii\gii\generators\model\{closure}()
+#11 D:\xampp\htdocs\youhui\vendor\yiisoft\yii2-gii\components\ActiveField.php(41): call_user_func(Object(Closure))
+#12 D:\xampp\htdocs\youhui\vendor\yiisoft\yii2\base\Object.php(107): yii\gii\components\ActiveField->init()
+#13 [internal function]: yii\base\Object->__construct(Array)
+#14 D:\xampp\htdocs\youhui\vendor\yiisoft\yii2\di\Container.php(364): ReflectionClass->newInstanceArgs(Array)
+#15 D:\xampp\htdocs\youhui\vendor\yiisoft\yii2\di\Container.php(147): yii\di\Container->build('yii\gii\compone...', Array, Array)
+#16 D:\xampp\htdocs\youhui\vendor\yiisoft\yii2\BaseYii.php(344): yii\di\Container->get('yii\gii\compone...', Array, Array)
+#17 D:\xampp\htdocs\youhui\vendor\yiisoft\yii2\widgets\ActiveForm.php(279): yii\BaseYii::createObject(Array)
+#18 D:\xampp\htdocs\youhui\vendor\yiisoft\yii2-gii\generators\model\form.php(6): yii\widgets\ActiveForm->field(Object(yii\gii\generators\model\Generator), 'tableName')
+#19 D:\xampp\htdocs\youhui\vendor\yiisoft\yii2\base\View.php(325): require('D:\xampp\htdocs...')
+#20 D:\xampp\htdocs\youhui\vendor\yiisoft\yii2\base\View.php(247): yii\base\View->renderPhpFile('D:\xampp\htdocs...', Array)
+#21 D:\xampp\htdocs\youhui\vendor\yiisoft\yii2-gii\views\default\view.php(38): yii\base\View->renderFile('D:\xampp\htdocs...', Array)
+#22 D:\xampp\htdocs\youhui\vendor\yiisoft\yii2\base\View.php(325): require('D:\xampp\htdocs...')
+#23 D:\xampp\htdocs\youhui\vendor\yiisoft\yii2\base\View.php(247): yii\base\View->renderPhpFile('D:\xampp\htdocs...', Array)
+#24 D:\xampp\htdocs\youhui\vendor\yiisoft\yii2\base\View.php(149): yii\base\View->renderFile('D:\xampp\htdocs...', Array, Object(yii\gii\controllers\DefaultController))
+#25 D:\xampp\htdocs\youhui\vendor\yiisoft\yii2\base\Controller.php(367): yii\base\View->render('view', Array, Object(yii\gii\controllers\DefaultController))
+#26 D:\xampp\htdocs\youhui\vendor\yiisoft\yii2-gii\controllers\DefaultController.php(56): yii\base\Controller->render('view', Array)
+#27 [internal function]: yii\gii\controllers\DefaultController->actionView('model')
+#28 D:\xampp\htdocs\youhui\vendor\yiisoft\yii2\base\InlineAction.php(55): call_user_func_array(Array, Array)
+#29 D:\xampp\htdocs\youhui\vendor\yiisoft\yii2\base\Controller.php(151): yii\base\InlineAction->runWithParams(Array)
+#30 D:\xampp\htdocs\youhui\vendor\yiisoft\yii2\base\Module.php(455): yii\base\Controller->runAction('view', Array)
+#31 D:\xampp\htdocs\youhui\vendor\yiisoft\yii2\web\Application.php(83): yii\base\Module->runAction('gii/default/vie...', Array)
+#32 D:\xampp\htdocs\youhui\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#33 D:\xampp\htdocs\youhui\frontend\web\index.php(18): yii\base\Application->run()
+#34 {main}
+
+Next exception 'yii\db\Exception' with message 'SQLSTATE[HY000] [1049] Unknown database 'tp_couton'' in D:\xampp\htdocs\youhui\vendor\yiisoft\yii2\db\Connection.php:534
+Stack trace:
+#0 D:\xampp\htdocs\youhui\vendor\yiisoft\yii2\db\Connection.php(836): yii\db\Connection->open()
+#1 D:\xampp\htdocs\youhui\vendor\yiisoft\yii2\db\Connection.php(823): yii\db\Connection->getMasterPdo()
+#2 D:\xampp\htdocs\youhui\vendor\yiisoft\yii2\db\Command.php(208): yii\db\Connection->getSlavePdo()
+#3 D:\xampp\htdocs\youhui\vendor\yiisoft\yii2\db\Command.php(813): yii\db\Command->prepare(true)
+#4 D:\xampp\htdocs\youhui\vendor\yiisoft\yii2\db\Command.php(393): yii\db\Command->queryInternal('fetchAll', 7)
+#5 D:\xampp\htdocs\youhui\vendor\yiisoft\yii2\db\mysql\Schema.php(305): yii\db\Command->queryColumn()
+#6 D:\xampp\htdocs\youhui\vendor\yiisoft\yii2\db\Schema.php(205): yii\db\mysql\Schema->findTableNames('')
+#7 D:\xampp\htdocs\youhui\vendor\yiisoft\yii2-gii\generators\model\Generator.php(133): yii\db\Schema->getTableNames()
+#8 [internal function]: yii\gii\generators\model\Generator->yii\gii\generators\model\{closure}()
+#9 D:\xampp\htdocs\youhui\vendor\yiisoft\yii2-gii\components\ActiveField.php(41): call_user_func(Object(Closure))
+#10 D:\xampp\htdocs\youhui\vendor\yiisoft\yii2\base\Object.php(107): yii\gii\components\ActiveField->init()
+#11 [internal function]: yii\base\Object->__construct(Array)
+#12 D:\xampp\htdocs\youhui\vendor\yiisoft\yii2\di\Container.php(364): ReflectionClass->newInstanceArgs(Array)
+#13 D:\xampp\htdocs\youhui\vendor\yiisoft\yii2\di\Container.php(147): yii\di\Container->build('yii\gii\compone...', Array, Array)
+#14 D:\xampp\htdocs\youhui\vendor\yiisoft\yii2\BaseYii.php(344): yii\di\Container->get('yii\gii\compone...', Array, Array)
+#15 D:\xampp\htdocs\youhui\vendor\yiisoft\yii2\widgets\ActiveForm.php(279): yii\BaseYii::createObject(Array)
+#16 D:\xampp\htdocs\youhui\vendor\yiisoft\yii2-gii\generators\model\form.php(6): yii\widgets\ActiveForm->field(Object(yii\gii\generators\model\Generator), 'tableName')
+#17 D:\xampp\htdocs\youhui\vendor\yiisoft\yii2\base\View.php(325): require('D:\xampp\htdocs...')
+#18 D:\xampp\htdocs\youhui\vendor\yiisoft\yii2\base\View.php(247): yii\base\View->renderPhpFile('D:\xampp\htdocs...', Array)
+#19 D:\xampp\htdocs\youhui\vendor\yiisoft\yii2-gii\views\default\view.php(38): yii\base\View->renderFile('D:\xampp\htdocs...', Array)
+#20 D:\xampp\htdocs\youhui\vendor\yiisoft\yii2\base\View.php(325): require('D:\xampp\htdocs...')
+#21 D:\xampp\htdocs\youhui\vendor\yiisoft\yii2\base\View.php(247): yii\base\View->renderPhpFile('D:\xampp\htdocs...', Array)
+#22 D:\xampp\htdocs\youhui\vendor\yiisoft\yii2\base\View.php(149): yii\base\View->renderFile('D:\xampp\htdocs...', Array, Object(yii\gii\controllers\DefaultController))
+#23 D:\xampp\htdocs\youhui\vendor\yiisoft\yii2\base\Controller.php(367): yii\base\View->render('view', Array, Object(yii\gii\controllers\DefaultController))
+#24 D:\xampp\htdocs\youhui\vendor\yiisoft\yii2-gii\controllers\DefaultController.php(56): yii\base\Controller->render('view', Array)
+#25 [internal function]: yii\gii\controllers\DefaultController->actionView('model')
+#26 D:\xampp\htdocs\youhui\vendor\yiisoft\yii2\base\InlineAction.php(55): call_user_func_array(Array, Array)
+#27 D:\xampp\htdocs\youhui\vendor\yiisoft\yii2\base\Controller.php(151): yii\base\InlineAction->runWithParams(Array)
+#28 D:\xampp\htdocs\youhui\vendor\yiisoft\yii2\base\Module.php(455): yii\base\Controller->runAction('view', Array)
+#29 D:\xampp\htdocs\youhui\vendor\yiisoft\yii2\web\Application.php(83): yii\base\Module->runAction('gii/default/vie...', Array)
+#30 D:\xampp\htdocs\youhui\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#31 D:\xampp\htdocs\youhui\frontend\web\index.php(18): yii\base\Application->run()
+#32 {main}
+Additional Information:
+
+2015-01-29 08:16:53 [127.0.0.1][-][-][info][application] $_GET = [
+    'r' => 'gii/default/view'
+    'id' => 'model'
+]
+
+$_COOKIE = [
+    'AJSTAT_ok_times' => '1'
+    '_ga' => 'GA1.1.54924247.1416566351'
+    '__zpspc' => '9.2.1416813744.1416814460.10#4|||||#'
+    'bdshare_firstime' => '1418786158546'
+    'CNZZDATA4617777' => 'cnzz_eid=682052683-1418784431-&ntime=1418784197'
+    'CNZZDATA4617788' => 'cnzz_eid=431890627-1419157234-&ntime=1419203501'
+    'CNZZDATA4617784' => 'cnzz_eid=1410397910-1418812097-&ntime=1419983038'
+    'Jjzq_2132_saltkey' => 'wkOPSZrn'
+    'Jjzq_2132_lastvisit' => '1420423935'
+    'Jjzq_2132_ulastactivity' => '3cd47khBmEfAZuKV56v5xcereJG/Dl7C07x2T1XA2znHteTfL3el'
+    'RB5E_2132_saltkey' => 'YR3N3T3T'
+    'RB5E_2132_lastvisit' => '1420425536'
+    'RB5E_2132_ulastactivity' => '7a33yKqJzIUHWbK8a2g4rYyfLxZRCEFiozw4LjGbd97NwT8w9vkf'
+    'VOIr_2132_saltkey' => 'Ot1vtjL1'
+    'VOIr_2132_lastvisit' => '1420426036'
+    'VOIr_2132_ulastactivity' => '40a3geAD9hD7n9MsDQ4l4FnD7q3ymVwknLjv8+KttwvvmeBgf8zp'
+    'VOIr_2132_nofavfid' => '1'
+    'uchome_loginuser' => 'admin'
+    'CNZZDATA2924747' => 'cnzz_eid=1577273435-1420269582-&ntime=1420676356'
+    'CNZZDATA3668490' => 'cnzz_eid=405753816-1420849139-http%3A%2F%2Flocalhost%2F&ntime=1420849139'
+    'CNZZDATA3637100' => 'cnzz_eid=1250976432-1420847467-http%3A%2F%2Flocalhost%2F&ntime=1420847467'
+    'sid' => '5581iHsOCW5McFRYsx5i%2BRZkm6ESzH4wFOp%2B8dqIBW3lcUiALVNvuGwefDxiMjpKKfOm2rMjEnAQ%2Fw'
+    'PHPSESSID' => 'i0h8suf3tmf5rbapcgo2kpav04'
+    'admin_think_language' => 'zh-CN'
+    '_csrf' => '5f7bdae08a93c57bb73393cb2b0876a0fb1613149a7bf37f99384d23e2bfb3ads:32:\"F8bGIY4NCSosYrh2iYO8jz3tkURD7A0a\";'
+]
+
+$_SERVER = [
+    'MIBDIRS' => 'D:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'D:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.57 Safari/537.36'
+    'HTTP_REFERER' => 'http://localhost/youhui/frontend/web/?r=gii'
+    'HTTP_ACCEPT_ENCODING' => 'gzip,deflate,sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8,en;q=0.6'
+    'HTTP_COOKIE' => 'AJSTAT_ok_times=1; _ga=GA1.1.54924247.1416566351; __zpspc=9.2.1416813744.1416814460.10%234%7C%7C%7C%7C%7C%23; bdshare_firstime=1418786158546; CNZZDATA4617777=cnzz_eid%3D682052683-1418784431-%26ntime%3D1418784197; CNZZDATA4617788=cnzz_eid%3D431890627-1419157234-%26ntime%3D1419203501; CNZZDATA4617784=cnzz_eid%3D1410397910-1418812097-%26ntime%3D1419983038; Jjzq_2132_saltkey=wkOPSZrn; Jjzq_2132_lastvisit=1420423935; Jjzq_2132_ulastactivity=3cd47khBmEfAZuKV56v5xcereJG%2FDl7C07x2T1XA2znHteTfL3el; RB5E_2132_saltkey=YR3N3T3T; RB5E_2132_lastvisit=1420425536; RB5E_2132_ulastactivity=7a33yKqJzIUHWbK8a2g4rYyfLxZRCEFiozw4LjGbd97NwT8w9vkf; VOIr_2132_saltkey=Ot1vtjL1; VOIr_2132_lastvisit=1420426036; VOIr_2132_ulastactivity=40a3geAD9hD7n9MsDQ4l4FnD7q3ymVwknLjv8%2BKttwvvmeBgf8zp; VOIr_2132_nofavfid=1; uchome_loginuser=admin; CNZZDATA2924747=cnzz_eid%3D1577273435-1420269582-%26ntime%3D1420676356; CNZZDATA3668490=cnzz_eid%3D405753816-1420849139-http%253A%252F%252Flocalhost%252F%26ntime%3D1420849139; CNZZDATA3637100=cnzz_eid%3D1250976432-1420847467-http%253A%252F%252Flocalhost%252F%26ntime%3D1420847467; sid=5581iHsOCW5McFRYsx5i%252BRZkm6ESzH4wFOp%252B8dqIBW3lcUiALVNvuGwefDxiMjpKKfOm2rMjEnAQ%252Fw; PHPSESSID=i0h8suf3tmf5rbapcgo2kpav04; admin_think_language=zh-CN; _csrf=5f7bdae08a93c57bb73393cb2b0876a0fb1613149a7bf37f99384d23e2bfb3ads%3A32%3A%22F8bGIY4NCSosYrh2iYO8jz3tkURD7A0a%22%3B'
+    'PATH' => 'C:\\Program Files (x86)\\Common Files\\NetSarang;C:\\ProgramData\\Oracle\\Java\\javapath;C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;D:\\xampp\\php\\php.exe;D:\\Program Files\\Java\\jdk1.8.0_25\\bin;D:\\Program Files\\Java\\jdk1.8.0_25\\jre\\bin;D:\\git\\bin;D:\\xampp\\php;C:\\ProgramData\\ComposerSetup\\bin;C:\\Windows\\system32'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.7 (Win32) OpenSSL/1.0.1e PHP/5.5.9 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.7 (Win32) OpenSSL/1.0.1e PHP/5.5.9'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'D:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'D:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'D:/xampp/htdocs/youhui/frontend/web/index.php'
+    'REMOTE_PORT' => '59730'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=gii%2Fdefault%2Fview&id=model'
+    'REQUEST_URI' => '/youhui/frontend/web/index.php?r=gii%2Fdefault%2Fview&id=model'
+    'SCRIPT_NAME' => '/youhui/frontend/web/index.php'
+    'PHP_SELF' => '/youhui/frontend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1422515813.496
+    'REQUEST_TIME' => 1422515813
+]
