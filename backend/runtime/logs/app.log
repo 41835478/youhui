@@ -1,0 +1,690 @@
+2015-01-29 07:49:40 [127.0.0.1][][-][error][yii\db\Exception] exception 'PDOException' with message 'SQLSTATE[HY000] [1049] Unknown database 'yii2advanced'' in D:\youhui\vendor\yiisoft\yii2\db\Connection.php:579
+Stack trace:
+#0 D:\youhui\vendor\yiisoft\yii2\db\Connection.php(579): PDO->__construct('mysql:host=loca...', 'root', '', NULL)
+#1 D:\youhui\vendor\yiisoft\yii2\db\Connection.php(529): yii\db\Connection->createPdoInstance()
+#2 D:\youhui\vendor\yiisoft\yii2\db\Connection.php(836): yii\db\Connection->open()
+#3 D:\youhui\vendor\yiisoft\yii2\db\Connection.php(823): yii\db\Connection->getMasterPdo()
+#4 D:\youhui\vendor\yiisoft\yii2\db\Schema.php(382): yii\db\Connection->getSlavePdo()
+#5 D:\youhui\vendor\yiisoft\yii2\db\Connection.php(732): yii\db\Schema->quoteValue('asdasd')
+#6 D:\youhui\vendor\yiisoft\yii2\db\Command.php(164): yii\db\Connection->quoteValue('asdasd')
+#7 D:\youhui\vendor\yiisoft\yii2\db\Command.php(790): yii\db\Command->getRawSql()
+#8 D:\youhui\vendor\yiisoft\yii2\db\Command.php(364): yii\db\Command->queryInternal('fetch', NULL)
+#9 D:\youhui\vendor\yiisoft\yii2\db\Query.php(243): yii\db\Command->queryOne()
+#10 D:\youhui\vendor\yiisoft\yii2\db\ActiveQuery.php(285): yii\db\Query->one(NULL)
+#11 D:\youhui\vendor\yiisoft\yii2\db\ActiveRecord.php(180): yii\db\ActiveQuery->one()
+#12 D:\youhui\vendor\yiisoft\yii2\db\BaseActiveRecord.php(101): yii\db\ActiveRecord::findByCondition(Array, true)
+#13 D:\youhui\common\models\User.php(87): yii\db\BaseActiveRecord::findOne(Array)
+#14 D:\youhui\common\models\LoginForm.php(72): common\models\User::findByUsername('asdasd')
+#15 D:\youhui\common\models\LoginForm.php(43): common\models\LoginForm->getUser()
+#16 [internal function]: common\models\LoginForm->validatePassword('password', NULL)
+#17 D:\youhui\vendor\yiisoft\yii2\validators\InlineValidator.php(67): call_user_func(Array, 'password', NULL)
+#18 D:\youhui\vendor\yiisoft\yii2\validators\Validator.php(238): yii\validators\InlineValidator->validateAttribute(Object(common\models\LoginForm), 'password')
+#19 D:\youhui\vendor\yiisoft\yii2\base\Model.php(333): yii\validators\Validator->validateAttributes(Object(common\models\LoginForm), Array)
+#20 D:\youhui\common\models\LoginForm.php(57): yii\base\Model->validate()
+#21 D:\youhui\backend\controllers\SiteController.php(68): common\models\LoginForm->login()
+#22 [internal function]: backend\controllers\SiteController->actionLogin()
+#23 D:\youhui\vendor\yiisoft\yii2\base\InlineAction.php(55): call_user_func_array(Array, Array)
+#24 D:\youhui\vendor\yiisoft\yii2\base\Controller.php(151): yii\base\InlineAction->runWithParams(Array)
+#25 D:\youhui\vendor\yiisoft\yii2\base\Module.php(455): yii\base\Controller->runAction('login', Array)
+#26 D:\youhui\vendor\yiisoft\yii2\web\Application.php(83): yii\base\Module->runAction('site/login', Array)
+#27 D:\youhui\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#28 D:\youhui\backend\web\index.php(18): yii\base\Application->run()
+#29 {main}
+
+Next exception 'yii\db\Exception' with message 'SQLSTATE[HY000] [1049] Unknown database 'yii2advanced'' in D:\youhui\vendor\yiisoft\yii2\db\Connection.php:534
+Stack trace:
+#0 D:\youhui\vendor\yiisoft\yii2\db\Connection.php(836): yii\db\Connection->open()
+#1 D:\youhui\vendor\yiisoft\yii2\db\Connection.php(823): yii\db\Connection->getMasterPdo()
+#2 D:\youhui\vendor\yiisoft\yii2\db\Schema.php(382): yii\db\Connection->getSlavePdo()
+#3 D:\youhui\vendor\yiisoft\yii2\db\Connection.php(732): yii\db\Schema->quoteValue('asdasd')
+#4 D:\youhui\vendor\yiisoft\yii2\db\Command.php(164): yii\db\Connection->quoteValue('asdasd')
+#5 D:\youhui\vendor\yiisoft\yii2\db\Command.php(790): yii\db\Command->getRawSql()
+#6 D:\youhui\vendor\yiisoft\yii2\db\Command.php(364): yii\db\Command->queryInternal('fetch', NULL)
+#7 D:\youhui\vendor\yiisoft\yii2\db\Query.php(243): yii\db\Command->queryOne()
+#8 D:\youhui\vendor\yiisoft\yii2\db\ActiveQuery.php(285): yii\db\Query->one(NULL)
+#9 D:\youhui\vendor\yiisoft\yii2\db\ActiveRecord.php(180): yii\db\ActiveQuery->one()
+#10 D:\youhui\vendor\yiisoft\yii2\db\BaseActiveRecord.php(101): yii\db\ActiveRecord::findByCondition(Array, true)
+#11 D:\youhui\common\models\User.php(87): yii\db\BaseActiveRecord::findOne(Array)
+#12 D:\youhui\common\models\LoginForm.php(72): common\models\User::findByUsername('asdasd')
+#13 D:\youhui\common\models\LoginForm.php(43): common\models\LoginForm->getUser()
+#14 [internal function]: common\models\LoginForm->validatePassword('password', NULL)
+#15 D:\youhui\vendor\yiisoft\yii2\validators\InlineValidator.php(67): call_user_func(Array, 'password', NULL)
+#16 D:\youhui\vendor\yiisoft\yii2\validators\Validator.php(238): yii\validators\InlineValidator->validateAttribute(Object(common\models\LoginForm), 'password')
+#17 D:\youhui\vendor\yiisoft\yii2\base\Model.php(333): yii\validators\Validator->validateAttributes(Object(common\models\LoginForm), Array)
+#18 D:\youhui\common\models\LoginForm.php(57): yii\base\Model->validate()
+#19 D:\youhui\backend\controllers\SiteController.php(68): common\models\LoginForm->login()
+#20 [internal function]: backend\controllers\SiteController->actionLogin()
+#21 D:\youhui\vendor\yiisoft\yii2\base\InlineAction.php(55): call_user_func_array(Array, Array)
+#22 D:\youhui\vendor\yiisoft\yii2\base\Controller.php(151): yii\base\InlineAction->runWithParams(Array)
+#23 D:\youhui\vendor\yiisoft\yii2\base\Module.php(455): yii\base\Controller->runAction('login', Array)
+#24 D:\youhui\vendor\yiisoft\yii2\web\Application.php(83): yii\base\Module->runAction('site/login', Array)
+#25 D:\youhui\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#26 D:\youhui\backend\web\index.php(18): yii\base\Application->run()
+#27 {main}
+Additional Information:
+
+2015-01-29 07:49:39 [127.0.0.1][][-][info][application] $_GET = [
+    'r' => 'site/login'
+]
+
+$_POST = [
+    '_csrf' => 'WTFZc3hNdzgQZCkiIQsxdSpCADdKGQNsHGYOMSw8RmcceT4pPB0RYg=='
+    'LoginForm' => [
+        'username' => 'asdasd'
+        'password' => 'asdasd'
+        'rememberMe' => '1'
+    ]
+    'login-button' => ''
+]
+
+$_COOKIE = [
+    'bdshare_firstime' => '1422512739434'
+    'PHPSESSID' => 'a8f6sbrpk83g9l9fh1nm2k6ei4'
+    '_csrf' => '111ecd911e1d6ff57c17f1af399b674b4b9321242d908e089115ede48bd3d809s:32:\"IUpQYFFMssYD2TtTEWWBTq1_EHgZDPfZ\";'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => '/backend/web/'
+]
+
+$_SERVER = [
+    'MIBDIRS' => 'D:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'D:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'www.youhui.com'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'CONTENT_LENGTH' => '198'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_ORIGIN' => 'http://www.youhui.com'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/39.0.2171.95 Safari/537.36'
+    'CONTENT_TYPE' => 'application/x-www-form-urlencoded'
+    'HTTP_REFERER' => 'http://www.youhui.com/backend/web/index.php?r=site%2Flogin'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8'
+    'HTTP_COOKIE' => 'bdshare_firstime=1422512739434; PHPSESSID=a8f6sbrpk83g9l9fh1nm2k6ei4; _csrf=111ecd911e1d6ff57c17f1af399b674b4b9321242d908e089115ede48bd3d809s%3A32%3A%22IUpQYFFMssYD2TtTEWWBTq1_EHgZDPfZ%22%3B'
+    'PATH' => 'C:\\Program Files\\360\\360Desktop;C:\\Program Files\\Common Files\\NetSarang;C:\\ProgramData\\Oracle\\Java\\javapath;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;D:\\Git\\bin;%JAVA_HOME%\\bin;D:\\node\\;C:\\Users\\Administrator\\AppData\\Roaming\\npm'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.7 (Win32) OpenSSL/1.0.1e PHP/5.5.9 Server at www.youhui.com Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.7 (Win32) OpenSSL/1.0.1e PHP/5.5.9'
+    'SERVER_NAME' => 'www.youhui.com'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'D:/youhui/'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'D:/youhui/'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'D:/youhui/backend/web/index.php'
+    'REMOTE_PORT' => '62601'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'POST'
+    'QUERY_STRING' => 'r=site%2Flogin'
+    'REQUEST_URI' => '/backend/web/index.php?r=site%2Flogin'
+    'SCRIPT_NAME' => '/backend/web/index.php'
+    'PHP_SELF' => '/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1422514179.959
+    'REQUEST_TIME' => 1422514179
+]
+2015-01-29 07:49:40 [127.0.0.1][][-][error][yii\db\Exception] exception 'PDOException' with message 'SQLSTATE[HY000] [1049] Unknown database 'yii2advanced'' in D:\youhui\vendor\yiisoft\yii2\db\Connection.php:579
+Stack trace:
+#0 D:\youhui\vendor\yiisoft\yii2\db\Connection.php(579): PDO->__construct('mysql:host=loca...', 'root', '', NULL)
+#1 D:\youhui\vendor\yiisoft\yii2\db\Connection.php(529): yii\db\Connection->createPdoInstance()
+#2 D:\youhui\vendor\yiisoft\yii2\db\Connection.php(836): yii\db\Connection->open()
+#3 D:\youhui\vendor\yiisoft\yii2\db\Connection.php(823): yii\db\Connection->getMasterPdo()
+#4 D:\youhui\vendor\yiisoft\yii2\db\Schema.php(382): yii\db\Connection->getSlavePdo()
+#5 D:\youhui\vendor\yiisoft\yii2\db\Connection.php(732): yii\db\Schema->quoteValue('asdasd')
+#6 D:\youhui\vendor\yiisoft\yii2\db\Command.php(164): yii\db\Connection->quoteValue('asdasd')
+#7 D:\youhui\vendor\yiisoft\yii2\db\Command.php(790): yii\db\Command->getRawSql()
+#8 D:\youhui\vendor\yiisoft\yii2\db\Command.php(364): yii\db\Command->queryInternal('fetch', NULL)
+#9 D:\youhui\vendor\yiisoft\yii2\db\Query.php(243): yii\db\Command->queryOne()
+#10 D:\youhui\vendor\yiisoft\yii2\db\ActiveQuery.php(285): yii\db\Query->one(NULL)
+#11 D:\youhui\vendor\yiisoft\yii2\db\ActiveRecord.php(180): yii\db\ActiveQuery->one()
+#12 D:\youhui\vendor\yiisoft\yii2\db\BaseActiveRecord.php(101): yii\db\ActiveRecord::findByCondition(Array, true)
+#13 D:\youhui\common\models\User.php(87): yii\db\BaseActiveRecord::findOne(Array)
+#14 D:\youhui\common\models\LoginForm.php(72): common\models\User::findByUsername('asdasd')
+#15 D:\youhui\common\models\LoginForm.php(43): common\models\LoginForm->getUser()
+#16 [internal function]: common\models\LoginForm->validatePassword('password', NULL)
+#17 D:\youhui\vendor\yiisoft\yii2\validators\InlineValidator.php(67): call_user_func(Array, 'password', NULL)
+#18 D:\youhui\vendor\yiisoft\yii2\validators\Validator.php(238): yii\validators\InlineValidator->validateAttribute(Object(common\models\LoginForm), 'password')
+#19 D:\youhui\vendor\yiisoft\yii2\base\Model.php(333): yii\validators\Validator->validateAttributes(Object(common\models\LoginForm), Array)
+#20 D:\youhui\common\models\LoginForm.php(57): yii\base\Model->validate()
+#21 D:\youhui\backend\controllers\SiteController.php(68): common\models\LoginForm->login()
+#22 [internal function]: backend\controllers\SiteController->actionLogin()
+#23 D:\youhui\vendor\yiisoft\yii2\base\InlineAction.php(55): call_user_func_array(Array, Array)
+#24 D:\youhui\vendor\yiisoft\yii2\base\Controller.php(151): yii\base\InlineAction->runWithParams(Array)
+#25 D:\youhui\vendor\yiisoft\yii2\base\Module.php(455): yii\base\Controller->runAction('login', Array)
+#26 D:\youhui\vendor\yiisoft\yii2\web\Application.php(83): yii\base\Module->runAction('site/login', Array)
+#27 D:\youhui\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#28 D:\youhui\backend\web\index.php(18): yii\base\Application->run()
+#29 {main}
+
+Next exception 'yii\db\Exception' with message 'SQLSTATE[HY000] [1049] Unknown database 'yii2advanced'' in D:\youhui\vendor\yiisoft\yii2\db\Connection.php:534
+Stack trace:
+#0 D:\youhui\vendor\yiisoft\yii2\db\Connection.php(836): yii\db\Connection->open()
+#1 D:\youhui\vendor\yiisoft\yii2\db\Connection.php(823): yii\db\Connection->getMasterPdo()
+#2 D:\youhui\vendor\yiisoft\yii2\db\Schema.php(382): yii\db\Connection->getSlavePdo()
+#3 D:\youhui\vendor\yiisoft\yii2\db\Connection.php(732): yii\db\Schema->quoteValue('asdasd')
+#4 D:\youhui\vendor\yiisoft\yii2\db\Command.php(164): yii\db\Connection->quoteValue('asdasd')
+#5 D:\youhui\vendor\yiisoft\yii2\db\Command.php(790): yii\db\Command->getRawSql()
+#6 D:\youhui\vendor\yiisoft\yii2\db\Command.php(364): yii\db\Command->queryInternal('fetch', NULL)
+#7 D:\youhui\vendor\yiisoft\yii2\db\Query.php(243): yii\db\Command->queryOne()
+#8 D:\youhui\vendor\yiisoft\yii2\db\ActiveQuery.php(285): yii\db\Query->one(NULL)
+#9 D:\youhui\vendor\yiisoft\yii2\db\ActiveRecord.php(180): yii\db\ActiveQuery->one()
+#10 D:\youhui\vendor\yiisoft\yii2\db\BaseActiveRecord.php(101): yii\db\ActiveRecord::findByCondition(Array, true)
+#11 D:\youhui\common\models\User.php(87): yii\db\BaseActiveRecord::findOne(Array)
+#12 D:\youhui\common\models\LoginForm.php(72): common\models\User::findByUsername('asdasd')
+#13 D:\youhui\common\models\LoginForm.php(43): common\models\LoginForm->getUser()
+#14 [internal function]: common\models\LoginForm->validatePassword('password', NULL)
+#15 D:\youhui\vendor\yiisoft\yii2\validators\InlineValidator.php(67): call_user_func(Array, 'password', NULL)
+#16 D:\youhui\vendor\yiisoft\yii2\validators\Validator.php(238): yii\validators\InlineValidator->validateAttribute(Object(common\models\LoginForm), 'password')
+#17 D:\youhui\vendor\yiisoft\yii2\base\Model.php(333): yii\validators\Validator->validateAttributes(Object(common\models\LoginForm), Array)
+#18 D:\youhui\common\models\LoginForm.php(57): yii\base\Model->validate()
+#19 D:\youhui\backend\controllers\SiteController.php(68): common\models\LoginForm->login()
+#20 [internal function]: backend\controllers\SiteController->actionLogin()
+#21 D:\youhui\vendor\yiisoft\yii2\base\InlineAction.php(55): call_user_func_array(Array, Array)
+#22 D:\youhui\vendor\yiisoft\yii2\base\Controller.php(151): yii\base\InlineAction->runWithParams(Array)
+#23 D:\youhui\vendor\yiisoft\yii2\base\Module.php(455): yii\base\Controller->runAction('login', Array)
+#24 D:\youhui\vendor\yiisoft\yii2\web\Application.php(83): yii\base\Module->runAction('site/login', Array)
+#25 D:\youhui\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#26 D:\youhui\backend\web\index.php(18): yii\base\Application->run()
+#27 {main}
+Additional Information:
+
+2015-01-29 07:49:40 [127.0.0.1][][-][info][application] $_GET = [
+    'r' => 'site/login'
+]
+
+$_POST = [
+    '_csrf' => 'WTFZc3hNdzgQZCkiIQsxdSpCADdKGQNsHGYOMSw8RmcceT4pPB0RYg=='
+    'LoginForm' => [
+        'username' => 'asdasd'
+        'password' => 'asdasd'
+        'rememberMe' => '1'
+    ]
+    'login-button' => ''
+]
+
+$_COOKIE = [
+    'bdshare_firstime' => '1422512739434'
+    'PHPSESSID' => 'a8f6sbrpk83g9l9fh1nm2k6ei4'
+    '_csrf' => '111ecd911e1d6ff57c17f1af399b674b4b9321242d908e089115ede48bd3d809s:32:\"IUpQYFFMssYD2TtTEWWBTq1_EHgZDPfZ\";'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => '/backend/web/'
+]
+
+$_SERVER = [
+    'MIBDIRS' => 'D:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'D:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'www.youhui.com'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'CONTENT_LENGTH' => '198'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_ORIGIN' => 'http://www.youhui.com'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/39.0.2171.95 Safari/537.36'
+    'CONTENT_TYPE' => 'application/x-www-form-urlencoded'
+    'HTTP_REFERER' => 'http://www.youhui.com/backend/web/index.php?r=site%2Flogin'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8'
+    'HTTP_COOKIE' => 'bdshare_firstime=1422512739434; PHPSESSID=a8f6sbrpk83g9l9fh1nm2k6ei4; _csrf=111ecd911e1d6ff57c17f1af399b674b4b9321242d908e089115ede48bd3d809s%3A32%3A%22IUpQYFFMssYD2TtTEWWBTq1_EHgZDPfZ%22%3B'
+    'PATH' => 'C:\\Program Files\\360\\360Desktop;C:\\Program Files\\Common Files\\NetSarang;C:\\ProgramData\\Oracle\\Java\\javapath;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;D:\\Git\\bin;%JAVA_HOME%\\bin;D:\\node\\;C:\\Users\\Administrator\\AppData\\Roaming\\npm'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.7 (Win32) OpenSSL/1.0.1e PHP/5.5.9 Server at www.youhui.com Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.7 (Win32) OpenSSL/1.0.1e PHP/5.5.9'
+    'SERVER_NAME' => 'www.youhui.com'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'D:/youhui/'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'D:/youhui/'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'D:/youhui/backend/web/index.php'
+    'REMOTE_PORT' => '62600'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'POST'
+    'QUERY_STRING' => 'r=site%2Flogin'
+    'REQUEST_URI' => '/backend/web/index.php?r=site%2Flogin'
+    'SCRIPT_NAME' => '/backend/web/index.php'
+    'PHP_SELF' => '/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1422514180.19
+    'REQUEST_TIME' => 1422514180
+]
+2015-01-29 07:49:40 [127.0.0.1][][-][error][yii\db\Exception] exception 'PDOException' with message 'SQLSTATE[HY000] [1049] Unknown database 'yii2advanced'' in D:\youhui\vendor\yiisoft\yii2\db\Connection.php:579
+Stack trace:
+#0 D:\youhui\vendor\yiisoft\yii2\db\Connection.php(579): PDO->__construct('mysql:host=loca...', 'root', '', NULL)
+#1 D:\youhui\vendor\yiisoft\yii2\db\Connection.php(529): yii\db\Connection->createPdoInstance()
+#2 D:\youhui\vendor\yiisoft\yii2\db\Connection.php(836): yii\db\Connection->open()
+#3 D:\youhui\vendor\yiisoft\yii2\db\Connection.php(823): yii\db\Connection->getMasterPdo()
+#4 D:\youhui\vendor\yiisoft\yii2\db\Schema.php(382): yii\db\Connection->getSlavePdo()
+#5 D:\youhui\vendor\yiisoft\yii2\db\Connection.php(732): yii\db\Schema->quoteValue('asdasd')
+#6 D:\youhui\vendor\yiisoft\yii2\db\Command.php(164): yii\db\Connection->quoteValue('asdasd')
+#7 D:\youhui\vendor\yiisoft\yii2\db\Command.php(790): yii\db\Command->getRawSql()
+#8 D:\youhui\vendor\yiisoft\yii2\db\Command.php(364): yii\db\Command->queryInternal('fetch', NULL)
+#9 D:\youhui\vendor\yiisoft\yii2\db\Query.php(243): yii\db\Command->queryOne()
+#10 D:\youhui\vendor\yiisoft\yii2\db\ActiveQuery.php(285): yii\db\Query->one(NULL)
+#11 D:\youhui\vendor\yiisoft\yii2\db\ActiveRecord.php(180): yii\db\ActiveQuery->one()
+#12 D:\youhui\vendor\yiisoft\yii2\db\BaseActiveRecord.php(101): yii\db\ActiveRecord::findByCondition(Array, true)
+#13 D:\youhui\common\models\User.php(87): yii\db\BaseActiveRecord::findOne(Array)
+#14 D:\youhui\common\models\LoginForm.php(72): common\models\User::findByUsername('asdasd')
+#15 D:\youhui\common\models\LoginForm.php(43): common\models\LoginForm->getUser()
+#16 [internal function]: common\models\LoginForm->validatePassword('password', NULL)
+#17 D:\youhui\vendor\yiisoft\yii2\validators\InlineValidator.php(67): call_user_func(Array, 'password', NULL)
+#18 D:\youhui\vendor\yiisoft\yii2\validators\Validator.php(238): yii\validators\InlineValidator->validateAttribute(Object(common\models\LoginForm), 'password')
+#19 D:\youhui\vendor\yiisoft\yii2\base\Model.php(333): yii\validators\Validator->validateAttributes(Object(common\models\LoginForm), Array)
+#20 D:\youhui\common\models\LoginForm.php(57): yii\base\Model->validate()
+#21 D:\youhui\backend\controllers\SiteController.php(68): common\models\LoginForm->login()
+#22 [internal function]: backend\controllers\SiteController->actionLogin()
+#23 D:\youhui\vendor\yiisoft\yii2\base\InlineAction.php(55): call_user_func_array(Array, Array)
+#24 D:\youhui\vendor\yiisoft\yii2\base\Controller.php(151): yii\base\InlineAction->runWithParams(Array)
+#25 D:\youhui\vendor\yiisoft\yii2\base\Module.php(455): yii\base\Controller->runAction('login', Array)
+#26 D:\youhui\vendor\yiisoft\yii2\web\Application.php(83): yii\base\Module->runAction('site/login', Array)
+#27 D:\youhui\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#28 D:\youhui\backend\web\index.php(18): yii\base\Application->run()
+#29 {main}
+
+Next exception 'yii\db\Exception' with message 'SQLSTATE[HY000] [1049] Unknown database 'yii2advanced'' in D:\youhui\vendor\yiisoft\yii2\db\Connection.php:534
+Stack trace:
+#0 D:\youhui\vendor\yiisoft\yii2\db\Connection.php(836): yii\db\Connection->open()
+#1 D:\youhui\vendor\yiisoft\yii2\db\Connection.php(823): yii\db\Connection->getMasterPdo()
+#2 D:\youhui\vendor\yiisoft\yii2\db\Schema.php(382): yii\db\Connection->getSlavePdo()
+#3 D:\youhui\vendor\yiisoft\yii2\db\Connection.php(732): yii\db\Schema->quoteValue('asdasd')
+#4 D:\youhui\vendor\yiisoft\yii2\db\Command.php(164): yii\db\Connection->quoteValue('asdasd')
+#5 D:\youhui\vendor\yiisoft\yii2\db\Command.php(790): yii\db\Command->getRawSql()
+#6 D:\youhui\vendor\yiisoft\yii2\db\Command.php(364): yii\db\Command->queryInternal('fetch', NULL)
+#7 D:\youhui\vendor\yiisoft\yii2\db\Query.php(243): yii\db\Command->queryOne()
+#8 D:\youhui\vendor\yiisoft\yii2\db\ActiveQuery.php(285): yii\db\Query->one(NULL)
+#9 D:\youhui\vendor\yiisoft\yii2\db\ActiveRecord.php(180): yii\db\ActiveQuery->one()
+#10 D:\youhui\vendor\yiisoft\yii2\db\BaseActiveRecord.php(101): yii\db\ActiveRecord::findByCondition(Array, true)
+#11 D:\youhui\common\models\User.php(87): yii\db\BaseActiveRecord::findOne(Array)
+#12 D:\youhui\common\models\LoginForm.php(72): common\models\User::findByUsername('asdasd')
+#13 D:\youhui\common\models\LoginForm.php(43): common\models\LoginForm->getUser()
+#14 [internal function]: common\models\LoginForm->validatePassword('password', NULL)
+#15 D:\youhui\vendor\yiisoft\yii2\validators\InlineValidator.php(67): call_user_func(Array, 'password', NULL)
+#16 D:\youhui\vendor\yiisoft\yii2\validators\Validator.php(238): yii\validators\InlineValidator->validateAttribute(Object(common\models\LoginForm), 'password')
+#17 D:\youhui\vendor\yiisoft\yii2\base\Model.php(333): yii\validators\Validator->validateAttributes(Object(common\models\LoginForm), Array)
+#18 D:\youhui\common\models\LoginForm.php(57): yii\base\Model->validate()
+#19 D:\youhui\backend\controllers\SiteController.php(68): common\models\LoginForm->login()
+#20 [internal function]: backend\controllers\SiteController->actionLogin()
+#21 D:\youhui\vendor\yiisoft\yii2\base\InlineAction.php(55): call_user_func_array(Array, Array)
+#22 D:\youhui\vendor\yiisoft\yii2\base\Controller.php(151): yii\base\InlineAction->runWithParams(Array)
+#23 D:\youhui\vendor\yiisoft\yii2\base\Module.php(455): yii\base\Controller->runAction('login', Array)
+#24 D:\youhui\vendor\yiisoft\yii2\web\Application.php(83): yii\base\Module->runAction('site/login', Array)
+#25 D:\youhui\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#26 D:\youhui\backend\web\index.php(18): yii\base\Application->run()
+#27 {main}
+Additional Information:
+
+2015-01-29 07:49:40 [127.0.0.1][][-][info][application] $_GET = [
+    'r' => 'site/login'
+]
+
+$_POST = [
+    '_csrf' => 'WTFZc3hNdzgQZCkiIQsxdSpCADdKGQNsHGYOMSw8RmcceT4pPB0RYg=='
+    'LoginForm' => [
+        'username' => 'asdasd'
+        'password' => 'asdasd'
+        'rememberMe' => '1'
+    ]
+    'login-button' => ''
+]
+
+$_COOKIE = [
+    'bdshare_firstime' => '1422512739434'
+    'PHPSESSID' => 'a8f6sbrpk83g9l9fh1nm2k6ei4'
+    '_csrf' => '111ecd911e1d6ff57c17f1af399b674b4b9321242d908e089115ede48bd3d809s:32:\"IUpQYFFMssYD2TtTEWWBTq1_EHgZDPfZ\";'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => '/backend/web/'
+]
+
+$_SERVER = [
+    'MIBDIRS' => 'D:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'D:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'www.youhui.com'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'CONTENT_LENGTH' => '198'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_ORIGIN' => 'http://www.youhui.com'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/39.0.2171.95 Safari/537.36'
+    'CONTENT_TYPE' => 'application/x-www-form-urlencoded'
+    'HTTP_REFERER' => 'http://www.youhui.com/backend/web/index.php?r=site%2Flogin'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8'
+    'HTTP_COOKIE' => 'bdshare_firstime=1422512739434; PHPSESSID=a8f6sbrpk83g9l9fh1nm2k6ei4; _csrf=111ecd911e1d6ff57c17f1af399b674b4b9321242d908e089115ede48bd3d809s%3A32%3A%22IUpQYFFMssYD2TtTEWWBTq1_EHgZDPfZ%22%3B'
+    'PATH' => 'C:\\Program Files\\360\\360Desktop;C:\\Program Files\\Common Files\\NetSarang;C:\\ProgramData\\Oracle\\Java\\javapath;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;D:\\Git\\bin;%JAVA_HOME%\\bin;D:\\node\\;C:\\Users\\Administrator\\AppData\\Roaming\\npm'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.7 (Win32) OpenSSL/1.0.1e PHP/5.5.9 Server at www.youhui.com Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.7 (Win32) OpenSSL/1.0.1e PHP/5.5.9'
+    'SERVER_NAME' => 'www.youhui.com'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'D:/youhui/'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'D:/youhui/'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'D:/youhui/backend/web/index.php'
+    'REMOTE_PORT' => '62602'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'POST'
+    'QUERY_STRING' => 'r=site%2Flogin'
+    'REQUEST_URI' => '/backend/web/index.php?r=site%2Flogin'
+    'SCRIPT_NAME' => '/backend/web/index.php'
+    'PHP_SELF' => '/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1422514180.355
+    'REQUEST_TIME' => 1422514180
+]
+2015-01-29 07:49:40 [127.0.0.1][][-][error][yii\db\Exception] exception 'PDOException' with message 'SQLSTATE[HY000] [1049] Unknown database 'yii2advanced'' in D:\youhui\vendor\yiisoft\yii2\db\Connection.php:579
+Stack trace:
+#0 D:\youhui\vendor\yiisoft\yii2\db\Connection.php(579): PDO->__construct('mysql:host=loca...', 'root', '', NULL)
+#1 D:\youhui\vendor\yiisoft\yii2\db\Connection.php(529): yii\db\Connection->createPdoInstance()
+#2 D:\youhui\vendor\yiisoft\yii2\db\Connection.php(836): yii\db\Connection->open()
+#3 D:\youhui\vendor\yiisoft\yii2\db\Connection.php(823): yii\db\Connection->getMasterPdo()
+#4 D:\youhui\vendor\yiisoft\yii2\db\Schema.php(382): yii\db\Connection->getSlavePdo()
+#5 D:\youhui\vendor\yiisoft\yii2\db\Connection.php(732): yii\db\Schema->quoteValue('asdasd')
+#6 D:\youhui\vendor\yiisoft\yii2\db\Command.php(164): yii\db\Connection->quoteValue('asdasd')
+#7 D:\youhui\vendor\yiisoft\yii2\db\Command.php(790): yii\db\Command->getRawSql()
+#8 D:\youhui\vendor\yiisoft\yii2\db\Command.php(364): yii\db\Command->queryInternal('fetch', NULL)
+#9 D:\youhui\vendor\yiisoft\yii2\db\Query.php(243): yii\db\Command->queryOne()
+#10 D:\youhui\vendor\yiisoft\yii2\db\ActiveQuery.php(285): yii\db\Query->one(NULL)
+#11 D:\youhui\vendor\yiisoft\yii2\db\ActiveRecord.php(180): yii\db\ActiveQuery->one()
+#12 D:\youhui\vendor\yiisoft\yii2\db\BaseActiveRecord.php(101): yii\db\ActiveRecord::findByCondition(Array, true)
+#13 D:\youhui\common\models\User.php(87): yii\db\BaseActiveRecord::findOne(Array)
+#14 D:\youhui\common\models\LoginForm.php(72): common\models\User::findByUsername('asdasd')
+#15 D:\youhui\common\models\LoginForm.php(43): common\models\LoginForm->getUser()
+#16 [internal function]: common\models\LoginForm->validatePassword('password', NULL)
+#17 D:\youhui\vendor\yiisoft\yii2\validators\InlineValidator.php(67): call_user_func(Array, 'password', NULL)
+#18 D:\youhui\vendor\yiisoft\yii2\validators\Validator.php(238): yii\validators\InlineValidator->validateAttribute(Object(common\models\LoginForm), 'password')
+#19 D:\youhui\vendor\yiisoft\yii2\base\Model.php(333): yii\validators\Validator->validateAttributes(Object(common\models\LoginForm), Array)
+#20 D:\youhui\common\models\LoginForm.php(57): yii\base\Model->validate()
+#21 D:\youhui\backend\controllers\SiteController.php(68): common\models\LoginForm->login()
+#22 [internal function]: backend\controllers\SiteController->actionLogin()
+#23 D:\youhui\vendor\yiisoft\yii2\base\InlineAction.php(55): call_user_func_array(Array, Array)
+#24 D:\youhui\vendor\yiisoft\yii2\base\Controller.php(151): yii\base\InlineAction->runWithParams(Array)
+#25 D:\youhui\vendor\yiisoft\yii2\base\Module.php(455): yii\base\Controller->runAction('login', Array)
+#26 D:\youhui\vendor\yiisoft\yii2\web\Application.php(83): yii\base\Module->runAction('site/login', Array)
+#27 D:\youhui\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#28 D:\youhui\backend\web\index.php(18): yii\base\Application->run()
+#29 {main}
+
+Next exception 'yii\db\Exception' with message 'SQLSTATE[HY000] [1049] Unknown database 'yii2advanced'' in D:\youhui\vendor\yiisoft\yii2\db\Connection.php:534
+Stack trace:
+#0 D:\youhui\vendor\yiisoft\yii2\db\Connection.php(836): yii\db\Connection->open()
+#1 D:\youhui\vendor\yiisoft\yii2\db\Connection.php(823): yii\db\Connection->getMasterPdo()
+#2 D:\youhui\vendor\yiisoft\yii2\db\Schema.php(382): yii\db\Connection->getSlavePdo()
+#3 D:\youhui\vendor\yiisoft\yii2\db\Connection.php(732): yii\db\Schema->quoteValue('asdasd')
+#4 D:\youhui\vendor\yiisoft\yii2\db\Command.php(164): yii\db\Connection->quoteValue('asdasd')
+#5 D:\youhui\vendor\yiisoft\yii2\db\Command.php(790): yii\db\Command->getRawSql()
+#6 D:\youhui\vendor\yiisoft\yii2\db\Command.php(364): yii\db\Command->queryInternal('fetch', NULL)
+#7 D:\youhui\vendor\yiisoft\yii2\db\Query.php(243): yii\db\Command->queryOne()
+#8 D:\youhui\vendor\yiisoft\yii2\db\ActiveQuery.php(285): yii\db\Query->one(NULL)
+#9 D:\youhui\vendor\yiisoft\yii2\db\ActiveRecord.php(180): yii\db\ActiveQuery->one()
+#10 D:\youhui\vendor\yiisoft\yii2\db\BaseActiveRecord.php(101): yii\db\ActiveRecord::findByCondition(Array, true)
+#11 D:\youhui\common\models\User.php(87): yii\db\BaseActiveRecord::findOne(Array)
+#12 D:\youhui\common\models\LoginForm.php(72): common\models\User::findByUsername('asdasd')
+#13 D:\youhui\common\models\LoginForm.php(43): common\models\LoginForm->getUser()
+#14 [internal function]: common\models\LoginForm->validatePassword('password', NULL)
+#15 D:\youhui\vendor\yiisoft\yii2\validators\InlineValidator.php(67): call_user_func(Array, 'password', NULL)
+#16 D:\youhui\vendor\yiisoft\yii2\validators\Validator.php(238): yii\validators\InlineValidator->validateAttribute(Object(common\models\LoginForm), 'password')
+#17 D:\youhui\vendor\yiisoft\yii2\base\Model.php(333): yii\validators\Validator->validateAttributes(Object(common\models\LoginForm), Array)
+#18 D:\youhui\common\models\LoginForm.php(57): yii\base\Model->validate()
+#19 D:\youhui\backend\controllers\SiteController.php(68): common\models\LoginForm->login()
+#20 [internal function]: backend\controllers\SiteController->actionLogin()
+#21 D:\youhui\vendor\yiisoft\yii2\base\InlineAction.php(55): call_user_func_array(Array, Array)
+#22 D:\youhui\vendor\yiisoft\yii2\base\Controller.php(151): yii\base\InlineAction->runWithParams(Array)
+#23 D:\youhui\vendor\yiisoft\yii2\base\Module.php(455): yii\base\Controller->runAction('login', Array)
+#24 D:\youhui\vendor\yiisoft\yii2\web\Application.php(83): yii\base\Module->runAction('site/login', Array)
+#25 D:\youhui\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#26 D:\youhui\backend\web\index.php(18): yii\base\Application->run()
+#27 {main}
+Additional Information:
+
+2015-01-29 07:49:40 [127.0.0.1][][-][info][application] $_GET = [
+    'r' => 'site/login'
+]
+
+$_POST = [
+    '_csrf' => 'WTFZc3hNdzgQZCkiIQsxdSpCADdKGQNsHGYOMSw8RmcceT4pPB0RYg=='
+    'LoginForm' => [
+        'username' => 'asdasd'
+        'password' => 'asdasd'
+        'rememberMe' => '1'
+    ]
+    'login-button' => ''
+]
+
+$_COOKIE = [
+    'bdshare_firstime' => '1422512739434'
+    'PHPSESSID' => 'a8f6sbrpk83g9l9fh1nm2k6ei4'
+    '_csrf' => '111ecd911e1d6ff57c17f1af399b674b4b9321242d908e089115ede48bd3d809s:32:\"IUpQYFFMssYD2TtTEWWBTq1_EHgZDPfZ\";'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => '/backend/web/'
+]
+
+$_SERVER = [
+    'MIBDIRS' => 'D:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'D:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'www.youhui.com'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'CONTENT_LENGTH' => '198'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_ORIGIN' => 'http://www.youhui.com'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/39.0.2171.95 Safari/537.36'
+    'CONTENT_TYPE' => 'application/x-www-form-urlencoded'
+    'HTTP_REFERER' => 'http://www.youhui.com/backend/web/index.php?r=site%2Flogin'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8'
+    'HTTP_COOKIE' => 'bdshare_firstime=1422512739434; PHPSESSID=a8f6sbrpk83g9l9fh1nm2k6ei4; _csrf=111ecd911e1d6ff57c17f1af399b674b4b9321242d908e089115ede48bd3d809s%3A32%3A%22IUpQYFFMssYD2TtTEWWBTq1_EHgZDPfZ%22%3B'
+    'PATH' => 'C:\\Program Files\\360\\360Desktop;C:\\Program Files\\Common Files\\NetSarang;C:\\ProgramData\\Oracle\\Java\\javapath;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;D:\\Git\\bin;%JAVA_HOME%\\bin;D:\\node\\;C:\\Users\\Administrator\\AppData\\Roaming\\npm'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.7 (Win32) OpenSSL/1.0.1e PHP/5.5.9 Server at www.youhui.com Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.7 (Win32) OpenSSL/1.0.1e PHP/5.5.9'
+    'SERVER_NAME' => 'www.youhui.com'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'D:/youhui/'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'D:/youhui/'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'D:/youhui/backend/web/index.php'
+    'REMOTE_PORT' => '62603'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'POST'
+    'QUERY_STRING' => 'r=site%2Flogin'
+    'REQUEST_URI' => '/backend/web/index.php?r=site%2Flogin'
+    'SCRIPT_NAME' => '/backend/web/index.php'
+    'PHP_SELF' => '/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1422514180.532
+    'REQUEST_TIME' => 1422514180
+]
+2015-01-29 07:49:40 [127.0.0.1][][-][error][yii\db\Exception] exception 'PDOException' with message 'SQLSTATE[HY000] [1049] Unknown database 'yii2advanced'' in D:\youhui\vendor\yiisoft\yii2\db\Connection.php:579
+Stack trace:
+#0 D:\youhui\vendor\yiisoft\yii2\db\Connection.php(579): PDO->__construct('mysql:host=loca...', 'root', '', NULL)
+#1 D:\youhui\vendor\yiisoft\yii2\db\Connection.php(529): yii\db\Connection->createPdoInstance()
+#2 D:\youhui\vendor\yiisoft\yii2\db\Connection.php(836): yii\db\Connection->open()
+#3 D:\youhui\vendor\yiisoft\yii2\db\Connection.php(823): yii\db\Connection->getMasterPdo()
+#4 D:\youhui\vendor\yiisoft\yii2\db\Schema.php(382): yii\db\Connection->getSlavePdo()
+#5 D:\youhui\vendor\yiisoft\yii2\db\Connection.php(732): yii\db\Schema->quoteValue('asdasd')
+#6 D:\youhui\vendor\yiisoft\yii2\db\Command.php(164): yii\db\Connection->quoteValue('asdasd')
+#7 D:\youhui\vendor\yiisoft\yii2\db\Command.php(790): yii\db\Command->getRawSql()
+#8 D:\youhui\vendor\yiisoft\yii2\db\Command.php(364): yii\db\Command->queryInternal('fetch', NULL)
+#9 D:\youhui\vendor\yiisoft\yii2\db\Query.php(243): yii\db\Command->queryOne()
+#10 D:\youhui\vendor\yiisoft\yii2\db\ActiveQuery.php(285): yii\db\Query->one(NULL)
+#11 D:\youhui\vendor\yiisoft\yii2\db\ActiveRecord.php(180): yii\db\ActiveQuery->one()
+#12 D:\youhui\vendor\yiisoft\yii2\db\BaseActiveRecord.php(101): yii\db\ActiveRecord::findByCondition(Array, true)
+#13 D:\youhui\common\models\User.php(87): yii\db\BaseActiveRecord::findOne(Array)
+#14 D:\youhui\common\models\LoginForm.php(72): common\models\User::findByUsername('asdasd')
+#15 D:\youhui\common\models\LoginForm.php(43): common\models\LoginForm->getUser()
+#16 [internal function]: common\models\LoginForm->validatePassword('password', NULL)
+#17 D:\youhui\vendor\yiisoft\yii2\validators\InlineValidator.php(67): call_user_func(Array, 'password', NULL)
+#18 D:\youhui\vendor\yiisoft\yii2\validators\Validator.php(238): yii\validators\InlineValidator->validateAttribute(Object(common\models\LoginForm), 'password')
+#19 D:\youhui\vendor\yiisoft\yii2\base\Model.php(333): yii\validators\Validator->validateAttributes(Object(common\models\LoginForm), Array)
+#20 D:\youhui\common\models\LoginForm.php(57): yii\base\Model->validate()
+#21 D:\youhui\backend\controllers\SiteController.php(68): common\models\LoginForm->login()
+#22 [internal function]: backend\controllers\SiteController->actionLogin()
+#23 D:\youhui\vendor\yiisoft\yii2\base\InlineAction.php(55): call_user_func_array(Array, Array)
+#24 D:\youhui\vendor\yiisoft\yii2\base\Controller.php(151): yii\base\InlineAction->runWithParams(Array)
+#25 D:\youhui\vendor\yiisoft\yii2\base\Module.php(455): yii\base\Controller->runAction('login', Array)
+#26 D:\youhui\vendor\yiisoft\yii2\web\Application.php(83): yii\base\Module->runAction('site/login', Array)
+#27 D:\youhui\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#28 D:\youhui\backend\web\index.php(18): yii\base\Application->run()
+#29 {main}
+
+Next exception 'yii\db\Exception' with message 'SQLSTATE[HY000] [1049] Unknown database 'yii2advanced'' in D:\youhui\vendor\yiisoft\yii2\db\Connection.php:534
+Stack trace:
+#0 D:\youhui\vendor\yiisoft\yii2\db\Connection.php(836): yii\db\Connection->open()
+#1 D:\youhui\vendor\yiisoft\yii2\db\Connection.php(823): yii\db\Connection->getMasterPdo()
+#2 D:\youhui\vendor\yiisoft\yii2\db\Schema.php(382): yii\db\Connection->getSlavePdo()
+#3 D:\youhui\vendor\yiisoft\yii2\db\Connection.php(732): yii\db\Schema->quoteValue('asdasd')
+#4 D:\youhui\vendor\yiisoft\yii2\db\Command.php(164): yii\db\Connection->quoteValue('asdasd')
+#5 D:\youhui\vendor\yiisoft\yii2\db\Command.php(790): yii\db\Command->getRawSql()
+#6 D:\youhui\vendor\yiisoft\yii2\db\Command.php(364): yii\db\Command->queryInternal('fetch', NULL)
+#7 D:\youhui\vendor\yiisoft\yii2\db\Query.php(243): yii\db\Command->queryOne()
+#8 D:\youhui\vendor\yiisoft\yii2\db\ActiveQuery.php(285): yii\db\Query->one(NULL)
+#9 D:\youhui\vendor\yiisoft\yii2\db\ActiveRecord.php(180): yii\db\ActiveQuery->one()
+#10 D:\youhui\vendor\yiisoft\yii2\db\BaseActiveRecord.php(101): yii\db\ActiveRecord::findByCondition(Array, true)
+#11 D:\youhui\common\models\User.php(87): yii\db\BaseActiveRecord::findOne(Array)
+#12 D:\youhui\common\models\LoginForm.php(72): common\models\User::findByUsername('asdasd')
+#13 D:\youhui\common\models\LoginForm.php(43): common\models\LoginForm->getUser()
+#14 [internal function]: common\models\LoginForm->validatePassword('password', NULL)
+#15 D:\youhui\vendor\yiisoft\yii2\validators\InlineValidator.php(67): call_user_func(Array, 'password', NULL)
+#16 D:\youhui\vendor\yiisoft\yii2\validators\Validator.php(238): yii\validators\InlineValidator->validateAttribute(Object(common\models\LoginForm), 'password')
+#17 D:\youhui\vendor\yiisoft\yii2\base\Model.php(333): yii\validators\Validator->validateAttributes(Object(common\models\LoginForm), Array)
+#18 D:\youhui\common\models\LoginForm.php(57): yii\base\Model->validate()
+#19 D:\youhui\backend\controllers\SiteController.php(68): common\models\LoginForm->login()
+#20 [internal function]: backend\controllers\SiteController->actionLogin()
+#21 D:\youhui\vendor\yiisoft\yii2\base\InlineAction.php(55): call_user_func_array(Array, Array)
+#22 D:\youhui\vendor\yiisoft\yii2\base\Controller.php(151): yii\base\InlineAction->runWithParams(Array)
+#23 D:\youhui\vendor\yiisoft\yii2\base\Module.php(455): yii\base\Controller->runAction('login', Array)
+#24 D:\youhui\vendor\yiisoft\yii2\web\Application.php(83): yii\base\Module->runAction('site/login', Array)
+#25 D:\youhui\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#26 D:\youhui\backend\web\index.php(18): yii\base\Application->run()
+#27 {main}
+Additional Information:
+
+2015-01-29 07:49:40 [127.0.0.1][][-][info][application] $_GET = [
+    'r' => 'site/login'
+]
+
+$_POST = [
+    '_csrf' => 'WTFZc3hNdzgQZCkiIQsxdSpCADdKGQNsHGYOMSw8RmcceT4pPB0RYg=='
+    'LoginForm' => [
+        'username' => 'asdasd'
+        'password' => 'asdasd'
+        'rememberMe' => '1'
+    ]
+    'login-button' => ''
+]
+
+$_COOKIE = [
+    'bdshare_firstime' => '1422512739434'
+    'PHPSESSID' => 'a8f6sbrpk83g9l9fh1nm2k6ei4'
+    '_csrf' => '111ecd911e1d6ff57c17f1af399b674b4b9321242d908e089115ede48bd3d809s:32:\"IUpQYFFMssYD2TtTEWWBTq1_EHgZDPfZ\";'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => '/backend/web/'
+]
+
+$_SERVER = [
+    'MIBDIRS' => 'D:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'D:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'www.youhui.com'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'CONTENT_LENGTH' => '198'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_ORIGIN' => 'http://www.youhui.com'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/39.0.2171.95 Safari/537.36'
+    'CONTENT_TYPE' => 'application/x-www-form-urlencoded'
+    'HTTP_REFERER' => 'http://www.youhui.com/backend/web/index.php?r=site%2Flogin'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8'
+    'HTTP_COOKIE' => 'bdshare_firstime=1422512739434; PHPSESSID=a8f6sbrpk83g9l9fh1nm2k6ei4; _csrf=111ecd911e1d6ff57c17f1af399b674b4b9321242d908e089115ede48bd3d809s%3A32%3A%22IUpQYFFMssYD2TtTEWWBTq1_EHgZDPfZ%22%3B'
+    'PATH' => 'C:\\Program Files\\360\\360Desktop;C:\\Program Files\\Common Files\\NetSarang;C:\\ProgramData\\Oracle\\Java\\javapath;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;D:\\Git\\bin;%JAVA_HOME%\\bin;D:\\node\\;C:\\Users\\Administrator\\AppData\\Roaming\\npm'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.7 (Win32) OpenSSL/1.0.1e PHP/5.5.9 Server at www.youhui.com Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.7 (Win32) OpenSSL/1.0.1e PHP/5.5.9'
+    'SERVER_NAME' => 'www.youhui.com'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'D:/youhui/'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'D:/youhui/'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'D:/youhui/backend/web/index.php'
+    'REMOTE_PORT' => '62604'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'POST'
+    'QUERY_STRING' => 'r=site%2Flogin'
+    'REQUEST_URI' => '/backend/web/index.php?r=site%2Flogin'
+    'SCRIPT_NAME' => '/backend/web/index.php'
+    'PHP_SELF' => '/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1422514180.747
+    'REQUEST_TIME' => 1422514180
+]
