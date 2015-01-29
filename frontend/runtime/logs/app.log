@@ -1254,3 +1254,69 @@ $_SERVER = [
     'REQUEST_TIME' => 1422515813
 >>>>>>> 18b0b47259f1f6a758d332f69f2600c9f760f730
 ]
+2015-01-29 09:39:06 [127.0.0.1][][8jc2p823bbdeemq40iaim0jsu2][warning][yii\log\Dispatcher::dispatch] Unable to send log via yii\debug\LogTarget: PHP Notice 'yii\base\ErrorException' with message 'unserialize(): Error at offset 0 of 40759 bytes' 
+
+in E:\yiicoupons\vendor\yiisoft\yii2-debug\LogTarget.php:86
+
+Stack trace:
+#0 [internal function]: yii\base\ErrorHandler->handleError(8, 'unserialize(): ...', 'E:\yiicoupons\v...', 86, Array)
+#1 E:\yiicoupons\vendor\yiisoft\yii2-debug\LogTarget.php(86): unserialize('<<<<<<< HEAD??a...')
+#2 E:\yiicoupons\vendor\yiisoft\yii2-debug\LogTarget.php(61): yii\debug\LogTarget->updateIndexFile('E:\yiicoupons\f...', Array)
+#3 E:\yiicoupons\vendor\yiisoft\yii2-debug\LogTarget.php(112): yii\debug\LogTarget->export(Array)
+#4 E:\yiicoupons\vendor\yiisoft\yii2\log\Dispatcher.php(183): yii\debug\LogTarget->collect(Array, true)
+#5 E:\yiicoupons\vendor\yiisoft\yii2\log\Logger.php(166): yii\log\Dispatcher->dispatch(Array, true)
+#6 [internal function]: yii\log\Logger->flush(true)
+#7 {main}
+2015-01-29 09:39:05 [127.0.0.1][][8jc2p823bbdeemq40iaim0jsu2][info][application] $_COOKIE = [
+    'bdshare_firstime' => '1422504719907'
+    'PHPSESSID' => '8jc2p823bbdeemq40iaim0jsu2'
+]
+
+$_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'MIBDIRS' => 'D:/navcat/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'D:/navcat/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_ACCEPT' => 'text/html, application/xhtml+xml, */*'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.3; WOW64; Trident/7.0; LCJB; rv:11.0; QQBrowser/8.0.3197.400) like Gecko'
+    'HTTP_REFERER' => 'http://www.yiicoupons.com/frontend/'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_HOST' => 'www.yiicoupons.com'
+    'HTTP_CONNECTION' => 'Keep-Alive'
+    'HTTP_COOKIE' => 'bdshare_firstime=1422504719907; PHPSESSID=8jc2p823bbdeemq40iaim0jsu2'
+    'PATH' => 'C:\\ProgramData\\Oracle\\Java\\javapath;C:\\Program Files (x86)\\Common Files\\NetSarang;C:\\Program Files (x86)\\Lenovo\\FusionEngine;C:\\Program Files (x86)\\Intel\\iCLS Client\\;C:\\Program Files\\Intel\\iCLS Client\\;C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;C:\\windows\\system32;C:\\windows;C:\\windows\\System32\\Wbem;C:\\windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\DAL;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\IPT;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\DAL;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\IPT;C:\\Program Files (x86)\\Common Files\\lenovo\\easyplussdk\\bin;C:\\Program Files (x86)\\iFLYTEK\\VoiceAssistant\\SpeechPlusRuntime;C:\\Program Files (x86)\\Lenovo\\Voice SDK;D:\\navcat\\git\\bin;D:\\navcat\\java\\bin;D:\\navcat\\xampp\\php;C:\\ProgramData\\ComposerSetup\\bin'
+    'SystemRoot' => 'C:\\windows'
+    'COMSPEC' => 'C:\\windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.4 (Win32) OpenSSL/1.0.1e PHP/5.5.1 Server at www.yiicoupons.com Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.4 (Win32) OpenSSL/1.0.1e PHP/5.5.1'
+    'SERVER_NAME' => 'www.yiicoupons.com'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'E:/yiicoupons'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'E:/yiicoupons'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'E:/yiicoupons/frontend/web/index.php'
+    'REMOTE_PORT' => '49601'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/frontend/web/'
+    'SCRIPT_NAME' => '/frontend/web/index.php'
+    'PHP_SELF' => '/frontend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1422520745.879
+    'REQUEST_TIME' => 1422520745
+]
