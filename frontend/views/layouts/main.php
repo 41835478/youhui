@@ -134,11 +134,11 @@ jQuery(function() {
             <div class="w990">
                 <ul id="nav_l">
                     <!--class="active"-->
-                    <li><a href="index.php?r=show/index" ><span></span>首页</a></li>
+                    <li><a href="index.php?r=site/index" ><span></span>首页</a></li>
                     <li>|</li>
-                    <li><a href="index.php?r=show/index" ><span></span>最新优惠券</a></li>
+                    <li><a href="index.php?r=new/index" ><span></span>最新优惠券</a></li>
                     <li>|</li>
-                    <li><a href="index.php?r=show/index" ><span></span>热门优惠券</a></li>
+                    <li><a href="index.php?r=hot/index" ><span></span>热门优惠券</a></li>
                     <li>|</li>
                     <li><a href="index.php?r=receive/index" ><span></span>最近被领取的优惠券</a></li>
                     <li>|</li>
@@ -151,7 +151,7 @@ jQuery(function() {
                 
 <ul id="nav_r">
         <li id="userweibo">
-    <a href="/end/tp-coupon/index.php?a=login&m=user">登陆</a><a href="/end/tp-coupon/index.php?a=reg&m=user">注册</a>
+    <a href="?r=login/login">登陆</a><a href="?r=registered/regis">注册</a>
     </li>
     </ul>
 
