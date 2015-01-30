@@ -12049,3 +12049,2241 @@ $_SERVER = [
     'REQUEST_TIME' => 1422519781
 >>>>>>> 209ff4da71dd7995c11ec8c8264b49b800500c49
 ]
+2015-01-30 02:28:27 [127.0.0.1][-][-][warning][yii\log\Dispatcher::dispatch] Unable to send log via yii\debug\LogTarget: PHP Notice 'yii\base\ErrorException' with message 'unserialize(): Error at offset 0 of 45789 bytes' 
+
+in D:\xampp\htdocs\youhui\vendor\yiisoft\yii2-debug\LogTarget.php:86
+
+Stack trace:
+#0 [internal function]: yii\base\ErrorHandler->handleError(8, 'unserialize(): ...', 'D:\xampp\htdocs...', 86, Array)
+#1 D:\xampp\htdocs\youhui\vendor\yiisoft\yii2-debug\LogTarget.php(86): unserialize('<<<<<<< HEAD??a...')
+#2 D:\xampp\htdocs\youhui\vendor\yiisoft\yii2-debug\LogTarget.php(61): yii\debug\LogTarget->updateIndexFile('D:\xampp\htdocs...', Array)
+#3 D:\xampp\htdocs\youhui\vendor\yiisoft\yii2-debug\LogTarget.php(112): yii\debug\LogTarget->export(Array)
+#4 D:\xampp\htdocs\youhui\vendor\yiisoft\yii2\log\Dispatcher.php(183): yii\debug\LogTarget->collect(Array, true)
+#5 D:\xampp\htdocs\youhui\vendor\yiisoft\yii2\log\Logger.php(166): yii\log\Dispatcher->dispatch(Array, true)
+#6 [internal function]: yii\log\Logger->flush(true)
+#7 {main}
+2015-01-30 02:28:27 [127.0.0.1][-][-][info][application] $_GET = [
+    'r' => 'site/index'
+]
+
+$_COOKIE = [
+    'AJSTAT_ok_times' => '1'
+    '_ga' => 'GA1.1.54924247.1416566351'
+    '__zpspc' => '9.2.1416813744.1416814460.10#4|||||#'
+    'bdshare_firstime' => '1418786158546'
+    'CNZZDATA4617777' => 'cnzz_eid=682052683-1418784431-&ntime=1418784197'
+    'CNZZDATA4617788' => 'cnzz_eid=431890627-1419157234-&ntime=1419203501'
+    'CNZZDATA4617784' => 'cnzz_eid=1410397910-1418812097-&ntime=1419983038'
+    'Jjzq_2132_saltkey' => 'wkOPSZrn'
+    'Jjzq_2132_lastvisit' => '1420423935'
+    'Jjzq_2132_ulastactivity' => '3cd47khBmEfAZuKV56v5xcereJG/Dl7C07x2T1XA2znHteTfL3el'
+    'RB5E_2132_saltkey' => 'YR3N3T3T'
+    'RB5E_2132_lastvisit' => '1420425536'
+    'RB5E_2132_ulastactivity' => '7a33yKqJzIUHWbK8a2g4rYyfLxZRCEFiozw4LjGbd97NwT8w9vkf'
+    'VOIr_2132_saltkey' => 'Ot1vtjL1'
+    'VOIr_2132_lastvisit' => '1420426036'
+    'VOIr_2132_ulastactivity' => '40a3geAD9hD7n9MsDQ4l4FnD7q3ymVwknLjv8+KttwvvmeBgf8zp'
+    'VOIr_2132_nofavfid' => '1'
+    'uchome_loginuser' => 'admin'
+    'CNZZDATA2924747' => 'cnzz_eid=1577273435-1420269582-&ntime=1420676356'
+    'CNZZDATA3668490' => 'cnzz_eid=405753816-1420849139-http%3A%2F%2Flocalhost%2F&ntime=1420849139'
+    'CNZZDATA3637100' => 'cnzz_eid=1250976432-1420847467-http%3A%2F%2Flocalhost%2F&ntime=1420847467'
+    'sid' => '5581iHsOCW5McFRYsx5i%2BRZkm6ESzH4wFOp%2B8dqIBW3lcUiALVNvuGwefDxiMjpKKfOm2rMjEnAQ%2Fw'
+    'PHPSESSID' => '20i13vqn7j4u0e5d1t8b0eeub4'
+    '_csrf' => 'e608113b460aca5a8d48f9ab5369e32c7cd50f166922d9ed9faf77d831cff95cs:32:\"-rMsw__77Eq15_KL42cvogAH_39UZg2t\";'
+]
+
+$_SESSION = [
+    '__flash' => []
+    'user_name' => 'admin'
+    'user_id' => 1
+]
+
+$_SERVER = [
+    'MIBDIRS' => 'D:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'D:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.57 Safari/537.36'
+    'HTTP_ACCEPT_ENCODING' => 'gzip,deflate,sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8,en;q=0.6'
+    'HTTP_COOKIE' => 'AJSTAT_ok_times=1; _ga=GA1.1.54924247.1416566351; __zpspc=9.2.1416813744.1416814460.10%234%7C%7C%7C%7C%7C%23; bdshare_firstime=1418786158546; CNZZDATA4617777=cnzz_eid%3D682052683-1418784431-%26ntime%3D1418784197; CNZZDATA4617788=cnzz_eid%3D431890627-1419157234-%26ntime%3D1419203501; CNZZDATA4617784=cnzz_eid%3D1410397910-1418812097-%26ntime%3D1419983038; Jjzq_2132_saltkey=wkOPSZrn; Jjzq_2132_lastvisit=1420423935; Jjzq_2132_ulastactivity=3cd47khBmEfAZuKV56v5xcereJG%2FDl7C07x2T1XA2znHteTfL3el; RB5E_2132_saltkey=YR3N3T3T; RB5E_2132_lastvisit=1420425536; RB5E_2132_ulastactivity=7a33yKqJzIUHWbK8a2g4rYyfLxZRCEFiozw4LjGbd97NwT8w9vkf; VOIr_2132_saltkey=Ot1vtjL1; VOIr_2132_lastvisit=1420426036; VOIr_2132_ulastactivity=40a3geAD9hD7n9MsDQ4l4FnD7q3ymVwknLjv8%2BKttwvvmeBgf8zp; VOIr_2132_nofavfid=1; uchome_loginuser=admin; CNZZDATA2924747=cnzz_eid%3D1577273435-1420269582-%26ntime%3D1420676356; CNZZDATA3668490=cnzz_eid%3D405753816-1420849139-http%253A%252F%252Flocalhost%252F%26ntime%3D1420849139; CNZZDATA3637100=cnzz_eid%3D1250976432-1420847467-http%253A%252F%252Flocalhost%252F%26ntime%3D1420847467; sid=5581iHsOCW5McFRYsx5i%252BRZkm6ESzH4wFOp%252B8dqIBW3lcUiALVNvuGwefDxiMjpKKfOm2rMjEnAQ%252Fw; PHPSESSID=20i13vqn7j4u0e5d1t8b0eeub4; _csrf=e608113b460aca5a8d48f9ab5369e32c7cd50f166922d9ed9faf77d831cff95cs%3A32%3A%22-rMsw__77Eq15_KL42cvogAH_39UZg2t%22%3B'
+    'PATH' => 'C:\\Program Files (x86)\\Common Files\\NetSarang;C:\\ProgramData\\Oracle\\Java\\javapath;C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;D:\\xampp\\php\\php.exe;D:\\Program Files\\Java\\jdk1.8.0_25\\bin;D:\\Program Files\\Java\\jdk1.8.0_25\\jre\\bin;D:\\git\\bin;D:\\xampp\\php;C:\\ProgramData\\ComposerSetup\\bin;C:\\Windows\\system32'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.7 (Win32) OpenSSL/1.0.1e PHP/5.5.9 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.7 (Win32) OpenSSL/1.0.1e PHP/5.5.9'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'D:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'D:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'D:/xampp/htdocs/youhui/backend/web/index.php'
+    'REMOTE_PORT' => '51139'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=site/index'
+    'REQUEST_URI' => '/youhui/backend/web/?r=site/index'
+    'SCRIPT_NAME' => '/youhui/backend/web/index.php'
+    'PHP_SELF' => '/youhui/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1422581307.055
+    'REQUEST_TIME' => 1422581307
+]
+2015-01-30 02:28:27 [127.0.0.1][-][-][warning][yii\log\Dispatcher::dispatch] Unable to send log via yii\debug\LogTarget: PHP Notice 'yii\base\ErrorException' with message 'unserialize(): Error at offset 0 of 45789 bytes' 
+
+in D:\xampp\htdocs\youhui\vendor\yiisoft\yii2-debug\LogTarget.php:86
+
+Stack trace:
+#0 [internal function]: yii\base\ErrorHandler->handleError(8, 'unserialize(): ...', 'D:\xampp\htdocs...', 86, Array)
+#1 D:\xampp\htdocs\youhui\vendor\yiisoft\yii2-debug\LogTarget.php(86): unserialize('<<<<<<< HEAD??a...')
+#2 D:\xampp\htdocs\youhui\vendor\yiisoft\yii2-debug\LogTarget.php(61): yii\debug\LogTarget->updateIndexFile('D:\xampp\htdocs...', Array)
+#3 D:\xampp\htdocs\youhui\vendor\yiisoft\yii2-debug\LogTarget.php(112): yii\debug\LogTarget->export(Array)
+#4 D:\xampp\htdocs\youhui\vendor\yiisoft\yii2\log\Dispatcher.php(183): yii\debug\LogTarget->collect(Array, true)
+#5 D:\xampp\htdocs\youhui\vendor\yiisoft\yii2\log\Logger.php(166): yii\log\Dispatcher->dispatch(Array, true)
+#6 [internal function]: yii\log\Logger->flush(true)
+#7 {main}
+2015-01-30 02:28:27 [127.0.0.1][-][-][info][application] $_GET = [
+    'r' => 'site/top'
+]
+
+$_COOKIE = [
+    'AJSTAT_ok_times' => '1'
+    '_ga' => 'GA1.1.54924247.1416566351'
+    '__zpspc' => '9.2.1416813744.1416814460.10#4|||||#'
+    'bdshare_firstime' => '1418786158546'
+    'CNZZDATA4617777' => 'cnzz_eid=682052683-1418784431-&ntime=1418784197'
+    'CNZZDATA4617788' => 'cnzz_eid=431890627-1419157234-&ntime=1419203501'
+    'CNZZDATA4617784' => 'cnzz_eid=1410397910-1418812097-&ntime=1419983038'
+    'Jjzq_2132_saltkey' => 'wkOPSZrn'
+    'Jjzq_2132_lastvisit' => '1420423935'
+    'Jjzq_2132_ulastactivity' => '3cd47khBmEfAZuKV56v5xcereJG/Dl7C07x2T1XA2znHteTfL3el'
+    'RB5E_2132_saltkey' => 'YR3N3T3T'
+    'RB5E_2132_lastvisit' => '1420425536'
+    'RB5E_2132_ulastactivity' => '7a33yKqJzIUHWbK8a2g4rYyfLxZRCEFiozw4LjGbd97NwT8w9vkf'
+    'VOIr_2132_saltkey' => 'Ot1vtjL1'
+    'VOIr_2132_lastvisit' => '1420426036'
+    'VOIr_2132_ulastactivity' => '40a3geAD9hD7n9MsDQ4l4FnD7q3ymVwknLjv8+KttwvvmeBgf8zp'
+    'VOIr_2132_nofavfid' => '1'
+    'uchome_loginuser' => 'admin'
+    'CNZZDATA2924747' => 'cnzz_eid=1577273435-1420269582-&ntime=1420676356'
+    'CNZZDATA3668490' => 'cnzz_eid=405753816-1420849139-http%3A%2F%2Flocalhost%2F&ntime=1420849139'
+    'CNZZDATA3637100' => 'cnzz_eid=1250976432-1420847467-http%3A%2F%2Flocalhost%2F&ntime=1420847467'
+    'sid' => '5581iHsOCW5McFRYsx5i%2BRZkm6ESzH4wFOp%2B8dqIBW3lcUiALVNvuGwefDxiMjpKKfOm2rMjEnAQ%2Fw'
+    'PHPSESSID' => '20i13vqn7j4u0e5d1t8b0eeub4'
+    '_csrf' => 'e608113b460aca5a8d48f9ab5369e32c7cd50f166922d9ed9faf77d831cff95cs:32:\"-rMsw__77Eq15_KL42cvogAH_39UZg2t\";'
+]
+
+$_SERVER = [
+    'MIBDIRS' => 'D:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'D:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.57 Safari/537.36'
+    'HTTP_REFERER' => 'http://localhost/youhui/backend/web/?r=site/index'
+    'HTTP_ACCEPT_ENCODING' => 'gzip,deflate,sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8,en;q=0.6'
+    'HTTP_COOKIE' => 'AJSTAT_ok_times=1; _ga=GA1.1.54924247.1416566351; __zpspc=9.2.1416813744.1416814460.10%234%7C%7C%7C%7C%7C%23; bdshare_firstime=1418786158546; CNZZDATA4617777=cnzz_eid%3D682052683-1418784431-%26ntime%3D1418784197; CNZZDATA4617788=cnzz_eid%3D431890627-1419157234-%26ntime%3D1419203501; CNZZDATA4617784=cnzz_eid%3D1410397910-1418812097-%26ntime%3D1419983038; Jjzq_2132_saltkey=wkOPSZrn; Jjzq_2132_lastvisit=1420423935; Jjzq_2132_ulastactivity=3cd47khBmEfAZuKV56v5xcereJG%2FDl7C07x2T1XA2znHteTfL3el; RB5E_2132_saltkey=YR3N3T3T; RB5E_2132_lastvisit=1420425536; RB5E_2132_ulastactivity=7a33yKqJzIUHWbK8a2g4rYyfLxZRCEFiozw4LjGbd97NwT8w9vkf; VOIr_2132_saltkey=Ot1vtjL1; VOIr_2132_lastvisit=1420426036; VOIr_2132_ulastactivity=40a3geAD9hD7n9MsDQ4l4FnD7q3ymVwknLjv8%2BKttwvvmeBgf8zp; VOIr_2132_nofavfid=1; uchome_loginuser=admin; CNZZDATA2924747=cnzz_eid%3D1577273435-1420269582-%26ntime%3D1420676356; CNZZDATA3668490=cnzz_eid%3D405753816-1420849139-http%253A%252F%252Flocalhost%252F%26ntime%3D1420849139; CNZZDATA3637100=cnzz_eid%3D1250976432-1420847467-http%253A%252F%252Flocalhost%252F%26ntime%3D1420847467; sid=5581iHsOCW5McFRYsx5i%252BRZkm6ESzH4wFOp%252B8dqIBW3lcUiALVNvuGwefDxiMjpKKfOm2rMjEnAQ%252Fw; PHPSESSID=20i13vqn7j4u0e5d1t8b0eeub4; _csrf=e608113b460aca5a8d48f9ab5369e32c7cd50f166922d9ed9faf77d831cff95cs%3A32%3A%22-rMsw__77Eq15_KL42cvogAH_39UZg2t%22%3B'
+    'PATH' => 'C:\\Program Files (x86)\\Common Files\\NetSarang;C:\\ProgramData\\Oracle\\Java\\javapath;C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;D:\\xampp\\php\\php.exe;D:\\Program Files\\Java\\jdk1.8.0_25\\bin;D:\\Program Files\\Java\\jdk1.8.0_25\\jre\\bin;D:\\git\\bin;D:\\xampp\\php;C:\\ProgramData\\ComposerSetup\\bin;C:\\Windows\\system32'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.7 (Win32) OpenSSL/1.0.1e PHP/5.5.9 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.7 (Win32) OpenSSL/1.0.1e PHP/5.5.9'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'D:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'D:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'D:/xampp/htdocs/youhui/backend/web/index.php'
+    'REMOTE_PORT' => '51139'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=site/top'
+    'REQUEST_URI' => '/youhui/backend/web/?r=site/top'
+    'SCRIPT_NAME' => '/youhui/backend/web/index.php'
+    'PHP_SELF' => '/youhui/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1422581307.115
+    'REQUEST_TIME' => 1422581307
+]
+2015-01-30 02:28:27 [127.0.0.1][-][-][warning][yii\log\Dispatcher::dispatch] Unable to send log via yii\debug\LogTarget: PHP Notice 'yii\base\ErrorException' with message 'unserialize(): Error at offset 0 of 45789 bytes' 
+
+in D:\xampp\htdocs\youhui\vendor\yiisoft\yii2-debug\LogTarget.php:86
+
+Stack trace:
+#0 [internal function]: yii\base\ErrorHandler->handleError(8, 'unserialize(): ...', 'D:\xampp\htdocs...', 86, Array)
+#1 D:\xampp\htdocs\youhui\vendor\yiisoft\yii2-debug\LogTarget.php(86): unserialize('<<<<<<< HEAD??a...')
+#2 D:\xampp\htdocs\youhui\vendor\yiisoft\yii2-debug\LogTarget.php(61): yii\debug\LogTarget->updateIndexFile('D:\xampp\htdocs...', Array)
+#3 D:\xampp\htdocs\youhui\vendor\yiisoft\yii2-debug\LogTarget.php(112): yii\debug\LogTarget->export(Array)
+#4 D:\xampp\htdocs\youhui\vendor\yiisoft\yii2\log\Dispatcher.php(183): yii\debug\LogTarget->collect(Array, true)
+#5 D:\xampp\htdocs\youhui\vendor\yiisoft\yii2\log\Logger.php(166): yii\log\Dispatcher->dispatch(Array, true)
+#6 [internal function]: yii\log\Logger->flush(true)
+#7 {main}
+2015-01-30 02:28:27 [127.0.0.1][-][-][info][application] $_GET = [
+    'r' => 'site/change'
+]
+
+$_COOKIE = [
+    'AJSTAT_ok_times' => '1'
+    '_ga' => 'GA1.1.54924247.1416566351'
+    '__zpspc' => '9.2.1416813744.1416814460.10#4|||||#'
+    'bdshare_firstime' => '1418786158546'
+    'CNZZDATA4617777' => 'cnzz_eid=682052683-1418784431-&ntime=1418784197'
+    'CNZZDATA4617788' => 'cnzz_eid=431890627-1419157234-&ntime=1419203501'
+    'CNZZDATA4617784' => 'cnzz_eid=1410397910-1418812097-&ntime=1419983038'
+    'Jjzq_2132_saltkey' => 'wkOPSZrn'
+    'Jjzq_2132_lastvisit' => '1420423935'
+    'Jjzq_2132_ulastactivity' => '3cd47khBmEfAZuKV56v5xcereJG/Dl7C07x2T1XA2znHteTfL3el'
+    'RB5E_2132_saltkey' => 'YR3N3T3T'
+    'RB5E_2132_lastvisit' => '1420425536'
+    'RB5E_2132_ulastactivity' => '7a33yKqJzIUHWbK8a2g4rYyfLxZRCEFiozw4LjGbd97NwT8w9vkf'
+    'VOIr_2132_saltkey' => 'Ot1vtjL1'
+    'VOIr_2132_lastvisit' => '1420426036'
+    'VOIr_2132_ulastactivity' => '40a3geAD9hD7n9MsDQ4l4FnD7q3ymVwknLjv8+KttwvvmeBgf8zp'
+    'VOIr_2132_nofavfid' => '1'
+    'uchome_loginuser' => 'admin'
+    'CNZZDATA2924747' => 'cnzz_eid=1577273435-1420269582-&ntime=1420676356'
+    'CNZZDATA3668490' => 'cnzz_eid=405753816-1420849139-http%3A%2F%2Flocalhost%2F&ntime=1420849139'
+    'CNZZDATA3637100' => 'cnzz_eid=1250976432-1420847467-http%3A%2F%2Flocalhost%2F&ntime=1420847467'
+    'sid' => '5581iHsOCW5McFRYsx5i%2BRZkm6ESzH4wFOp%2B8dqIBW3lcUiALVNvuGwefDxiMjpKKfOm2rMjEnAQ%2Fw'
+    'PHPSESSID' => '20i13vqn7j4u0e5d1t8b0eeub4'
+    '_csrf' => 'e608113b460aca5a8d48f9ab5369e32c7cd50f166922d9ed9faf77d831cff95cs:32:\"-rMsw__77Eq15_KL42cvogAH_39UZg2t\";'
+]
+
+$_SERVER = [
+    'MIBDIRS' => 'D:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'D:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.57 Safari/537.36'
+    'HTTP_REFERER' => 'http://localhost/youhui/backend/web/?r=site/index'
+    'HTTP_ACCEPT_ENCODING' => 'gzip,deflate,sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8,en;q=0.6'
+    'HTTP_COOKIE' => 'AJSTAT_ok_times=1; _ga=GA1.1.54924247.1416566351; __zpspc=9.2.1416813744.1416814460.10%234%7C%7C%7C%7C%7C%23; bdshare_firstime=1418786158546; CNZZDATA4617777=cnzz_eid%3D682052683-1418784431-%26ntime%3D1418784197; CNZZDATA4617788=cnzz_eid%3D431890627-1419157234-%26ntime%3D1419203501; CNZZDATA4617784=cnzz_eid%3D1410397910-1418812097-%26ntime%3D1419983038; Jjzq_2132_saltkey=wkOPSZrn; Jjzq_2132_lastvisit=1420423935; Jjzq_2132_ulastactivity=3cd47khBmEfAZuKV56v5xcereJG%2FDl7C07x2T1XA2znHteTfL3el; RB5E_2132_saltkey=YR3N3T3T; RB5E_2132_lastvisit=1420425536; RB5E_2132_ulastactivity=7a33yKqJzIUHWbK8a2g4rYyfLxZRCEFiozw4LjGbd97NwT8w9vkf; VOIr_2132_saltkey=Ot1vtjL1; VOIr_2132_lastvisit=1420426036; VOIr_2132_ulastactivity=40a3geAD9hD7n9MsDQ4l4FnD7q3ymVwknLjv8%2BKttwvvmeBgf8zp; VOIr_2132_nofavfid=1; uchome_loginuser=admin; CNZZDATA2924747=cnzz_eid%3D1577273435-1420269582-%26ntime%3D1420676356; CNZZDATA3668490=cnzz_eid%3D405753816-1420849139-http%253A%252F%252Flocalhost%252F%26ntime%3D1420849139; CNZZDATA3637100=cnzz_eid%3D1250976432-1420847467-http%253A%252F%252Flocalhost%252F%26ntime%3D1420847467; sid=5581iHsOCW5McFRYsx5i%252BRZkm6ESzH4wFOp%252B8dqIBW3lcUiALVNvuGwefDxiMjpKKfOm2rMjEnAQ%252Fw; PHPSESSID=20i13vqn7j4u0e5d1t8b0eeub4; _csrf=e608113b460aca5a8d48f9ab5369e32c7cd50f166922d9ed9faf77d831cff95cs%3A32%3A%22-rMsw__77Eq15_KL42cvogAH_39UZg2t%22%3B'
+    'PATH' => 'C:\\Program Files (x86)\\Common Files\\NetSarang;C:\\ProgramData\\Oracle\\Java\\javapath;C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;D:\\xampp\\php\\php.exe;D:\\Program Files\\Java\\jdk1.8.0_25\\bin;D:\\Program Files\\Java\\jdk1.8.0_25\\jre\\bin;D:\\git\\bin;D:\\xampp\\php;C:\\ProgramData\\ComposerSetup\\bin;C:\\Windows\\system32'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.7 (Win32) OpenSSL/1.0.1e PHP/5.5.9 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.7 (Win32) OpenSSL/1.0.1e PHP/5.5.9'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'D:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'D:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'D:/xampp/htdocs/youhui/backend/web/index.php'
+    'REMOTE_PORT' => '51141'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=site/change'
+    'REQUEST_URI' => '/youhui/backend/web/?r=site/change'
+    'SCRIPT_NAME' => '/youhui/backend/web/index.php'
+    'PHP_SELF' => '/youhui/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1422581307.125
+    'REQUEST_TIME' => 1422581307
+]
+2015-01-30 02:28:27 [127.0.0.1][-][-][warning][yii\log\Dispatcher::dispatch] Unable to send log via yii\debug\LogTarget: PHP Notice 'yii\base\ErrorException' with message 'unserialize(): Error at offset 0 of 45789 bytes' 
+
+in D:\xampp\htdocs\youhui\vendor\yiisoft\yii2-debug\LogTarget.php:86
+
+Stack trace:
+#0 [internal function]: yii\base\ErrorHandler->handleError(8, 'unserialize(): ...', 'D:\xampp\htdocs...', 86, Array)
+#1 D:\xampp\htdocs\youhui\vendor\yiisoft\yii2-debug\LogTarget.php(86): unserialize('<<<<<<< HEAD??a...')
+#2 D:\xampp\htdocs\youhui\vendor\yiisoft\yii2-debug\LogTarget.php(61): yii\debug\LogTarget->updateIndexFile('D:\xampp\htdocs...', Array)
+#3 D:\xampp\htdocs\youhui\vendor\yiisoft\yii2-debug\LogTarget.php(112): yii\debug\LogTarget->export(Array)
+#4 D:\xampp\htdocs\youhui\vendor\yiisoft\yii2\log\Dispatcher.php(183): yii\debug\LogTarget->collect(Array, true)
+#5 D:\xampp\htdocs\youhui\vendor\yiisoft\yii2\log\Logger.php(166): yii\log\Dispatcher->dispatch(Array, true)
+#6 [internal function]: yii\log\Logger->flush(true)
+#7 {main}
+2015-01-30 02:28:27 [127.0.0.1][-][-][info][application] $_GET = [
+    'r' => 'site/main'
+]
+
+$_COOKIE = [
+    'AJSTAT_ok_times' => '1'
+    '_ga' => 'GA1.1.54924247.1416566351'
+    '__zpspc' => '9.2.1416813744.1416814460.10#4|||||#'
+    'bdshare_firstime' => '1418786158546'
+    'CNZZDATA4617777' => 'cnzz_eid=682052683-1418784431-&ntime=1418784197'
+    'CNZZDATA4617788' => 'cnzz_eid=431890627-1419157234-&ntime=1419203501'
+    'CNZZDATA4617784' => 'cnzz_eid=1410397910-1418812097-&ntime=1419983038'
+    'Jjzq_2132_saltkey' => 'wkOPSZrn'
+    'Jjzq_2132_lastvisit' => '1420423935'
+    'Jjzq_2132_ulastactivity' => '3cd47khBmEfAZuKV56v5xcereJG/Dl7C07x2T1XA2znHteTfL3el'
+    'RB5E_2132_saltkey' => 'YR3N3T3T'
+    'RB5E_2132_lastvisit' => '1420425536'
+    'RB5E_2132_ulastactivity' => '7a33yKqJzIUHWbK8a2g4rYyfLxZRCEFiozw4LjGbd97NwT8w9vkf'
+    'VOIr_2132_saltkey' => 'Ot1vtjL1'
+    'VOIr_2132_lastvisit' => '1420426036'
+    'VOIr_2132_ulastactivity' => '40a3geAD9hD7n9MsDQ4l4FnD7q3ymVwknLjv8+KttwvvmeBgf8zp'
+    'VOIr_2132_nofavfid' => '1'
+    'uchome_loginuser' => 'admin'
+    'CNZZDATA2924747' => 'cnzz_eid=1577273435-1420269582-&ntime=1420676356'
+    'CNZZDATA3668490' => 'cnzz_eid=405753816-1420849139-http%3A%2F%2Flocalhost%2F&ntime=1420849139'
+    'CNZZDATA3637100' => 'cnzz_eid=1250976432-1420847467-http%3A%2F%2Flocalhost%2F&ntime=1420847467'
+    'sid' => '5581iHsOCW5McFRYsx5i%2BRZkm6ESzH4wFOp%2B8dqIBW3lcUiALVNvuGwefDxiMjpKKfOm2rMjEnAQ%2Fw'
+    'PHPSESSID' => '20i13vqn7j4u0e5d1t8b0eeub4'
+    '_csrf' => 'e608113b460aca5a8d48f9ab5369e32c7cd50f166922d9ed9faf77d831cff95cs:32:\"-rMsw__77Eq15_KL42cvogAH_39UZg2t\";'
+]
+
+$_SERVER = [
+    'MIBDIRS' => 'D:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'D:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.57 Safari/537.36'
+    'HTTP_REFERER' => 'http://localhost/youhui/backend/web/?r=site/index'
+    'HTTP_ACCEPT_ENCODING' => 'gzip,deflate,sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8,en;q=0.6'
+    'HTTP_COOKIE' => 'AJSTAT_ok_times=1; _ga=GA1.1.54924247.1416566351; __zpspc=9.2.1416813744.1416814460.10%234%7C%7C%7C%7C%7C%23; bdshare_firstime=1418786158546; CNZZDATA4617777=cnzz_eid%3D682052683-1418784431-%26ntime%3D1418784197; CNZZDATA4617788=cnzz_eid%3D431890627-1419157234-%26ntime%3D1419203501; CNZZDATA4617784=cnzz_eid%3D1410397910-1418812097-%26ntime%3D1419983038; Jjzq_2132_saltkey=wkOPSZrn; Jjzq_2132_lastvisit=1420423935; Jjzq_2132_ulastactivity=3cd47khBmEfAZuKV56v5xcereJG%2FDl7C07x2T1XA2znHteTfL3el; RB5E_2132_saltkey=YR3N3T3T; RB5E_2132_lastvisit=1420425536; RB5E_2132_ulastactivity=7a33yKqJzIUHWbK8a2g4rYyfLxZRCEFiozw4LjGbd97NwT8w9vkf; VOIr_2132_saltkey=Ot1vtjL1; VOIr_2132_lastvisit=1420426036; VOIr_2132_ulastactivity=40a3geAD9hD7n9MsDQ4l4FnD7q3ymVwknLjv8%2BKttwvvmeBgf8zp; VOIr_2132_nofavfid=1; uchome_loginuser=admin; CNZZDATA2924747=cnzz_eid%3D1577273435-1420269582-%26ntime%3D1420676356; CNZZDATA3668490=cnzz_eid%3D405753816-1420849139-http%253A%252F%252Flocalhost%252F%26ntime%3D1420849139; CNZZDATA3637100=cnzz_eid%3D1250976432-1420847467-http%253A%252F%252Flocalhost%252F%26ntime%3D1420847467; sid=5581iHsOCW5McFRYsx5i%252BRZkm6ESzH4wFOp%252B8dqIBW3lcUiALVNvuGwefDxiMjpKKfOm2rMjEnAQ%252Fw; PHPSESSID=20i13vqn7j4u0e5d1t8b0eeub4; _csrf=e608113b460aca5a8d48f9ab5369e32c7cd50f166922d9ed9faf77d831cff95cs%3A32%3A%22-rMsw__77Eq15_KL42cvogAH_39UZg2t%22%3B'
+    'PATH' => 'C:\\Program Files (x86)\\Common Files\\NetSarang;C:\\ProgramData\\Oracle\\Java\\javapath;C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;D:\\xampp\\php\\php.exe;D:\\Program Files\\Java\\jdk1.8.0_25\\bin;D:\\Program Files\\Java\\jdk1.8.0_25\\jre\\bin;D:\\git\\bin;D:\\xampp\\php;C:\\ProgramData\\ComposerSetup\\bin;C:\\Windows\\system32'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.7 (Win32) OpenSSL/1.0.1e PHP/5.5.9 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.7 (Win32) OpenSSL/1.0.1e PHP/5.5.9'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'D:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'D:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'D:/xampp/htdocs/youhui/backend/web/index.php'
+    'REMOTE_PORT' => '51142'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=site/main'
+    'REQUEST_URI' => '/youhui/backend/web/?r=site/main'
+    'SCRIPT_NAME' => '/youhui/backend/web/index.php'
+    'PHP_SELF' => '/youhui/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1422581307.138
+    'REQUEST_TIME' => 1422581307
+]
+2015-01-30 02:28:27 [127.0.0.1][-][-][warning][yii\log\Dispatcher::dispatch] Unable to send log via yii\debug\LogTarget: PHP Notice 'yii\base\ErrorException' with message 'unserialize(): Error at offset 0 of 45789 bytes' 
+
+in D:\xampp\htdocs\youhui\vendor\yiisoft\yii2-debug\LogTarget.php:86
+
+Stack trace:
+#0 [internal function]: yii\base\ErrorHandler->handleError(8, 'unserialize(): ...', 'D:\xampp\htdocs...', 86, Array)
+#1 D:\xampp\htdocs\youhui\vendor\yiisoft\yii2-debug\LogTarget.php(86): unserialize('<<<<<<< HEAD??a...')
+#2 D:\xampp\htdocs\youhui\vendor\yiisoft\yii2-debug\LogTarget.php(61): yii\debug\LogTarget->updateIndexFile('D:\xampp\htdocs...', Array)
+#3 D:\xampp\htdocs\youhui\vendor\yiisoft\yii2-debug\LogTarget.php(112): yii\debug\LogTarget->export(Array)
+#4 D:\xampp\htdocs\youhui\vendor\yiisoft\yii2\log\Dispatcher.php(183): yii\debug\LogTarget->collect(Array, true)
+#5 D:\xampp\htdocs\youhui\vendor\yiisoft\yii2\log\Logger.php(166): yii\log\Dispatcher->dispatch(Array, true)
+#6 [internal function]: yii\log\Logger->flush(true)
+#7 {main}
+2015-01-30 02:28:27 [127.0.0.1][-][-][info][application] $_GET = [
+    'r' => 'site/left'
+    'act' => '1'
+]
+
+$_COOKIE = [
+    'AJSTAT_ok_times' => '1'
+    '_ga' => 'GA1.1.54924247.1416566351'
+    '__zpspc' => '9.2.1416813744.1416814460.10#4|||||#'
+    'bdshare_firstime' => '1418786158546'
+    'CNZZDATA4617777' => 'cnzz_eid=682052683-1418784431-&ntime=1418784197'
+    'CNZZDATA4617788' => 'cnzz_eid=431890627-1419157234-&ntime=1419203501'
+    'CNZZDATA4617784' => 'cnzz_eid=1410397910-1418812097-&ntime=1419983038'
+    'Jjzq_2132_saltkey' => 'wkOPSZrn'
+    'Jjzq_2132_lastvisit' => '1420423935'
+    'Jjzq_2132_ulastactivity' => '3cd47khBmEfAZuKV56v5xcereJG/Dl7C07x2T1XA2znHteTfL3el'
+    'RB5E_2132_saltkey' => 'YR3N3T3T'
+    'RB5E_2132_lastvisit' => '1420425536'
+    'RB5E_2132_ulastactivity' => '7a33yKqJzIUHWbK8a2g4rYyfLxZRCEFiozw4LjGbd97NwT8w9vkf'
+    'VOIr_2132_saltkey' => 'Ot1vtjL1'
+    'VOIr_2132_lastvisit' => '1420426036'
+    'VOIr_2132_ulastactivity' => '40a3geAD9hD7n9MsDQ4l4FnD7q3ymVwknLjv8+KttwvvmeBgf8zp'
+    'VOIr_2132_nofavfid' => '1'
+    'uchome_loginuser' => 'admin'
+    'CNZZDATA2924747' => 'cnzz_eid=1577273435-1420269582-&ntime=1420676356'
+    'CNZZDATA3668490' => 'cnzz_eid=405753816-1420849139-http%3A%2F%2Flocalhost%2F&ntime=1420849139'
+    'CNZZDATA3637100' => 'cnzz_eid=1250976432-1420847467-http%3A%2F%2Flocalhost%2F&ntime=1420847467'
+    'sid' => '5581iHsOCW5McFRYsx5i%2BRZkm6ESzH4wFOp%2B8dqIBW3lcUiALVNvuGwefDxiMjpKKfOm2rMjEnAQ%2Fw'
+    'PHPSESSID' => '20i13vqn7j4u0e5d1t8b0eeub4'
+    '_csrf' => 'e608113b460aca5a8d48f9ab5369e32c7cd50f166922d9ed9faf77d831cff95cs:32:\"-rMsw__77Eq15_KL42cvogAH_39UZg2t\";'
+]
+
+$_SERVER = [
+    'MIBDIRS' => 'D:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'D:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.57 Safari/537.36'
+    'HTTP_REFERER' => 'http://localhost/youhui/backend/web/?r=site/index'
+    'HTTP_ACCEPT_ENCODING' => 'gzip,deflate,sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8,en;q=0.6'
+    'HTTP_COOKIE' => 'AJSTAT_ok_times=1; _ga=GA1.1.54924247.1416566351; __zpspc=9.2.1416813744.1416814460.10%234%7C%7C%7C%7C%7C%23; bdshare_firstime=1418786158546; CNZZDATA4617777=cnzz_eid%3D682052683-1418784431-%26ntime%3D1418784197; CNZZDATA4617788=cnzz_eid%3D431890627-1419157234-%26ntime%3D1419203501; CNZZDATA4617784=cnzz_eid%3D1410397910-1418812097-%26ntime%3D1419983038; Jjzq_2132_saltkey=wkOPSZrn; Jjzq_2132_lastvisit=1420423935; Jjzq_2132_ulastactivity=3cd47khBmEfAZuKV56v5xcereJG%2FDl7C07x2T1XA2znHteTfL3el; RB5E_2132_saltkey=YR3N3T3T; RB5E_2132_lastvisit=1420425536; RB5E_2132_ulastactivity=7a33yKqJzIUHWbK8a2g4rYyfLxZRCEFiozw4LjGbd97NwT8w9vkf; VOIr_2132_saltkey=Ot1vtjL1; VOIr_2132_lastvisit=1420426036; VOIr_2132_ulastactivity=40a3geAD9hD7n9MsDQ4l4FnD7q3ymVwknLjv8%2BKttwvvmeBgf8zp; VOIr_2132_nofavfid=1; uchome_loginuser=admin; CNZZDATA2924747=cnzz_eid%3D1577273435-1420269582-%26ntime%3D1420676356; CNZZDATA3668490=cnzz_eid%3D405753816-1420849139-http%253A%252F%252Flocalhost%252F%26ntime%3D1420849139; CNZZDATA3637100=cnzz_eid%3D1250976432-1420847467-http%253A%252F%252Flocalhost%252F%26ntime%3D1420847467; sid=5581iHsOCW5McFRYsx5i%252BRZkm6ESzH4wFOp%252B8dqIBW3lcUiALVNvuGwefDxiMjpKKfOm2rMjEnAQ%252Fw; PHPSESSID=20i13vqn7j4u0e5d1t8b0eeub4; _csrf=e608113b460aca5a8d48f9ab5369e32c7cd50f166922d9ed9faf77d831cff95cs%3A32%3A%22-rMsw__77Eq15_KL42cvogAH_39UZg2t%22%3B'
+    'PATH' => 'C:\\Program Files (x86)\\Common Files\\NetSarang;C:\\ProgramData\\Oracle\\Java\\javapath;C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;D:\\xampp\\php\\php.exe;D:\\Program Files\\Java\\jdk1.8.0_25\\bin;D:\\Program Files\\Java\\jdk1.8.0_25\\jre\\bin;D:\\git\\bin;D:\\xampp\\php;C:\\ProgramData\\ComposerSetup\\bin;C:\\Windows\\system32'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.7 (Win32) OpenSSL/1.0.1e PHP/5.5.9 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.7 (Win32) OpenSSL/1.0.1e PHP/5.5.9'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'D:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'D:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'D:/xampp/htdocs/youhui/backend/web/index.php'
+    'REMOTE_PORT' => '51140'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=site/left&act=1'
+    'REQUEST_URI' => '/youhui/backend/web/?r=site/left&act=1'
+    'SCRIPT_NAME' => '/youhui/backend/web/index.php'
+    'PHP_SELF' => '/youhui/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1422581307.128
+    'REQUEST_TIME' => 1422581307
+]
+2015-01-30 02:28:27 [127.0.0.1][-][-][warning][yii\log\Dispatcher::dispatch] Unable to send log via yii\debug\LogTarget: PHP Notice 'yii\base\ErrorException' with message 'unserialize(): Error at offset 0 of 45789 bytes' 
+
+in D:\xampp\htdocs\youhui\vendor\yiisoft\yii2-debug\LogTarget.php:86
+
+Stack trace:
+#0 [internal function]: yii\base\ErrorHandler->handleError(8, 'unserialize(): ...', 'D:\xampp\htdocs...', 86, Array)
+#1 D:\xampp\htdocs\youhui\vendor\yiisoft\yii2-debug\LogTarget.php(86): unserialize('<<<<<<< HEAD??a...')
+#2 D:\xampp\htdocs\youhui\vendor\yiisoft\yii2-debug\LogTarget.php(61): yii\debug\LogTarget->updateIndexFile('D:\xampp\htdocs...', Array)
+#3 D:\xampp\htdocs\youhui\vendor\yiisoft\yii2-debug\LogTarget.php(112): yii\debug\LogTarget->export(Array)
+#4 D:\xampp\htdocs\youhui\vendor\yiisoft\yii2\log\Dispatcher.php(183): yii\debug\LogTarget->collect(Array, true)
+#5 D:\xampp\htdocs\youhui\vendor\yiisoft\yii2\log\Logger.php(166): yii\log\Dispatcher->dispatch(Array, true)
+#6 [internal function]: yii\log\Logger->flush(true)
+#7 {main}
+2015-01-30 02:28:27 [127.0.0.1][-][-][info][application] $_GET = [
+    'r' => 'site/footer'
+]
+
+$_COOKIE = [
+    'AJSTAT_ok_times' => '1'
+    '_ga' => 'GA1.1.54924247.1416566351'
+    '__zpspc' => '9.2.1416813744.1416814460.10#4|||||#'
+    'bdshare_firstime' => '1418786158546'
+    'CNZZDATA4617777' => 'cnzz_eid=682052683-1418784431-&ntime=1418784197'
+    'CNZZDATA4617788' => 'cnzz_eid=431890627-1419157234-&ntime=1419203501'
+    'CNZZDATA4617784' => 'cnzz_eid=1410397910-1418812097-&ntime=1419983038'
+    'Jjzq_2132_saltkey' => 'wkOPSZrn'
+    'Jjzq_2132_lastvisit' => '1420423935'
+    'Jjzq_2132_ulastactivity' => '3cd47khBmEfAZuKV56v5xcereJG/Dl7C07x2T1XA2znHteTfL3el'
+    'RB5E_2132_saltkey' => 'YR3N3T3T'
+    'RB5E_2132_lastvisit' => '1420425536'
+    'RB5E_2132_ulastactivity' => '7a33yKqJzIUHWbK8a2g4rYyfLxZRCEFiozw4LjGbd97NwT8w9vkf'
+    'VOIr_2132_saltkey' => 'Ot1vtjL1'
+    'VOIr_2132_lastvisit' => '1420426036'
+    'VOIr_2132_ulastactivity' => '40a3geAD9hD7n9MsDQ4l4FnD7q3ymVwknLjv8+KttwvvmeBgf8zp'
+    'VOIr_2132_nofavfid' => '1'
+    'uchome_loginuser' => 'admin'
+    'CNZZDATA2924747' => 'cnzz_eid=1577273435-1420269582-&ntime=1420676356'
+    'CNZZDATA3668490' => 'cnzz_eid=405753816-1420849139-http%3A%2F%2Flocalhost%2F&ntime=1420849139'
+    'CNZZDATA3637100' => 'cnzz_eid=1250976432-1420847467-http%3A%2F%2Flocalhost%2F&ntime=1420847467'
+    'sid' => '5581iHsOCW5McFRYsx5i%2BRZkm6ESzH4wFOp%2B8dqIBW3lcUiALVNvuGwefDxiMjpKKfOm2rMjEnAQ%2Fw'
+    'PHPSESSID' => '20i13vqn7j4u0e5d1t8b0eeub4'
+    '_csrf' => 'e608113b460aca5a8d48f9ab5369e32c7cd50f166922d9ed9faf77d831cff95cs:32:\"-rMsw__77Eq15_KL42cvogAH_39UZg2t\";'
+]
+
+$_SERVER = [
+    'MIBDIRS' => 'D:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'D:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.57 Safari/537.36'
+    'HTTP_REFERER' => 'http://localhost/youhui/backend/web/?r=site/index'
+    'HTTP_ACCEPT_ENCODING' => 'gzip,deflate,sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8,en;q=0.6'
+    'HTTP_COOKIE' => 'AJSTAT_ok_times=1; _ga=GA1.1.54924247.1416566351; __zpspc=9.2.1416813744.1416814460.10%234%7C%7C%7C%7C%7C%23; bdshare_firstime=1418786158546; CNZZDATA4617777=cnzz_eid%3D682052683-1418784431-%26ntime%3D1418784197; CNZZDATA4617788=cnzz_eid%3D431890627-1419157234-%26ntime%3D1419203501; CNZZDATA4617784=cnzz_eid%3D1410397910-1418812097-%26ntime%3D1419983038; Jjzq_2132_saltkey=wkOPSZrn; Jjzq_2132_lastvisit=1420423935; Jjzq_2132_ulastactivity=3cd47khBmEfAZuKV56v5xcereJG%2FDl7C07x2T1XA2znHteTfL3el; RB5E_2132_saltkey=YR3N3T3T; RB5E_2132_lastvisit=1420425536; RB5E_2132_ulastactivity=7a33yKqJzIUHWbK8a2g4rYyfLxZRCEFiozw4LjGbd97NwT8w9vkf; VOIr_2132_saltkey=Ot1vtjL1; VOIr_2132_lastvisit=1420426036; VOIr_2132_ulastactivity=40a3geAD9hD7n9MsDQ4l4FnD7q3ymVwknLjv8%2BKttwvvmeBgf8zp; VOIr_2132_nofavfid=1; uchome_loginuser=admin; CNZZDATA2924747=cnzz_eid%3D1577273435-1420269582-%26ntime%3D1420676356; CNZZDATA3668490=cnzz_eid%3D405753816-1420849139-http%253A%252F%252Flocalhost%252F%26ntime%3D1420849139; CNZZDATA3637100=cnzz_eid%3D1250976432-1420847467-http%253A%252F%252Flocalhost%252F%26ntime%3D1420847467; sid=5581iHsOCW5McFRYsx5i%252BRZkm6ESzH4wFOp%252B8dqIBW3lcUiALVNvuGwefDxiMjpKKfOm2rMjEnAQ%252Fw; PHPSESSID=20i13vqn7j4u0e5d1t8b0eeub4; _csrf=e608113b460aca5a8d48f9ab5369e32c7cd50f166922d9ed9faf77d831cff95cs%3A32%3A%22-rMsw__77Eq15_KL42cvogAH_39UZg2t%22%3B'
+    'PATH' => 'C:\\Program Files (x86)\\Common Files\\NetSarang;C:\\ProgramData\\Oracle\\Java\\javapath;C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;D:\\xampp\\php\\php.exe;D:\\Program Files\\Java\\jdk1.8.0_25\\bin;D:\\Program Files\\Java\\jdk1.8.0_25\\jre\\bin;D:\\git\\bin;D:\\xampp\\php;C:\\ProgramData\\ComposerSetup\\bin;C:\\Windows\\system32'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.7 (Win32) OpenSSL/1.0.1e PHP/5.5.9 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.7 (Win32) OpenSSL/1.0.1e PHP/5.5.9'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'D:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'D:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'D:/xampp/htdocs/youhui/backend/web/index.php'
+    'REMOTE_PORT' => '51143'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=site/footer'
+    'REQUEST_URI' => '/youhui/backend/web/?r=site/footer'
+    'SCRIPT_NAME' => '/youhui/backend/web/index.php'
+    'PHP_SELF' => '/youhui/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1422581307.13
+    'REQUEST_TIME' => 1422581307
+]
+2015-01-30 02:28:27 [127.0.0.1][-][-][warning][yii\log\Dispatcher::dispatch] Unable to send log via yii\debug\LogTarget: PHP Notice 'yii\base\ErrorException' with message 'unserialize(): Error at offset 0 of 45789 bytes' 
+
+in D:\xampp\htdocs\youhui\vendor\yiisoft\yii2-debug\LogTarget.php:86
+
+Stack trace:
+#0 [internal function]: yii\base\ErrorHandler->handleError(8, 'unserialize(): ...', 'D:\xampp\htdocs...', 86, Array)
+#1 D:\xampp\htdocs\youhui\vendor\yiisoft\yii2-debug\LogTarget.php(86): unserialize('<<<<<<< HEAD??a...')
+#2 D:\xampp\htdocs\youhui\vendor\yiisoft\yii2-debug\LogTarget.php(61): yii\debug\LogTarget->updateIndexFile('D:\xampp\htdocs...', Array)
+#3 D:\xampp\htdocs\youhui\vendor\yiisoft\yii2-debug\LogTarget.php(112): yii\debug\LogTarget->export(Array)
+#4 D:\xampp\htdocs\youhui\vendor\yiisoft\yii2\log\Dispatcher.php(183): yii\debug\LogTarget->collect(Array, true)
+#5 D:\xampp\htdocs\youhui\vendor\yiisoft\yii2\log\Logger.php(166): yii\log\Dispatcher->dispatch(Array, true)
+#6 [internal function]: yii\log\Logger->flush(true)
+#7 {main}
+2015-01-30 02:28:27 [127.0.0.1][-][-][info][application] $_GET = [
+    'r' => 'youhui/index'
+]
+
+$_COOKIE = [
+    'AJSTAT_ok_times' => '1'
+    '_ga' => 'GA1.1.54924247.1416566351'
+    '__zpspc' => '9.2.1416813744.1416814460.10#4|||||#'
+    'bdshare_firstime' => '1418786158546'
+    'CNZZDATA4617777' => 'cnzz_eid=682052683-1418784431-&ntime=1418784197'
+    'CNZZDATA4617788' => 'cnzz_eid=431890627-1419157234-&ntime=1419203501'
+    'CNZZDATA4617784' => 'cnzz_eid=1410397910-1418812097-&ntime=1419983038'
+    'Jjzq_2132_saltkey' => 'wkOPSZrn'
+    'Jjzq_2132_lastvisit' => '1420423935'
+    'Jjzq_2132_ulastactivity' => '3cd47khBmEfAZuKV56v5xcereJG/Dl7C07x2T1XA2znHteTfL3el'
+    'RB5E_2132_saltkey' => 'YR3N3T3T'
+    'RB5E_2132_lastvisit' => '1420425536'
+    'RB5E_2132_ulastactivity' => '7a33yKqJzIUHWbK8a2g4rYyfLxZRCEFiozw4LjGbd97NwT8w9vkf'
+    'VOIr_2132_saltkey' => 'Ot1vtjL1'
+    'VOIr_2132_lastvisit' => '1420426036'
+    'VOIr_2132_ulastactivity' => '40a3geAD9hD7n9MsDQ4l4FnD7q3ymVwknLjv8+KttwvvmeBgf8zp'
+    'VOIr_2132_nofavfid' => '1'
+    'uchome_loginuser' => 'admin'
+    'CNZZDATA2924747' => 'cnzz_eid=1577273435-1420269582-&ntime=1420676356'
+    'CNZZDATA3668490' => 'cnzz_eid=405753816-1420849139-http%3A%2F%2Flocalhost%2F&ntime=1420849139'
+    'CNZZDATA3637100' => 'cnzz_eid=1250976432-1420847467-http%3A%2F%2Flocalhost%2F&ntime=1420847467'
+    'sid' => '5581iHsOCW5McFRYsx5i%2BRZkm6ESzH4wFOp%2B8dqIBW3lcUiALVNvuGwefDxiMjpKKfOm2rMjEnAQ%2Fw'
+    'PHPSESSID' => '20i13vqn7j4u0e5d1t8b0eeub4'
+    '_csrf' => 'e608113b460aca5a8d48f9ab5369e32c7cd50f166922d9ed9faf77d831cff95cs:32:\"-rMsw__77Eq15_KL42cvogAH_39UZg2t\";'
+]
+
+$_SERVER = [
+    'MIBDIRS' => 'D:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'D:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.57 Safari/537.36'
+    'HTTP_REFERER' => 'http://localhost/youhui/backend/web/?r=site/index'
+    'HTTP_ACCEPT_ENCODING' => 'gzip,deflate,sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8,en;q=0.6'
+    'HTTP_COOKIE' => 'AJSTAT_ok_times=1; _ga=GA1.1.54924247.1416566351; __zpspc=9.2.1416813744.1416814460.10%234%7C%7C%7C%7C%7C%23; bdshare_firstime=1418786158546; CNZZDATA4617777=cnzz_eid%3D682052683-1418784431-%26ntime%3D1418784197; CNZZDATA4617788=cnzz_eid%3D431890627-1419157234-%26ntime%3D1419203501; CNZZDATA4617784=cnzz_eid%3D1410397910-1418812097-%26ntime%3D1419983038; Jjzq_2132_saltkey=wkOPSZrn; Jjzq_2132_lastvisit=1420423935; Jjzq_2132_ulastactivity=3cd47khBmEfAZuKV56v5xcereJG%2FDl7C07x2T1XA2znHteTfL3el; RB5E_2132_saltkey=YR3N3T3T; RB5E_2132_lastvisit=1420425536; RB5E_2132_ulastactivity=7a33yKqJzIUHWbK8a2g4rYyfLxZRCEFiozw4LjGbd97NwT8w9vkf; VOIr_2132_saltkey=Ot1vtjL1; VOIr_2132_lastvisit=1420426036; VOIr_2132_ulastactivity=40a3geAD9hD7n9MsDQ4l4FnD7q3ymVwknLjv8%2BKttwvvmeBgf8zp; VOIr_2132_nofavfid=1; uchome_loginuser=admin; CNZZDATA2924747=cnzz_eid%3D1577273435-1420269582-%26ntime%3D1420676356; CNZZDATA3668490=cnzz_eid%3D405753816-1420849139-http%253A%252F%252Flocalhost%252F%26ntime%3D1420849139; CNZZDATA3637100=cnzz_eid%3D1250976432-1420847467-http%253A%252F%252Flocalhost%252F%26ntime%3D1420847467; sid=5581iHsOCW5McFRYsx5i%252BRZkm6ESzH4wFOp%252B8dqIBW3lcUiALVNvuGwefDxiMjpKKfOm2rMjEnAQ%252Fw; PHPSESSID=20i13vqn7j4u0e5d1t8b0eeub4; _csrf=e608113b460aca5a8d48f9ab5369e32c7cd50f166922d9ed9faf77d831cff95cs%3A32%3A%22-rMsw__77Eq15_KL42cvogAH_39UZg2t%22%3B'
+    'PATH' => 'C:\\Program Files (x86)\\Common Files\\NetSarang;C:\\ProgramData\\Oracle\\Java\\javapath;C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;D:\\xampp\\php\\php.exe;D:\\Program Files\\Java\\jdk1.8.0_25\\bin;D:\\Program Files\\Java\\jdk1.8.0_25\\jre\\bin;D:\\git\\bin;D:\\xampp\\php;C:\\ProgramData\\ComposerSetup\\bin;C:\\Windows\\system32'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.7 (Win32) OpenSSL/1.0.1e PHP/5.5.9 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.7 (Win32) OpenSSL/1.0.1e PHP/5.5.9'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'D:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'D:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'D:/xampp/htdocs/youhui/backend/web/index.php'
+    'REMOTE_PORT' => '51143'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=youhui/index'
+    'REQUEST_URI' => '/youhui/backend/web/?r=youhui/index'
+    'SCRIPT_NAME' => '/youhui/backend/web/index.php'
+    'PHP_SELF' => '/youhui/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1422581307.391
+    'REQUEST_TIME' => 1422581307
+]
+2015-01-30 02:28:29 [127.0.0.1][-][-][warning][yii\log\Dispatcher::dispatch] Unable to send log via yii\debug\LogTarget: PHP Notice 'yii\base\ErrorException' with message 'unserialize(): Error at offset 0 of 45789 bytes' 
+
+in D:\xampp\htdocs\youhui\vendor\yiisoft\yii2-debug\LogTarget.php:86
+
+Stack trace:
+#0 [internal function]: yii\base\ErrorHandler->handleError(8, 'unserialize(): ...', 'D:\xampp\htdocs...', 86, Array)
+#1 D:\xampp\htdocs\youhui\vendor\yiisoft\yii2-debug\LogTarget.php(86): unserialize('<<<<<<< HEAD??a...')
+#2 D:\xampp\htdocs\youhui\vendor\yiisoft\yii2-debug\LogTarget.php(61): yii\debug\LogTarget->updateIndexFile('D:\xampp\htdocs...', Array)
+#3 D:\xampp\htdocs\youhui\vendor\yiisoft\yii2-debug\LogTarget.php(112): yii\debug\LogTarget->export(Array)
+#4 D:\xampp\htdocs\youhui\vendor\yiisoft\yii2\log\Dispatcher.php(183): yii\debug\LogTarget->collect(Array, true)
+#5 D:\xampp\htdocs\youhui\vendor\yiisoft\yii2\log\Logger.php(166): yii\log\Dispatcher->dispatch(Array, true)
+#6 [internal function]: yii\log\Logger->flush(true)
+#7 {main}
+2015-01-30 02:28:29 [127.0.0.1][-][-][info][application] $_GET = [
+    'r' => 'cuxiao/list'
+]
+
+$_COOKIE = [
+    'AJSTAT_ok_times' => '1'
+    '_ga' => 'GA1.1.54924247.1416566351'
+    '__zpspc' => '9.2.1416813744.1416814460.10#4|||||#'
+    'bdshare_firstime' => '1418786158546'
+    'CNZZDATA4617777' => 'cnzz_eid=682052683-1418784431-&ntime=1418784197'
+    'CNZZDATA4617788' => 'cnzz_eid=431890627-1419157234-&ntime=1419203501'
+    'CNZZDATA4617784' => 'cnzz_eid=1410397910-1418812097-&ntime=1419983038'
+    'Jjzq_2132_saltkey' => 'wkOPSZrn'
+    'Jjzq_2132_lastvisit' => '1420423935'
+    'Jjzq_2132_ulastactivity' => '3cd47khBmEfAZuKV56v5xcereJG/Dl7C07x2T1XA2znHteTfL3el'
+    'RB5E_2132_saltkey' => 'YR3N3T3T'
+    'RB5E_2132_lastvisit' => '1420425536'
+    'RB5E_2132_ulastactivity' => '7a33yKqJzIUHWbK8a2g4rYyfLxZRCEFiozw4LjGbd97NwT8w9vkf'
+    'VOIr_2132_saltkey' => 'Ot1vtjL1'
+    'VOIr_2132_lastvisit' => '1420426036'
+    'VOIr_2132_ulastactivity' => '40a3geAD9hD7n9MsDQ4l4FnD7q3ymVwknLjv8+KttwvvmeBgf8zp'
+    'VOIr_2132_nofavfid' => '1'
+    'uchome_loginuser' => 'admin'
+    'CNZZDATA2924747' => 'cnzz_eid=1577273435-1420269582-&ntime=1420676356'
+    'CNZZDATA3668490' => 'cnzz_eid=405753816-1420849139-http%3A%2F%2Flocalhost%2F&ntime=1420849139'
+    'CNZZDATA3637100' => 'cnzz_eid=1250976432-1420847467-http%3A%2F%2Flocalhost%2F&ntime=1420847467'
+    'sid' => '5581iHsOCW5McFRYsx5i%2BRZkm6ESzH4wFOp%2B8dqIBW3lcUiALVNvuGwefDxiMjpKKfOm2rMjEnAQ%2Fw'
+    'PHPSESSID' => '20i13vqn7j4u0e5d1t8b0eeub4'
+    '_csrf' => 'e608113b460aca5a8d48f9ab5369e32c7cd50f166922d9ed9faf77d831cff95cs:32:\"-rMsw__77Eq15_KL42cvogAH_39UZg2t\";'
+]
+
+$_SERVER = [
+    'MIBDIRS' => 'D:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'D:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.57 Safari/537.36'
+    'HTTP_REFERER' => 'http://localhost/youhui/backend/web/?r=site/left&act=1'
+    'HTTP_ACCEPT_ENCODING' => 'gzip,deflate,sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8,en;q=0.6'
+    'HTTP_COOKIE' => 'AJSTAT_ok_times=1; _ga=GA1.1.54924247.1416566351; __zpspc=9.2.1416813744.1416814460.10%234%7C%7C%7C%7C%7C%23; bdshare_firstime=1418786158546; CNZZDATA4617777=cnzz_eid%3D682052683-1418784431-%26ntime%3D1418784197; CNZZDATA4617788=cnzz_eid%3D431890627-1419157234-%26ntime%3D1419203501; CNZZDATA4617784=cnzz_eid%3D1410397910-1418812097-%26ntime%3D1419983038; Jjzq_2132_saltkey=wkOPSZrn; Jjzq_2132_lastvisit=1420423935; Jjzq_2132_ulastactivity=3cd47khBmEfAZuKV56v5xcereJG%2FDl7C07x2T1XA2znHteTfL3el; RB5E_2132_saltkey=YR3N3T3T; RB5E_2132_lastvisit=1420425536; RB5E_2132_ulastactivity=7a33yKqJzIUHWbK8a2g4rYyfLxZRCEFiozw4LjGbd97NwT8w9vkf; VOIr_2132_saltkey=Ot1vtjL1; VOIr_2132_lastvisit=1420426036; VOIr_2132_ulastactivity=40a3geAD9hD7n9MsDQ4l4FnD7q3ymVwknLjv8%2BKttwvvmeBgf8zp; VOIr_2132_nofavfid=1; uchome_loginuser=admin; CNZZDATA2924747=cnzz_eid%3D1577273435-1420269582-%26ntime%3D1420676356; CNZZDATA3668490=cnzz_eid%3D405753816-1420849139-http%253A%252F%252Flocalhost%252F%26ntime%3D1420849139; CNZZDATA3637100=cnzz_eid%3D1250976432-1420847467-http%253A%252F%252Flocalhost%252F%26ntime%3D1420847467; sid=5581iHsOCW5McFRYsx5i%252BRZkm6ESzH4wFOp%252B8dqIBW3lcUiALVNvuGwefDxiMjpKKfOm2rMjEnAQ%252Fw; PHPSESSID=20i13vqn7j4u0e5d1t8b0eeub4; _csrf=e608113b460aca5a8d48f9ab5369e32c7cd50f166922d9ed9faf77d831cff95cs%3A32%3A%22-rMsw__77Eq15_KL42cvogAH_39UZg2t%22%3B'
+    'PATH' => 'C:\\Program Files (x86)\\Common Files\\NetSarang;C:\\ProgramData\\Oracle\\Java\\javapath;C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;D:\\xampp\\php\\php.exe;D:\\Program Files\\Java\\jdk1.8.0_25\\bin;D:\\Program Files\\Java\\jdk1.8.0_25\\jre\\bin;D:\\git\\bin;D:\\xampp\\php;C:\\ProgramData\\ComposerSetup\\bin;C:\\Windows\\system32'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.7 (Win32) OpenSSL/1.0.1e PHP/5.5.9 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.7 (Win32) OpenSSL/1.0.1e PHP/5.5.9'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'D:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'D:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'D:/xampp/htdocs/youhui/backend/web/index.php'
+    'REMOTE_PORT' => '51143'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=cuxiao/list'
+    'REQUEST_URI' => '/youhui/backend/web/?r=cuxiao/list'
+    'SCRIPT_NAME' => '/youhui/backend/web/index.php'
+    'PHP_SELF' => '/youhui/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1422581309.333
+    'REQUEST_TIME' => 1422581309
+]
+2015-01-30 02:28:31 [127.0.0.1][-][-][warning][yii\log\Dispatcher::dispatch] Unable to send log via yii\debug\LogTarget: PHP Notice 'yii\base\ErrorException' with message 'unserialize(): Error at offset 0 of 45789 bytes' 
+
+in D:\xampp\htdocs\youhui\vendor\yiisoft\yii2-debug\LogTarget.php:86
+
+Stack trace:
+#0 [internal function]: yii\base\ErrorHandler->handleError(8, 'unserialize(): ...', 'D:\xampp\htdocs...', 86, Array)
+#1 D:\xampp\htdocs\youhui\vendor\yiisoft\yii2-debug\LogTarget.php(86): unserialize('<<<<<<< HEAD??a...')
+#2 D:\xampp\htdocs\youhui\vendor\yiisoft\yii2-debug\LogTarget.php(61): yii\debug\LogTarget->updateIndexFile('D:\xampp\htdocs...', Array)
+#3 D:\xampp\htdocs\youhui\vendor\yiisoft\yii2-debug\LogTarget.php(112): yii\debug\LogTarget->export(Array)
+#4 D:\xampp\htdocs\youhui\vendor\yiisoft\yii2\log\Dispatcher.php(183): yii\debug\LogTarget->collect(Array, true)
+#5 D:\xampp\htdocs\youhui\vendor\yiisoft\yii2\log\Logger.php(166): yii\log\Dispatcher->dispatch(Array, true)
+#6 [internal function]: yii\log\Logger->flush(true)
+#7 {main}
+2015-01-30 02:28:31 [127.0.0.1][-][-][info][application] $_GET = [
+    'r' => 'cuxiao/add'
+]
+
+$_COOKIE = [
+    'AJSTAT_ok_times' => '1'
+    '_ga' => 'GA1.1.54924247.1416566351'
+    '__zpspc' => '9.2.1416813744.1416814460.10#4|||||#'
+    'bdshare_firstime' => '1418786158546'
+    'CNZZDATA4617777' => 'cnzz_eid=682052683-1418784431-&ntime=1418784197'
+    'CNZZDATA4617788' => 'cnzz_eid=431890627-1419157234-&ntime=1419203501'
+    'CNZZDATA4617784' => 'cnzz_eid=1410397910-1418812097-&ntime=1419983038'
+    'Jjzq_2132_saltkey' => 'wkOPSZrn'
+    'Jjzq_2132_lastvisit' => '1420423935'
+    'Jjzq_2132_ulastactivity' => '3cd47khBmEfAZuKV56v5xcereJG/Dl7C07x2T1XA2znHteTfL3el'
+    'RB5E_2132_saltkey' => 'YR3N3T3T'
+    'RB5E_2132_lastvisit' => '1420425536'
+    'RB5E_2132_ulastactivity' => '7a33yKqJzIUHWbK8a2g4rYyfLxZRCEFiozw4LjGbd97NwT8w9vkf'
+    'VOIr_2132_saltkey' => 'Ot1vtjL1'
+    'VOIr_2132_lastvisit' => '1420426036'
+    'VOIr_2132_ulastactivity' => '40a3geAD9hD7n9MsDQ4l4FnD7q3ymVwknLjv8+KttwvvmeBgf8zp'
+    'VOIr_2132_nofavfid' => '1'
+    'uchome_loginuser' => 'admin'
+    'CNZZDATA2924747' => 'cnzz_eid=1577273435-1420269582-&ntime=1420676356'
+    'CNZZDATA3668490' => 'cnzz_eid=405753816-1420849139-http%3A%2F%2Flocalhost%2F&ntime=1420849139'
+    'CNZZDATA3637100' => 'cnzz_eid=1250976432-1420847467-http%3A%2F%2Flocalhost%2F&ntime=1420847467'
+    'sid' => '5581iHsOCW5McFRYsx5i%2BRZkm6ESzH4wFOp%2B8dqIBW3lcUiALVNvuGwefDxiMjpKKfOm2rMjEnAQ%2Fw'
+    'PHPSESSID' => '20i13vqn7j4u0e5d1t8b0eeub4'
+    '_csrf' => 'e608113b460aca5a8d48f9ab5369e32c7cd50f166922d9ed9faf77d831cff95cs:32:\"-rMsw__77Eq15_KL42cvogAH_39UZg2t\";'
+]
+
+$_SERVER = [
+    'MIBDIRS' => 'D:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'D:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.57 Safari/537.36'
+    'HTTP_REFERER' => 'http://localhost/youhui/backend/web/?r=site/left&act=1'
+    'HTTP_ACCEPT_ENCODING' => 'gzip,deflate,sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8,en;q=0.6'
+    'HTTP_COOKIE' => 'AJSTAT_ok_times=1; _ga=GA1.1.54924247.1416566351; __zpspc=9.2.1416813744.1416814460.10%234%7C%7C%7C%7C%7C%23; bdshare_firstime=1418786158546; CNZZDATA4617777=cnzz_eid%3D682052683-1418784431-%26ntime%3D1418784197; CNZZDATA4617788=cnzz_eid%3D431890627-1419157234-%26ntime%3D1419203501; CNZZDATA4617784=cnzz_eid%3D1410397910-1418812097-%26ntime%3D1419983038; Jjzq_2132_saltkey=wkOPSZrn; Jjzq_2132_lastvisit=1420423935; Jjzq_2132_ulastactivity=3cd47khBmEfAZuKV56v5xcereJG%2FDl7C07x2T1XA2znHteTfL3el; RB5E_2132_saltkey=YR3N3T3T; RB5E_2132_lastvisit=1420425536; RB5E_2132_ulastactivity=7a33yKqJzIUHWbK8a2g4rYyfLxZRCEFiozw4LjGbd97NwT8w9vkf; VOIr_2132_saltkey=Ot1vtjL1; VOIr_2132_lastvisit=1420426036; VOIr_2132_ulastactivity=40a3geAD9hD7n9MsDQ4l4FnD7q3ymVwknLjv8%2BKttwvvmeBgf8zp; VOIr_2132_nofavfid=1; uchome_loginuser=admin; CNZZDATA2924747=cnzz_eid%3D1577273435-1420269582-%26ntime%3D1420676356; CNZZDATA3668490=cnzz_eid%3D405753816-1420849139-http%253A%252F%252Flocalhost%252F%26ntime%3D1420849139; CNZZDATA3637100=cnzz_eid%3D1250976432-1420847467-http%253A%252F%252Flocalhost%252F%26ntime%3D1420847467; sid=5581iHsOCW5McFRYsx5i%252BRZkm6ESzH4wFOp%252B8dqIBW3lcUiALVNvuGwefDxiMjpKKfOm2rMjEnAQ%252Fw; PHPSESSID=20i13vqn7j4u0e5d1t8b0eeub4; _csrf=e608113b460aca5a8d48f9ab5369e32c7cd50f166922d9ed9faf77d831cff95cs%3A32%3A%22-rMsw__77Eq15_KL42cvogAH_39UZg2t%22%3B'
+    'PATH' => 'C:\\Program Files (x86)\\Common Files\\NetSarang;C:\\ProgramData\\Oracle\\Java\\javapath;C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;D:\\xampp\\php\\php.exe;D:\\Program Files\\Java\\jdk1.8.0_25\\bin;D:\\Program Files\\Java\\jdk1.8.0_25\\jre\\bin;D:\\git\\bin;D:\\xampp\\php;C:\\ProgramData\\ComposerSetup\\bin;C:\\Windows\\system32'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.7 (Win32) OpenSSL/1.0.1e PHP/5.5.9 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.7 (Win32) OpenSSL/1.0.1e PHP/5.5.9'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'D:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'D:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'D:/xampp/htdocs/youhui/backend/web/index.php'
+    'REMOTE_PORT' => '51142'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=cuxiao/add'
+    'REQUEST_URI' => '/youhui/backend/web/?r=cuxiao/add'
+    'SCRIPT_NAME' => '/youhui/backend/web/index.php'
+    'PHP_SELF' => '/youhui/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1422581311.734
+    'REQUEST_TIME' => 1422581311
+]
+2015-01-30 02:28:33 [127.0.0.1][-][-][warning][yii\log\Dispatcher::dispatch] Unable to send log via yii\debug\LogTarget: PHP Notice 'yii\base\ErrorException' with message 'unserialize(): Error at offset 0 of 45789 bytes' 
+
+in D:\xampp\htdocs\youhui\vendor\yiisoft\yii2-debug\LogTarget.php:86
+
+Stack trace:
+#0 [internal function]: yii\base\ErrorHandler->handleError(8, 'unserialize(): ...', 'D:\xampp\htdocs...', 86, Array)
+#1 D:\xampp\htdocs\youhui\vendor\yiisoft\yii2-debug\LogTarget.php(86): unserialize('<<<<<<< HEAD??a...')
+#2 D:\xampp\htdocs\youhui\vendor\yiisoft\yii2-debug\LogTarget.php(61): yii\debug\LogTarget->updateIndexFile('D:\xampp\htdocs...', Array)
+#3 D:\xampp\htdocs\youhui\vendor\yiisoft\yii2-debug\LogTarget.php(112): yii\debug\LogTarget->export(Array)
+#4 D:\xampp\htdocs\youhui\vendor\yiisoft\yii2\log\Dispatcher.php(183): yii\debug\LogTarget->collect(Array, true)
+#5 D:\xampp\htdocs\youhui\vendor\yiisoft\yii2\log\Logger.php(166): yii\log\Dispatcher->dispatch(Array, true)
+#6 [internal function]: yii\log\Logger->flush(true)
+#7 {main}
+2015-01-30 02:28:33 [127.0.0.1][-][-][info][application] $_GET = [
+    'r' => 'cuxiao/list'
+]
+
+$_COOKIE = [
+    'AJSTAT_ok_times' => '1'
+    '_ga' => 'GA1.1.54924247.1416566351'
+    '__zpspc' => '9.2.1416813744.1416814460.10#4|||||#'
+    'bdshare_firstime' => '1418786158546'
+    'CNZZDATA4617777' => 'cnzz_eid=682052683-1418784431-&ntime=1418784197'
+    'CNZZDATA4617788' => 'cnzz_eid=431890627-1419157234-&ntime=1419203501'
+    'CNZZDATA4617784' => 'cnzz_eid=1410397910-1418812097-&ntime=1419983038'
+    'Jjzq_2132_saltkey' => 'wkOPSZrn'
+    'Jjzq_2132_lastvisit' => '1420423935'
+    'Jjzq_2132_ulastactivity' => '3cd47khBmEfAZuKV56v5xcereJG/Dl7C07x2T1XA2znHteTfL3el'
+    'RB5E_2132_saltkey' => 'YR3N3T3T'
+    'RB5E_2132_lastvisit' => '1420425536'
+    'RB5E_2132_ulastactivity' => '7a33yKqJzIUHWbK8a2g4rYyfLxZRCEFiozw4LjGbd97NwT8w9vkf'
+    'VOIr_2132_saltkey' => 'Ot1vtjL1'
+    'VOIr_2132_lastvisit' => '1420426036'
+    'VOIr_2132_ulastactivity' => '40a3geAD9hD7n9MsDQ4l4FnD7q3ymVwknLjv8+KttwvvmeBgf8zp'
+    'VOIr_2132_nofavfid' => '1'
+    'uchome_loginuser' => 'admin'
+    'CNZZDATA2924747' => 'cnzz_eid=1577273435-1420269582-&ntime=1420676356'
+    'CNZZDATA3668490' => 'cnzz_eid=405753816-1420849139-http%3A%2F%2Flocalhost%2F&ntime=1420849139'
+    'CNZZDATA3637100' => 'cnzz_eid=1250976432-1420847467-http%3A%2F%2Flocalhost%2F&ntime=1420847467'
+    'sid' => '5581iHsOCW5McFRYsx5i%2BRZkm6ESzH4wFOp%2B8dqIBW3lcUiALVNvuGwefDxiMjpKKfOm2rMjEnAQ%2Fw'
+    'PHPSESSID' => '20i13vqn7j4u0e5d1t8b0eeub4'
+    '_csrf' => 'e608113b460aca5a8d48f9ab5369e32c7cd50f166922d9ed9faf77d831cff95cs:32:\"-rMsw__77Eq15_KL42cvogAH_39UZg2t\";'
+]
+
+$_SERVER = [
+    'MIBDIRS' => 'D:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'D:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.57 Safari/537.36'
+    'HTTP_REFERER' => 'http://localhost/youhui/backend/web/?r=site/left&act=1'
+    'HTTP_ACCEPT_ENCODING' => 'gzip,deflate,sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8,en;q=0.6'
+    'HTTP_COOKIE' => 'AJSTAT_ok_times=1; _ga=GA1.1.54924247.1416566351; __zpspc=9.2.1416813744.1416814460.10%234%7C%7C%7C%7C%7C%23; bdshare_firstime=1418786158546; CNZZDATA4617777=cnzz_eid%3D682052683-1418784431-%26ntime%3D1418784197; CNZZDATA4617788=cnzz_eid%3D431890627-1419157234-%26ntime%3D1419203501; CNZZDATA4617784=cnzz_eid%3D1410397910-1418812097-%26ntime%3D1419983038; Jjzq_2132_saltkey=wkOPSZrn; Jjzq_2132_lastvisit=1420423935; Jjzq_2132_ulastactivity=3cd47khBmEfAZuKV56v5xcereJG%2FDl7C07x2T1XA2znHteTfL3el; RB5E_2132_saltkey=YR3N3T3T; RB5E_2132_lastvisit=1420425536; RB5E_2132_ulastactivity=7a33yKqJzIUHWbK8a2g4rYyfLxZRCEFiozw4LjGbd97NwT8w9vkf; VOIr_2132_saltkey=Ot1vtjL1; VOIr_2132_lastvisit=1420426036; VOIr_2132_ulastactivity=40a3geAD9hD7n9MsDQ4l4FnD7q3ymVwknLjv8%2BKttwvvmeBgf8zp; VOIr_2132_nofavfid=1; uchome_loginuser=admin; CNZZDATA2924747=cnzz_eid%3D1577273435-1420269582-%26ntime%3D1420676356; CNZZDATA3668490=cnzz_eid%3D405753816-1420849139-http%253A%252F%252Flocalhost%252F%26ntime%3D1420849139; CNZZDATA3637100=cnzz_eid%3D1250976432-1420847467-http%253A%252F%252Flocalhost%252F%26ntime%3D1420847467; sid=5581iHsOCW5McFRYsx5i%252BRZkm6ESzH4wFOp%252B8dqIBW3lcUiALVNvuGwefDxiMjpKKfOm2rMjEnAQ%252Fw; PHPSESSID=20i13vqn7j4u0e5d1t8b0eeub4; _csrf=e608113b460aca5a8d48f9ab5369e32c7cd50f166922d9ed9faf77d831cff95cs%3A32%3A%22-rMsw__77Eq15_KL42cvogAH_39UZg2t%22%3B'
+    'PATH' => 'C:\\Program Files (x86)\\Common Files\\NetSarang;C:\\ProgramData\\Oracle\\Java\\javapath;C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;D:\\xampp\\php\\php.exe;D:\\Program Files\\Java\\jdk1.8.0_25\\bin;D:\\Program Files\\Java\\jdk1.8.0_25\\jre\\bin;D:\\git\\bin;D:\\xampp\\php;C:\\ProgramData\\ComposerSetup\\bin;C:\\Windows\\system32'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.7 (Win32) OpenSSL/1.0.1e PHP/5.5.9 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.7 (Win32) OpenSSL/1.0.1e PHP/5.5.9'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'D:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'D:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'D:/xampp/htdocs/youhui/backend/web/index.php'
+    'REMOTE_PORT' => '51144'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=cuxiao/list'
+    'REQUEST_URI' => '/youhui/backend/web/?r=cuxiao/list'
+    'SCRIPT_NAME' => '/youhui/backend/web/index.php'
+    'PHP_SELF' => '/youhui/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1422581313.073
+    'REQUEST_TIME' => 1422581313
+]
+2015-01-30 02:28:47 [127.0.0.1][-][-][warning][yii\log\Dispatcher::dispatch] Unable to send log via yii\debug\LogTarget: PHP Notice 'yii\base\ErrorException' with message 'unserialize(): Error at offset 0 of 45789 bytes' 
+
+in D:\xampp\htdocs\youhui\vendor\yiisoft\yii2-debug\LogTarget.php:86
+
+Stack trace:
+#0 [internal function]: yii\base\ErrorHandler->handleError(8, 'unserialize(): ...', 'D:\xampp\htdocs...', 86, Array)
+#1 D:\xampp\htdocs\youhui\vendor\yiisoft\yii2-debug\LogTarget.php(86): unserialize('<<<<<<< HEAD??a...')
+#2 D:\xampp\htdocs\youhui\vendor\yiisoft\yii2-debug\LogTarget.php(61): yii\debug\LogTarget->updateIndexFile('D:\xampp\htdocs...', Array)
+#3 D:\xampp\htdocs\youhui\vendor\yiisoft\yii2-debug\LogTarget.php(112): yii\debug\LogTarget->export(Array)
+#4 D:\xampp\htdocs\youhui\vendor\yiisoft\yii2\log\Dispatcher.php(183): yii\debug\LogTarget->collect(Array, true)
+#5 D:\xampp\htdocs\youhui\vendor\yiisoft\yii2\log\Logger.php(166): yii\log\Dispatcher->dispatch(Array, true)
+#6 [internal function]: yii\log\Logger->flush(true)
+#7 {main}
+2015-01-30 02:28:47 [127.0.0.1][-][-][info][application] $_GET = [
+    'r' => 'cuxiao/add'
+]
+
+$_COOKIE = [
+    'AJSTAT_ok_times' => '1'
+    '_ga' => 'GA1.1.54924247.1416566351'
+    '__zpspc' => '9.2.1416813744.1416814460.10#4|||||#'
+    'bdshare_firstime' => '1418786158546'
+    'CNZZDATA4617777' => 'cnzz_eid=682052683-1418784431-&ntime=1418784197'
+    'CNZZDATA4617788' => 'cnzz_eid=431890627-1419157234-&ntime=1419203501'
+    'CNZZDATA4617784' => 'cnzz_eid=1410397910-1418812097-&ntime=1419983038'
+    'Jjzq_2132_saltkey' => 'wkOPSZrn'
+    'Jjzq_2132_lastvisit' => '1420423935'
+    'Jjzq_2132_ulastactivity' => '3cd47khBmEfAZuKV56v5xcereJG/Dl7C07x2T1XA2znHteTfL3el'
+    'RB5E_2132_saltkey' => 'YR3N3T3T'
+    'RB5E_2132_lastvisit' => '1420425536'
+    'RB5E_2132_ulastactivity' => '7a33yKqJzIUHWbK8a2g4rYyfLxZRCEFiozw4LjGbd97NwT8w9vkf'
+    'VOIr_2132_saltkey' => 'Ot1vtjL1'
+    'VOIr_2132_lastvisit' => '1420426036'
+    'VOIr_2132_ulastactivity' => '40a3geAD9hD7n9MsDQ4l4FnD7q3ymVwknLjv8+KttwvvmeBgf8zp'
+    'VOIr_2132_nofavfid' => '1'
+    'uchome_loginuser' => 'admin'
+    'CNZZDATA2924747' => 'cnzz_eid=1577273435-1420269582-&ntime=1420676356'
+    'CNZZDATA3668490' => 'cnzz_eid=405753816-1420849139-http%3A%2F%2Flocalhost%2F&ntime=1420849139'
+    'CNZZDATA3637100' => 'cnzz_eid=1250976432-1420847467-http%3A%2F%2Flocalhost%2F&ntime=1420847467'
+    'sid' => '5581iHsOCW5McFRYsx5i%2BRZkm6ESzH4wFOp%2B8dqIBW3lcUiALVNvuGwefDxiMjpKKfOm2rMjEnAQ%2Fw'
+    'PHPSESSID' => '20i13vqn7j4u0e5d1t8b0eeub4'
+    '_csrf' => 'e608113b460aca5a8d48f9ab5369e32c7cd50f166922d9ed9faf77d831cff95cs:32:\"-rMsw__77Eq15_KL42cvogAH_39UZg2t\";'
+]
+
+$_SERVER = [
+    'MIBDIRS' => 'D:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'D:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.57 Safari/537.36'
+    'HTTP_REFERER' => 'http://localhost/youhui/backend/web/?r=site/left&act=1'
+    'HTTP_ACCEPT_ENCODING' => 'gzip,deflate,sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8,en;q=0.6'
+    'HTTP_COOKIE' => 'AJSTAT_ok_times=1; _ga=GA1.1.54924247.1416566351; __zpspc=9.2.1416813744.1416814460.10%234%7C%7C%7C%7C%7C%23; bdshare_firstime=1418786158546; CNZZDATA4617777=cnzz_eid%3D682052683-1418784431-%26ntime%3D1418784197; CNZZDATA4617788=cnzz_eid%3D431890627-1419157234-%26ntime%3D1419203501; CNZZDATA4617784=cnzz_eid%3D1410397910-1418812097-%26ntime%3D1419983038; Jjzq_2132_saltkey=wkOPSZrn; Jjzq_2132_lastvisit=1420423935; Jjzq_2132_ulastactivity=3cd47khBmEfAZuKV56v5xcereJG%2FDl7C07x2T1XA2znHteTfL3el; RB5E_2132_saltkey=YR3N3T3T; RB5E_2132_lastvisit=1420425536; RB5E_2132_ulastactivity=7a33yKqJzIUHWbK8a2g4rYyfLxZRCEFiozw4LjGbd97NwT8w9vkf; VOIr_2132_saltkey=Ot1vtjL1; VOIr_2132_lastvisit=1420426036; VOIr_2132_ulastactivity=40a3geAD9hD7n9MsDQ4l4FnD7q3ymVwknLjv8%2BKttwvvmeBgf8zp; VOIr_2132_nofavfid=1; uchome_loginuser=admin; CNZZDATA2924747=cnzz_eid%3D1577273435-1420269582-%26ntime%3D1420676356; CNZZDATA3668490=cnzz_eid%3D405753816-1420849139-http%253A%252F%252Flocalhost%252F%26ntime%3D1420849139; CNZZDATA3637100=cnzz_eid%3D1250976432-1420847467-http%253A%252F%252Flocalhost%252F%26ntime%3D1420847467; sid=5581iHsOCW5McFRYsx5i%252BRZkm6ESzH4wFOp%252B8dqIBW3lcUiALVNvuGwefDxiMjpKKfOm2rMjEnAQ%252Fw; PHPSESSID=20i13vqn7j4u0e5d1t8b0eeub4; _csrf=e608113b460aca5a8d48f9ab5369e32c7cd50f166922d9ed9faf77d831cff95cs%3A32%3A%22-rMsw__77Eq15_KL42cvogAH_39UZg2t%22%3B'
+    'PATH' => 'C:\\Program Files (x86)\\Common Files\\NetSarang;C:\\ProgramData\\Oracle\\Java\\javapath;C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;D:\\xampp\\php\\php.exe;D:\\Program Files\\Java\\jdk1.8.0_25\\bin;D:\\Program Files\\Java\\jdk1.8.0_25\\jre\\bin;D:\\git\\bin;D:\\xampp\\php;C:\\ProgramData\\ComposerSetup\\bin;C:\\Windows\\system32'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.7 (Win32) OpenSSL/1.0.1e PHP/5.5.9 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.7 (Win32) OpenSSL/1.0.1e PHP/5.5.9'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'D:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'D:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'D:/xampp/htdocs/youhui/backend/web/index.php'
+    'REMOTE_PORT' => '51155'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=cuxiao/add'
+    'REQUEST_URI' => '/youhui/backend/web/?r=cuxiao/add'
+    'SCRIPT_NAME' => '/youhui/backend/web/index.php'
+    'PHP_SELF' => '/youhui/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1422581327.177
+    'REQUEST_TIME' => 1422581327
+]
+2015-01-30 02:29:08 [127.0.0.1][-][-][warning][yii\log\Dispatcher::dispatch] Unable to send log via yii\debug\LogTarget: PHP Notice 'yii\base\ErrorException' with message 'unserialize(): Error at offset 0 of 45789 bytes' 
+
+in D:\xampp\htdocs\youhui\vendor\yiisoft\yii2-debug\LogTarget.php:86
+
+Stack trace:
+#0 [internal function]: yii\base\ErrorHandler->handleError(8, 'unserialize(): ...', 'D:\xampp\htdocs...', 86, Array)
+#1 D:\xampp\htdocs\youhui\vendor\yiisoft\yii2-debug\LogTarget.php(86): unserialize('<<<<<<< HEAD??a...')
+#2 D:\xampp\htdocs\youhui\vendor\yiisoft\yii2-debug\LogTarget.php(61): yii\debug\LogTarget->updateIndexFile('D:\xampp\htdocs...', Array)
+#3 D:\xampp\htdocs\youhui\vendor\yiisoft\yii2-debug\LogTarget.php(112): yii\debug\LogTarget->export(Array)
+#4 D:\xampp\htdocs\youhui\vendor\yiisoft\yii2\log\Dispatcher.php(183): yii\debug\LogTarget->collect(Array, true)
+#5 D:\xampp\htdocs\youhui\vendor\yiisoft\yii2\log\Logger.php(166): yii\log\Dispatcher->dispatch(Array, true)
+#6 [internal function]: yii\log\Logger->flush(true)
+#7 {main}
+2015-01-30 02:29:08 [127.0.0.1][-][-][info][application] $_GET = [
+    'r' => 'cuxiao/add'
+]
+
+$_COOKIE = [
+    'AJSTAT_ok_times' => '1'
+    '_ga' => 'GA1.1.54924247.1416566351'
+    '__zpspc' => '9.2.1416813744.1416814460.10#4|||||#'
+    'bdshare_firstime' => '1418786158546'
+    'CNZZDATA4617777' => 'cnzz_eid=682052683-1418784431-&ntime=1418784197'
+    'CNZZDATA4617788' => 'cnzz_eid=431890627-1419157234-&ntime=1419203501'
+    'CNZZDATA4617784' => 'cnzz_eid=1410397910-1418812097-&ntime=1419983038'
+    'Jjzq_2132_saltkey' => 'wkOPSZrn'
+    'Jjzq_2132_lastvisit' => '1420423935'
+    'Jjzq_2132_ulastactivity' => '3cd47khBmEfAZuKV56v5xcereJG/Dl7C07x2T1XA2znHteTfL3el'
+    'RB5E_2132_saltkey' => 'YR3N3T3T'
+    'RB5E_2132_lastvisit' => '1420425536'
+    'RB5E_2132_ulastactivity' => '7a33yKqJzIUHWbK8a2g4rYyfLxZRCEFiozw4LjGbd97NwT8w9vkf'
+    'VOIr_2132_saltkey' => 'Ot1vtjL1'
+    'VOIr_2132_lastvisit' => '1420426036'
+    'VOIr_2132_ulastactivity' => '40a3geAD9hD7n9MsDQ4l4FnD7q3ymVwknLjv8+KttwvvmeBgf8zp'
+    'VOIr_2132_nofavfid' => '1'
+    'uchome_loginuser' => 'admin'
+    'CNZZDATA2924747' => 'cnzz_eid=1577273435-1420269582-&ntime=1420676356'
+    'CNZZDATA3668490' => 'cnzz_eid=405753816-1420849139-http%3A%2F%2Flocalhost%2F&ntime=1420849139'
+    'CNZZDATA3637100' => 'cnzz_eid=1250976432-1420847467-http%3A%2F%2Flocalhost%2F&ntime=1420847467'
+    'sid' => '5581iHsOCW5McFRYsx5i%2BRZkm6ESzH4wFOp%2B8dqIBW3lcUiALVNvuGwefDxiMjpKKfOm2rMjEnAQ%2Fw'
+    'PHPSESSID' => '20i13vqn7j4u0e5d1t8b0eeub4'
+    '_csrf' => 'e608113b460aca5a8d48f9ab5369e32c7cd50f166922d9ed9faf77d831cff95cs:32:\"-rMsw__77Eq15_KL42cvogAH_39UZg2t\";'
+]
+
+$_SERVER = [
+    'MIBDIRS' => 'D:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'D:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.57 Safari/537.36'
+    'HTTP_REFERER' => 'http://localhost/youhui/backend/web/?r=site/left&act=1'
+    'HTTP_ACCEPT_ENCODING' => 'gzip,deflate,sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8,en;q=0.6'
+    'HTTP_COOKIE' => 'AJSTAT_ok_times=1; _ga=GA1.1.54924247.1416566351; __zpspc=9.2.1416813744.1416814460.10%234%7C%7C%7C%7C%7C%23; bdshare_firstime=1418786158546; CNZZDATA4617777=cnzz_eid%3D682052683-1418784431-%26ntime%3D1418784197; CNZZDATA4617788=cnzz_eid%3D431890627-1419157234-%26ntime%3D1419203501; CNZZDATA4617784=cnzz_eid%3D1410397910-1418812097-%26ntime%3D1419983038; Jjzq_2132_saltkey=wkOPSZrn; Jjzq_2132_lastvisit=1420423935; Jjzq_2132_ulastactivity=3cd47khBmEfAZuKV56v5xcereJG%2FDl7C07x2T1XA2znHteTfL3el; RB5E_2132_saltkey=YR3N3T3T; RB5E_2132_lastvisit=1420425536; RB5E_2132_ulastactivity=7a33yKqJzIUHWbK8a2g4rYyfLxZRCEFiozw4LjGbd97NwT8w9vkf; VOIr_2132_saltkey=Ot1vtjL1; VOIr_2132_lastvisit=1420426036; VOIr_2132_ulastactivity=40a3geAD9hD7n9MsDQ4l4FnD7q3ymVwknLjv8%2BKttwvvmeBgf8zp; VOIr_2132_nofavfid=1; uchome_loginuser=admin; CNZZDATA2924747=cnzz_eid%3D1577273435-1420269582-%26ntime%3D1420676356; CNZZDATA3668490=cnzz_eid%3D405753816-1420849139-http%253A%252F%252Flocalhost%252F%26ntime%3D1420849139; CNZZDATA3637100=cnzz_eid%3D1250976432-1420847467-http%253A%252F%252Flocalhost%252F%26ntime%3D1420847467; sid=5581iHsOCW5McFRYsx5i%252BRZkm6ESzH4wFOp%252B8dqIBW3lcUiALVNvuGwefDxiMjpKKfOm2rMjEnAQ%252Fw; PHPSESSID=20i13vqn7j4u0e5d1t8b0eeub4; _csrf=e608113b460aca5a8d48f9ab5369e32c7cd50f166922d9ed9faf77d831cff95cs%3A32%3A%22-rMsw__77Eq15_KL42cvogAH_39UZg2t%22%3B'
+    'PATH' => 'C:\\Program Files (x86)\\Common Files\\NetSarang;C:\\ProgramData\\Oracle\\Java\\javapath;C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;D:\\xampp\\php\\php.exe;D:\\Program Files\\Java\\jdk1.8.0_25\\bin;D:\\Program Files\\Java\\jdk1.8.0_25\\jre\\bin;D:\\git\\bin;D:\\xampp\\php;C:\\ProgramData\\ComposerSetup\\bin;C:\\Windows\\system32'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.7 (Win32) OpenSSL/1.0.1e PHP/5.5.9 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.7 (Win32) OpenSSL/1.0.1e PHP/5.5.9'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'D:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'D:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'D:/xampp/htdocs/youhui/backend/web/index.php'
+    'REMOTE_PORT' => '51162'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=cuxiao/add'
+    'REQUEST_URI' => '/youhui/backend/web/?r=cuxiao/add'
+    'SCRIPT_NAME' => '/youhui/backend/web/index.php'
+    'PHP_SELF' => '/youhui/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1422581348.835
+    'REQUEST_TIME' => 1422581348
+]
+2015-01-30 02:29:10 [127.0.0.1][-][-][warning][yii\log\Dispatcher::dispatch] Unable to send log via yii\debug\LogTarget: PHP Notice 'yii\base\ErrorException' with message 'unserialize(): Error at offset 0 of 45789 bytes' 
+
+in D:\xampp\htdocs\youhui\vendor\yiisoft\yii2-debug\LogTarget.php:86
+
+Stack trace:
+#0 [internal function]: yii\base\ErrorHandler->handleError(8, 'unserialize(): ...', 'D:\xampp\htdocs...', 86, Array)
+#1 D:\xampp\htdocs\youhui\vendor\yiisoft\yii2-debug\LogTarget.php(86): unserialize('<<<<<<< HEAD??a...')
+#2 D:\xampp\htdocs\youhui\vendor\yiisoft\yii2-debug\LogTarget.php(61): yii\debug\LogTarget->updateIndexFile('D:\xampp\htdocs...', Array)
+#3 D:\xampp\htdocs\youhui\vendor\yiisoft\yii2-debug\LogTarget.php(112): yii\debug\LogTarget->export(Array)
+#4 D:\xampp\htdocs\youhui\vendor\yiisoft\yii2\log\Dispatcher.php(183): yii\debug\LogTarget->collect(Array, true)
+#5 D:\xampp\htdocs\youhui\vendor\yiisoft\yii2\log\Logger.php(166): yii\log\Dispatcher->dispatch(Array, true)
+#6 [internal function]: yii\log\Logger->flush(true)
+#7 {main}
+2015-01-30 02:29:10 [127.0.0.1][-][-][info][application] $_GET = [
+    'r' => 'cuxiao/list'
+]
+
+$_COOKIE = [
+    'AJSTAT_ok_times' => '1'
+    '_ga' => 'GA1.1.54924247.1416566351'
+    '__zpspc' => '9.2.1416813744.1416814460.10#4|||||#'
+    'bdshare_firstime' => '1418786158546'
+    'CNZZDATA4617777' => 'cnzz_eid=682052683-1418784431-&ntime=1418784197'
+    'CNZZDATA4617788' => 'cnzz_eid=431890627-1419157234-&ntime=1419203501'
+    'CNZZDATA4617784' => 'cnzz_eid=1410397910-1418812097-&ntime=1419983038'
+    'Jjzq_2132_saltkey' => 'wkOPSZrn'
+    'Jjzq_2132_lastvisit' => '1420423935'
+    'Jjzq_2132_ulastactivity' => '3cd47khBmEfAZuKV56v5xcereJG/Dl7C07x2T1XA2znHteTfL3el'
+    'RB5E_2132_saltkey' => 'YR3N3T3T'
+    'RB5E_2132_lastvisit' => '1420425536'
+    'RB5E_2132_ulastactivity' => '7a33yKqJzIUHWbK8a2g4rYyfLxZRCEFiozw4LjGbd97NwT8w9vkf'
+    'VOIr_2132_saltkey' => 'Ot1vtjL1'
+    'VOIr_2132_lastvisit' => '1420426036'
+    'VOIr_2132_ulastactivity' => '40a3geAD9hD7n9MsDQ4l4FnD7q3ymVwknLjv8+KttwvvmeBgf8zp'
+    'VOIr_2132_nofavfid' => '1'
+    'uchome_loginuser' => 'admin'
+    'CNZZDATA2924747' => 'cnzz_eid=1577273435-1420269582-&ntime=1420676356'
+    'CNZZDATA3668490' => 'cnzz_eid=405753816-1420849139-http%3A%2F%2Flocalhost%2F&ntime=1420849139'
+    'CNZZDATA3637100' => 'cnzz_eid=1250976432-1420847467-http%3A%2F%2Flocalhost%2F&ntime=1420847467'
+    'sid' => '5581iHsOCW5McFRYsx5i%2BRZkm6ESzH4wFOp%2B8dqIBW3lcUiALVNvuGwefDxiMjpKKfOm2rMjEnAQ%2Fw'
+    'PHPSESSID' => '20i13vqn7j4u0e5d1t8b0eeub4'
+    '_csrf' => 'e608113b460aca5a8d48f9ab5369e32c7cd50f166922d9ed9faf77d831cff95cs:32:\"-rMsw__77Eq15_KL42cvogAH_39UZg2t\";'
+]
+
+$_SERVER = [
+    'MIBDIRS' => 'D:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'D:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.57 Safari/537.36'
+    'HTTP_REFERER' => 'http://localhost/youhui/backend/web/?r=site/left&act=1'
+    'HTTP_ACCEPT_ENCODING' => 'gzip,deflate,sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8,en;q=0.6'
+    'HTTP_COOKIE' => 'AJSTAT_ok_times=1; _ga=GA1.1.54924247.1416566351; __zpspc=9.2.1416813744.1416814460.10%234%7C%7C%7C%7C%7C%23; bdshare_firstime=1418786158546; CNZZDATA4617777=cnzz_eid%3D682052683-1418784431-%26ntime%3D1418784197; CNZZDATA4617788=cnzz_eid%3D431890627-1419157234-%26ntime%3D1419203501; CNZZDATA4617784=cnzz_eid%3D1410397910-1418812097-%26ntime%3D1419983038; Jjzq_2132_saltkey=wkOPSZrn; Jjzq_2132_lastvisit=1420423935; Jjzq_2132_ulastactivity=3cd47khBmEfAZuKV56v5xcereJG%2FDl7C07x2T1XA2znHteTfL3el; RB5E_2132_saltkey=YR3N3T3T; RB5E_2132_lastvisit=1420425536; RB5E_2132_ulastactivity=7a33yKqJzIUHWbK8a2g4rYyfLxZRCEFiozw4LjGbd97NwT8w9vkf; VOIr_2132_saltkey=Ot1vtjL1; VOIr_2132_lastvisit=1420426036; VOIr_2132_ulastactivity=40a3geAD9hD7n9MsDQ4l4FnD7q3ymVwknLjv8%2BKttwvvmeBgf8zp; VOIr_2132_nofavfid=1; uchome_loginuser=admin; CNZZDATA2924747=cnzz_eid%3D1577273435-1420269582-%26ntime%3D1420676356; CNZZDATA3668490=cnzz_eid%3D405753816-1420849139-http%253A%252F%252Flocalhost%252F%26ntime%3D1420849139; CNZZDATA3637100=cnzz_eid%3D1250976432-1420847467-http%253A%252F%252Flocalhost%252F%26ntime%3D1420847467; sid=5581iHsOCW5McFRYsx5i%252BRZkm6ESzH4wFOp%252B8dqIBW3lcUiALVNvuGwefDxiMjpKKfOm2rMjEnAQ%252Fw; PHPSESSID=20i13vqn7j4u0e5d1t8b0eeub4; _csrf=e608113b460aca5a8d48f9ab5369e32c7cd50f166922d9ed9faf77d831cff95cs%3A32%3A%22-rMsw__77Eq15_KL42cvogAH_39UZg2t%22%3B'
+    'PATH' => 'C:\\Program Files (x86)\\Common Files\\NetSarang;C:\\ProgramData\\Oracle\\Java\\javapath;C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;D:\\xampp\\php\\php.exe;D:\\Program Files\\Java\\jdk1.8.0_25\\bin;D:\\Program Files\\Java\\jdk1.8.0_25\\jre\\bin;D:\\git\\bin;D:\\xampp\\php;C:\\ProgramData\\ComposerSetup\\bin;C:\\Windows\\system32'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.7 (Win32) OpenSSL/1.0.1e PHP/5.5.9 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.7 (Win32) OpenSSL/1.0.1e PHP/5.5.9'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'D:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'D:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'D:/xampp/htdocs/youhui/backend/web/index.php'
+    'REMOTE_PORT' => '51165'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=cuxiao/list'
+    'REQUEST_URI' => '/youhui/backend/web/?r=cuxiao/list'
+    'SCRIPT_NAME' => '/youhui/backend/web/index.php'
+    'PHP_SELF' => '/youhui/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1422581350.58
+    'REQUEST_TIME' => 1422581350
+]
+2015-01-30 02:30:42 [127.0.0.1][-][-][warning][yii\log\Dispatcher::dispatch] Unable to send log via yii\debug\LogTarget: PHP Notice 'yii\base\ErrorException' with message 'unserialize(): Error at offset 0 of 45789 bytes' 
+
+in D:\xampp\htdocs\youhui\vendor\yiisoft\yii2-debug\LogTarget.php:86
+
+Stack trace:
+#0 [internal function]: yii\base\ErrorHandler->handleError(8, 'unserialize(): ...', 'D:\xampp\htdocs...', 86, Array)
+#1 D:\xampp\htdocs\youhui\vendor\yiisoft\yii2-debug\LogTarget.php(86): unserialize('<<<<<<< HEAD??a...')
+#2 D:\xampp\htdocs\youhui\vendor\yiisoft\yii2-debug\LogTarget.php(61): yii\debug\LogTarget->updateIndexFile('D:\xampp\htdocs...', Array)
+#3 D:\xampp\htdocs\youhui\vendor\yiisoft\yii2-debug\LogTarget.php(112): yii\debug\LogTarget->export(Array)
+#4 D:\xampp\htdocs\youhui\vendor\yiisoft\yii2\log\Dispatcher.php(183): yii\debug\LogTarget->collect(Array, true)
+#5 D:\xampp\htdocs\youhui\vendor\yiisoft\yii2\log\Logger.php(166): yii\log\Dispatcher->dispatch(Array, true)
+#6 [internal function]: yii\log\Logger->flush(true)
+#7 {main}
+2015-01-30 02:30:42 [127.0.0.1][-][-][info][application] $_GET = [
+    'r' => 'cuxiao/list'
+]
+
+$_COOKIE = [
+    'AJSTAT_ok_times' => '1'
+    '_ga' => 'GA1.1.54924247.1416566351'
+    '__zpspc' => '9.2.1416813744.1416814460.10#4|||||#'
+    'bdshare_firstime' => '1418786158546'
+    'CNZZDATA4617777' => 'cnzz_eid=682052683-1418784431-&ntime=1418784197'
+    'CNZZDATA4617788' => 'cnzz_eid=431890627-1419157234-&ntime=1419203501'
+    'CNZZDATA4617784' => 'cnzz_eid=1410397910-1418812097-&ntime=1419983038'
+    'Jjzq_2132_saltkey' => 'wkOPSZrn'
+    'Jjzq_2132_lastvisit' => '1420423935'
+    'Jjzq_2132_ulastactivity' => '3cd47khBmEfAZuKV56v5xcereJG/Dl7C07x2T1XA2znHteTfL3el'
+    'RB5E_2132_saltkey' => 'YR3N3T3T'
+    'RB5E_2132_lastvisit' => '1420425536'
+    'RB5E_2132_ulastactivity' => '7a33yKqJzIUHWbK8a2g4rYyfLxZRCEFiozw4LjGbd97NwT8w9vkf'
+    'VOIr_2132_saltkey' => 'Ot1vtjL1'
+    'VOIr_2132_lastvisit' => '1420426036'
+    'VOIr_2132_ulastactivity' => '40a3geAD9hD7n9MsDQ4l4FnD7q3ymVwknLjv8+KttwvvmeBgf8zp'
+    'VOIr_2132_nofavfid' => '1'
+    'uchome_loginuser' => 'admin'
+    'CNZZDATA2924747' => 'cnzz_eid=1577273435-1420269582-&ntime=1420676356'
+    'CNZZDATA3668490' => 'cnzz_eid=405753816-1420849139-http%3A%2F%2Flocalhost%2F&ntime=1420849139'
+    'CNZZDATA3637100' => 'cnzz_eid=1250976432-1420847467-http%3A%2F%2Flocalhost%2F&ntime=1420847467'
+    'sid' => '5581iHsOCW5McFRYsx5i%2BRZkm6ESzH4wFOp%2B8dqIBW3lcUiALVNvuGwefDxiMjpKKfOm2rMjEnAQ%2Fw'
+    'PHPSESSID' => '20i13vqn7j4u0e5d1t8b0eeub4'
+    '_csrf' => 'e608113b460aca5a8d48f9ab5369e32c7cd50f166922d9ed9faf77d831cff95cs:32:\"-rMsw__77Eq15_KL42cvogAH_39UZg2t\";'
+]
+
+$_SERVER = [
+    'MIBDIRS' => 'D:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'D:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.57 Safari/537.36'
+    'HTTP_REFERER' => 'http://localhost/youhui/backend/web/?r=site/left&act=1'
+    'HTTP_ACCEPT_ENCODING' => 'gzip,deflate,sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8,en;q=0.6'
+    'HTTP_COOKIE' => 'AJSTAT_ok_times=1; _ga=GA1.1.54924247.1416566351; __zpspc=9.2.1416813744.1416814460.10%234%7C%7C%7C%7C%7C%23; bdshare_firstime=1418786158546; CNZZDATA4617777=cnzz_eid%3D682052683-1418784431-%26ntime%3D1418784197; CNZZDATA4617788=cnzz_eid%3D431890627-1419157234-%26ntime%3D1419203501; CNZZDATA4617784=cnzz_eid%3D1410397910-1418812097-%26ntime%3D1419983038; Jjzq_2132_saltkey=wkOPSZrn; Jjzq_2132_lastvisit=1420423935; Jjzq_2132_ulastactivity=3cd47khBmEfAZuKV56v5xcereJG%2FDl7C07x2T1XA2znHteTfL3el; RB5E_2132_saltkey=YR3N3T3T; RB5E_2132_lastvisit=1420425536; RB5E_2132_ulastactivity=7a33yKqJzIUHWbK8a2g4rYyfLxZRCEFiozw4LjGbd97NwT8w9vkf; VOIr_2132_saltkey=Ot1vtjL1; VOIr_2132_lastvisit=1420426036; VOIr_2132_ulastactivity=40a3geAD9hD7n9MsDQ4l4FnD7q3ymVwknLjv8%2BKttwvvmeBgf8zp; VOIr_2132_nofavfid=1; uchome_loginuser=admin; CNZZDATA2924747=cnzz_eid%3D1577273435-1420269582-%26ntime%3D1420676356; CNZZDATA3668490=cnzz_eid%3D405753816-1420849139-http%253A%252F%252Flocalhost%252F%26ntime%3D1420849139; CNZZDATA3637100=cnzz_eid%3D1250976432-1420847467-http%253A%252F%252Flocalhost%252F%26ntime%3D1420847467; sid=5581iHsOCW5McFRYsx5i%252BRZkm6ESzH4wFOp%252B8dqIBW3lcUiALVNvuGwefDxiMjpKKfOm2rMjEnAQ%252Fw; PHPSESSID=20i13vqn7j4u0e5d1t8b0eeub4; _csrf=e608113b460aca5a8d48f9ab5369e32c7cd50f166922d9ed9faf77d831cff95cs%3A32%3A%22-rMsw__77Eq15_KL42cvogAH_39UZg2t%22%3B'
+    'PATH' => 'C:\\Program Files (x86)\\Common Files\\NetSarang;C:\\ProgramData\\Oracle\\Java\\javapath;C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;D:\\xampp\\php\\php.exe;D:\\Program Files\\Java\\jdk1.8.0_25\\bin;D:\\Program Files\\Java\\jdk1.8.0_25\\jre\\bin;D:\\git\\bin;D:\\xampp\\php;C:\\ProgramData\\ComposerSetup\\bin;C:\\Windows\\system32'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.7 (Win32) OpenSSL/1.0.1e PHP/5.5.9 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.7 (Win32) OpenSSL/1.0.1e PHP/5.5.9'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'D:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'D:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'D:/xampp/htdocs/youhui/backend/web/index.php'
+    'REMOTE_PORT' => '51181'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=cuxiao/list'
+    'REQUEST_URI' => '/youhui/backend/web/?r=cuxiao/list'
+    'SCRIPT_NAME' => '/youhui/backend/web/index.php'
+    'PHP_SELF' => '/youhui/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1422581442.18
+    'REQUEST_TIME' => 1422581442
+]
+2015-01-30 02:31:28 [127.0.0.1][-][-][warning][yii\log\Dispatcher::dispatch] Unable to send log via yii\debug\LogTarget: PHP Notice 'yii\base\ErrorException' with message 'unserialize(): Error at offset 0 of 45789 bytes' 
+
+in D:\xampp\htdocs\youhui\vendor\yiisoft\yii2-debug\LogTarget.php:86
+
+Stack trace:
+#0 [internal function]: yii\base\ErrorHandler->handleError(8, 'unserialize(): ...', 'D:\xampp\htdocs...', 86, Array)
+#1 D:\xampp\htdocs\youhui\vendor\yiisoft\yii2-debug\LogTarget.php(86): unserialize('<<<<<<< HEAD??a...')
+#2 D:\xampp\htdocs\youhui\vendor\yiisoft\yii2-debug\LogTarget.php(61): yii\debug\LogTarget->updateIndexFile('D:\xampp\htdocs...', Array)
+#3 D:\xampp\htdocs\youhui\vendor\yiisoft\yii2-debug\LogTarget.php(112): yii\debug\LogTarget->export(Array)
+#4 D:\xampp\htdocs\youhui\vendor\yiisoft\yii2\log\Dispatcher.php(183): yii\debug\LogTarget->collect(Array, true)
+#5 D:\xampp\htdocs\youhui\vendor\yiisoft\yii2\log\Logger.php(166): yii\log\Dispatcher->dispatch(Array, true)
+#6 [internal function]: yii\log\Logger->flush(true)
+#7 {main}
+2015-01-30 02:31:28 [127.0.0.1][-][-][info][application] $_GET = [
+    'r' => 'cuxiao/list'
+]
+
+$_COOKIE = [
+    'AJSTAT_ok_times' => '1'
+    '_ga' => 'GA1.1.54924247.1416566351'
+    '__zpspc' => '9.2.1416813744.1416814460.10#4|||||#'
+    'bdshare_firstime' => '1418786158546'
+    'CNZZDATA4617777' => 'cnzz_eid=682052683-1418784431-&ntime=1418784197'
+    'CNZZDATA4617788' => 'cnzz_eid=431890627-1419157234-&ntime=1419203501'
+    'CNZZDATA4617784' => 'cnzz_eid=1410397910-1418812097-&ntime=1419983038'
+    'Jjzq_2132_saltkey' => 'wkOPSZrn'
+    'Jjzq_2132_lastvisit' => '1420423935'
+    'Jjzq_2132_ulastactivity' => '3cd47khBmEfAZuKV56v5xcereJG/Dl7C07x2T1XA2znHteTfL3el'
+    'RB5E_2132_saltkey' => 'YR3N3T3T'
+    'RB5E_2132_lastvisit' => '1420425536'
+    'RB5E_2132_ulastactivity' => '7a33yKqJzIUHWbK8a2g4rYyfLxZRCEFiozw4LjGbd97NwT8w9vkf'
+    'VOIr_2132_saltkey' => 'Ot1vtjL1'
+    'VOIr_2132_lastvisit' => '1420426036'
+    'VOIr_2132_ulastactivity' => '40a3geAD9hD7n9MsDQ4l4FnD7q3ymVwknLjv8+KttwvvmeBgf8zp'
+    'VOIr_2132_nofavfid' => '1'
+    'uchome_loginuser' => 'admin'
+    'CNZZDATA2924747' => 'cnzz_eid=1577273435-1420269582-&ntime=1420676356'
+    'CNZZDATA3668490' => 'cnzz_eid=405753816-1420849139-http%3A%2F%2Flocalhost%2F&ntime=1420849139'
+    'CNZZDATA3637100' => 'cnzz_eid=1250976432-1420847467-http%3A%2F%2Flocalhost%2F&ntime=1420847467'
+    'sid' => '5581iHsOCW5McFRYsx5i%2BRZkm6ESzH4wFOp%2B8dqIBW3lcUiALVNvuGwefDxiMjpKKfOm2rMjEnAQ%2Fw'
+    'PHPSESSID' => '20i13vqn7j4u0e5d1t8b0eeub4'
+    '_csrf' => 'e608113b460aca5a8d48f9ab5369e32c7cd50f166922d9ed9faf77d831cff95cs:32:\"-rMsw__77Eq15_KL42cvogAH_39UZg2t\";'
+]
+
+$_SERVER = [
+    'MIBDIRS' => 'D:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'D:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.57 Safari/537.36'
+    'HTTP_REFERER' => 'http://localhost/youhui/backend/web/?r=site/left&act=1'
+    'HTTP_ACCEPT_ENCODING' => 'gzip,deflate,sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8,en;q=0.6'
+    'HTTP_COOKIE' => 'AJSTAT_ok_times=1; _ga=GA1.1.54924247.1416566351; __zpspc=9.2.1416813744.1416814460.10%234%7C%7C%7C%7C%7C%23; bdshare_firstime=1418786158546; CNZZDATA4617777=cnzz_eid%3D682052683-1418784431-%26ntime%3D1418784197; CNZZDATA4617788=cnzz_eid%3D431890627-1419157234-%26ntime%3D1419203501; CNZZDATA4617784=cnzz_eid%3D1410397910-1418812097-%26ntime%3D1419983038; Jjzq_2132_saltkey=wkOPSZrn; Jjzq_2132_lastvisit=1420423935; Jjzq_2132_ulastactivity=3cd47khBmEfAZuKV56v5xcereJG%2FDl7C07x2T1XA2znHteTfL3el; RB5E_2132_saltkey=YR3N3T3T; RB5E_2132_lastvisit=1420425536; RB5E_2132_ulastactivity=7a33yKqJzIUHWbK8a2g4rYyfLxZRCEFiozw4LjGbd97NwT8w9vkf; VOIr_2132_saltkey=Ot1vtjL1; VOIr_2132_lastvisit=1420426036; VOIr_2132_ulastactivity=40a3geAD9hD7n9MsDQ4l4FnD7q3ymVwknLjv8%2BKttwvvmeBgf8zp; VOIr_2132_nofavfid=1; uchome_loginuser=admin; CNZZDATA2924747=cnzz_eid%3D1577273435-1420269582-%26ntime%3D1420676356; CNZZDATA3668490=cnzz_eid%3D405753816-1420849139-http%253A%252F%252Flocalhost%252F%26ntime%3D1420849139; CNZZDATA3637100=cnzz_eid%3D1250976432-1420847467-http%253A%252F%252Flocalhost%252F%26ntime%3D1420847467; sid=5581iHsOCW5McFRYsx5i%252BRZkm6ESzH4wFOp%252B8dqIBW3lcUiALVNvuGwefDxiMjpKKfOm2rMjEnAQ%252Fw; PHPSESSID=20i13vqn7j4u0e5d1t8b0eeub4; _csrf=e608113b460aca5a8d48f9ab5369e32c7cd50f166922d9ed9faf77d831cff95cs%3A32%3A%22-rMsw__77Eq15_KL42cvogAH_39UZg2t%22%3B'
+    'PATH' => 'C:\\Program Files (x86)\\Common Files\\NetSarang;C:\\ProgramData\\Oracle\\Java\\javapath;C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;D:\\xampp\\php\\php.exe;D:\\Program Files\\Java\\jdk1.8.0_25\\bin;D:\\Program Files\\Java\\jdk1.8.0_25\\jre\\bin;D:\\git\\bin;D:\\xampp\\php;C:\\ProgramData\\ComposerSetup\\bin;C:\\Windows\\system32'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.7 (Win32) OpenSSL/1.0.1e PHP/5.5.9 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.7 (Win32) OpenSSL/1.0.1e PHP/5.5.9'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'D:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'D:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'D:/xampp/htdocs/youhui/backend/web/index.php'
+    'REMOTE_PORT' => '51196'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=cuxiao/list'
+    'REQUEST_URI' => '/youhui/backend/web/?r=cuxiao/list'
+    'SCRIPT_NAME' => '/youhui/backend/web/index.php'
+    'PHP_SELF' => '/youhui/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1422581488.494
+    'REQUEST_TIME' => 1422581488
+]
+2015-01-30 02:31:37 [127.0.0.1][-][-][warning][yii\log\Dispatcher::dispatch] Unable to send log via yii\debug\LogTarget: PHP Notice 'yii\base\ErrorException' with message 'unserialize(): Error at offset 0 of 45789 bytes' 
+
+in D:\xampp\htdocs\youhui\vendor\yiisoft\yii2-debug\LogTarget.php:86
+
+Stack trace:
+#0 [internal function]: yii\base\ErrorHandler->handleError(8, 'unserialize(): ...', 'D:\xampp\htdocs...', 86, Array)
+#1 D:\xampp\htdocs\youhui\vendor\yiisoft\yii2-debug\LogTarget.php(86): unserialize('<<<<<<< HEAD??a...')
+#2 D:\xampp\htdocs\youhui\vendor\yiisoft\yii2-debug\LogTarget.php(61): yii\debug\LogTarget->updateIndexFile('D:\xampp\htdocs...', Array)
+#3 D:\xampp\htdocs\youhui\vendor\yiisoft\yii2-debug\LogTarget.php(112): yii\debug\LogTarget->export(Array)
+#4 D:\xampp\htdocs\youhui\vendor\yiisoft\yii2\log\Dispatcher.php(183): yii\debug\LogTarget->collect(Array, true)
+#5 D:\xampp\htdocs\youhui\vendor\yiisoft\yii2\log\Logger.php(166): yii\log\Dispatcher->dispatch(Array, true)
+#6 [internal function]: yii\log\Logger->flush(true)
+#7 {main}
+2015-01-30 02:31:37 [127.0.0.1][-][-][info][application] $_GET = [
+    'r' => 'cuxiao/list'
+]
+
+$_COOKIE = [
+    'AJSTAT_ok_times' => '1'
+    '_ga' => 'GA1.1.54924247.1416566351'
+    '__zpspc' => '9.2.1416813744.1416814460.10#4|||||#'
+    'bdshare_firstime' => '1418786158546'
+    'CNZZDATA4617777' => 'cnzz_eid=682052683-1418784431-&ntime=1418784197'
+    'CNZZDATA4617788' => 'cnzz_eid=431890627-1419157234-&ntime=1419203501'
+    'CNZZDATA4617784' => 'cnzz_eid=1410397910-1418812097-&ntime=1419983038'
+    'Jjzq_2132_saltkey' => 'wkOPSZrn'
+    'Jjzq_2132_lastvisit' => '1420423935'
+    'Jjzq_2132_ulastactivity' => '3cd47khBmEfAZuKV56v5xcereJG/Dl7C07x2T1XA2znHteTfL3el'
+    'RB5E_2132_saltkey' => 'YR3N3T3T'
+    'RB5E_2132_lastvisit' => '1420425536'
+    'RB5E_2132_ulastactivity' => '7a33yKqJzIUHWbK8a2g4rYyfLxZRCEFiozw4LjGbd97NwT8w9vkf'
+    'VOIr_2132_saltkey' => 'Ot1vtjL1'
+    'VOIr_2132_lastvisit' => '1420426036'
+    'VOIr_2132_ulastactivity' => '40a3geAD9hD7n9MsDQ4l4FnD7q3ymVwknLjv8+KttwvvmeBgf8zp'
+    'VOIr_2132_nofavfid' => '1'
+    'uchome_loginuser' => 'admin'
+    'CNZZDATA2924747' => 'cnzz_eid=1577273435-1420269582-&ntime=1420676356'
+    'CNZZDATA3668490' => 'cnzz_eid=405753816-1420849139-http%3A%2F%2Flocalhost%2F&ntime=1420849139'
+    'CNZZDATA3637100' => 'cnzz_eid=1250976432-1420847467-http%3A%2F%2Flocalhost%2F&ntime=1420847467'
+    'sid' => '5581iHsOCW5McFRYsx5i%2BRZkm6ESzH4wFOp%2B8dqIBW3lcUiALVNvuGwefDxiMjpKKfOm2rMjEnAQ%2Fw'
+    'PHPSESSID' => '20i13vqn7j4u0e5d1t8b0eeub4'
+    '_csrf' => 'e608113b460aca5a8d48f9ab5369e32c7cd50f166922d9ed9faf77d831cff95cs:32:\"-rMsw__77Eq15_KL42cvogAH_39UZg2t\";'
+]
+
+$_SERVER = [
+    'MIBDIRS' => 'D:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'D:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.57 Safari/537.36'
+    'HTTP_REFERER' => 'http://localhost/youhui/backend/web/?r=site/left&act=1'
+    'HTTP_ACCEPT_ENCODING' => 'gzip,deflate,sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8,en;q=0.6'
+    'HTTP_COOKIE' => 'AJSTAT_ok_times=1; _ga=GA1.1.54924247.1416566351; __zpspc=9.2.1416813744.1416814460.10%234%7C%7C%7C%7C%7C%23; bdshare_firstime=1418786158546; CNZZDATA4617777=cnzz_eid%3D682052683-1418784431-%26ntime%3D1418784197; CNZZDATA4617788=cnzz_eid%3D431890627-1419157234-%26ntime%3D1419203501; CNZZDATA4617784=cnzz_eid%3D1410397910-1418812097-%26ntime%3D1419983038; Jjzq_2132_saltkey=wkOPSZrn; Jjzq_2132_lastvisit=1420423935; Jjzq_2132_ulastactivity=3cd47khBmEfAZuKV56v5xcereJG%2FDl7C07x2T1XA2znHteTfL3el; RB5E_2132_saltkey=YR3N3T3T; RB5E_2132_lastvisit=1420425536; RB5E_2132_ulastactivity=7a33yKqJzIUHWbK8a2g4rYyfLxZRCEFiozw4LjGbd97NwT8w9vkf; VOIr_2132_saltkey=Ot1vtjL1; VOIr_2132_lastvisit=1420426036; VOIr_2132_ulastactivity=40a3geAD9hD7n9MsDQ4l4FnD7q3ymVwknLjv8%2BKttwvvmeBgf8zp; VOIr_2132_nofavfid=1; uchome_loginuser=admin; CNZZDATA2924747=cnzz_eid%3D1577273435-1420269582-%26ntime%3D1420676356; CNZZDATA3668490=cnzz_eid%3D405753816-1420849139-http%253A%252F%252Flocalhost%252F%26ntime%3D1420849139; CNZZDATA3637100=cnzz_eid%3D1250976432-1420847467-http%253A%252F%252Flocalhost%252F%26ntime%3D1420847467; sid=5581iHsOCW5McFRYsx5i%252BRZkm6ESzH4wFOp%252B8dqIBW3lcUiALVNvuGwefDxiMjpKKfOm2rMjEnAQ%252Fw; PHPSESSID=20i13vqn7j4u0e5d1t8b0eeub4; _csrf=e608113b460aca5a8d48f9ab5369e32c7cd50f166922d9ed9faf77d831cff95cs%3A32%3A%22-rMsw__77Eq15_KL42cvogAH_39UZg2t%22%3B'
+    'PATH' => 'C:\\Program Files (x86)\\Common Files\\NetSarang;C:\\ProgramData\\Oracle\\Java\\javapath;C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;D:\\xampp\\php\\php.exe;D:\\Program Files\\Java\\jdk1.8.0_25\\bin;D:\\Program Files\\Java\\jdk1.8.0_25\\jre\\bin;D:\\git\\bin;D:\\xampp\\php;C:\\ProgramData\\ComposerSetup\\bin;C:\\Windows\\system32'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.7 (Win32) OpenSSL/1.0.1e PHP/5.5.9 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.7 (Win32) OpenSSL/1.0.1e PHP/5.5.9'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'D:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'D:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'D:/xampp/htdocs/youhui/backend/web/index.php'
+    'REMOTE_PORT' => '51202'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=cuxiao/list'
+    'REQUEST_URI' => '/youhui/backend/web/?r=cuxiao/list'
+    'SCRIPT_NAME' => '/youhui/backend/web/index.php'
+    'PHP_SELF' => '/youhui/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1422581497.806
+    'REQUEST_TIME' => 1422581497
+]
+2015-01-30 02:31:50 [127.0.0.1][-][-][warning][yii\log\Dispatcher::dispatch] Unable to send log via yii\debug\LogTarget: PHP Notice 'yii\base\ErrorException' with message 'unserialize(): Error at offset 0 of 45789 bytes' 
+
+in D:\xampp\htdocs\youhui\vendor\yiisoft\yii2-debug\LogTarget.php:86
+
+Stack trace:
+#0 [internal function]: yii\base\ErrorHandler->handleError(8, 'unserialize(): ...', 'D:\xampp\htdocs...', 86, Array)
+#1 D:\xampp\htdocs\youhui\vendor\yiisoft\yii2-debug\LogTarget.php(86): unserialize('<<<<<<< HEAD??a...')
+#2 D:\xampp\htdocs\youhui\vendor\yiisoft\yii2-debug\LogTarget.php(61): yii\debug\LogTarget->updateIndexFile('D:\xampp\htdocs...', Array)
+#3 D:\xampp\htdocs\youhui\vendor\yiisoft\yii2-debug\LogTarget.php(112): yii\debug\LogTarget->export(Array)
+#4 D:\xampp\htdocs\youhui\vendor\yiisoft\yii2\log\Dispatcher.php(183): yii\debug\LogTarget->collect(Array, true)
+#5 D:\xampp\htdocs\youhui\vendor\yiisoft\yii2\log\Logger.php(166): yii\log\Dispatcher->dispatch(Array, true)
+#6 [internal function]: yii\log\Logger->flush(true)
+#7 {main}
+2015-01-30 02:31:50 [127.0.0.1][-][-][info][application] $_GET = [
+    'r' => 'cuxiao/list'
+]
+
+$_COOKIE = [
+    'AJSTAT_ok_times' => '1'
+    '_ga' => 'GA1.1.54924247.1416566351'
+    '__zpspc' => '9.2.1416813744.1416814460.10#4|||||#'
+    'bdshare_firstime' => '1418786158546'
+    'CNZZDATA4617777' => 'cnzz_eid=682052683-1418784431-&ntime=1418784197'
+    'CNZZDATA4617788' => 'cnzz_eid=431890627-1419157234-&ntime=1419203501'
+    'CNZZDATA4617784' => 'cnzz_eid=1410397910-1418812097-&ntime=1419983038'
+    'Jjzq_2132_saltkey' => 'wkOPSZrn'
+    'Jjzq_2132_lastvisit' => '1420423935'
+    'Jjzq_2132_ulastactivity' => '3cd47khBmEfAZuKV56v5xcereJG/Dl7C07x2T1XA2znHteTfL3el'
+    'RB5E_2132_saltkey' => 'YR3N3T3T'
+    'RB5E_2132_lastvisit' => '1420425536'
+    'RB5E_2132_ulastactivity' => '7a33yKqJzIUHWbK8a2g4rYyfLxZRCEFiozw4LjGbd97NwT8w9vkf'
+    'VOIr_2132_saltkey' => 'Ot1vtjL1'
+    'VOIr_2132_lastvisit' => '1420426036'
+    'VOIr_2132_ulastactivity' => '40a3geAD9hD7n9MsDQ4l4FnD7q3ymVwknLjv8+KttwvvmeBgf8zp'
+    'VOIr_2132_nofavfid' => '1'
+    'uchome_loginuser' => 'admin'
+    'CNZZDATA2924747' => 'cnzz_eid=1577273435-1420269582-&ntime=1420676356'
+    'CNZZDATA3668490' => 'cnzz_eid=405753816-1420849139-http%3A%2F%2Flocalhost%2F&ntime=1420849139'
+    'CNZZDATA3637100' => 'cnzz_eid=1250976432-1420847467-http%3A%2F%2Flocalhost%2F&ntime=1420847467'
+    'sid' => '5581iHsOCW5McFRYsx5i%2BRZkm6ESzH4wFOp%2B8dqIBW3lcUiALVNvuGwefDxiMjpKKfOm2rMjEnAQ%2Fw'
+    'PHPSESSID' => '20i13vqn7j4u0e5d1t8b0eeub4'
+    '_csrf' => 'e608113b460aca5a8d48f9ab5369e32c7cd50f166922d9ed9faf77d831cff95cs:32:\"-rMsw__77Eq15_KL42cvogAH_39UZg2t\";'
+]
+
+$_SERVER = [
+    'MIBDIRS' => 'D:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'D:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.57 Safari/537.36'
+    'HTTP_REFERER' => 'http://localhost/youhui/backend/web/?r=site/left&act=1'
+    'HTTP_ACCEPT_ENCODING' => 'gzip,deflate,sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8,en;q=0.6'
+    'HTTP_COOKIE' => 'AJSTAT_ok_times=1; _ga=GA1.1.54924247.1416566351; __zpspc=9.2.1416813744.1416814460.10%234%7C%7C%7C%7C%7C%23; bdshare_firstime=1418786158546; CNZZDATA4617777=cnzz_eid%3D682052683-1418784431-%26ntime%3D1418784197; CNZZDATA4617788=cnzz_eid%3D431890627-1419157234-%26ntime%3D1419203501; CNZZDATA4617784=cnzz_eid%3D1410397910-1418812097-%26ntime%3D1419983038; Jjzq_2132_saltkey=wkOPSZrn; Jjzq_2132_lastvisit=1420423935; Jjzq_2132_ulastactivity=3cd47khBmEfAZuKV56v5xcereJG%2FDl7C07x2T1XA2znHteTfL3el; RB5E_2132_saltkey=YR3N3T3T; RB5E_2132_lastvisit=1420425536; RB5E_2132_ulastactivity=7a33yKqJzIUHWbK8a2g4rYyfLxZRCEFiozw4LjGbd97NwT8w9vkf; VOIr_2132_saltkey=Ot1vtjL1; VOIr_2132_lastvisit=1420426036; VOIr_2132_ulastactivity=40a3geAD9hD7n9MsDQ4l4FnD7q3ymVwknLjv8%2BKttwvvmeBgf8zp; VOIr_2132_nofavfid=1; uchome_loginuser=admin; CNZZDATA2924747=cnzz_eid%3D1577273435-1420269582-%26ntime%3D1420676356; CNZZDATA3668490=cnzz_eid%3D405753816-1420849139-http%253A%252F%252Flocalhost%252F%26ntime%3D1420849139; CNZZDATA3637100=cnzz_eid%3D1250976432-1420847467-http%253A%252F%252Flocalhost%252F%26ntime%3D1420847467; sid=5581iHsOCW5McFRYsx5i%252BRZkm6ESzH4wFOp%252B8dqIBW3lcUiALVNvuGwefDxiMjpKKfOm2rMjEnAQ%252Fw; PHPSESSID=20i13vqn7j4u0e5d1t8b0eeub4; _csrf=e608113b460aca5a8d48f9ab5369e32c7cd50f166922d9ed9faf77d831cff95cs%3A32%3A%22-rMsw__77Eq15_KL42cvogAH_39UZg2t%22%3B'
+    'PATH' => 'C:\\Program Files (x86)\\Common Files\\NetSarang;C:\\ProgramData\\Oracle\\Java\\javapath;C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;D:\\xampp\\php\\php.exe;D:\\Program Files\\Java\\jdk1.8.0_25\\bin;D:\\Program Files\\Java\\jdk1.8.0_25\\jre\\bin;D:\\git\\bin;D:\\xampp\\php;C:\\ProgramData\\ComposerSetup\\bin;C:\\Windows\\system32'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.7 (Win32) OpenSSL/1.0.1e PHP/5.5.9 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.7 (Win32) OpenSSL/1.0.1e PHP/5.5.9'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'D:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'D:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'D:/xampp/htdocs/youhui/backend/web/index.php'
+    'REMOTE_PORT' => '51204'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=cuxiao/list'
+    'REQUEST_URI' => '/youhui/backend/web/?r=cuxiao/list'
+    'SCRIPT_NAME' => '/youhui/backend/web/index.php'
+    'PHP_SELF' => '/youhui/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1422581510.064
+    'REQUEST_TIME' => 1422581510
+]
+2015-01-30 02:32:13 [127.0.0.1][-][-][warning][yii\log\Dispatcher::dispatch] Unable to send log via yii\debug\LogTarget: PHP Notice 'yii\base\ErrorException' with message 'unserialize(): Error at offset 0 of 45789 bytes' 
+
+in D:\xampp\htdocs\youhui\vendor\yiisoft\yii2-debug\LogTarget.php:86
+
+Stack trace:
+#0 [internal function]: yii\base\ErrorHandler->handleError(8, 'unserialize(): ...', 'D:\xampp\htdocs...', 86, Array)
+#1 D:\xampp\htdocs\youhui\vendor\yiisoft\yii2-debug\LogTarget.php(86): unserialize('<<<<<<< HEAD??a...')
+#2 D:\xampp\htdocs\youhui\vendor\yiisoft\yii2-debug\LogTarget.php(61): yii\debug\LogTarget->updateIndexFile('D:\xampp\htdocs...', Array)
+#3 D:\xampp\htdocs\youhui\vendor\yiisoft\yii2-debug\LogTarget.php(112): yii\debug\LogTarget->export(Array)
+#4 D:\xampp\htdocs\youhui\vendor\yiisoft\yii2\log\Dispatcher.php(183): yii\debug\LogTarget->collect(Array, true)
+#5 D:\xampp\htdocs\youhui\vendor\yiisoft\yii2\log\Logger.php(166): yii\log\Dispatcher->dispatch(Array, true)
+#6 [internal function]: yii\log\Logger->flush(true)
+#7 {main}
+2015-01-30 02:32:13 [127.0.0.1][-][-][info][application] $_GET = [
+    'r' => 'cuxiao/list'
+]
+
+$_COOKIE = [
+    'AJSTAT_ok_times' => '1'
+    '_ga' => 'GA1.1.54924247.1416566351'
+    '__zpspc' => '9.2.1416813744.1416814460.10#4|||||#'
+    'bdshare_firstime' => '1418786158546'
+    'CNZZDATA4617777' => 'cnzz_eid=682052683-1418784431-&ntime=1418784197'
+    'CNZZDATA4617788' => 'cnzz_eid=431890627-1419157234-&ntime=1419203501'
+    'CNZZDATA4617784' => 'cnzz_eid=1410397910-1418812097-&ntime=1419983038'
+    'Jjzq_2132_saltkey' => 'wkOPSZrn'
+    'Jjzq_2132_lastvisit' => '1420423935'
+    'Jjzq_2132_ulastactivity' => '3cd47khBmEfAZuKV56v5xcereJG/Dl7C07x2T1XA2znHteTfL3el'
+    'RB5E_2132_saltkey' => 'YR3N3T3T'
+    'RB5E_2132_lastvisit' => '1420425536'
+    'RB5E_2132_ulastactivity' => '7a33yKqJzIUHWbK8a2g4rYyfLxZRCEFiozw4LjGbd97NwT8w9vkf'
+    'VOIr_2132_saltkey' => 'Ot1vtjL1'
+    'VOIr_2132_lastvisit' => '1420426036'
+    'VOIr_2132_ulastactivity' => '40a3geAD9hD7n9MsDQ4l4FnD7q3ymVwknLjv8+KttwvvmeBgf8zp'
+    'VOIr_2132_nofavfid' => '1'
+    'uchome_loginuser' => 'admin'
+    'CNZZDATA2924747' => 'cnzz_eid=1577273435-1420269582-&ntime=1420676356'
+    'CNZZDATA3668490' => 'cnzz_eid=405753816-1420849139-http%3A%2F%2Flocalhost%2F&ntime=1420849139'
+    'CNZZDATA3637100' => 'cnzz_eid=1250976432-1420847467-http%3A%2F%2Flocalhost%2F&ntime=1420847467'
+    'sid' => '5581iHsOCW5McFRYsx5i%2BRZkm6ESzH4wFOp%2B8dqIBW3lcUiALVNvuGwefDxiMjpKKfOm2rMjEnAQ%2Fw'
+    'PHPSESSID' => '20i13vqn7j4u0e5d1t8b0eeub4'
+    '_csrf' => 'e608113b460aca5a8d48f9ab5369e32c7cd50f166922d9ed9faf77d831cff95cs:32:\"-rMsw__77Eq15_KL42cvogAH_39UZg2t\";'
+]
+
+$_SERVER = [
+    'MIBDIRS' => 'D:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'D:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.57 Safari/537.36'
+    'HTTP_REFERER' => 'http://localhost/youhui/backend/web/?r=site/left&act=1'
+    'HTTP_ACCEPT_ENCODING' => 'gzip,deflate,sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8,en;q=0.6'
+    'HTTP_COOKIE' => 'AJSTAT_ok_times=1; _ga=GA1.1.54924247.1416566351; __zpspc=9.2.1416813744.1416814460.10%234%7C%7C%7C%7C%7C%23; bdshare_firstime=1418786158546; CNZZDATA4617777=cnzz_eid%3D682052683-1418784431-%26ntime%3D1418784197; CNZZDATA4617788=cnzz_eid%3D431890627-1419157234-%26ntime%3D1419203501; CNZZDATA4617784=cnzz_eid%3D1410397910-1418812097-%26ntime%3D1419983038; Jjzq_2132_saltkey=wkOPSZrn; Jjzq_2132_lastvisit=1420423935; Jjzq_2132_ulastactivity=3cd47khBmEfAZuKV56v5xcereJG%2FDl7C07x2T1XA2znHteTfL3el; RB5E_2132_saltkey=YR3N3T3T; RB5E_2132_lastvisit=1420425536; RB5E_2132_ulastactivity=7a33yKqJzIUHWbK8a2g4rYyfLxZRCEFiozw4LjGbd97NwT8w9vkf; VOIr_2132_saltkey=Ot1vtjL1; VOIr_2132_lastvisit=1420426036; VOIr_2132_ulastactivity=40a3geAD9hD7n9MsDQ4l4FnD7q3ymVwknLjv8%2BKttwvvmeBgf8zp; VOIr_2132_nofavfid=1; uchome_loginuser=admin; CNZZDATA2924747=cnzz_eid%3D1577273435-1420269582-%26ntime%3D1420676356; CNZZDATA3668490=cnzz_eid%3D405753816-1420849139-http%253A%252F%252Flocalhost%252F%26ntime%3D1420849139; CNZZDATA3637100=cnzz_eid%3D1250976432-1420847467-http%253A%252F%252Flocalhost%252F%26ntime%3D1420847467; sid=5581iHsOCW5McFRYsx5i%252BRZkm6ESzH4wFOp%252B8dqIBW3lcUiALVNvuGwefDxiMjpKKfOm2rMjEnAQ%252Fw; PHPSESSID=20i13vqn7j4u0e5d1t8b0eeub4; _csrf=e608113b460aca5a8d48f9ab5369e32c7cd50f166922d9ed9faf77d831cff95cs%3A32%3A%22-rMsw__77Eq15_KL42cvogAH_39UZg2t%22%3B'
+    'PATH' => 'C:\\Program Files (x86)\\Common Files\\NetSarang;C:\\ProgramData\\Oracle\\Java\\javapath;C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;D:\\xampp\\php\\php.exe;D:\\Program Files\\Java\\jdk1.8.0_25\\bin;D:\\Program Files\\Java\\jdk1.8.0_25\\jre\\bin;D:\\git\\bin;D:\\xampp\\php;C:\\ProgramData\\ComposerSetup\\bin;C:\\Windows\\system32'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.7 (Win32) OpenSSL/1.0.1e PHP/5.5.9 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.7 (Win32) OpenSSL/1.0.1e PHP/5.5.9'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'D:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'D:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'D:/xampp/htdocs/youhui/backend/web/index.php'
+    'REMOTE_PORT' => '51212'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=cuxiao/list'
+    'REQUEST_URI' => '/youhui/backend/web/?r=cuxiao/list'
+    'SCRIPT_NAME' => '/youhui/backend/web/index.php'
+    'PHP_SELF' => '/youhui/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1422581533.056
+    'REQUEST_TIME' => 1422581533
+]
+2015-01-30 02:32:19 [127.0.0.1][-][-][warning][yii\log\Dispatcher::dispatch] Unable to send log via yii\debug\LogTarget: PHP Notice 'yii\base\ErrorException' with message 'unserialize(): Error at offset 0 of 45789 bytes' 
+
+in D:\xampp\htdocs\youhui\vendor\yiisoft\yii2-debug\LogTarget.php:86
+
+Stack trace:
+#0 [internal function]: yii\base\ErrorHandler->handleError(8, 'unserialize(): ...', 'D:\xampp\htdocs...', 86, Array)
+#1 D:\xampp\htdocs\youhui\vendor\yiisoft\yii2-debug\LogTarget.php(86): unserialize('<<<<<<< HEAD??a...')
+#2 D:\xampp\htdocs\youhui\vendor\yiisoft\yii2-debug\LogTarget.php(61): yii\debug\LogTarget->updateIndexFile('D:\xampp\htdocs...', Array)
+#3 D:\xampp\htdocs\youhui\vendor\yiisoft\yii2-debug\LogTarget.php(112): yii\debug\LogTarget->export(Array)
+#4 D:\xampp\htdocs\youhui\vendor\yiisoft\yii2\log\Dispatcher.php(183): yii\debug\LogTarget->collect(Array, true)
+#5 D:\xampp\htdocs\youhui\vendor\yiisoft\yii2\log\Logger.php(166): yii\log\Dispatcher->dispatch(Array, true)
+#6 [internal function]: yii\log\Logger->flush(true)
+#7 {main}
+2015-01-30 02:32:19 [127.0.0.1][-][-][info][application] $_GET = [
+    'r' => 'cuxiao/list'
+]
+
+$_COOKIE = [
+    'AJSTAT_ok_times' => '1'
+    '_ga' => 'GA1.1.54924247.1416566351'
+    '__zpspc' => '9.2.1416813744.1416814460.10#4|||||#'
+    'bdshare_firstime' => '1418786158546'
+    'CNZZDATA4617777' => 'cnzz_eid=682052683-1418784431-&ntime=1418784197'
+    'CNZZDATA4617788' => 'cnzz_eid=431890627-1419157234-&ntime=1419203501'
+    'CNZZDATA4617784' => 'cnzz_eid=1410397910-1418812097-&ntime=1419983038'
+    'Jjzq_2132_saltkey' => 'wkOPSZrn'
+    'Jjzq_2132_lastvisit' => '1420423935'
+    'Jjzq_2132_ulastactivity' => '3cd47khBmEfAZuKV56v5xcereJG/Dl7C07x2T1XA2znHteTfL3el'
+    'RB5E_2132_saltkey' => 'YR3N3T3T'
+    'RB5E_2132_lastvisit' => '1420425536'
+    'RB5E_2132_ulastactivity' => '7a33yKqJzIUHWbK8a2g4rYyfLxZRCEFiozw4LjGbd97NwT8w9vkf'
+    'VOIr_2132_saltkey' => 'Ot1vtjL1'
+    'VOIr_2132_lastvisit' => '1420426036'
+    'VOIr_2132_ulastactivity' => '40a3geAD9hD7n9MsDQ4l4FnD7q3ymVwknLjv8+KttwvvmeBgf8zp'
+    'VOIr_2132_nofavfid' => '1'
+    'uchome_loginuser' => 'admin'
+    'CNZZDATA2924747' => 'cnzz_eid=1577273435-1420269582-&ntime=1420676356'
+    'CNZZDATA3668490' => 'cnzz_eid=405753816-1420849139-http%3A%2F%2Flocalhost%2F&ntime=1420849139'
+    'CNZZDATA3637100' => 'cnzz_eid=1250976432-1420847467-http%3A%2F%2Flocalhost%2F&ntime=1420847467'
+    'sid' => '5581iHsOCW5McFRYsx5i%2BRZkm6ESzH4wFOp%2B8dqIBW3lcUiALVNvuGwefDxiMjpKKfOm2rMjEnAQ%2Fw'
+    'PHPSESSID' => '20i13vqn7j4u0e5d1t8b0eeub4'
+    '_csrf' => 'e608113b460aca5a8d48f9ab5369e32c7cd50f166922d9ed9faf77d831cff95cs:32:\"-rMsw__77Eq15_KL42cvogAH_39UZg2t\";'
+]
+
+$_SERVER = [
+    'MIBDIRS' => 'D:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'D:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.57 Safari/537.36'
+    'HTTP_REFERER' => 'http://localhost/youhui/backend/web/?r=site/left&act=1'
+    'HTTP_ACCEPT_ENCODING' => 'gzip,deflate,sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8,en;q=0.6'
+    'HTTP_COOKIE' => 'AJSTAT_ok_times=1; _ga=GA1.1.54924247.1416566351; __zpspc=9.2.1416813744.1416814460.10%234%7C%7C%7C%7C%7C%23; bdshare_firstime=1418786158546; CNZZDATA4617777=cnzz_eid%3D682052683-1418784431-%26ntime%3D1418784197; CNZZDATA4617788=cnzz_eid%3D431890627-1419157234-%26ntime%3D1419203501; CNZZDATA4617784=cnzz_eid%3D1410397910-1418812097-%26ntime%3D1419983038; Jjzq_2132_saltkey=wkOPSZrn; Jjzq_2132_lastvisit=1420423935; Jjzq_2132_ulastactivity=3cd47khBmEfAZuKV56v5xcereJG%2FDl7C07x2T1XA2znHteTfL3el; RB5E_2132_saltkey=YR3N3T3T; RB5E_2132_lastvisit=1420425536; RB5E_2132_ulastactivity=7a33yKqJzIUHWbK8a2g4rYyfLxZRCEFiozw4LjGbd97NwT8w9vkf; VOIr_2132_saltkey=Ot1vtjL1; VOIr_2132_lastvisit=1420426036; VOIr_2132_ulastactivity=40a3geAD9hD7n9MsDQ4l4FnD7q3ymVwknLjv8%2BKttwvvmeBgf8zp; VOIr_2132_nofavfid=1; uchome_loginuser=admin; CNZZDATA2924747=cnzz_eid%3D1577273435-1420269582-%26ntime%3D1420676356; CNZZDATA3668490=cnzz_eid%3D405753816-1420849139-http%253A%252F%252Flocalhost%252F%26ntime%3D1420849139; CNZZDATA3637100=cnzz_eid%3D1250976432-1420847467-http%253A%252F%252Flocalhost%252F%26ntime%3D1420847467; sid=5581iHsOCW5McFRYsx5i%252BRZkm6ESzH4wFOp%252B8dqIBW3lcUiALVNvuGwefDxiMjpKKfOm2rMjEnAQ%252Fw; PHPSESSID=20i13vqn7j4u0e5d1t8b0eeub4; _csrf=e608113b460aca5a8d48f9ab5369e32c7cd50f166922d9ed9faf77d831cff95cs%3A32%3A%22-rMsw__77Eq15_KL42cvogAH_39UZg2t%22%3B'
+    'PATH' => 'C:\\Program Files (x86)\\Common Files\\NetSarang;C:\\ProgramData\\Oracle\\Java\\javapath;C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;D:\\xampp\\php\\php.exe;D:\\Program Files\\Java\\jdk1.8.0_25\\bin;D:\\Program Files\\Java\\jdk1.8.0_25\\jre\\bin;D:\\git\\bin;D:\\xampp\\php;C:\\ProgramData\\ComposerSetup\\bin;C:\\Windows\\system32'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.7 (Win32) OpenSSL/1.0.1e PHP/5.5.9 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.7 (Win32) OpenSSL/1.0.1e PHP/5.5.9'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'D:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'D:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'D:/xampp/htdocs/youhui/backend/web/index.php'
+    'REMOTE_PORT' => '51213'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=cuxiao/list'
+    'REQUEST_URI' => '/youhui/backend/web/?r=cuxiao/list'
+    'SCRIPT_NAME' => '/youhui/backend/web/index.php'
+    'PHP_SELF' => '/youhui/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1422581539.435
+    'REQUEST_TIME' => 1422581539
+]
+2015-01-30 02:32:22 [127.0.0.1][-][-][warning][yii\log\Dispatcher::dispatch] Unable to send log via yii\debug\LogTarget: PHP Notice 'yii\base\ErrorException' with message 'unserialize(): Error at offset 0 of 45789 bytes' 
+
+in D:\xampp\htdocs\youhui\vendor\yiisoft\yii2-debug\LogTarget.php:86
+
+Stack trace:
+#0 [internal function]: yii\base\ErrorHandler->handleError(8, 'unserialize(): ...', 'D:\xampp\htdocs...', 86, Array)
+#1 D:\xampp\htdocs\youhui\vendor\yiisoft\yii2-debug\LogTarget.php(86): unserialize('<<<<<<< HEAD??a...')
+#2 D:\xampp\htdocs\youhui\vendor\yiisoft\yii2-debug\LogTarget.php(61): yii\debug\LogTarget->updateIndexFile('D:\xampp\htdocs...', Array)
+#3 D:\xampp\htdocs\youhui\vendor\yiisoft\yii2-debug\LogTarget.php(112): yii\debug\LogTarget->export(Array)
+#4 D:\xampp\htdocs\youhui\vendor\yiisoft\yii2\log\Dispatcher.php(183): yii\debug\LogTarget->collect(Array, true)
+#5 D:\xampp\htdocs\youhui\vendor\yiisoft\yii2\log\Logger.php(166): yii\log\Dispatcher->dispatch(Array, true)
+#6 [internal function]: yii\log\Logger->flush(true)
+#7 {main}
+2015-01-30 02:32:22 [127.0.0.1][-][-][info][application] $_GET = [
+    'r' => 'cuxiao/list'
+]
+
+$_COOKIE = [
+    'AJSTAT_ok_times' => '1'
+    '_ga' => 'GA1.1.54924247.1416566351'
+    '__zpspc' => '9.2.1416813744.1416814460.10#4|||||#'
+    'bdshare_firstime' => '1418786158546'
+    'CNZZDATA4617777' => 'cnzz_eid=682052683-1418784431-&ntime=1418784197'
+    'CNZZDATA4617788' => 'cnzz_eid=431890627-1419157234-&ntime=1419203501'
+    'CNZZDATA4617784' => 'cnzz_eid=1410397910-1418812097-&ntime=1419983038'
+    'Jjzq_2132_saltkey' => 'wkOPSZrn'
+    'Jjzq_2132_lastvisit' => '1420423935'
+    'Jjzq_2132_ulastactivity' => '3cd47khBmEfAZuKV56v5xcereJG/Dl7C07x2T1XA2znHteTfL3el'
+    'RB5E_2132_saltkey' => 'YR3N3T3T'
+    'RB5E_2132_lastvisit' => '1420425536'
+    'RB5E_2132_ulastactivity' => '7a33yKqJzIUHWbK8a2g4rYyfLxZRCEFiozw4LjGbd97NwT8w9vkf'
+    'VOIr_2132_saltkey' => 'Ot1vtjL1'
+    'VOIr_2132_lastvisit' => '1420426036'
+    'VOIr_2132_ulastactivity' => '40a3geAD9hD7n9MsDQ4l4FnD7q3ymVwknLjv8+KttwvvmeBgf8zp'
+    'VOIr_2132_nofavfid' => '1'
+    'uchome_loginuser' => 'admin'
+    'CNZZDATA2924747' => 'cnzz_eid=1577273435-1420269582-&ntime=1420676356'
+    'CNZZDATA3668490' => 'cnzz_eid=405753816-1420849139-http%3A%2F%2Flocalhost%2F&ntime=1420849139'
+    'CNZZDATA3637100' => 'cnzz_eid=1250976432-1420847467-http%3A%2F%2Flocalhost%2F&ntime=1420847467'
+    'sid' => '5581iHsOCW5McFRYsx5i%2BRZkm6ESzH4wFOp%2B8dqIBW3lcUiALVNvuGwefDxiMjpKKfOm2rMjEnAQ%2Fw'
+    'PHPSESSID' => '20i13vqn7j4u0e5d1t8b0eeub4'
+    '_csrf' => 'e608113b460aca5a8d48f9ab5369e32c7cd50f166922d9ed9faf77d831cff95cs:32:\"-rMsw__77Eq15_KL42cvogAH_39UZg2t\";'
+]
+
+$_SERVER = [
+    'MIBDIRS' => 'D:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'D:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.57 Safari/537.36'
+    'HTTP_REFERER' => 'http://localhost/youhui/backend/web/?r=site/left&act=1'
+    'HTTP_ACCEPT_ENCODING' => 'gzip,deflate,sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8,en;q=0.6'
+    'HTTP_COOKIE' => 'AJSTAT_ok_times=1; _ga=GA1.1.54924247.1416566351; __zpspc=9.2.1416813744.1416814460.10%234%7C%7C%7C%7C%7C%23; bdshare_firstime=1418786158546; CNZZDATA4617777=cnzz_eid%3D682052683-1418784431-%26ntime%3D1418784197; CNZZDATA4617788=cnzz_eid%3D431890627-1419157234-%26ntime%3D1419203501; CNZZDATA4617784=cnzz_eid%3D1410397910-1418812097-%26ntime%3D1419983038; Jjzq_2132_saltkey=wkOPSZrn; Jjzq_2132_lastvisit=1420423935; Jjzq_2132_ulastactivity=3cd47khBmEfAZuKV56v5xcereJG%2FDl7C07x2T1XA2znHteTfL3el; RB5E_2132_saltkey=YR3N3T3T; RB5E_2132_lastvisit=1420425536; RB5E_2132_ulastactivity=7a33yKqJzIUHWbK8a2g4rYyfLxZRCEFiozw4LjGbd97NwT8w9vkf; VOIr_2132_saltkey=Ot1vtjL1; VOIr_2132_lastvisit=1420426036; VOIr_2132_ulastactivity=40a3geAD9hD7n9MsDQ4l4FnD7q3ymVwknLjv8%2BKttwvvmeBgf8zp; VOIr_2132_nofavfid=1; uchome_loginuser=admin; CNZZDATA2924747=cnzz_eid%3D1577273435-1420269582-%26ntime%3D1420676356; CNZZDATA3668490=cnzz_eid%3D405753816-1420849139-http%253A%252F%252Flocalhost%252F%26ntime%3D1420849139; CNZZDATA3637100=cnzz_eid%3D1250976432-1420847467-http%253A%252F%252Flocalhost%252F%26ntime%3D1420847467; sid=5581iHsOCW5McFRYsx5i%252BRZkm6ESzH4wFOp%252B8dqIBW3lcUiALVNvuGwefDxiMjpKKfOm2rMjEnAQ%252Fw; PHPSESSID=20i13vqn7j4u0e5d1t8b0eeub4; _csrf=e608113b460aca5a8d48f9ab5369e32c7cd50f166922d9ed9faf77d831cff95cs%3A32%3A%22-rMsw__77Eq15_KL42cvogAH_39UZg2t%22%3B'
+    'PATH' => 'C:\\Program Files (x86)\\Common Files\\NetSarang;C:\\ProgramData\\Oracle\\Java\\javapath;C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;D:\\xampp\\php\\php.exe;D:\\Program Files\\Java\\jdk1.8.0_25\\bin;D:\\Program Files\\Java\\jdk1.8.0_25\\jre\\bin;D:\\git\\bin;D:\\xampp\\php;C:\\ProgramData\\ComposerSetup\\bin;C:\\Windows\\system32'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.7 (Win32) OpenSSL/1.0.1e PHP/5.5.9 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.7 (Win32) OpenSSL/1.0.1e PHP/5.5.9'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'D:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'D:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'D:/xampp/htdocs/youhui/backend/web/index.php'
+    'REMOTE_PORT' => '51213'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=cuxiao/list'
+    'REQUEST_URI' => '/youhui/backend/web/?r=cuxiao/list'
+    'SCRIPT_NAME' => '/youhui/backend/web/index.php'
+    'PHP_SELF' => '/youhui/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1422581542.484
+    'REQUEST_TIME' => 1422581542
+]
+2015-01-30 02:32:24 [127.0.0.1][-][-][warning][yii\log\Dispatcher::dispatch] Unable to send log via yii\debug\LogTarget: PHP Notice 'yii\base\ErrorException' with message 'unserialize(): Error at offset 0 of 45789 bytes' 
+
+in D:\xampp\htdocs\youhui\vendor\yiisoft\yii2-debug\LogTarget.php:86
+
+Stack trace:
+#0 [internal function]: yii\base\ErrorHandler->handleError(8, 'unserialize(): ...', 'D:\xampp\htdocs...', 86, Array)
+#1 D:\xampp\htdocs\youhui\vendor\yiisoft\yii2-debug\LogTarget.php(86): unserialize('<<<<<<< HEAD??a...')
+#2 D:\xampp\htdocs\youhui\vendor\yiisoft\yii2-debug\LogTarget.php(61): yii\debug\LogTarget->updateIndexFile('D:\xampp\htdocs...', Array)
+#3 D:\xampp\htdocs\youhui\vendor\yiisoft\yii2-debug\LogTarget.php(112): yii\debug\LogTarget->export(Array)
+#4 D:\xampp\htdocs\youhui\vendor\yiisoft\yii2\log\Dispatcher.php(183): yii\debug\LogTarget->collect(Array, true)
+#5 D:\xampp\htdocs\youhui\vendor\yiisoft\yii2\log\Logger.php(166): yii\log\Dispatcher->dispatch(Array, true)
+#6 [internal function]: yii\log\Logger->flush(true)
+#7 {main}
+2015-01-30 02:32:24 [127.0.0.1][-][-][info][application] $_GET = [
+    'r' => 'cuxiao/list'
+]
+
+$_COOKIE = [
+    'AJSTAT_ok_times' => '1'
+    '_ga' => 'GA1.1.54924247.1416566351'
+    '__zpspc' => '9.2.1416813744.1416814460.10#4|||||#'
+    'bdshare_firstime' => '1418786158546'
+    'CNZZDATA4617777' => 'cnzz_eid=682052683-1418784431-&ntime=1418784197'
+    'CNZZDATA4617788' => 'cnzz_eid=431890627-1419157234-&ntime=1419203501'
+    'CNZZDATA4617784' => 'cnzz_eid=1410397910-1418812097-&ntime=1419983038'
+    'Jjzq_2132_saltkey' => 'wkOPSZrn'
+    'Jjzq_2132_lastvisit' => '1420423935'
+    'Jjzq_2132_ulastactivity' => '3cd47khBmEfAZuKV56v5xcereJG/Dl7C07x2T1XA2znHteTfL3el'
+    'RB5E_2132_saltkey' => 'YR3N3T3T'
+    'RB5E_2132_lastvisit' => '1420425536'
+    'RB5E_2132_ulastactivity' => '7a33yKqJzIUHWbK8a2g4rYyfLxZRCEFiozw4LjGbd97NwT8w9vkf'
+    'VOIr_2132_saltkey' => 'Ot1vtjL1'
+    'VOIr_2132_lastvisit' => '1420426036'
+    'VOIr_2132_ulastactivity' => '40a3geAD9hD7n9MsDQ4l4FnD7q3ymVwknLjv8+KttwvvmeBgf8zp'
+    'VOIr_2132_nofavfid' => '1'
+    'uchome_loginuser' => 'admin'
+    'CNZZDATA2924747' => 'cnzz_eid=1577273435-1420269582-&ntime=1420676356'
+    'CNZZDATA3668490' => 'cnzz_eid=405753816-1420849139-http%3A%2F%2Flocalhost%2F&ntime=1420849139'
+    'CNZZDATA3637100' => 'cnzz_eid=1250976432-1420847467-http%3A%2F%2Flocalhost%2F&ntime=1420847467'
+    'sid' => '5581iHsOCW5McFRYsx5i%2BRZkm6ESzH4wFOp%2B8dqIBW3lcUiALVNvuGwefDxiMjpKKfOm2rMjEnAQ%2Fw'
+    'PHPSESSID' => '20i13vqn7j4u0e5d1t8b0eeub4'
+    '_csrf' => 'e608113b460aca5a8d48f9ab5369e32c7cd50f166922d9ed9faf77d831cff95cs:32:\"-rMsw__77Eq15_KL42cvogAH_39UZg2t\";'
+]
+
+$_SERVER = [
+    'MIBDIRS' => 'D:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'D:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.57 Safari/537.36'
+    'HTTP_REFERER' => 'http://localhost/youhui/backend/web/?r=site/left&act=1'
+    'HTTP_ACCEPT_ENCODING' => 'gzip,deflate,sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8,en;q=0.6'
+    'HTTP_COOKIE' => 'AJSTAT_ok_times=1; _ga=GA1.1.54924247.1416566351; __zpspc=9.2.1416813744.1416814460.10%234%7C%7C%7C%7C%7C%23; bdshare_firstime=1418786158546; CNZZDATA4617777=cnzz_eid%3D682052683-1418784431-%26ntime%3D1418784197; CNZZDATA4617788=cnzz_eid%3D431890627-1419157234-%26ntime%3D1419203501; CNZZDATA4617784=cnzz_eid%3D1410397910-1418812097-%26ntime%3D1419983038; Jjzq_2132_saltkey=wkOPSZrn; Jjzq_2132_lastvisit=1420423935; Jjzq_2132_ulastactivity=3cd47khBmEfAZuKV56v5xcereJG%2FDl7C07x2T1XA2znHteTfL3el; RB5E_2132_saltkey=YR3N3T3T; RB5E_2132_lastvisit=1420425536; RB5E_2132_ulastactivity=7a33yKqJzIUHWbK8a2g4rYyfLxZRCEFiozw4LjGbd97NwT8w9vkf; VOIr_2132_saltkey=Ot1vtjL1; VOIr_2132_lastvisit=1420426036; VOIr_2132_ulastactivity=40a3geAD9hD7n9MsDQ4l4FnD7q3ymVwknLjv8%2BKttwvvmeBgf8zp; VOIr_2132_nofavfid=1; uchome_loginuser=admin; CNZZDATA2924747=cnzz_eid%3D1577273435-1420269582-%26ntime%3D1420676356; CNZZDATA3668490=cnzz_eid%3D405753816-1420849139-http%253A%252F%252Flocalhost%252F%26ntime%3D1420849139; CNZZDATA3637100=cnzz_eid%3D1250976432-1420847467-http%253A%252F%252Flocalhost%252F%26ntime%3D1420847467; sid=5581iHsOCW5McFRYsx5i%252BRZkm6ESzH4wFOp%252B8dqIBW3lcUiALVNvuGwefDxiMjpKKfOm2rMjEnAQ%252Fw; PHPSESSID=20i13vqn7j4u0e5d1t8b0eeub4; _csrf=e608113b460aca5a8d48f9ab5369e32c7cd50f166922d9ed9faf77d831cff95cs%3A32%3A%22-rMsw__77Eq15_KL42cvogAH_39UZg2t%22%3B'
+    'PATH' => 'C:\\Program Files (x86)\\Common Files\\NetSarang;C:\\ProgramData\\Oracle\\Java\\javapath;C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;D:\\xampp\\php\\php.exe;D:\\Program Files\\Java\\jdk1.8.0_25\\bin;D:\\Program Files\\Java\\jdk1.8.0_25\\jre\\bin;D:\\git\\bin;D:\\xampp\\php;C:\\ProgramData\\ComposerSetup\\bin;C:\\Windows\\system32'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.7 (Win32) OpenSSL/1.0.1e PHP/5.5.9 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.7 (Win32) OpenSSL/1.0.1e PHP/5.5.9'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'D:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'D:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'D:/xampp/htdocs/youhui/backend/web/index.php'
+    'REMOTE_PORT' => '51216'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=cuxiao/list'
+    'REQUEST_URI' => '/youhui/backend/web/?r=cuxiao/list'
+    'SCRIPT_NAME' => '/youhui/backend/web/index.php'
+    'PHP_SELF' => '/youhui/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1422581544.798
+    'REQUEST_TIME' => 1422581544
+]
+2015-01-30 02:32:26 [127.0.0.1][-][-][warning][yii\log\Dispatcher::dispatch] Unable to send log via yii\debug\LogTarget: PHP Notice 'yii\base\ErrorException' with message 'unserialize(): Error at offset 0 of 45789 bytes' 
+
+in D:\xampp\htdocs\youhui\vendor\yiisoft\yii2-debug\LogTarget.php:86
+
+Stack trace:
+#0 [internal function]: yii\base\ErrorHandler->handleError(8, 'unserialize(): ...', 'D:\xampp\htdocs...', 86, Array)
+#1 D:\xampp\htdocs\youhui\vendor\yiisoft\yii2-debug\LogTarget.php(86): unserialize('<<<<<<< HEAD??a...')
+#2 D:\xampp\htdocs\youhui\vendor\yiisoft\yii2-debug\LogTarget.php(61): yii\debug\LogTarget->updateIndexFile('D:\xampp\htdocs...', Array)
+#3 D:\xampp\htdocs\youhui\vendor\yiisoft\yii2-debug\LogTarget.php(112): yii\debug\LogTarget->export(Array)
+#4 D:\xampp\htdocs\youhui\vendor\yiisoft\yii2\log\Dispatcher.php(183): yii\debug\LogTarget->collect(Array, true)
+#5 D:\xampp\htdocs\youhui\vendor\yiisoft\yii2\log\Logger.php(166): yii\log\Dispatcher->dispatch(Array, true)
+#6 [internal function]: yii\log\Logger->flush(true)
+#7 {main}
+2015-01-30 02:32:26 [127.0.0.1][-][-][info][application] $_GET = [
+    'r' => 'cuxiao/list'
+]
+
+$_COOKIE = [
+    'AJSTAT_ok_times' => '1'
+    '_ga' => 'GA1.1.54924247.1416566351'
+    '__zpspc' => '9.2.1416813744.1416814460.10#4|||||#'
+    'bdshare_firstime' => '1418786158546'
+    'CNZZDATA4617777' => 'cnzz_eid=682052683-1418784431-&ntime=1418784197'
+    'CNZZDATA4617788' => 'cnzz_eid=431890627-1419157234-&ntime=1419203501'
+    'CNZZDATA4617784' => 'cnzz_eid=1410397910-1418812097-&ntime=1419983038'
+    'Jjzq_2132_saltkey' => 'wkOPSZrn'
+    'Jjzq_2132_lastvisit' => '1420423935'
+    'Jjzq_2132_ulastactivity' => '3cd47khBmEfAZuKV56v5xcereJG/Dl7C07x2T1XA2znHteTfL3el'
+    'RB5E_2132_saltkey' => 'YR3N3T3T'
+    'RB5E_2132_lastvisit' => '1420425536'
+    'RB5E_2132_ulastactivity' => '7a33yKqJzIUHWbK8a2g4rYyfLxZRCEFiozw4LjGbd97NwT8w9vkf'
+    'VOIr_2132_saltkey' => 'Ot1vtjL1'
+    'VOIr_2132_lastvisit' => '1420426036'
+    'VOIr_2132_ulastactivity' => '40a3geAD9hD7n9MsDQ4l4FnD7q3ymVwknLjv8+KttwvvmeBgf8zp'
+    'VOIr_2132_nofavfid' => '1'
+    'uchome_loginuser' => 'admin'
+    'CNZZDATA2924747' => 'cnzz_eid=1577273435-1420269582-&ntime=1420676356'
+    'CNZZDATA3668490' => 'cnzz_eid=405753816-1420849139-http%3A%2F%2Flocalhost%2F&ntime=1420849139'
+    'CNZZDATA3637100' => 'cnzz_eid=1250976432-1420847467-http%3A%2F%2Flocalhost%2F&ntime=1420847467'
+    'sid' => '5581iHsOCW5McFRYsx5i%2BRZkm6ESzH4wFOp%2B8dqIBW3lcUiALVNvuGwefDxiMjpKKfOm2rMjEnAQ%2Fw'
+    'PHPSESSID' => '20i13vqn7j4u0e5d1t8b0eeub4'
+    '_csrf' => 'e608113b460aca5a8d48f9ab5369e32c7cd50f166922d9ed9faf77d831cff95cs:32:\"-rMsw__77Eq15_KL42cvogAH_39UZg2t\";'
+]
+
+$_SERVER = [
+    'MIBDIRS' => 'D:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'D:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.57 Safari/537.36'
+    'HTTP_REFERER' => 'http://localhost/youhui/backend/web/?r=site/left&act=1'
+    'HTTP_ACCEPT_ENCODING' => 'gzip,deflate,sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8,en;q=0.6'
+    'HTTP_COOKIE' => 'AJSTAT_ok_times=1; _ga=GA1.1.54924247.1416566351; __zpspc=9.2.1416813744.1416814460.10%234%7C%7C%7C%7C%7C%23; bdshare_firstime=1418786158546; CNZZDATA4617777=cnzz_eid%3D682052683-1418784431-%26ntime%3D1418784197; CNZZDATA4617788=cnzz_eid%3D431890627-1419157234-%26ntime%3D1419203501; CNZZDATA4617784=cnzz_eid%3D1410397910-1418812097-%26ntime%3D1419983038; Jjzq_2132_saltkey=wkOPSZrn; Jjzq_2132_lastvisit=1420423935; Jjzq_2132_ulastactivity=3cd47khBmEfAZuKV56v5xcereJG%2FDl7C07x2T1XA2znHteTfL3el; RB5E_2132_saltkey=YR3N3T3T; RB5E_2132_lastvisit=1420425536; RB5E_2132_ulastactivity=7a33yKqJzIUHWbK8a2g4rYyfLxZRCEFiozw4LjGbd97NwT8w9vkf; VOIr_2132_saltkey=Ot1vtjL1; VOIr_2132_lastvisit=1420426036; VOIr_2132_ulastactivity=40a3geAD9hD7n9MsDQ4l4FnD7q3ymVwknLjv8%2BKttwvvmeBgf8zp; VOIr_2132_nofavfid=1; uchome_loginuser=admin; CNZZDATA2924747=cnzz_eid%3D1577273435-1420269582-%26ntime%3D1420676356; CNZZDATA3668490=cnzz_eid%3D405753816-1420849139-http%253A%252F%252Flocalhost%252F%26ntime%3D1420849139; CNZZDATA3637100=cnzz_eid%3D1250976432-1420847467-http%253A%252F%252Flocalhost%252F%26ntime%3D1420847467; sid=5581iHsOCW5McFRYsx5i%252BRZkm6ESzH4wFOp%252B8dqIBW3lcUiALVNvuGwefDxiMjpKKfOm2rMjEnAQ%252Fw; PHPSESSID=20i13vqn7j4u0e5d1t8b0eeub4; _csrf=e608113b460aca5a8d48f9ab5369e32c7cd50f166922d9ed9faf77d831cff95cs%3A32%3A%22-rMsw__77Eq15_KL42cvogAH_39UZg2t%22%3B'
+    'PATH' => 'C:\\Program Files (x86)\\Common Files\\NetSarang;C:\\ProgramData\\Oracle\\Java\\javapath;C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;D:\\xampp\\php\\php.exe;D:\\Program Files\\Java\\jdk1.8.0_25\\bin;D:\\Program Files\\Java\\jdk1.8.0_25\\jre\\bin;D:\\git\\bin;D:\\xampp\\php;C:\\ProgramData\\ComposerSetup\\bin;C:\\Windows\\system32'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.7 (Win32) OpenSSL/1.0.1e PHP/5.5.9 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.7 (Win32) OpenSSL/1.0.1e PHP/5.5.9'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'D:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'D:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'D:/xampp/htdocs/youhui/backend/web/index.php'
+    'REMOTE_PORT' => '51213'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=cuxiao/list'
+    'REQUEST_URI' => '/youhui/backend/web/?r=cuxiao/list'
+    'SCRIPT_NAME' => '/youhui/backend/web/index.php'
+    'PHP_SELF' => '/youhui/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1422581546.614
+    'REQUEST_TIME' => 1422581546
+]
+2015-01-30 02:32:27 [127.0.0.1][-][-][warning][yii\log\Dispatcher::dispatch] Unable to send log via yii\debug\LogTarget: PHP Notice 'yii\base\ErrorException' with message 'unserialize(): Error at offset 0 of 45789 bytes' 
+
+in D:\xampp\htdocs\youhui\vendor\yiisoft\yii2-debug\LogTarget.php:86
+
+Stack trace:
+#0 [internal function]: yii\base\ErrorHandler->handleError(8, 'unserialize(): ...', 'D:\xampp\htdocs...', 86, Array)
+#1 D:\xampp\htdocs\youhui\vendor\yiisoft\yii2-debug\LogTarget.php(86): unserialize('<<<<<<< HEAD??a...')
+#2 D:\xampp\htdocs\youhui\vendor\yiisoft\yii2-debug\LogTarget.php(61): yii\debug\LogTarget->updateIndexFile('D:\xampp\htdocs...', Array)
+#3 D:\xampp\htdocs\youhui\vendor\yiisoft\yii2-debug\LogTarget.php(112): yii\debug\LogTarget->export(Array)
+#4 D:\xampp\htdocs\youhui\vendor\yiisoft\yii2\log\Dispatcher.php(183): yii\debug\LogTarget->collect(Array, true)
+#5 D:\xampp\htdocs\youhui\vendor\yiisoft\yii2\log\Logger.php(166): yii\log\Dispatcher->dispatch(Array, true)
+#6 [internal function]: yii\log\Logger->flush(true)
+#7 {main}
+2015-01-30 02:32:27 [127.0.0.1][-][-][info][application] $_GET = [
+    'r' => 'cuxiao/add'
+]
+
+$_COOKIE = [
+    'AJSTAT_ok_times' => '1'
+    '_ga' => 'GA1.1.54924247.1416566351'
+    '__zpspc' => '9.2.1416813744.1416814460.10#4|||||#'
+    'bdshare_firstime' => '1418786158546'
+    'CNZZDATA4617777' => 'cnzz_eid=682052683-1418784431-&ntime=1418784197'
+    'CNZZDATA4617788' => 'cnzz_eid=431890627-1419157234-&ntime=1419203501'
+    'CNZZDATA4617784' => 'cnzz_eid=1410397910-1418812097-&ntime=1419983038'
+    'Jjzq_2132_saltkey' => 'wkOPSZrn'
+    'Jjzq_2132_lastvisit' => '1420423935'
+    'Jjzq_2132_ulastactivity' => '3cd47khBmEfAZuKV56v5xcereJG/Dl7C07x2T1XA2znHteTfL3el'
+    'RB5E_2132_saltkey' => 'YR3N3T3T'
+    'RB5E_2132_lastvisit' => '1420425536'
+    'RB5E_2132_ulastactivity' => '7a33yKqJzIUHWbK8a2g4rYyfLxZRCEFiozw4LjGbd97NwT8w9vkf'
+    'VOIr_2132_saltkey' => 'Ot1vtjL1'
+    'VOIr_2132_lastvisit' => '1420426036'
+    'VOIr_2132_ulastactivity' => '40a3geAD9hD7n9MsDQ4l4FnD7q3ymVwknLjv8+KttwvvmeBgf8zp'
+    'VOIr_2132_nofavfid' => '1'
+    'uchome_loginuser' => 'admin'
+    'CNZZDATA2924747' => 'cnzz_eid=1577273435-1420269582-&ntime=1420676356'
+    'CNZZDATA3668490' => 'cnzz_eid=405753816-1420849139-http%3A%2F%2Flocalhost%2F&ntime=1420849139'
+    'CNZZDATA3637100' => 'cnzz_eid=1250976432-1420847467-http%3A%2F%2Flocalhost%2F&ntime=1420847467'
+    'sid' => '5581iHsOCW5McFRYsx5i%2BRZkm6ESzH4wFOp%2B8dqIBW3lcUiALVNvuGwefDxiMjpKKfOm2rMjEnAQ%2Fw'
+    'PHPSESSID' => '20i13vqn7j4u0e5d1t8b0eeub4'
+    '_csrf' => 'e608113b460aca5a8d48f9ab5369e32c7cd50f166922d9ed9faf77d831cff95cs:32:\"-rMsw__77Eq15_KL42cvogAH_39UZg2t\";'
+]
+
+$_SERVER = [
+    'MIBDIRS' => 'D:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'D:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.57 Safari/537.36'
+    'HTTP_REFERER' => 'http://localhost/youhui/backend/web/?r=site/left&act=1'
+    'HTTP_ACCEPT_ENCODING' => 'gzip,deflate,sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8,en;q=0.6'
+    'HTTP_COOKIE' => 'AJSTAT_ok_times=1; _ga=GA1.1.54924247.1416566351; __zpspc=9.2.1416813744.1416814460.10%234%7C%7C%7C%7C%7C%23; bdshare_firstime=1418786158546; CNZZDATA4617777=cnzz_eid%3D682052683-1418784431-%26ntime%3D1418784197; CNZZDATA4617788=cnzz_eid%3D431890627-1419157234-%26ntime%3D1419203501; CNZZDATA4617784=cnzz_eid%3D1410397910-1418812097-%26ntime%3D1419983038; Jjzq_2132_saltkey=wkOPSZrn; Jjzq_2132_lastvisit=1420423935; Jjzq_2132_ulastactivity=3cd47khBmEfAZuKV56v5xcereJG%2FDl7C07x2T1XA2znHteTfL3el; RB5E_2132_saltkey=YR3N3T3T; RB5E_2132_lastvisit=1420425536; RB5E_2132_ulastactivity=7a33yKqJzIUHWbK8a2g4rYyfLxZRCEFiozw4LjGbd97NwT8w9vkf; VOIr_2132_saltkey=Ot1vtjL1; VOIr_2132_lastvisit=1420426036; VOIr_2132_ulastactivity=40a3geAD9hD7n9MsDQ4l4FnD7q3ymVwknLjv8%2BKttwvvmeBgf8zp; VOIr_2132_nofavfid=1; uchome_loginuser=admin; CNZZDATA2924747=cnzz_eid%3D1577273435-1420269582-%26ntime%3D1420676356; CNZZDATA3668490=cnzz_eid%3D405753816-1420849139-http%253A%252F%252Flocalhost%252F%26ntime%3D1420849139; CNZZDATA3637100=cnzz_eid%3D1250976432-1420847467-http%253A%252F%252Flocalhost%252F%26ntime%3D1420847467; sid=5581iHsOCW5McFRYsx5i%252BRZkm6ESzH4wFOp%252B8dqIBW3lcUiALVNvuGwefDxiMjpKKfOm2rMjEnAQ%252Fw; PHPSESSID=20i13vqn7j4u0e5d1t8b0eeub4; _csrf=e608113b460aca5a8d48f9ab5369e32c7cd50f166922d9ed9faf77d831cff95cs%3A32%3A%22-rMsw__77Eq15_KL42cvogAH_39UZg2t%22%3B'
+    'PATH' => 'C:\\Program Files (x86)\\Common Files\\NetSarang;C:\\ProgramData\\Oracle\\Java\\javapath;C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;D:\\xampp\\php\\php.exe;D:\\Program Files\\Java\\jdk1.8.0_25\\bin;D:\\Program Files\\Java\\jdk1.8.0_25\\jre\\bin;D:\\git\\bin;D:\\xampp\\php;C:\\ProgramData\\ComposerSetup\\bin;C:\\Windows\\system32'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.7 (Win32) OpenSSL/1.0.1e PHP/5.5.9 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.7 (Win32) OpenSSL/1.0.1e PHP/5.5.9'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'D:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'D:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'D:/xampp/htdocs/youhui/backend/web/index.php'
+    'REMOTE_PORT' => '51216'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=cuxiao/add'
+    'REQUEST_URI' => '/youhui/backend/web/?r=cuxiao/add'
+    'SCRIPT_NAME' => '/youhui/backend/web/index.php'
+    'PHP_SELF' => '/youhui/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1422581547.267
+    'REQUEST_TIME' => 1422581547
+]
+2015-01-30 02:32:30 [127.0.0.1][-][-][error][yii\web\HttpException:404] exception 'yii\base\InvalidRouteException' with message 'Unable to resolve the request "chuxiao/select".' in D:\xampp\htdocs\youhui\vendor\yiisoft\yii2\base\Module.php:461
+Stack trace:
+#0 D:\xampp\htdocs\youhui\vendor\yiisoft\yii2\web\Application.php(83): yii\base\Module->runAction('chuxiao/select', Array)
+#1 D:\xampp\htdocs\youhui\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 D:\xampp\htdocs\youhui\backend\web\index.php(18): yii\base\Application->run()
+#3 {main}
+
+Next exception 'yii\web\NotFoundHttpException' with message 'Unable to resolve the request "chuxiao/select".' in D:\xampp\htdocs\youhui\vendor\yiisoft\yii2\web\Application.php:95
+Stack trace:
+#0 D:\xampp\htdocs\youhui\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 D:\xampp\htdocs\youhui\backend\web\index.php(18): yii\base\Application->run()
+#2 {main}
+2015-01-30 02:32:30 [127.0.0.1][-][-][info][application] $_GET = [
+    'r' => 'chuxiao/select'
+    'is_iframe' => '1'
+    'keepThis' => 'true'
+]
+
+$_COOKIE = [
+    'AJSTAT_ok_times' => '1'
+    '_ga' => 'GA1.1.54924247.1416566351'
+    '__zpspc' => '9.2.1416813744.1416814460.10#4|||||#'
+    'bdshare_firstime' => '1418786158546'
+    'CNZZDATA4617777' => 'cnzz_eid=682052683-1418784431-&ntime=1418784197'
+    'CNZZDATA4617788' => 'cnzz_eid=431890627-1419157234-&ntime=1419203501'
+    'CNZZDATA4617784' => 'cnzz_eid=1410397910-1418812097-&ntime=1419983038'
+    'Jjzq_2132_saltkey' => 'wkOPSZrn'
+    'Jjzq_2132_lastvisit' => '1420423935'
+    'Jjzq_2132_ulastactivity' => '3cd47khBmEfAZuKV56v5xcereJG/Dl7C07x2T1XA2znHteTfL3el'
+    'RB5E_2132_saltkey' => 'YR3N3T3T'
+    'RB5E_2132_lastvisit' => '1420425536'
+    'RB5E_2132_ulastactivity' => '7a33yKqJzIUHWbK8a2g4rYyfLxZRCEFiozw4LjGbd97NwT8w9vkf'
+    'VOIr_2132_saltkey' => 'Ot1vtjL1'
+    'VOIr_2132_lastvisit' => '1420426036'
+    'VOIr_2132_ulastactivity' => '40a3geAD9hD7n9MsDQ4l4FnD7q3ymVwknLjv8+KttwvvmeBgf8zp'
+    'VOIr_2132_nofavfid' => '1'
+    'uchome_loginuser' => 'admin'
+    'CNZZDATA2924747' => 'cnzz_eid=1577273435-1420269582-&ntime=1420676356'
+    'CNZZDATA3668490' => 'cnzz_eid=405753816-1420849139-http%3A%2F%2Flocalhost%2F&ntime=1420849139'
+    'CNZZDATA3637100' => 'cnzz_eid=1250976432-1420847467-http%3A%2F%2Flocalhost%2F&ntime=1420847467'
+    'sid' => '5581iHsOCW5McFRYsx5i%2BRZkm6ESzH4wFOp%2B8dqIBW3lcUiALVNvuGwefDxiMjpKKfOm2rMjEnAQ%2Fw'
+    'PHPSESSID' => '20i13vqn7j4u0e5d1t8b0eeub4'
+    '_csrf' => 'e608113b460aca5a8d48f9ab5369e32c7cd50f166922d9ed9faf77d831cff95cs:32:\"-rMsw__77Eq15_KL42cvogAH_39UZg2t\";'
+]
+
+$_SERVER = [
+    'MIBDIRS' => 'D:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'D:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.57 Safari/537.36'
+    'HTTP_REFERER' => 'http://localhost/youhui/backend/web/?r=cuxiao/add'
+    'HTTP_ACCEPT_ENCODING' => 'gzip,deflate,sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8,en;q=0.6'
+    'HTTP_COOKIE' => 'AJSTAT_ok_times=1; _ga=GA1.1.54924247.1416566351; __zpspc=9.2.1416813744.1416814460.10%234%7C%7C%7C%7C%7C%23; bdshare_firstime=1418786158546; CNZZDATA4617777=cnzz_eid%3D682052683-1418784431-%26ntime%3D1418784197; CNZZDATA4617788=cnzz_eid%3D431890627-1419157234-%26ntime%3D1419203501; CNZZDATA4617784=cnzz_eid%3D1410397910-1418812097-%26ntime%3D1419983038; Jjzq_2132_saltkey=wkOPSZrn; Jjzq_2132_lastvisit=1420423935; Jjzq_2132_ulastactivity=3cd47khBmEfAZuKV56v5xcereJG%2FDl7C07x2T1XA2znHteTfL3el; RB5E_2132_saltkey=YR3N3T3T; RB5E_2132_lastvisit=1420425536; RB5E_2132_ulastactivity=7a33yKqJzIUHWbK8a2g4rYyfLxZRCEFiozw4LjGbd97NwT8w9vkf; VOIr_2132_saltkey=Ot1vtjL1; VOIr_2132_lastvisit=1420426036; VOIr_2132_ulastactivity=40a3geAD9hD7n9MsDQ4l4FnD7q3ymVwknLjv8%2BKttwvvmeBgf8zp; VOIr_2132_nofavfid=1; uchome_loginuser=admin; CNZZDATA2924747=cnzz_eid%3D1577273435-1420269582-%26ntime%3D1420676356; CNZZDATA3668490=cnzz_eid%3D405753816-1420849139-http%253A%252F%252Flocalhost%252F%26ntime%3D1420849139; CNZZDATA3637100=cnzz_eid%3D1250976432-1420847467-http%253A%252F%252Flocalhost%252F%26ntime%3D1420847467; sid=5581iHsOCW5McFRYsx5i%252BRZkm6ESzH4wFOp%252B8dqIBW3lcUiALVNvuGwefDxiMjpKKfOm2rMjEnAQ%252Fw; PHPSESSID=20i13vqn7j4u0e5d1t8b0eeub4; _csrf=e608113b460aca5a8d48f9ab5369e32c7cd50f166922d9ed9faf77d831cff95cs%3A32%3A%22-rMsw__77Eq15_KL42cvogAH_39UZg2t%22%3B'
+    'PATH' => 'C:\\Program Files (x86)\\Common Files\\NetSarang;C:\\ProgramData\\Oracle\\Java\\javapath;C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;D:\\xampp\\php\\php.exe;D:\\Program Files\\Java\\jdk1.8.0_25\\bin;D:\\Program Files\\Java\\jdk1.8.0_25\\jre\\bin;D:\\git\\bin;D:\\xampp\\php;C:\\ProgramData\\ComposerSetup\\bin;C:\\Windows\\system32'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.7 (Win32) OpenSSL/1.0.1e PHP/5.5.9 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.7 (Win32) OpenSSL/1.0.1e PHP/5.5.9'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'D:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'D:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'D:/xampp/htdocs/youhui/backend/web/index.php'
+    'REMOTE_PORT' => '51216'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=chuxiao/select&is_iframe=1&keepThis=true&'
+    'REQUEST_URI' => '/youhui/backend/web/?r=chuxiao/select&is_iframe=1&keepThis=true&'
+    'SCRIPT_NAME' => '/youhui/backend/web/index.php'
+    'PHP_SELF' => '/youhui/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1422581550.006
+    'REQUEST_TIME' => 1422581550
+]
+2015-01-30 02:38:47 [127.0.0.1][-][-][error][yii\base\UnknownPropertyException] exception 'yii\base\UnknownPropertyException' with message 'Setting unknown property: app\models\MallZhekou::expiry' in D:\xampp\htdocs\youhui\vendor\yiisoft\yii2\base\Component.php:197
+Stack trace:
+#0 D:\xampp\htdocs\youhui\vendor\yiisoft\yii2\db\BaseActiveRecord.php(266): yii\base\Component->__set('expiry', 1423263600)
+#1 D:\xampp\htdocs\youhui\backend\controllers\CuxiaoController.php(61): yii\db\BaseActiveRecord->__set('expiry', 1423263600)
+#2 [internal function]: backend\controllers\CuxiaoController->actionAdd_do()
+#3 D:\xampp\htdocs\youhui\vendor\yiisoft\yii2\base\InlineAction.php(55): call_user_func_array(Array, Array)
+#4 D:\xampp\htdocs\youhui\vendor\yiisoft\yii2\base\Controller.php(151): yii\base\InlineAction->runWithParams(Array)
+#5 D:\xampp\htdocs\youhui\vendor\yiisoft\yii2\base\Module.php(455): yii\base\Controller->runAction('add_do', Array)
+#6 D:\xampp\htdocs\youhui\vendor\yiisoft\yii2\web\Application.php(83): yii\base\Module->runAction('cuxiao/add_do', Array)
+#7 D:\xampp\htdocs\youhui\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#8 D:\xampp\htdocs\youhui\backend\web\index.php(18): yii\base\Application->run()
+#9 {main}
+2015-01-30 02:38:47 [127.0.0.1][-][-][info][application] $_GET = [
+    'r' => 'cuxiao/add_do'
+]
+
+$_POST = [
+    'm_name' => '麻辣烫'
+    'm_id' => '6'
+    'title' => 'qwewqeqw'
+    'cate_id' => '9'
+    'expiry' => '2015-02-07'
+    'description' => 'ewqeqwewqe'
+    'gourl' => 'wqeqwe'
+    'sort_order' => '9999'
+    'hash' => 'fd2d5be5bae39a2563d091d240c44d68'
+    'id' => '0'
+    '__hash__' => 'a7d408463f7669c84376ded8f594c64e_5243d55feaeeecd5927f891b40b9df9a'
+]
+
+$_FILES = [
+    'logo' => [
+        'name' => '英雄四组logo.png'
+        'type' => 'image/png'
+        'tmp_name' => 'D:\\xampp\\tmp\\phpEE8F.tmp'
+        'error' => 0
+        'size' => 10290
+    ]
+]
+
+$_COOKIE = [
+    'AJSTAT_ok_times' => '1'
+    '_ga' => 'GA1.1.54924247.1416566351'
+    '__zpspc' => '9.2.1416813744.1416814460.10#4|||||#'
+    'bdshare_firstime' => '1418786158546'
+    'CNZZDATA4617777' => 'cnzz_eid=682052683-1418784431-&ntime=1418784197'
+    'CNZZDATA4617788' => 'cnzz_eid=431890627-1419157234-&ntime=1419203501'
+    'CNZZDATA4617784' => 'cnzz_eid=1410397910-1418812097-&ntime=1419983038'
+    'Jjzq_2132_saltkey' => 'wkOPSZrn'
+    'Jjzq_2132_lastvisit' => '1420423935'
+    'Jjzq_2132_ulastactivity' => '3cd47khBmEfAZuKV56v5xcereJG/Dl7C07x2T1XA2znHteTfL3el'
+    'RB5E_2132_saltkey' => 'YR3N3T3T'
+    'RB5E_2132_lastvisit' => '1420425536'
+    'RB5E_2132_ulastactivity' => '7a33yKqJzIUHWbK8a2g4rYyfLxZRCEFiozw4LjGbd97NwT8w9vkf'
+    'VOIr_2132_saltkey' => 'Ot1vtjL1'
+    'VOIr_2132_lastvisit' => '1420426036'
+    'VOIr_2132_ulastactivity' => '40a3geAD9hD7n9MsDQ4l4FnD7q3ymVwknLjv8+KttwvvmeBgf8zp'
+    'VOIr_2132_nofavfid' => '1'
+    'uchome_loginuser' => 'admin'
+    'CNZZDATA2924747' => 'cnzz_eid=1577273435-1420269582-&ntime=1420676356'
+    'CNZZDATA3668490' => 'cnzz_eid=405753816-1420849139-http%3A%2F%2Flocalhost%2F&ntime=1420849139'
+    'CNZZDATA3637100' => 'cnzz_eid=1250976432-1420847467-http%3A%2F%2Flocalhost%2F&ntime=1420847467'
+    'sid' => '5581iHsOCW5McFRYsx5i%2BRZkm6ESzH4wFOp%2B8dqIBW3lcUiALVNvuGwefDxiMjpKKfOm2rMjEnAQ%2Fw'
+    'PHPSESSID' => '20i13vqn7j4u0e5d1t8b0eeub4'
+    '_csrf' => 'e608113b460aca5a8d48f9ab5369e32c7cd50f166922d9ed9faf77d831cff95cs:32:\"-rMsw__77Eq15_KL42cvogAH_39UZg2t\";'
+]
+
+$_SERVER = [
+    'MIBDIRS' => 'D:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'D:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'CONTENT_LENGTH' => '11655'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_ORIGIN' => 'http://localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.57 Safari/537.36'
+    'CONTENT_TYPE' => 'multipart/form-data; boundary=----WebKitFormBoundaryHXgkfBiv3TZ0eB50'
+    'HTTP_REFERER' => 'http://localhost/youhui/backend/web/?r=cuxiao/add'
+    'HTTP_ACCEPT_ENCODING' => 'gzip,deflate,sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8,en;q=0.6'
+    'HTTP_COOKIE' => 'AJSTAT_ok_times=1; _ga=GA1.1.54924247.1416566351; __zpspc=9.2.1416813744.1416814460.10%234%7C%7C%7C%7C%7C%23; bdshare_firstime=1418786158546; CNZZDATA4617777=cnzz_eid%3D682052683-1418784431-%26ntime%3D1418784197; CNZZDATA4617788=cnzz_eid%3D431890627-1419157234-%26ntime%3D1419203501; CNZZDATA4617784=cnzz_eid%3D1410397910-1418812097-%26ntime%3D1419983038; Jjzq_2132_saltkey=wkOPSZrn; Jjzq_2132_lastvisit=1420423935; Jjzq_2132_ulastactivity=3cd47khBmEfAZuKV56v5xcereJG%2FDl7C07x2T1XA2znHteTfL3el; RB5E_2132_saltkey=YR3N3T3T; RB5E_2132_lastvisit=1420425536; RB5E_2132_ulastactivity=7a33yKqJzIUHWbK8a2g4rYyfLxZRCEFiozw4LjGbd97NwT8w9vkf; VOIr_2132_saltkey=Ot1vtjL1; VOIr_2132_lastvisit=1420426036; VOIr_2132_ulastactivity=40a3geAD9hD7n9MsDQ4l4FnD7q3ymVwknLjv8%2BKttwvvmeBgf8zp; VOIr_2132_nofavfid=1; uchome_loginuser=admin; CNZZDATA2924747=cnzz_eid%3D1577273435-1420269582-%26ntime%3D1420676356; CNZZDATA3668490=cnzz_eid%3D405753816-1420849139-http%253A%252F%252Flocalhost%252F%26ntime%3D1420849139; CNZZDATA3637100=cnzz_eid%3D1250976432-1420847467-http%253A%252F%252Flocalhost%252F%26ntime%3D1420847467; sid=5581iHsOCW5McFRYsx5i%252BRZkm6ESzH4wFOp%252B8dqIBW3lcUiALVNvuGwefDxiMjpKKfOm2rMjEnAQ%252Fw; PHPSESSID=20i13vqn7j4u0e5d1t8b0eeub4; _csrf=e608113b460aca5a8d48f9ab5369e32c7cd50f166922d9ed9faf77d831cff95cs%3A32%3A%22-rMsw__77Eq15_KL42cvogAH_39UZg2t%22%3B'
+    'PATH' => 'C:\\Program Files (x86)\\Common Files\\NetSarang;C:\\ProgramData\\Oracle\\Java\\javapath;C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;D:\\xampp\\php\\php.exe;D:\\Program Files\\Java\\jdk1.8.0_25\\bin;D:\\Program Files\\Java\\jdk1.8.0_25\\jre\\bin;D:\\git\\bin;D:\\xampp\\php;C:\\ProgramData\\ComposerSetup\\bin;C:\\Windows\\system32'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.7 (Win32) OpenSSL/1.0.1e PHP/5.5.9 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.7 (Win32) OpenSSL/1.0.1e PHP/5.5.9'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'D:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'D:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'D:/xampp/htdocs/youhui/backend/web/index.php'
+    'REMOTE_PORT' => '51289'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'POST'
+    'QUERY_STRING' => 'r=cuxiao/add_do'
+    'REQUEST_URI' => '/youhui/backend/web/?r=cuxiao/add_do'
+    'SCRIPT_NAME' => '/youhui/backend/web/index.php'
+    'PHP_SELF' => '/youhui/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1422581927.146
+    'REQUEST_TIME' => 1422581927
+]

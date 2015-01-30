@@ -102,6 +102,7 @@ $(document).ready(function(){
 </div>
 <table cellspacing="0" cellpadding="0" border="0" class="table-list list" id="checkList">
 <thead>
+  
 <tr>
 <th width="30" class="first"><input type="checkbox" onclick="check_all('id[]', this)"></th>
 <th>活动名称</th>
@@ -110,18 +111,21 @@ $(document).ready(function(){
 <th width="60">排序</th>
 <th width="100">操作</th>
 </tr>
+
 </thead>
 <tbody>
+      <?php foreach ($list as $v){ ?>
 <tr id="tt-item-1">
 <td class="first"><input type="checkbox" value="1" name="id[]"></td>
-<td align="left"><a href="?g=Admin&m=MallPromotion&a=view&id=1">456</a></td>
-<td align="left">123</td>
-<td align="left"><a href="http://www.baidu.com" target="_blank">http://www.baidu.com</a></td>
+<td align="left"><a href="?g=Admin&m=MallPromotion&a=view&id=1"><?php echo $v['title']?></a></td>
+<td align="left"><?php echo $v['cate_id']?></td>
+<td align="left"><a href="http://www.baidu.com" target="_blank"><?php echo $v['gourl']?></a></td>
 <td align="center"><span class="pointer" module="MallPromotion" group="Admin" model="" pk="" href="javascript:;" onclick="textEdit(this,'1','sort_order')">9999</span></td>
 <td align="center"><a href="?g=Admin&m=MallPromotion&a=edit&id=1">编辑</a>
-&nbsp;&nbsp;<a onclick="del(1)" href="javascript:;">删除</a>
+&nbsp;&nbsp;<a href="?r=cuxiao/del&id=<?php echo $v['id']?>">删除</a>
 </td>
 </tr>
+        <?php }?>
 </tbody></table>
 <div class="pager"><span class="page_left_1_1">首页</span> <span class="page_left_2_2">上一页</span>  <span class="page_now">1</span> <span class="page_right_2_2">下一页</span> <span class="page_right_1_1">尾页</span></div>
 						</div>

@@ -117,7 +117,7 @@ $(document).ready(function(){
 <td align="left"><a href="http://www.baidu.com" target="_blank"><?php echo $v['gourl']?></a></td>
 <td align="center"><span class="pointer" module="MallZhekou" group="Admin" model="" pk="" href="javascript:;" onclick="textEdit(this,'1','sort_order')"><?php echo $v['sort_order']?></span></td>
 <td align="center"><a href="?g=Admin&m=MallZhekou&a=edit&id=1">编辑</a>
-&nbsp;&nbsp;<a onclick="del(1)" href="javascript:;">删除</a>
+&nbsp;&nbsp;<a  href="?r=zhekou/del&id=<?php echo $v['id']?>">删除</a>
 </td>
 </tr>
         <?php }?>
