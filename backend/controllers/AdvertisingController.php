@@ -28,7 +28,8 @@ class AdvertisingController extends Controller
 	public function actionGuang_add_do(){
                                 $model = new DbsAd();
                                 if($_POST['media_type']==101){
-                                           
+                                           $model->ad_code=$_POST['ad_img'];
+                                           $model->ad_code=$_POST['img_url'];
                                 }
                                 
                                 $model->position_id=$_POST['position_id'];
@@ -41,8 +42,8 @@ class AdvertisingController extends Controller
                                 
                                 $model->ad_code=$_POST['ad_code'];
                                 $model->ad_code=$_POST['flash_url'];
-                                $model->ad_code=$_POST['ad_img'];
-                                $model->ad_code=$_POST['img_url'];
+                                
+                                
                                 $model->ad_code=$_POST['upfile_flash'];
                                 $model->ad_code=$_POST['ad_link2'];
                                 $model->ad_code=$_POST['ad_text'];
