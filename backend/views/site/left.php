@@ -15,8 +15,8 @@
         		<dl>
 			<dt><div><strong>优惠券管理</strong></div></dt>
             			<dd><p><a href="?r=youhui/index" target="mainFrame">优惠券列表</a></p></dd>
-            			<dd><p><a href="?g=Admin&m=CouponCode&a=best" target="mainFrame">每日精选优惠券</a></p></dd>
-            			<dd><p><a href="?g=Admin&m=CouponCode&a=add" target="mainFrame">添加优惠券</a></p></dd>
+            			<dd><p><a href="?r=youhui/best" target="mainFrame">每日精选优惠券</a></p></dd>
+            			<dd><p><a href="?r=youhui/add" target="mainFrame">添加优惠券</a></p></dd>
                      </dl>
          		<dl>
 			<dt><div><strong>商家管理</strong></div></dt>

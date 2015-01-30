@@ -70,12 +70,8 @@ class ZhekouController extends Controller
     }
  
     public function actionAdd_cat(){
-        if($_GET['id']){
-            $shang=$_GET['name'];
-        }else{
-            $shang='';
-        }
-         return $this->render('add_cat',['shang'=>$shang]);
+   
+         return $this->render('add_cat');
     }
     public function actionDel_cat(){
         $res=ZhekouCategory::deleteAll(['id'=>$_GET['id']]);
