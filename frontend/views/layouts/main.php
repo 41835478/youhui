@@ -5,11 +5,13 @@ use yii\bootstrap\NavBar;
 use yii\widgets\Breadcrumbs;
 use frontend\assets\AppAsset;
 use frontend\widgets\Alert;
-
+use yii\web\Session;
 /* @var $this \yii\web\View */
 /* @var $content string */
 
 AppAsset::register($this);
+$session = new Session();
+$session->open();
 ?>
         
 		<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
@@ -133,27 +135,56 @@ jQuery(function() {
         <div id="nav">
             <div class="w990">
                 <ul id="nav_l">
-                    <li><a href="index.php?r=show/index" class="active"><span></span>首页</a></li>
+                    <!--class="active"-->
+                    <li><a href="index.php?r=site/index" ><span></span>首页</a></li>
                     <li>|</li>
-                    <li><a href="index.php?r=show/index" ><span></span>最新优惠券</a></li>
+                    <li><a href="index.php?r=new/index" ><span></span>最新优惠券</a></li>
                     <li>|</li>
-                    <li><a href="index.php?r=show/index" ><span></span>热门优惠券</a></li>
+                    <li><a href="index.php?r=hot/index" ><span></span>热门优惠券</a></li>
                     <li>|</li>
-                    <li><a href="index.php?r=show/index" ><span></span>最近被领取的优惠券</a></li>
+                    <li><a href="index.php?r=receive/index" ><span></span>最近被领取的优惠券</a></li>
                     <li>|</li>
-                    <li><a href="index.php?r=show/index" ><span></span>商家大全</a></li>
+                    <li><a href="index.php?r=mall/index" ><span></span>商家大全</a></li>
                     <li>|</li>
                     <li><a href="index.php?r=promotion/index" ><span></span>促销活动</a></li>
                     <li>|</li>
                     <li><a href="index.php?r=zhekou/index" ><span></span>超值折扣</a></li>
                 </ul>
                 
-<ul id="nav_r">
-        <li id="userweibo">
-    <a href="/end/tp-coupon/index.php?a=login&m=user">登陆</a><a href="/end/tp-coupon/index.php?a=reg&m=user">注册</a>
+
+
+                
+                <ul id="nav_r">
+                    <?php if(empty($session['user'])){?>
+        <li id="userweibo"><a href="?r=login/login">登陆</a><a href="?r=registered/regis">注册</a></li>
+                    <?php }else{ ?>
+        <li id="usercenter"><a href="/end/tp-coupon/index.php?a=codes&m=user" class=""><span></span>账号中心</a>
+                    <?php }?>
+        <div style="display: none;" class="nav_i">
+            <div class="nav_i_u">
+                <div class="nav_i_u_l">
+                    <a href="javascript:void(0);"><img src="http://www.wangxu.com/ucenter/upload/uc_server/avatar.php?uid=3&type=real&size=middle" onerror="this.src='Public/Images/Home/avatar.jpeg'"></a>
+                </div>
+                <div class="nav_i_u_i">
+                    
+                    <a href="javascript:void(0);"><?php echo $session['user']['nick']?></a><br>
+                    
+                </div>
+            </div>
+            <ul>
+                <li><a href="/end/tp-coupon/index.php?a=codes&m=user" style="color: #f00">我领取的优惠券</a></li>
+                <li><a href="/end/tp-coupon/index.php?a=pay&m=payment">账号充值</a></li>
+                <li><a href="/end/tp-coupon/index.php?a=consume_records&m=user">消费记录</a></li>
+                <li><a href="/end/tp-coupon/index.php?a=invite&m=user">邀请好友</a></li>
+                <li><a href="/end/tp-coupon/index.php?a=editpwd&m=user">修改密码</a></li>
+                <li><a href="?r=login/logout">注销登录</a></li>
+            </ul>
+        </div>
     </li>
     </ul>
 
+                
+                
             </div>
         </div>
          
