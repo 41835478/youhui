@@ -28,7 +28,7 @@
 
 </script>
 	<div class="fanwe-body">
-		<div class="fb-title"><div><p><span>广告管理 &gt; 广告列表</span></p></div></div>
+		<div class="fb-title"><div><p><span>友情链接管理 &gt; 链接列表</span></p></div></div>
 		<div class="fb-body">
 			<table class="body-table" cellpadding="0" cellspacing="1" border="0">
 				<tr>
@@ -37,8 +37,8 @@
 <script type="text/javascript" src="Public/Js/jquery.SetTableBgColor.js"></script>
 <script type="text/javascript">
 var g = 'Admin';
-var m = 'Adv';
-var _hash_ = '2ac6d4bcce8f257f817e0beb2ed8c2a7';
+var m = 'FriendLink';
+var _hash_ = 'ed7c6d3c5e066d82f495e4727df5ed51';
 
 function del(id)
 {
@@ -49,7 +49,7 @@ function del(id)
 					width: 300,
 					buttons: {
 						"确定": function() { 
-							var url = "?g="+g+"&m="+m+"&a=del&ad_id="+id+"&ajax=1&_hash_="+_hash_;
+							var url = "?g="+g+"&m="+m+"&a=del&id="+id+"&ajax=1&_hash_="+_hash_;
 							$.getJSON(url, function(data){
 													if(data.status == 0){
 														$('#dialog>p').html('删除失败');
@@ -79,52 +79,58 @@ $(document).ready(function(){
 
 </script>
 <div class="handle-btns">
-	<div class="img-button "><p><input type="button" class="addData" onclick="window.location.href='?g=Admin&m=Adv&a=add'" value="添加" name="addData" id="addData"></p></div>
+	<div class="img-button "><p><input type="button" class="addData" onclick="window.location.href='?r=link/link_add'" value="添加" name="addData" id="addData"></p></div>
 	</div>
 <div class="search-box">
 </div>
 <table cellspacing="0" cellpadding="0" border="0" class="table-list list" id="checkList">
 <thead>
 <tr>
-<th width="30" class="first"><input type="checkbox" onclick="check_all('ad_id[]', this)"></th>
+<th width="30" class="first"><input type="checkbox" onclick="check_all('link_id[]', this)"></th>
 <th width="50">ID</th>
-<th>广告名称</th>
-<th width="200">广告位置</th>
-<th width="80">广告类型</th>
-<th width="120">开始时间</th>
-<th width="120">结束时间</th>
-<th width="80">点击次数</th>
-<th>调用代码</th>
+<th>网站名称</th>
+<th width="80">链接位置</th>
+<th width="80">链接类型</th>
+<th width="200">链接</th>
+<th width="260">链接内容</th>
 <th width="100">操作</th>
 </tr>
 </thead>
 <tbody>
-<?php foreach($data as $k=>$v){?>
-<tr id="tr<?php echo $v['ad_id']?>">
-<td class="first"><input type="checkbox" value="<?php echo $v['ad_id']?>" name="ad_id[]"></td>
-<td><?php echo $v['ad_id']?></td>
-<td align="left"><?php echo $v['ad_name']?></td>
-<td align="left"><?php echo $v['position_name']?></td>
-<td align="left"><?php if($v['media_type']==101){
-	echo "图片";
-}else if($v['media_type']==102){
-	echo "Flash";
-}else if($v['media_type']==103){
-	echo "代码";
-}else if($v['media_type']==104){
-	echo "文字";
+<?php foreach($list as $k=>$v){?>
+<tr id="tr<?php echo $v['link_id']?>">
+<td class="first"><input type="checkbox" value="<?php echo $v['link_id']?>" name="link_id[]"></td>
+<td>1</td>
+<td align="left"><?php echo $v['site_name']?></td>
+<td align="left"><?php if($v['position_id']==101){
+	echo "首页";
+}else{
+	echo "友情链接页";
 }?></td>
-<td align="left"><?php echo date("Y-m-d H:i:s",$v['start_time'])?></td>
-<td align="left"><?php echo date("Y-m-d H:i:s",$v['end_time'])?></td>
-<td align="left"><?php echo $v['click_count']?></td>
-<td align="left">&lt;script type="text/javascript" src="/end/TP-COUPON/index.php?m=Adv&a=show&id=7"&gt;&lt;/script&gt;</td>
-<td align="center"><a href="?r=advertising/guang_upd&id=<?php echo $v['ad_id']?>">编辑</a>
-&nbsp;&nbsp;<a onclick="del(<?php echo $v['ad_id']?>)" href="javascript:;">删除</a>
+<td align="left"><?php if($v['link_type']==1){
+	echo "文字";
+}else{
+	echo "图片";
+}?></td>
+<td align="left"><?php echo $v['link_url']?></td>
+<?php if($v['link_type']==1){?>
+<td align="left"><?php echo $v['link_code']?></td>
+<?php
+}else{
+?>
+<td align="left"><img src="<?php echo $v['link_code']?>" height="60" width="150"  /></td>
+<?php
+}
+?>
+<td align="center"><a href="?r=link/link_upd&id=<?php echo $v["link_id"]?>">编辑</a>
+&nbsp;&nbsp;<a onclick="del(<?php echo $v['link_id']?>)" href="javascript:;">删除</a>
 </td>
 </tr>
 <?php
 }
 ?>
+
+
 </tbody></table>
 <div class="pager"><span class="page_left_1_1">首页</span> <span class="page_left_2_2">上一页</span>  <span class="page_now">1</span> <span class="page_right_2_2">下一页</span> <span class="page_right_1_1">尾页</span></div>
 						</div>
@@ -139,20 +145,18 @@ $(document).ready(function(){
 <script type="text/javascript">
 function del(id){
 	$.ajax({
-            url:"?r=advertising/guang_del",
-            data:{"id":id},
-            type:"post",
-            success:function(res){
-                if(res==1){
-                    $("#tr"+id).remove();
-                }else{
-                    alert("删除失败");
-                }
-                
-            }	
-})
+		url:"?r=link/link_del",
+			data:{"id":id},
+			type:"post",
+			success:function(res){
+				if(res==1){
+					$("#tr"+id).remove();
+				}else{
+					alert("删除失败");
+				}
+		}
+	})
 }
-
 
 jQuery(function($){
 	updateBodyDivHeight();

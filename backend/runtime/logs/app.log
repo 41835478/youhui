@@ -44431,3 +44431,2926 @@ $_SERVER = [
     'REQUEST_TIME_FLOAT' => 1422584663.139
     'REQUEST_TIME' => 1422584663
 ]
+2015-01-30 03:45:07 [127.0.0.1][-][-][error][yii\base\ErrorException:8] exception 'yii\base\ErrorException' with message 'Undefined index: ad_img' in D:\youhui\backend\controllers\AdvertisingController.php:31
+Stack trace:
+#0 D:\youhui\backend\controllers\AdvertisingController.php(31): yii\base\ErrorHandler->handleError(8, 'Undefined index...', 'D:\youhui\backe...', 31, Array)
+#1 [internal function]: backend\controllers\AdvertisingController->actionGuang_add_do()
+#2 D:\youhui\vendor\yiisoft\yii2\base\InlineAction.php(55): call_user_func_array(Array, Array)
+#3 D:\youhui\vendor\yiisoft\yii2\base\Controller.php(151): yii\base\InlineAction->runWithParams(Array)
+#4 D:\youhui\vendor\yiisoft\yii2\base\Module.php(455): yii\base\Controller->runAction('guang_add_do', Array)
+#5 D:\youhui\vendor\yiisoft\yii2\web\Application.php(83): yii\base\Module->runAction('advertising/gua...', Array)
+#6 D:\youhui\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#7 D:\youhui\backend\web\index.php(18): yii\base\Application->run()
+#8 {main}
+2015-01-30 03:45:07 [127.0.0.1][-][-][info][application] $_GET = [
+    'r' => 'advertising/guang_add_do'
+]
+
+$_POST = [
+    'ad_name' => 'a'
+    'media_type' => '101'
+    'position_id' => '1'
+    'enabled' => '1'
+    'start_time' => '2015-01-08 10:45'
+    'end_time' => '2015-01-31 10:45'
+    'ad_link' => 'www.baidu.com'
+    'img_url' => 'www.123.com'
+    'flash_url' => ''
+    'ad_code' => ''
+    'ad_link2' => ''
+    'ad_text' => ''
+]
+
+$_FILES = [
+    'ad_img' => [
+        'name' => ''
+        'type' => ''
+        'tmp_name' => ''
+        'error' => 4
+        'size' => 0
+    ]
+    'upfile_flash' => [
+        'name' => ''
+        'type' => ''
+        'tmp_name' => ''
+        'error' => 4
+        'size' => 0
+    ]
+]
+
+$_COOKIE = [
+    'bdshare_firstime' => '1422512739434'
+]
+
+$_SERVER = [
+    'MIBDIRS' => 'D:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'D:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'www.youhui.com'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'CONTENT_LENGTH' => '1546'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_ORIGIN' => 'http://www.youhui.com'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/39.0.2171.95 Safari/537.36'
+    'CONTENT_TYPE' => 'multipart/form-data; boundary=----WebKitFormBoundary4fl68CoqbOyYP1hq'
+    'HTTP_REFERER' => 'http://www.youhui.com/backend/web/?r=advertising/guang_add'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8'
+    'HTTP_COOKIE' => 'bdshare_firstime=1422512739434'
+    'PATH' => 'C:\\Program Files\\360\\360Desktop;C:\\Program Files\\Common Files\\NetSarang;C:\\ProgramData\\Oracle\\Java\\javapath;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;D:\\Git\\bin;%JAVA_HOME%\\bin;D:\\node\\;C:\\Users\\Administrator\\AppData\\Roaming\\npm'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.7 (Win32) OpenSSL/1.0.1e PHP/5.5.9 Server at www.youhui.com Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.7 (Win32) OpenSSL/1.0.1e PHP/5.5.9'
+    'SERVER_NAME' => 'www.youhui.com'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'D:/youhui/'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'D:/youhui/'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'D:/youhui/backend/web/index.php'
+    'REMOTE_PORT' => '54116'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'POST'
+    'QUERY_STRING' => 'r=advertising/guang_add_do'
+    'REQUEST_URI' => '/backend/web/?r=advertising/guang_add_do'
+    'SCRIPT_NAME' => '/backend/web/index.php'
+    'PHP_SELF' => '/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1422585907.135
+    'REQUEST_TIME' => 1422585907
+]
+2015-01-30 03:48:20 [127.0.0.1][-][-][error][yii\base\ErrorException:8] exception 'yii\base\ErrorException' with message 'Undefined index: ad_img' in D:\youhui\backend\controllers\AdvertisingController.php:32
+Stack trace:
+#0 D:\youhui\backend\controllers\AdvertisingController.php(32): yii\base\ErrorHandler->handleError(8, 'Undefined index...', 'D:\youhui\backe...', 32, Array)
+#1 [internal function]: backend\controllers\AdvertisingController->actionGuang_add_do()
+#2 D:\youhui\vendor\yiisoft\yii2\base\InlineAction.php(55): call_user_func_array(Array, Array)
+#3 D:\youhui\vendor\yiisoft\yii2\base\Controller.php(151): yii\base\InlineAction->runWithParams(Array)
+#4 D:\youhui\vendor\yiisoft\yii2\base\Module.php(455): yii\base\Controller->runAction('guang_add_do', Array)
+#5 D:\youhui\vendor\yiisoft\yii2\web\Application.php(83): yii\base\Module->runAction('advertising/gua...', Array)
+#6 D:\youhui\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#7 D:\youhui\backend\web\index.php(18): yii\base\Application->run()
+#8 {main}
+2015-01-30 03:48:19 [127.0.0.1][-][-][info][application] $_GET = [
+    'r' => 'advertising/guang_add_do'
+]
+
+$_POST = [
+    'ad_name' => 'asdasdasd'
+    'media_type' => '101'
+    'position_id' => '1'
+    'enabled' => '1'
+    'start_time' => '2015-01-07 10:48'
+    'end_time' => '2015-01-31 10:48'
+    'ad_link' => 'http://www.baidu.com'
+    'img_url' => 'http://112233.com'
+    'flash_url' => ''
+    'ad_code' => ''
+    'ad_link2' => ''
+    'ad_text' => ''
+]
+
+$_FILES = [
+    'ad_img' => [
+        'name' => ''
+        'type' => ''
+        'tmp_name' => ''
+        'error' => 4
+        'size' => 0
+    ]
+    'upfile_flash' => [
+        'name' => ''
+        'type' => ''
+        'tmp_name' => ''
+        'error' => 4
+        'size' => 0
+    ]
+]
+
+$_COOKIE = [
+    'bdshare_firstime' => '1422512739434'
+]
+
+$_SERVER = [
+    'MIBDIRS' => 'D:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'D:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'www.youhui.com'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'CONTENT_LENGTH' => '1567'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_ORIGIN' => 'http://www.youhui.com'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/39.0.2171.95 Safari/537.36'
+    'CONTENT_TYPE' => 'multipart/form-data; boundary=----WebKitFormBoundaryTPqhBZiHeV2b5BwJ'
+    'HTTP_REFERER' => 'http://www.youhui.com/backend/web/?r=advertising/guang_add'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8'
+    'HTTP_COOKIE' => 'bdshare_firstime=1422512739434'
+    'PATH' => 'C:\\Program Files\\360\\360Desktop;C:\\Program Files\\Common Files\\NetSarang;C:\\ProgramData\\Oracle\\Java\\javapath;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;D:\\Git\\bin;%JAVA_HOME%\\bin;D:\\node\\;C:\\Users\\Administrator\\AppData\\Roaming\\npm'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.7 (Win32) OpenSSL/1.0.1e PHP/5.5.9 Server at www.youhui.com Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.7 (Win32) OpenSSL/1.0.1e PHP/5.5.9'
+    'SERVER_NAME' => 'www.youhui.com'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'D:/youhui/'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'D:/youhui/'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'D:/youhui/backend/web/index.php'
+    'REMOTE_PORT' => '54182'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'POST'
+    'QUERY_STRING' => 'r=advertising/guang_add_do'
+    'REQUEST_URI' => '/backend/web/?r=advertising/guang_add_do'
+    'SCRIPT_NAME' => '/backend/web/index.php'
+    'PHP_SELF' => '/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1422586099.635
+    'REQUEST_TIME' => 1422586099
+]
+2015-01-30 03:51:59 [127.0.0.1][-][-][error][yii\base\ErrorException:8] exception 'yii\base\ErrorException' with message 'Undefined index: ad_img' in D:\youhui\backend\controllers\AdvertisingController.php:32
+Stack trace:
+#0 D:\youhui\backend\controllers\AdvertisingController.php(32): yii\base\ErrorHandler->handleError(8, 'Undefined index...', 'D:\youhui\backe...', 32, Array)
+#1 [internal function]: backend\controllers\AdvertisingController->actionGuang_add_do()
+#2 D:\youhui\vendor\yiisoft\yii2\base\InlineAction.php(55): call_user_func_array(Array, Array)
+#3 D:\youhui\vendor\yiisoft\yii2\base\Controller.php(151): yii\base\InlineAction->runWithParams(Array)
+#4 D:\youhui\vendor\yiisoft\yii2\base\Module.php(455): yii\base\Controller->runAction('guang_add_do', Array)
+#5 D:\youhui\vendor\yiisoft\yii2\web\Application.php(83): yii\base\Module->runAction('advertising/gua...', Array)
+#6 D:\youhui\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#7 D:\youhui\backend\web\index.php(18): yii\base\Application->run()
+#8 {main}
+2015-01-30 03:51:59 [127.0.0.1][-][-][info][application] $_GET = [
+    'r' => 'advertising/guang_add_do'
+]
+
+$_POST = [
+    'ad_name' => 'asdasdsa'
+    'media_type' => '101'
+    'position_id' => '1'
+    'enabled' => '1'
+    'start_time' => '2014-12-03 10:51'
+    'end_time' => '2015-01-24 10:51'
+    'ad_link' => 'http://www.baidu.com'
+    'img_url' => 'http://112233.com'
+    'flash_url' => ''
+    'ad_code' => ''
+    'ad_link2' => ''
+    'ad_text' => ''
+]
+
+$_FILES = [
+    'ad_img' => [
+        'name' => ''
+        'type' => ''
+        'tmp_name' => ''
+        'error' => 4
+        'size' => 0
+    ]
+    'upfile_flash' => [
+        'name' => ''
+        'type' => ''
+        'tmp_name' => ''
+        'error' => 4
+        'size' => 0
+    ]
+]
+
+$_COOKIE = [
+    'bdshare_firstime' => '1422512739434'
+]
+
+$_SERVER = [
+    'MIBDIRS' => 'D:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'D:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'www.youhui.com'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'CONTENT_LENGTH' => '1566'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_ORIGIN' => 'http://www.youhui.com'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/39.0.2171.95 Safari/537.36'
+    'CONTENT_TYPE' => 'multipart/form-data; boundary=----WebKitFormBoundaryvdRO2cd2XAjR1F3k'
+    'HTTP_REFERER' => 'http://www.youhui.com/backend/web/?r=advertising/guang_add'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8'
+    'HTTP_COOKIE' => 'bdshare_firstime=1422512739434'
+    'PATH' => 'C:\\Program Files\\360\\360Desktop;C:\\Program Files\\Common Files\\NetSarang;C:\\ProgramData\\Oracle\\Java\\javapath;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;D:\\Git\\bin;%JAVA_HOME%\\bin;D:\\node\\;C:\\Users\\Administrator\\AppData\\Roaming\\npm'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.7 (Win32) OpenSSL/1.0.1e PHP/5.5.9 Server at www.youhui.com Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.7 (Win32) OpenSSL/1.0.1e PHP/5.5.9'
+    'SERVER_NAME' => 'www.youhui.com'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'D:/youhui/'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'D:/youhui/'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'D:/youhui/backend/web/index.php'
+    'REMOTE_PORT' => '54216'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'POST'
+    'QUERY_STRING' => 'r=advertising/guang_add_do'
+    'REQUEST_URI' => '/backend/web/?r=advertising/guang_add_do'
+    'SCRIPT_NAME' => '/backend/web/index.php'
+    'PHP_SELF' => '/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1422586319.066
+    'REQUEST_TIME' => 1422586319
+]
+2015-01-30 04:18:19 [127.0.0.1][-][-][error][yii\base\ErrorException:4] exception 'yii\base\ErrorException' with message 'syntax error, unexpected '{'' in D:\youhui\backend\controllers\AdvertisingController.php:52
+Stack trace:
+#0 [internal function]: yii\base\ErrorHandler->handleFatalError()
+#1 {main}
+2015-01-30 04:18:19 [127.0.0.1][-][-][info][application] $_GET = [
+    'r' => 'advertising/guang_add'
+]
+
+$_COOKIE = [
+    'bdshare_firstime' => '1422512739434'
+]
+
+$_SERVER = [
+    'MIBDIRS' => 'D:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'D:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'www.youhui.com'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/39.0.2171.95 Safari/537.36'
+    'HTTP_REFERER' => 'http://www.youhui.com/backend/web/?r=site/left&act=2'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8'
+    'HTTP_COOKIE' => 'bdshare_firstime=1422512739434'
+    'PATH' => 'C:\\Program Files\\360\\360Desktop;C:\\Program Files\\Common Files\\NetSarang;C:\\ProgramData\\Oracle\\Java\\javapath;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;D:\\Git\\bin;%JAVA_HOME%\\bin;D:\\node\\;C:\\Users\\Administrator\\AppData\\Roaming\\npm'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.7 (Win32) OpenSSL/1.0.1e PHP/5.5.9 Server at www.youhui.com Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.7 (Win32) OpenSSL/1.0.1e PHP/5.5.9'
+    'SERVER_NAME' => 'www.youhui.com'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'D:/youhui/'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'D:/youhui/'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'D:/youhui/backend/web/index.php'
+    'REMOTE_PORT' => '54514'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=advertising/guang_add'
+    'REQUEST_URI' => '/backend/web/?r=advertising/guang_add'
+    'SCRIPT_NAME' => '/backend/web/index.php'
+    'PHP_SELF' => '/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1422587899.401
+    'REQUEST_TIME' => 1422587899
+]
+2015-01-30 04:18:26 [127.0.0.1][-][-][error][yii\base\ErrorException:4] exception 'yii\base\ErrorException' with message 'syntax error, unexpected '{'' in D:\youhui\backend\controllers\AdvertisingController.php:52
+Stack trace:
+#0 [internal function]: yii\base\ErrorHandler->handleFatalError()
+#1 {main}
+2015-01-30 04:18:26 [127.0.0.1][-][-][info][application] $_GET = [
+    'r' => 'advertising/guang_add'
+]
+
+$_COOKIE = [
+    'bdshare_firstime' => '1422512739434'
+]
+
+$_SERVER = [
+    'MIBDIRS' => 'D:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'D:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'www.youhui.com'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/39.0.2171.95 Safari/537.36'
+    'HTTP_REFERER' => 'http://www.youhui.com/backend/web/?r=site/left&act=2'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8'
+    'HTTP_COOKIE' => 'bdshare_firstime=1422512739434'
+    'PATH' => 'C:\\Program Files\\360\\360Desktop;C:\\Program Files\\Common Files\\NetSarang;C:\\ProgramData\\Oracle\\Java\\javapath;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;D:\\Git\\bin;%JAVA_HOME%\\bin;D:\\node\\;C:\\Users\\Administrator\\AppData\\Roaming\\npm'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.7 (Win32) OpenSSL/1.0.1e PHP/5.5.9 Server at www.youhui.com Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.7 (Win32) OpenSSL/1.0.1e PHP/5.5.9'
+    'SERVER_NAME' => 'www.youhui.com'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'D:/youhui/'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'D:/youhui/'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'D:/youhui/backend/web/index.php'
+    'REMOTE_PORT' => '54518'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=advertising/guang_add'
+    'REQUEST_URI' => '/backend/web/?r=advertising/guang_add'
+    'SCRIPT_NAME' => '/backend/web/index.php'
+    'PHP_SELF' => '/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1422587906.248
+    'REQUEST_TIME' => 1422587906
+]
+2015-01-30 04:19:21 [127.0.0.1][-][-][error][yii\base\ErrorException:4] exception 'yii\base\ErrorException' with message 'syntax error, unexpected '{'' in D:\youhui\backend\controllers\AdvertisingController.php:52
+Stack trace:
+#0 [internal function]: yii\base\ErrorHandler->handleFatalError()
+#1 {main}
+2015-01-30 04:19:21 [127.0.0.1][-][-][info][application] $_GET = [
+    'r' => 'advertising/guang_add'
+]
+
+$_COOKIE = [
+    'bdshare_firstime' => '1422512739434'
+]
+
+$_SERVER = [
+    'MIBDIRS' => 'D:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'D:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'www.youhui.com'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/39.0.2171.95 Safari/537.36'
+    'HTTP_REFERER' => 'http://www.youhui.com/backend/web/?r=site/left&act=2'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8'
+    'HTTP_COOKIE' => 'bdshare_firstime=1422512739434'
+    'PATH' => 'C:\\Program Files\\360\\360Desktop;C:\\Program Files\\Common Files\\NetSarang;C:\\ProgramData\\Oracle\\Java\\javapath;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;D:\\Git\\bin;%JAVA_HOME%\\bin;D:\\node\\;C:\\Users\\Administrator\\AppData\\Roaming\\npm'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.7 (Win32) OpenSSL/1.0.1e PHP/5.5.9 Server at www.youhui.com Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.7 (Win32) OpenSSL/1.0.1e PHP/5.5.9'
+    'SERVER_NAME' => 'www.youhui.com'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'D:/youhui/'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'D:/youhui/'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'D:/youhui/backend/web/index.php'
+    'REMOTE_PORT' => '54531'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=advertising/guang_add'
+    'REQUEST_URI' => '/backend/web/?r=advertising/guang_add'
+    'SCRIPT_NAME' => '/backend/web/index.php'
+    'PHP_SELF' => '/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1422587961.276
+    'REQUEST_TIME' => 1422587961
+]
+2015-01-30 04:21:31 [127.0.0.1][-][-][error][yii\base\ErrorException:8] exception 'yii\base\ErrorException' with message 'Undefined index: ad_url' in D:\youhui\backend\controllers\AdvertisingController.php:49
+Stack trace:
+#0 D:\youhui\backend\controllers\AdvertisingController.php(49): yii\base\ErrorHandler->handleError(8, 'Undefined index...', 'D:\youhui\backe...', 49, Array)
+#1 [internal function]: backend\controllers\AdvertisingController->actionGuang_add_do()
+#2 D:\youhui\vendor\yiisoft\yii2\base\InlineAction.php(55): call_user_func_array(Array, Array)
+#3 D:\youhui\vendor\yiisoft\yii2\base\Controller.php(151): yii\base\InlineAction->runWithParams(Array)
+#4 D:\youhui\vendor\yiisoft\yii2\base\Module.php(455): yii\base\Controller->runAction('guang_add_do', Array)
+#5 D:\youhui\vendor\yiisoft\yii2\web\Application.php(83): yii\base\Module->runAction('advertising/gua...', Array)
+#6 D:\youhui\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#7 D:\youhui\backend\web\index.php(18): yii\base\Application->run()
+#8 {main}
+2015-01-30 04:21:31 [127.0.0.1][-][-][info][application] $_GET = [
+    'r' => 'advertising/guang_add_do'
+]
+
+$_POST = [
+    'ad_name' => 'asdasdasd'
+    'media_type' => '101'
+    'position_id' => '1'
+    'enabled' => '1'
+    'start_time' => '2015-01-12 11:21'
+    'end_time' => '2015-02-13 11:21'
+    'ad_link' => 'http://www.baidu.com'
+    'img_url' => 'http://112233.com'
+    'flash_url' => ''
+    'ad_code' => ''
+    'ad_link2' => ''
+    'ad_text' => ''
+]
+
+$_FILES = [
+    'ad_img' => [
+        'name' => ''
+        'type' => ''
+        'tmp_name' => ''
+        'error' => 4
+        'size' => 0
+    ]
+    'upfile_flash' => [
+        'name' => ''
+        'type' => ''
+        'tmp_name' => ''
+        'error' => 4
+        'size' => 0
+    ]
+]
+
+$_COOKIE = [
+    'bdshare_firstime' => '1422512739434'
+]
+
+$_SERVER = [
+    'MIBDIRS' => 'D:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'D:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'www.youhui.com'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'CONTENT_LENGTH' => '1567'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_ORIGIN' => 'http://www.youhui.com'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/39.0.2171.95 Safari/537.36'
+    'CONTENT_TYPE' => 'multipart/form-data; boundary=----WebKitFormBoundaryOOOA4hTGFgsdMaHT'
+    'HTTP_REFERER' => 'http://www.youhui.com/backend/web/?r=advertising/guang_add'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8'
+    'HTTP_COOKIE' => 'bdshare_firstime=1422512739434'
+    'PATH' => 'C:\\Program Files\\360\\360Desktop;C:\\Program Files\\Common Files\\NetSarang;C:\\ProgramData\\Oracle\\Java\\javapath;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;D:\\Git\\bin;%JAVA_HOME%\\bin;D:\\node\\;C:\\Users\\Administrator\\AppData\\Roaming\\npm'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.7 (Win32) OpenSSL/1.0.1e PHP/5.5.9 Server at www.youhui.com Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.7 (Win32) OpenSSL/1.0.1e PHP/5.5.9'
+    'SERVER_NAME' => 'www.youhui.com'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'D:/youhui/'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'D:/youhui/'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'D:/youhui/backend/web/index.php'
+    'REMOTE_PORT' => '54550'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'POST'
+    'QUERY_STRING' => 'r=advertising/guang_add_do'
+    'REQUEST_URI' => '/backend/web/?r=advertising/guang_add_do'
+    'SCRIPT_NAME' => '/backend/web/index.php'
+    'PHP_SELF' => '/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1422588091.302
+    'REQUEST_TIME' => 1422588091
+]
+2015-01-30 05:31:00 [127.0.0.1][-][-][error][yii\base\ErrorException:8] exception 'yii\base\ErrorException' with message 'Undefined variable: v' in D:\youhui\backend\views\Advertising\guang_upd.php:77
+Stack trace:
+#0 D:\youhui\backend\views\Advertising\guang_upd.php(77): yii\base\ErrorHandler->handleError(8, 'Undefined varia...', 'D:\youhui\backe...', 77, Array)
+#1 D:\youhui\vendor\yiisoft\yii2\base\View.php(325): require('D:\youhui\backe...')
+#2 D:\youhui\vendor\yiisoft\yii2\base\View.php(247): yii\base\View->renderPhpFile('D:\youhui\backe...', Array)
+#3 D:\youhui\vendor\yiisoft\yii2\base\View.php(149): yii\base\View->renderFile('D:\youhui\backe...', Array, Object(backend\controllers\AdvertisingController))
+#4 D:\youhui\vendor\yiisoft\yii2\base\Controller.php(367): yii\base\View->render('guang_upd', Array, Object(backend\controllers\AdvertisingController))
+#5 D:\youhui\backend\controllers\AdvertisingController.php(105): yii\base\Controller->render('guang_upd', Array)
+#6 [internal function]: backend\controllers\AdvertisingController->actionGuang_upd()
+#7 D:\youhui\vendor\yiisoft\yii2\base\InlineAction.php(55): call_user_func_array(Array, Array)
+#8 D:\youhui\vendor\yiisoft\yii2\base\Controller.php(151): yii\base\InlineAction->runWithParams(Array)
+#9 D:\youhui\vendor\yiisoft\yii2\base\Module.php(455): yii\base\Controller->runAction('guang_upd', Array)
+#10 D:\youhui\vendor\yiisoft\yii2\web\Application.php(83): yii\base\Module->runAction('advertising/gua...', Array)
+#11 D:\youhui\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#12 D:\youhui\backend\web\index.php(18): yii\base\Application->run()
+#13 {main}
+2015-01-30 05:31:00 [127.0.0.1][-][-][info][application] $_GET = [
+    'r' => 'advertising/guang_upd'
+    'id' => '2'
+]
+
+$_COOKIE = [
+    'bdshare_firstime' => '1422512739434'
+    'PHPSESSID' => '6r52oeos5sh8661432dq2cupq5'
+]
+
+$_SERVER = [
+    'MIBDIRS' => 'D:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'D:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'www.youhui.com'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/39.0.2171.95 Safari/537.36'
+    'HTTP_REFERER' => 'http://www.youhui.com/backend/web/?r=advertising/guang_list'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8'
+    'HTTP_COOKIE' => 'bdshare_firstime=1422512739434; PHPSESSID=6r52oeos5sh8661432dq2cupq5'
+    'PATH' => 'C:\\Program Files\\360\\360Desktop;C:\\Program Files\\Common Files\\NetSarang;C:\\ProgramData\\Oracle\\Java\\javapath;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;D:\\Git\\bin;%JAVA_HOME%\\bin;D:\\node\\;C:\\Users\\Administrator\\AppData\\Roaming\\npm'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.7 (Win32) OpenSSL/1.0.1e PHP/5.5.9 Server at www.youhui.com Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.7 (Win32) OpenSSL/1.0.1e PHP/5.5.9'
+    'SERVER_NAME' => 'www.youhui.com'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'D:/youhui/'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'D:/youhui/'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'D:/youhui/backend/web/index.php'
+    'REMOTE_PORT' => '55388'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=advertising/guang_upd&id=2'
+    'REQUEST_URI' => '/backend/web/?r=advertising/guang_upd&id=2'
+    'SCRIPT_NAME' => '/backend/web/index.php'
+    'PHP_SELF' => '/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1422592260.253
+    'REQUEST_TIME' => 1422592260
+]
+2015-01-30 05:32:11 [127.0.0.1][-][-][error][yii\base\ErrorException:8] exception 'yii\base\ErrorException' with message 'Array to string conversion' in D:\youhui\backend\views\Advertising\guang_list.php:122
+Stack trace:
+#0 D:\youhui\backend\views\Advertising\guang_list.php(122): yii\base\ErrorHandler->handleError(8, 'Array to string...', 'D:\youhui\backe...', 122, Array)
+#1 D:\youhui\vendor\yiisoft\yii2\base\View.php(325): require('D:\youhui\backe...')
+#2 D:\youhui\vendor\yiisoft\yii2\base\View.php(247): yii\base\View->renderPhpFile('D:\youhui\backe...', Array)
+#3 D:\youhui\vendor\yiisoft\yii2\base\View.php(149): yii\base\View->renderFile('D:\youhui\backe...', Array, Object(backend\controllers\AdvertisingController))
+#4 D:\youhui\vendor\yiisoft\yii2\base\Controller.php(367): yii\base\View->render('guang_list', Array, Object(backend\controllers\AdvertisingController))
+#5 D:\youhui\backend\controllers\AdvertisingController.php(23): yii\base\Controller->render('guang_list', Array)
+#6 [internal function]: backend\controllers\AdvertisingController->actionGuang_list()
+#7 D:\youhui\vendor\yiisoft\yii2\base\InlineAction.php(55): call_user_func_array(Array, Array)
+#8 D:\youhui\vendor\yiisoft\yii2\base\Controller.php(151): yii\base\InlineAction->runWithParams(Array)
+#9 D:\youhui\vendor\yiisoft\yii2\base\Module.php(455): yii\base\Controller->runAction('guang_list', Array)
+#10 D:\youhui\vendor\yiisoft\yii2\web\Application.php(83): yii\base\Module->runAction('advertising/gua...', Array)
+#11 D:\youhui\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#12 D:\youhui\backend\web\index.php(18): yii\base\Application->run()
+#13 {main}
+2015-01-30 05:32:11 [127.0.0.1][-][-][info][application] $_GET = [
+    'r' => 'advertising/guang_list'
+]
+
+$_COOKIE = [
+    'bdshare_firstime' => '1422512739434'
+    'PHPSESSID' => '6r52oeos5sh8661432dq2cupq5'
+]
+
+$_SERVER = [
+    'MIBDIRS' => 'D:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'D:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'www.youhui.com'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/39.0.2171.95 Safari/537.36'
+    'HTTP_REFERER' => 'http://www.youhui.com/backend/web/?r=site/left&act=2'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8'
+    'HTTP_COOKIE' => 'bdshare_firstime=1422512739434; PHPSESSID=6r52oeos5sh8661432dq2cupq5'
+    'PATH' => 'C:\\Program Files\\360\\360Desktop;C:\\Program Files\\Common Files\\NetSarang;C:\\ProgramData\\Oracle\\Java\\javapath;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;D:\\Git\\bin;%JAVA_HOME%\\bin;D:\\node\\;C:\\Users\\Administrator\\AppData\\Roaming\\npm'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.7 (Win32) OpenSSL/1.0.1e PHP/5.5.9 Server at www.youhui.com Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.7 (Win32) OpenSSL/1.0.1e PHP/5.5.9'
+    'SERVER_NAME' => 'www.youhui.com'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'D:/youhui/'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'D:/youhui/'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'D:/youhui/backend/web/index.php'
+    'REMOTE_PORT' => '55409'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=advertising/guang_list'
+    'REQUEST_URI' => '/backend/web/?r=advertising/guang_list'
+    'SCRIPT_NAME' => '/backend/web/index.php'
+    'PHP_SELF' => '/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1422592331.56
+    'REQUEST_TIME' => 1422592331
+]
+2015-01-30 07:51:39 [127.0.0.1][-][-][error][yii\base\ErrorException:8] exception 'yii\base\ErrorException' with message 'Undefined index: id' in D:\youhui\backend\controllers\LocationController.php:44
+Stack trace:
+#0 D:\youhui\backend\controllers\LocationController.php(44): yii\base\ErrorHandler->handleError(8, 'Undefined index...', 'D:\youhui\backe...', 44, Array)
+#1 [internal function]: backend\controllers\LocationController->actionLocation_del()
+#2 D:\youhui\vendor\yiisoft\yii2\base\InlineAction.php(55): call_user_func_array(Array, Array)
+#3 D:\youhui\vendor\yiisoft\yii2\base\Controller.php(151): yii\base\InlineAction->runWithParams(Array)
+#4 D:\youhui\vendor\yiisoft\yii2\base\Module.php(455): yii\base\Controller->runAction('location_del', Array)
+#5 D:\youhui\vendor\yiisoft\yii2\web\Application.php(83): yii\base\Module->runAction('location/locati...', Array)
+#6 D:\youhui\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#7 D:\youhui\backend\web\index.php(18): yii\base\Application->run()
+#8 {main}
+2015-01-30 07:51:39 [127.0.0.1][-][-][info][application] $_GET = [
+    'r' => 'location/location_del'
+]
+
+$_POST = [
+    'id' => '1'
+]
+
+$_COOKIE = [
+    'bdshare_firstime' => '1422512739434'
+    'PHPSESSID' => '6r52oeos5sh8661432dq2cupq5'
+    '_csrf' => 'e33142692c78aaf2499c4da6b3e0997e080532e3d69a1b30f9776571bbbea01ds:32:\"hKwhwsXmjGjQaBfFOAAIAmFMbzaNkUZq\";'
+]
+
+$_SERVER = [
+    'MIBDIRS' => 'D:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'D:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'www.youhui.com'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'CONTENT_LENGTH' => '4'
+    'HTTP_ACCEPT' => '*/*'
+    'HTTP_ORIGIN' => 'http://www.youhui.com'
+    'HTTP_X_REQUESTED_WITH' => 'XMLHttpRequest'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/39.0.2171.95 Safari/537.36'
+    'CONTENT_TYPE' => 'application/x-www-form-urlencoded; charset=UTF-8'
+    'HTTP_REFERER' => 'http://www.youhui.com/backend/web/?r=location/location_list'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8'
+    'HTTP_COOKIE' => 'bdshare_firstime=1422512739434; PHPSESSID=6r52oeos5sh8661432dq2cupq5; _csrf=e33142692c78aaf2499c4da6b3e0997e080532e3d69a1b30f9776571bbbea01ds%3A32%3A%22hKwhwsXmjGjQaBfFOAAIAmFMbzaNkUZq%22%3B'
+    'PATH' => 'C:\\Program Files\\360\\360Desktop;C:\\Program Files\\Common Files\\NetSarang;C:\\ProgramData\\Oracle\\Java\\javapath;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;D:\\Git\\bin;%JAVA_HOME%\\bin;D:\\node\\;C:\\Users\\Administrator\\AppData\\Roaming\\npm'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.7 (Win32) OpenSSL/1.0.1e PHP/5.5.9 Server at www.youhui.com Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.7 (Win32) OpenSSL/1.0.1e PHP/5.5.9'
+    'SERVER_NAME' => 'www.youhui.com'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'D:/youhui/'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'D:/youhui/'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'D:/youhui/backend/web/index.php'
+    'REMOTE_PORT' => '59719'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'POST'
+    'QUERY_STRING' => 'r=location/location_del'
+    'REQUEST_URI' => '/backend/web/?r=location/location_del'
+    'SCRIPT_NAME' => '/backend/web/index.php'
+    'PHP_SELF' => '/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1422600699.67
+    'REQUEST_TIME' => 1422600699
+]
+2015-01-30 07:51:41 [127.0.0.1][-][-][error][yii\base\ErrorException:8] exception 'yii\base\ErrorException' with message 'Undefined index: id' in D:\youhui\backend\controllers\LocationController.php:44
+Stack trace:
+#0 D:\youhui\backend\controllers\LocationController.php(44): yii\base\ErrorHandler->handleError(8, 'Undefined index...', 'D:\youhui\backe...', 44, Array)
+#1 [internal function]: backend\controllers\LocationController->actionLocation_del()
+#2 D:\youhui\vendor\yiisoft\yii2\base\InlineAction.php(55): call_user_func_array(Array, Array)
+#3 D:\youhui\vendor\yiisoft\yii2\base\Controller.php(151): yii\base\InlineAction->runWithParams(Array)
+#4 D:\youhui\vendor\yiisoft\yii2\base\Module.php(455): yii\base\Controller->runAction('location_del', Array)
+#5 D:\youhui\vendor\yiisoft\yii2\web\Application.php(83): yii\base\Module->runAction('location/locati...', Array)
+#6 D:\youhui\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#7 D:\youhui\backend\web\index.php(18): yii\base\Application->run()
+#8 {main}
+2015-01-30 07:51:41 [127.0.0.1][-][-][info][application] $_GET = [
+    'r' => 'location/location_del'
+]
+
+$_POST = [
+    'id' => '5'
+]
+
+$_COOKIE = [
+    'bdshare_firstime' => '1422512739434'
+    'PHPSESSID' => '6r52oeos5sh8661432dq2cupq5'
+    '_csrf' => 'e33142692c78aaf2499c4da6b3e0997e080532e3d69a1b30f9776571bbbea01ds:32:\"hKwhwsXmjGjQaBfFOAAIAmFMbzaNkUZq\";'
+]
+
+$_SERVER = [
+    'MIBDIRS' => 'D:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'D:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'www.youhui.com'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'CONTENT_LENGTH' => '4'
+    'HTTP_ACCEPT' => '*/*'
+    'HTTP_ORIGIN' => 'http://www.youhui.com'
+    'HTTP_X_REQUESTED_WITH' => 'XMLHttpRequest'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/39.0.2171.95 Safari/537.36'
+    'CONTENT_TYPE' => 'application/x-www-form-urlencoded; charset=UTF-8'
+    'HTTP_REFERER' => 'http://www.youhui.com/backend/web/?r=location/location_list'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8'
+    'HTTP_COOKIE' => 'bdshare_firstime=1422512739434; PHPSESSID=6r52oeos5sh8661432dq2cupq5; _csrf=e33142692c78aaf2499c4da6b3e0997e080532e3d69a1b30f9776571bbbea01ds%3A32%3A%22hKwhwsXmjGjQaBfFOAAIAmFMbzaNkUZq%22%3B'
+    'PATH' => 'C:\\Program Files\\360\\360Desktop;C:\\Program Files\\Common Files\\NetSarang;C:\\ProgramData\\Oracle\\Java\\javapath;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;D:\\Git\\bin;%JAVA_HOME%\\bin;D:\\node\\;C:\\Users\\Administrator\\AppData\\Roaming\\npm'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.7 (Win32) OpenSSL/1.0.1e PHP/5.5.9 Server at www.youhui.com Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.7 (Win32) OpenSSL/1.0.1e PHP/5.5.9'
+    'SERVER_NAME' => 'www.youhui.com'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'D:/youhui/'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'D:/youhui/'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'D:/youhui/backend/web/index.php'
+    'REMOTE_PORT' => '59722'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'POST'
+    'QUERY_STRING' => 'r=location/location_del'
+    'REQUEST_URI' => '/backend/web/?r=location/location_del'
+    'SCRIPT_NAME' => '/backend/web/index.php'
+    'PHP_SELF' => '/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1422600701.189
+    'REQUEST_TIME' => 1422600701
+]
+2015-01-30 07:51:41 [127.0.0.1][-][-][error][yii\base\ErrorException:8] exception 'yii\base\ErrorException' with message 'Undefined index: id' in D:\youhui\backend\controllers\LocationController.php:44
+Stack trace:
+#0 D:\youhui\backend\controllers\LocationController.php(44): yii\base\ErrorHandler->handleError(8, 'Undefined index...', 'D:\youhui\backe...', 44, Array)
+#1 [internal function]: backend\controllers\LocationController->actionLocation_del()
+#2 D:\youhui\vendor\yiisoft\yii2\base\InlineAction.php(55): call_user_func_array(Array, Array)
+#3 D:\youhui\vendor\yiisoft\yii2\base\Controller.php(151): yii\base\InlineAction->runWithParams(Array)
+#4 D:\youhui\vendor\yiisoft\yii2\base\Module.php(455): yii\base\Controller->runAction('location_del', Array)
+#5 D:\youhui\vendor\yiisoft\yii2\web\Application.php(83): yii\base\Module->runAction('location/locati...', Array)
+#6 D:\youhui\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#7 D:\youhui\backend\web\index.php(18): yii\base\Application->run()
+#8 {main}
+2015-01-30 07:51:41 [127.0.0.1][-][-][info][application] $_GET = [
+    'r' => 'location/location_del'
+]
+
+$_POST = [
+    'id' => '5'
+]
+
+$_COOKIE = [
+    'bdshare_firstime' => '1422512739434'
+    'PHPSESSID' => '6r52oeos5sh8661432dq2cupq5'
+    '_csrf' => 'e33142692c78aaf2499c4da6b3e0997e080532e3d69a1b30f9776571bbbea01ds:32:\"hKwhwsXmjGjQaBfFOAAIAmFMbzaNkUZq\";'
+]
+
+$_SERVER = [
+    'MIBDIRS' => 'D:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'D:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'www.youhui.com'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'CONTENT_LENGTH' => '4'
+    'HTTP_ACCEPT' => '*/*'
+    'HTTP_ORIGIN' => 'http://www.youhui.com'
+    'HTTP_X_REQUESTED_WITH' => 'XMLHttpRequest'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/39.0.2171.95 Safari/537.36'
+    'CONTENT_TYPE' => 'application/x-www-form-urlencoded; charset=UTF-8'
+    'HTTP_REFERER' => 'http://www.youhui.com/backend/web/?r=location/location_list'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8'
+    'HTTP_COOKIE' => 'bdshare_firstime=1422512739434; PHPSESSID=6r52oeos5sh8661432dq2cupq5; _csrf=e33142692c78aaf2499c4da6b3e0997e080532e3d69a1b30f9776571bbbea01ds%3A32%3A%22hKwhwsXmjGjQaBfFOAAIAmFMbzaNkUZq%22%3B'
+    'PATH' => 'C:\\Program Files\\360\\360Desktop;C:\\Program Files\\Common Files\\NetSarang;C:\\ProgramData\\Oracle\\Java\\javapath;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;D:\\Git\\bin;%JAVA_HOME%\\bin;D:\\node\\;C:\\Users\\Administrator\\AppData\\Roaming\\npm'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.7 (Win32) OpenSSL/1.0.1e PHP/5.5.9 Server at www.youhui.com Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.7 (Win32) OpenSSL/1.0.1e PHP/5.5.9'
+    'SERVER_NAME' => 'www.youhui.com'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'D:/youhui/'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'D:/youhui/'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'D:/youhui/backend/web/index.php'
+    'REMOTE_PORT' => '59723'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'POST'
+    'QUERY_STRING' => 'r=location/location_del'
+    'REQUEST_URI' => '/backend/web/?r=location/location_del'
+    'SCRIPT_NAME' => '/backend/web/index.php'
+    'PHP_SELF' => '/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1422600701.916
+    'REQUEST_TIME' => 1422600701
+]
+2015-01-30 07:51:42 [127.0.0.1][-][-][error][yii\base\ErrorException:8] exception 'yii\base\ErrorException' with message 'Undefined index: id' in D:\youhui\backend\controllers\LocationController.php:44
+Stack trace:
+#0 D:\youhui\backend\controllers\LocationController.php(44): yii\base\ErrorHandler->handleError(8, 'Undefined index...', 'D:\youhui\backe...', 44, Array)
+#1 [internal function]: backend\controllers\LocationController->actionLocation_del()
+#2 D:\youhui\vendor\yiisoft\yii2\base\InlineAction.php(55): call_user_func_array(Array, Array)
+#3 D:\youhui\vendor\yiisoft\yii2\base\Controller.php(151): yii\base\InlineAction->runWithParams(Array)
+#4 D:\youhui\vendor\yiisoft\yii2\base\Module.php(455): yii\base\Controller->runAction('location_del', Array)
+#5 D:\youhui\vendor\yiisoft\yii2\web\Application.php(83): yii\base\Module->runAction('location/locati...', Array)
+#6 D:\youhui\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#7 D:\youhui\backend\web\index.php(18): yii\base\Application->run()
+#8 {main}
+2015-01-30 07:51:42 [127.0.0.1][-][-][info][application] $_GET = [
+    'r' => 'location/location_del'
+]
+
+$_POST = [
+    'id' => '4'
+]
+
+$_COOKIE = [
+    'bdshare_firstime' => '1422512739434'
+    'PHPSESSID' => '6r52oeos5sh8661432dq2cupq5'
+    '_csrf' => 'e33142692c78aaf2499c4da6b3e0997e080532e3d69a1b30f9776571bbbea01ds:32:\"hKwhwsXmjGjQaBfFOAAIAmFMbzaNkUZq\";'
+]
+
+$_SERVER = [
+    'MIBDIRS' => 'D:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'D:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'www.youhui.com'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'CONTENT_LENGTH' => '4'
+    'HTTP_ACCEPT' => '*/*'
+    'HTTP_ORIGIN' => 'http://www.youhui.com'
+    'HTTP_X_REQUESTED_WITH' => 'XMLHttpRequest'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/39.0.2171.95 Safari/537.36'
+    'CONTENT_TYPE' => 'application/x-www-form-urlencoded; charset=UTF-8'
+    'HTTP_REFERER' => 'http://www.youhui.com/backend/web/?r=location/location_list'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8'
+    'HTTP_COOKIE' => 'bdshare_firstime=1422512739434; PHPSESSID=6r52oeos5sh8661432dq2cupq5; _csrf=e33142692c78aaf2499c4da6b3e0997e080532e3d69a1b30f9776571bbbea01ds%3A32%3A%22hKwhwsXmjGjQaBfFOAAIAmFMbzaNkUZq%22%3B'
+    'PATH' => 'C:\\Program Files\\360\\360Desktop;C:\\Program Files\\Common Files\\NetSarang;C:\\ProgramData\\Oracle\\Java\\javapath;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;D:\\Git\\bin;%JAVA_HOME%\\bin;D:\\node\\;C:\\Users\\Administrator\\AppData\\Roaming\\npm'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.7 (Win32) OpenSSL/1.0.1e PHP/5.5.9 Server at www.youhui.com Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.7 (Win32) OpenSSL/1.0.1e PHP/5.5.9'
+    'SERVER_NAME' => 'www.youhui.com'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'D:/youhui/'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'D:/youhui/'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'D:/youhui/backend/web/index.php'
+    'REMOTE_PORT' => '59724'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'POST'
+    'QUERY_STRING' => 'r=location/location_del'
+    'REQUEST_URI' => '/backend/web/?r=location/location_del'
+    'SCRIPT_NAME' => '/backend/web/index.php'
+    'PHP_SELF' => '/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1422600702.34
+    'REQUEST_TIME' => 1422600702
+]
+2015-01-30 07:51:42 [127.0.0.1][-][-][error][yii\base\ErrorException:8] exception 'yii\base\ErrorException' with message 'Undefined index: id' in D:\youhui\backend\controllers\LocationController.php:44
+Stack trace:
+#0 D:\youhui\backend\controllers\LocationController.php(44): yii\base\ErrorHandler->handleError(8, 'Undefined index...', 'D:\youhui\backe...', 44, Array)
+#1 [internal function]: backend\controllers\LocationController->actionLocation_del()
+#2 D:\youhui\vendor\yiisoft\yii2\base\InlineAction.php(55): call_user_func_array(Array, Array)
+#3 D:\youhui\vendor\yiisoft\yii2\base\Controller.php(151): yii\base\InlineAction->runWithParams(Array)
+#4 D:\youhui\vendor\yiisoft\yii2\base\Module.php(455): yii\base\Controller->runAction('location_del', Array)
+#5 D:\youhui\vendor\yiisoft\yii2\web\Application.php(83): yii\base\Module->runAction('location/locati...', Array)
+#6 D:\youhui\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#7 D:\youhui\backend\web\index.php(18): yii\base\Application->run()
+#8 {main}
+2015-01-30 07:51:42 [127.0.0.1][-][-][info][application] $_GET = [
+    'r' => 'location/location_del'
+]
+
+$_POST = [
+    'id' => '4'
+]
+
+$_COOKIE = [
+    'bdshare_firstime' => '1422512739434'
+    'PHPSESSID' => '6r52oeos5sh8661432dq2cupq5'
+    '_csrf' => 'e33142692c78aaf2499c4da6b3e0997e080532e3d69a1b30f9776571bbbea01ds:32:\"hKwhwsXmjGjQaBfFOAAIAmFMbzaNkUZq\";'
+]
+
+$_SERVER = [
+    'MIBDIRS' => 'D:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'D:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'www.youhui.com'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'CONTENT_LENGTH' => '4'
+    'HTTP_ACCEPT' => '*/*'
+    'HTTP_ORIGIN' => 'http://www.youhui.com'
+    'HTTP_X_REQUESTED_WITH' => 'XMLHttpRequest'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/39.0.2171.95 Safari/537.36'
+    'CONTENT_TYPE' => 'application/x-www-form-urlencoded; charset=UTF-8'
+    'HTTP_REFERER' => 'http://www.youhui.com/backend/web/?r=location/location_list'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8'
+    'HTTP_COOKIE' => 'bdshare_firstime=1422512739434; PHPSESSID=6r52oeos5sh8661432dq2cupq5; _csrf=e33142692c78aaf2499c4da6b3e0997e080532e3d69a1b30f9776571bbbea01ds%3A32%3A%22hKwhwsXmjGjQaBfFOAAIAmFMbzaNkUZq%22%3B'
+    'PATH' => 'C:\\Program Files\\360\\360Desktop;C:\\Program Files\\Common Files\\NetSarang;C:\\ProgramData\\Oracle\\Java\\javapath;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;D:\\Git\\bin;%JAVA_HOME%\\bin;D:\\node\\;C:\\Users\\Administrator\\AppData\\Roaming\\npm'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.7 (Win32) OpenSSL/1.0.1e PHP/5.5.9 Server at www.youhui.com Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.7 (Win32) OpenSSL/1.0.1e PHP/5.5.9'
+    'SERVER_NAME' => 'www.youhui.com'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'D:/youhui/'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'D:/youhui/'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'D:/youhui/backend/web/index.php'
+    'REMOTE_PORT' => '59725'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'POST'
+    'QUERY_STRING' => 'r=location/location_del'
+    'REQUEST_URI' => '/backend/web/?r=location/location_del'
+    'SCRIPT_NAME' => '/backend/web/index.php'
+    'PHP_SELF' => '/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1422600702.652
+    'REQUEST_TIME' => 1422600702
+]
+2015-01-30 08:14:29 [127.0.0.1][-][-][error][yii\base\ErrorException:2] exception 'yii\base\ErrorException' with message 'Missing argument 1 for yii\db\BaseActiveRecord::findOne(), called in D:\youhui\backend\controllers\LocationController.php on line 54 and defined' in D:\youhui\vendor\yiisoft\yii2\db\BaseActiveRecord.php:99
+Stack trace:
+#0 D:\youhui\vendor\yiisoft\yii2\db\BaseActiveRecord.php(99): yii\base\ErrorHandler->handleError(2, 'Missing argumen...', 'D:\youhui\vendo...', 99, Array)
+#1 D:\youhui\backend\controllers\LocationController.php(54): yii\db\BaseActiveRecord::findOne()
+#2 [internal function]: backend\controllers\LocationController->actionLocation_upd()
+#3 D:\youhui\vendor\yiisoft\yii2\base\InlineAction.php(55): call_user_func_array(Array, Array)
+#4 D:\youhui\vendor\yiisoft\yii2\base\Controller.php(151): yii\base\InlineAction->runWithParams(Array)
+#5 D:\youhui\vendor\yiisoft\yii2\base\Module.php(455): yii\base\Controller->runAction('location_upd', Array)
+#6 D:\youhui\vendor\yiisoft\yii2\web\Application.php(83): yii\base\Module->runAction('location/locati...', Array)
+#7 D:\youhui\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#8 D:\youhui\backend\web\index.php(18): yii\base\Application->run()
+#9 {main}
+2015-01-30 08:14:29 [127.0.0.1][-][-][info][application] $_GET = [
+    'r' => 'location/location_upd'
+    'id' => '1'
+]
+
+$_COOKIE = [
+    'bdshare_firstime' => '1422512739434'
+    'PHPSESSID' => '6r52oeos5sh8661432dq2cupq5'
+    '_csrf' => 'e33142692c78aaf2499c4da6b3e0997e080532e3d69a1b30f9776571bbbea01ds:32:\"hKwhwsXmjGjQaBfFOAAIAmFMbzaNkUZq\";'
+]
+
+$_SERVER = [
+    'MIBDIRS' => 'D:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'D:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'www.youhui.com'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/39.0.2171.95 Safari/537.36'
+    'HTTP_REFERER' => 'http://www.youhui.com/backend/web/?r=location/location_list'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8'
+    'HTTP_COOKIE' => 'bdshare_firstime=1422512739434; PHPSESSID=6r52oeos5sh8661432dq2cupq5; _csrf=e33142692c78aaf2499c4da6b3e0997e080532e3d69a1b30f9776571bbbea01ds%3A32%3A%22hKwhwsXmjGjQaBfFOAAIAmFMbzaNkUZq%22%3B'
+    'PATH' => 'C:\\Program Files\\360\\360Desktop;C:\\Program Files\\Common Files\\NetSarang;C:\\ProgramData\\Oracle\\Java\\javapath;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;D:\\Git\\bin;%JAVA_HOME%\\bin;D:\\node\\;C:\\Users\\Administrator\\AppData\\Roaming\\npm'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.7 (Win32) OpenSSL/1.0.1e PHP/5.5.9 Server at www.youhui.com Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.7 (Win32) OpenSSL/1.0.1e PHP/5.5.9'
+    'SERVER_NAME' => 'www.youhui.com'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'D:/youhui/'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'D:/youhui/'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'D:/youhui/backend/web/index.php'
+    'REMOTE_PORT' => '59954'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=location/location_upd&id=1'
+    'REQUEST_URI' => '/backend/web/?r=location/location_upd&id=1'
+    'SCRIPT_NAME' => '/backend/web/index.php'
+    'PHP_SELF' => '/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1422602069.537
+    'REQUEST_TIME' => 1422602069
+]
+2015-01-30 08:15:00 [127.0.0.1][-][-][error][yii\base\ErrorException:2] exception 'yii\base\ErrorException' with message 'Missing argument 1 for yii\db\BaseActiveRecord::findOne(), called in D:\youhui\backend\controllers\LocationController.php on line 54 and defined' in D:\youhui\vendor\yiisoft\yii2\db\BaseActiveRecord.php:99
+Stack trace:
+#0 D:\youhui\vendor\yiisoft\yii2\db\BaseActiveRecord.php(99): yii\base\ErrorHandler->handleError(2, 'Missing argumen...', 'D:\youhui\vendo...', 99, Array)
+#1 D:\youhui\backend\controllers\LocationController.php(54): yii\db\BaseActiveRecord::findOne()
+#2 [internal function]: backend\controllers\LocationController->actionLocation_upd()
+#3 D:\youhui\vendor\yiisoft\yii2\base\InlineAction.php(55): call_user_func_array(Array, Array)
+#4 D:\youhui\vendor\yiisoft\yii2\base\Controller.php(151): yii\base\InlineAction->runWithParams(Array)
+#5 D:\youhui\vendor\yiisoft\yii2\base\Module.php(455): yii\base\Controller->runAction('location_upd', Array)
+#6 D:\youhui\vendor\yiisoft\yii2\web\Application.php(83): yii\base\Module->runAction('location/locati...', Array)
+#7 D:\youhui\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#8 D:\youhui\backend\web\index.php(18): yii\base\Application->run()
+#9 {main}
+2015-01-30 08:15:00 [127.0.0.1][-][-][info][application] $_GET = [
+    'r' => 'location/location_upd'
+    'id' => '1'
+]
+
+$_COOKIE = [
+    'bdshare_firstime' => '1422512739434'
+    'PHPSESSID' => '6r52oeos5sh8661432dq2cupq5'
+    '_csrf' => 'e33142692c78aaf2499c4da6b3e0997e080532e3d69a1b30f9776571bbbea01ds:32:\"hKwhwsXmjGjQaBfFOAAIAmFMbzaNkUZq\";'
+]
+
+$_SERVER = [
+    'MIBDIRS' => 'D:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'D:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'www.youhui.com'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/39.0.2171.95 Safari/537.36'
+    'HTTP_REFERER' => 'http://www.youhui.com/backend/web/?r=location/location_list'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8'
+    'HTTP_COOKIE' => 'bdshare_firstime=1422512739434; PHPSESSID=6r52oeos5sh8661432dq2cupq5; _csrf=e33142692c78aaf2499c4da6b3e0997e080532e3d69a1b30f9776571bbbea01ds%3A32%3A%22hKwhwsXmjGjQaBfFOAAIAmFMbzaNkUZq%22%3B'
+    'PATH' => 'C:\\Program Files\\360\\360Desktop;C:\\Program Files\\Common Files\\NetSarang;C:\\ProgramData\\Oracle\\Java\\javapath;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;D:\\Git\\bin;%JAVA_HOME%\\bin;D:\\node\\;C:\\Users\\Administrator\\AppData\\Roaming\\npm'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.7 (Win32) OpenSSL/1.0.1e PHP/5.5.9 Server at www.youhui.com Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.7 (Win32) OpenSSL/1.0.1e PHP/5.5.9'
+    'SERVER_NAME' => 'www.youhui.com'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'D:/youhui/'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'D:/youhui/'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'D:/youhui/backend/web/index.php'
+    'REMOTE_PORT' => '59956'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=location/location_upd&id=1'
+    'REQUEST_URI' => '/backend/web/?r=location/location_upd&id=1'
+    'SCRIPT_NAME' => '/backend/web/index.php'
+    'PHP_SELF' => '/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1422602100.634
+    'REQUEST_TIME' => 1422602100
+]
+2015-01-30 08:24:45 [127.0.0.1][-][-][error][yii\base\ErrorException:8] exception 'yii\base\ErrorException' with message 'Undefined index: id' in D:\youhui\backend\controllers\LocationController.php:54
+Stack trace:
+#0 D:\youhui\backend\controllers\LocationController.php(54): yii\base\ErrorHandler->handleError(8, 'Undefined index...', 'D:\youhui\backe...', 54, Array)
+#1 [internal function]: backend\controllers\LocationController->actionLocation_upd()
+#2 D:\youhui\vendor\yiisoft\yii2\base\InlineAction.php(55): call_user_func_array(Array, Array)
+#3 D:\youhui\vendor\yiisoft\yii2\base\Controller.php(151): yii\base\InlineAction->runWithParams(Array)
+#4 D:\youhui\vendor\yiisoft\yii2\base\Module.php(455): yii\base\Controller->runAction('location_upd', Array)
+#5 D:\youhui\vendor\yiisoft\yii2\web\Application.php(83): yii\base\Module->runAction('location/locati...', Array)
+#6 D:\youhui\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#7 D:\youhui\backend\web\index.php(18): yii\base\Application->run()
+#8 {main}
+2015-01-30 08:24:45 [127.0.0.1][-][-][info][application] $_GET = [
+    'r' => 'location/location_upd'
+]
+
+$_COOKIE = [
+    'bdshare_firstime' => '1422512739434'
+    'PHPSESSID' => '6r52oeos5sh8661432dq2cupq5'
+    '_csrf' => 'e33142692c78aaf2499c4da6b3e0997e080532e3d69a1b30f9776571bbbea01ds:32:\"hKwhwsXmjGjQaBfFOAAIAmFMbzaNkUZq\";'
+]
+
+$_SERVER = [
+    'MIBDIRS' => 'D:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'D:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'www.youhui.com'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/39.0.2171.95 Safari/537.36'
+    'HTTP_REFERER' => 'http://www.youhui.com/backend/web/?r=location/location_upd_do'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8'
+    'HTTP_COOKIE' => 'bdshare_firstime=1422512739434; PHPSESSID=6r52oeos5sh8661432dq2cupq5; _csrf=e33142692c78aaf2499c4da6b3e0997e080532e3d69a1b30f9776571bbbea01ds%3A32%3A%22hKwhwsXmjGjQaBfFOAAIAmFMbzaNkUZq%22%3B'
+    'PATH' => 'C:\\Program Files\\360\\360Desktop;C:\\Program Files\\Common Files\\NetSarang;C:\\ProgramData\\Oracle\\Java\\javapath;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;D:\\Git\\bin;%JAVA_HOME%\\bin;D:\\node\\;C:\\Users\\Administrator\\AppData\\Roaming\\npm'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.7 (Win32) OpenSSL/1.0.1e PHP/5.5.9 Server at www.youhui.com Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.7 (Win32) OpenSSL/1.0.1e PHP/5.5.9'
+    'SERVER_NAME' => 'www.youhui.com'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'D:/youhui/'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'D:/youhui/'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'D:/youhui/backend/web/index.php'
+    'REMOTE_PORT' => '60158'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=location/location_upd'
+    'REQUEST_URI' => '/backend/web/?r=location/location_upd'
+    'SCRIPT_NAME' => '/backend/web/index.php'
+    'PHP_SELF' => '/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1422602685.251
+    'REQUEST_TIME' => 1422602685
+]
+2015-01-30 08:26:04 [127.0.0.1][-][-][error][yii\base\ErrorException:8] exception 'yii\base\ErrorException' with message 'Undefined index: id' in D:\youhui\backend\controllers\LocationController.php:54
+Stack trace:
+#0 D:\youhui\backend\controllers\LocationController.php(54): yii\base\ErrorHandler->handleError(8, 'Undefined index...', 'D:\youhui\backe...', 54, Array)
+#1 [internal function]: backend\controllers\LocationController->actionLocation_upd()
+#2 D:\youhui\vendor\yiisoft\yii2\base\InlineAction.php(55): call_user_func_array(Array, Array)
+#3 D:\youhui\vendor\yiisoft\yii2\base\Controller.php(151): yii\base\InlineAction->runWithParams(Array)
+#4 D:\youhui\vendor\yiisoft\yii2\base\Module.php(455): yii\base\Controller->runAction('location_upd', Array)
+#5 D:\youhui\vendor\yiisoft\yii2\web\Application.php(83): yii\base\Module->runAction('location/locati...', Array)
+#6 D:\youhui\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#7 D:\youhui\backend\web\index.php(18): yii\base\Application->run()
+#8 {main}
+2015-01-30 08:26:04 [127.0.0.1][-][-][info][application] $_GET = [
+    'r' => 'location/location_upd'
+]
+
+$_COOKIE = [
+    'bdshare_firstime' => '1422512739434'
+    'PHPSESSID' => '6r52oeos5sh8661432dq2cupq5'
+    '_csrf' => 'e33142692c78aaf2499c4da6b3e0997e080532e3d69a1b30f9776571bbbea01ds:32:\"hKwhwsXmjGjQaBfFOAAIAmFMbzaNkUZq\";'
+]
+
+$_SERVER = [
+    'MIBDIRS' => 'D:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'D:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'www.youhui.com'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/39.0.2171.95 Safari/537.36'
+    'HTTP_REFERER' => 'http://www.youhui.com/backend/web/?r=location/location_upd_do'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8'
+    'HTTP_COOKIE' => 'bdshare_firstime=1422512739434; PHPSESSID=6r52oeos5sh8661432dq2cupq5; _csrf=e33142692c78aaf2499c4da6b3e0997e080532e3d69a1b30f9776571bbbea01ds%3A32%3A%22hKwhwsXmjGjQaBfFOAAIAmFMbzaNkUZq%22%3B'
+    'PATH' => 'C:\\Program Files\\360\\360Desktop;C:\\Program Files\\Common Files\\NetSarang;C:\\ProgramData\\Oracle\\Java\\javapath;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;D:\\Git\\bin;%JAVA_HOME%\\bin;D:\\node\\;C:\\Users\\Administrator\\AppData\\Roaming\\npm'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.7 (Win32) OpenSSL/1.0.1e PHP/5.5.9 Server at www.youhui.com Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.7 (Win32) OpenSSL/1.0.1e PHP/5.5.9'
+    'SERVER_NAME' => 'www.youhui.com'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'D:/youhui/'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'D:/youhui/'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'D:/youhui/backend/web/index.php'
+    'REMOTE_PORT' => '60179'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=location/location_upd'
+    'REQUEST_URI' => '/backend/web/?r=location/location_upd'
+    'SCRIPT_NAME' => '/backend/web/index.php'
+    'PHP_SELF' => '/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1422602764.81
+    'REQUEST_TIME' => 1422602764
+]
+2015-01-30 08:27:06 [127.0.0.1][-][-][error][yii\base\ErrorException:8] exception 'yii\base\ErrorException' with message 'Undefined index: id' in D:\youhui\backend\controllers\LocationController.php:54
+Stack trace:
+#0 D:\youhui\backend\controllers\LocationController.php(54): yii\base\ErrorHandler->handleError(8, 'Undefined index...', 'D:\youhui\backe...', 54, Array)
+#1 [internal function]: backend\controllers\LocationController->actionLocation_upd()
+#2 D:\youhui\vendor\yiisoft\yii2\base\InlineAction.php(55): call_user_func_array(Array, Array)
+#3 D:\youhui\vendor\yiisoft\yii2\base\Controller.php(151): yii\base\InlineAction->runWithParams(Array)
+#4 D:\youhui\vendor\yiisoft\yii2\base\Module.php(455): yii\base\Controller->runAction('location_upd', Array)
+#5 D:\youhui\vendor\yiisoft\yii2\web\Application.php(83): yii\base\Module->runAction('location/locati...', Array)
+#6 D:\youhui\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#7 D:\youhui\backend\web\index.php(18): yii\base\Application->run()
+#8 {main}
+2015-01-30 08:27:06 [127.0.0.1][-][-][info][application] $_GET = [
+    'r' => 'location/location_upd'
+]
+
+$_COOKIE = [
+    'bdshare_firstime' => '1422512739434'
+    'PHPSESSID' => '6r52oeos5sh8661432dq2cupq5'
+    '_csrf' => 'e33142692c78aaf2499c4da6b3e0997e080532e3d69a1b30f9776571bbbea01ds:32:\"hKwhwsXmjGjQaBfFOAAIAmFMbzaNkUZq\";'
+]
+
+$_SERVER = [
+    'MIBDIRS' => 'D:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'D:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'www.youhui.com'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/39.0.2171.95 Safari/537.36'
+    'HTTP_REFERER' => 'http://www.youhui.com/backend/web/?r=location/location_upd_do'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8'
+    'HTTP_COOKIE' => 'bdshare_firstime=1422512739434; PHPSESSID=6r52oeos5sh8661432dq2cupq5; _csrf=e33142692c78aaf2499c4da6b3e0997e080532e3d69a1b30f9776571bbbea01ds%3A32%3A%22hKwhwsXmjGjQaBfFOAAIAmFMbzaNkUZq%22%3B'
+    'PATH' => 'C:\\Program Files\\360\\360Desktop;C:\\Program Files\\Common Files\\NetSarang;C:\\ProgramData\\Oracle\\Java\\javapath;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;D:\\Git\\bin;%JAVA_HOME%\\bin;D:\\node\\;C:\\Users\\Administrator\\AppData\\Roaming\\npm'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.7 (Win32) OpenSSL/1.0.1e PHP/5.5.9 Server at www.youhui.com Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.7 (Win32) OpenSSL/1.0.1e PHP/5.5.9'
+    'SERVER_NAME' => 'www.youhui.com'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'D:/youhui/'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'D:/youhui/'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'D:/youhui/backend/web/index.php'
+    'REMOTE_PORT' => '60208'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=location/location_upd'
+    'REQUEST_URI' => '/backend/web/?r=location/location_upd'
+    'SCRIPT_NAME' => '/backend/web/index.php'
+    'PHP_SELF' => '/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1422602826.249
+    'REQUEST_TIME' => 1422602826
+]
+2015-01-30 08:28:02 [127.0.0.1][-][-][error][yii\base\ErrorException:1] exception 'yii\base\ErrorException' with message 'Call to undefined function backend\controllers\var_var_dump()' in D:\youhui\backend\controllers\LocationController.php:59
+Stack trace:
+#0 [internal function]: yii\base\ErrorHandler->handleFatalError()
+#1 {main}
+2015-01-30 08:28:02 [127.0.0.1][-][-][info][application] $_GET = [
+    'r' => 'location/location_upd_do'
+]
+
+$_POST = [
+    'position_name' => '天天1'
+    'ad_width' => '501'
+    'ad_height' => '10001'
+    'position_id' => '2'
+    'position_desc' => '1111'
+    'position_style' => '<table cellpadding=\"0\" cellspacing=\"0\">
+{foreach from=$ads item=ad}
+<tr><td>{$ad}</td></tr>
+{/foreach}
+</table>'
+    '_hash_' => 'b181b59d36d5749fc8b53a380001b03a'
+    '__hash__' => 'd576410f5cf7c6e39072ef2da01aca80_3707f707bdb14bc08718c6ed9051ecd0'
+]
+
+$_COOKIE = [
+    'bdshare_firstime' => '1422512739434'
+    'PHPSESSID' => '6r52oeos5sh8661432dq2cupq5'
+    '_csrf' => 'e33142692c78aaf2499c4da6b3e0997e080532e3d69a1b30f9776571bbbea01ds:32:\"hKwhwsXmjGjQaBfFOAAIAmFMbzaNkUZq\";'
+]
+
+$_SERVER = [
+    'MIBDIRS' => 'D:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'D:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'www.youhui.com'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'CONTENT_LENGTH' => '435'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_ORIGIN' => 'http://www.youhui.com'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/39.0.2171.95 Safari/537.36'
+    'CONTENT_TYPE' => 'application/x-www-form-urlencoded'
+    'HTTP_REFERER' => 'http://www.youhui.com/backend/web/?r=location/location_upd&id=1'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8'
+    'HTTP_COOKIE' => 'bdshare_firstime=1422512739434; PHPSESSID=6r52oeos5sh8661432dq2cupq5; _csrf=e33142692c78aaf2499c4da6b3e0997e080532e3d69a1b30f9776571bbbea01ds%3A32%3A%22hKwhwsXmjGjQaBfFOAAIAmFMbzaNkUZq%22%3B'
+    'PATH' => 'C:\\Program Files\\360\\360Desktop;C:\\Program Files\\Common Files\\NetSarang;C:\\ProgramData\\Oracle\\Java\\javapath;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;D:\\Git\\bin;%JAVA_HOME%\\bin;D:\\node\\;C:\\Users\\Administrator\\AppData\\Roaming\\npm'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.7 (Win32) OpenSSL/1.0.1e PHP/5.5.9 Server at www.youhui.com Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.7 (Win32) OpenSSL/1.0.1e PHP/5.5.9'
+    'SERVER_NAME' => 'www.youhui.com'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'D:/youhui/'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'D:/youhui/'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'D:/youhui/backend/web/index.php'
+    'REMOTE_PORT' => '60220'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'POST'
+    'QUERY_STRING' => 'r=location/location_upd_do'
+    'REQUEST_URI' => '/backend/web/?r=location/location_upd_do'
+    'SCRIPT_NAME' => '/backend/web/index.php'
+    'PHP_SELF' => '/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1422602882.203
+    'REQUEST_TIME' => 1422602882
+]
+2015-01-30 08:28:53 [127.0.0.1][-][-][error][yii\base\ErrorException:8] exception 'yii\base\ErrorException' with message 'Undefined index: id' in D:\youhui\backend\controllers\LocationController.php:54
+Stack trace:
+#0 D:\youhui\backend\controllers\LocationController.php(54): yii\base\ErrorHandler->handleError(8, 'Undefined index...', 'D:\youhui\backe...', 54, Array)
+#1 [internal function]: backend\controllers\LocationController->actionLocation_upd()
+#2 D:\youhui\vendor\yiisoft\yii2\base\InlineAction.php(55): call_user_func_array(Array, Array)
+#3 D:\youhui\vendor\yiisoft\yii2\base\Controller.php(151): yii\base\InlineAction->runWithParams(Array)
+#4 D:\youhui\vendor\yiisoft\yii2\base\Module.php(455): yii\base\Controller->runAction('location_upd', Array)
+#5 D:\youhui\vendor\yiisoft\yii2\web\Application.php(83): yii\base\Module->runAction('location/locati...', Array)
+#6 D:\youhui\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#7 D:\youhui\backend\web\index.php(18): yii\base\Application->run()
+#8 {main}
+2015-01-30 08:28:53 [127.0.0.1][-][-][info][application] $_GET = [
+    'r' => 'location/location_upd'
+]
+
+$_COOKIE = [
+    'bdshare_firstime' => '1422512739434'
+    'PHPSESSID' => '6r52oeos5sh8661432dq2cupq5'
+    '_csrf' => 'e33142692c78aaf2499c4da6b3e0997e080532e3d69a1b30f9776571bbbea01ds:32:\"hKwhwsXmjGjQaBfFOAAIAmFMbzaNkUZq\";'
+]
+
+$_SERVER = [
+    'MIBDIRS' => 'D:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'D:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'www.youhui.com'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/39.0.2171.95 Safari/537.36'
+    'HTTP_REFERER' => 'http://www.youhui.com/backend/web/?r=location/location_upd_do'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8'
+    'HTTP_COOKIE' => 'bdshare_firstime=1422512739434; PHPSESSID=6r52oeos5sh8661432dq2cupq5; _csrf=e33142692c78aaf2499c4da6b3e0997e080532e3d69a1b30f9776571bbbea01ds%3A32%3A%22hKwhwsXmjGjQaBfFOAAIAmFMbzaNkUZq%22%3B'
+    'PATH' => 'C:\\Program Files\\360\\360Desktop;C:\\Program Files\\Common Files\\NetSarang;C:\\ProgramData\\Oracle\\Java\\javapath;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;D:\\Git\\bin;%JAVA_HOME%\\bin;D:\\node\\;C:\\Users\\Administrator\\AppData\\Roaming\\npm'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.7 (Win32) OpenSSL/1.0.1e PHP/5.5.9 Server at www.youhui.com Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.7 (Win32) OpenSSL/1.0.1e PHP/5.5.9'
+    'SERVER_NAME' => 'www.youhui.com'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'D:/youhui/'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'D:/youhui/'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'D:/youhui/backend/web/index.php'
+    'REMOTE_PORT' => '60250'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=location/location_upd'
+    'REQUEST_URI' => '/backend/web/?r=location/location_upd'
+    'SCRIPT_NAME' => '/backend/web/index.php'
+    'PHP_SELF' => '/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1422602933.306
+    'REQUEST_TIME' => 1422602933
+]
+2015-01-30 08:37:16 [127.0.0.1][-][-][error][yii\web\HttpException:404] exception 'yii\base\InvalidRouteException' with message 'Unable to resolve the request: link/link_add' in D:\youhui\vendor\yiisoft\yii2\base\Controller.php:122
+Stack trace:
+#0 D:\youhui\vendor\yiisoft\yii2\base\Module.php(455): yii\base\Controller->runAction('link_add', Array)
+#1 D:\youhui\vendor\yiisoft\yii2\web\Application.php(83): yii\base\Module->runAction('link/link_add', Array)
+#2 D:\youhui\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#3 D:\youhui\backend\web\index.php(18): yii\base\Application->run()
+#4 {main}
+
+Next exception 'yii\web\NotFoundHttpException' with message 'Unable to resolve the request: link/link_add' in D:\youhui\vendor\yiisoft\yii2\web\Application.php:95
+Stack trace:
+#0 D:\youhui\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 D:\youhui\backend\web\index.php(18): yii\base\Application->run()
+#2 {main}
+2015-01-30 08:37:16 [127.0.0.1][-][-][info][application] $_GET = [
+    'r' => 'link/link_add'
+]
+
+$_COOKIE = [
+    'bdshare_firstime' => '1422512739434'
+    'PHPSESSID' => '6r52oeos5sh8661432dq2cupq5'
+    '_csrf' => 'e33142692c78aaf2499c4da6b3e0997e080532e3d69a1b30f9776571bbbea01ds:32:\"hKwhwsXmjGjQaBfFOAAIAmFMbzaNkUZq\";'
+]
+
+$_SERVER = [
+    'MIBDIRS' => 'D:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'D:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'www.youhui.com'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/39.0.2171.95 Safari/537.36'
+    'HTTP_REFERER' => 'http://www.youhui.com/backend/web/?r=site/left&act=2'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8'
+    'HTTP_COOKIE' => 'bdshare_firstime=1422512739434; PHPSESSID=6r52oeos5sh8661432dq2cupq5; _csrf=e33142692c78aaf2499c4da6b3e0997e080532e3d69a1b30f9776571bbbea01ds%3A32%3A%22hKwhwsXmjGjQaBfFOAAIAmFMbzaNkUZq%22%3B'
+    'PATH' => 'C:\\Program Files\\360\\360Desktop;C:\\Program Files\\Common Files\\NetSarang;C:\\ProgramData\\Oracle\\Java\\javapath;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;D:\\Git\\bin;%JAVA_HOME%\\bin;D:\\node\\;C:\\Users\\Administrator\\AppData\\Roaming\\npm'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.7 (Win32) OpenSSL/1.0.1e PHP/5.5.9 Server at www.youhui.com Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.7 (Win32) OpenSSL/1.0.1e PHP/5.5.9'
+    'SERVER_NAME' => 'www.youhui.com'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'D:/youhui/'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'D:/youhui/'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'D:/youhui/backend/web/index.php'
+    'REMOTE_PORT' => '60477'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=link/link_add'
+    'REQUEST_URI' => '/backend/web/?r=link/link_add'
+    'SCRIPT_NAME' => '/backend/web/index.php'
+    'PHP_SELF' => '/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1422603436.74
+    'REQUEST_TIME' => 1422603436
+]
+2015-01-30 08:37:35 [127.0.0.1][-][-][error][yii\web\HttpException:404] exception 'yii\base\InvalidRouteException' with message 'Unable to resolve the request: link/link_add' in D:\youhui\vendor\yiisoft\yii2\base\Controller.php:122
+Stack trace:
+#0 D:\youhui\vendor\yiisoft\yii2\base\Module.php(455): yii\base\Controller->runAction('link_add', Array)
+#1 D:\youhui\vendor\yiisoft\yii2\web\Application.php(83): yii\base\Module->runAction('link/link_add', Array)
+#2 D:\youhui\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#3 D:\youhui\backend\web\index.php(18): yii\base\Application->run()
+#4 {main}
+
+Next exception 'yii\web\NotFoundHttpException' with message 'Unable to resolve the request: link/link_add' in D:\youhui\vendor\yiisoft\yii2\web\Application.php:95
+Stack trace:
+#0 D:\youhui\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 D:\youhui\backend\web\index.php(18): yii\base\Application->run()
+#2 {main}
+2015-01-30 08:37:35 [127.0.0.1][-][-][info][application] $_GET = [
+    'r' => 'link/link_add'
+]
+
+$_COOKIE = [
+    'bdshare_firstime' => '1422512739434'
+    'PHPSESSID' => '6r52oeos5sh8661432dq2cupq5'
+    '_csrf' => 'e33142692c78aaf2499c4da6b3e0997e080532e3d69a1b30f9776571bbbea01ds:32:\"hKwhwsXmjGjQaBfFOAAIAmFMbzaNkUZq\";'
+]
+
+$_SERVER = [
+    'MIBDIRS' => 'D:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'D:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'www.youhui.com'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/39.0.2171.95 Safari/537.36'
+    'HTTP_REFERER' => 'http://www.youhui.com/backend/web/?r=site/left&act=2'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8'
+    'HTTP_COOKIE' => 'bdshare_firstime=1422512739434; PHPSESSID=6r52oeos5sh8661432dq2cupq5; _csrf=e33142692c78aaf2499c4da6b3e0997e080532e3d69a1b30f9776571bbbea01ds%3A32%3A%22hKwhwsXmjGjQaBfFOAAIAmFMbzaNkUZq%22%3B'
+    'PATH' => 'C:\\Program Files\\360\\360Desktop;C:\\Program Files\\Common Files\\NetSarang;C:\\ProgramData\\Oracle\\Java\\javapath;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;D:\\Git\\bin;%JAVA_HOME%\\bin;D:\\node\\;C:\\Users\\Administrator\\AppData\\Roaming\\npm'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.7 (Win32) OpenSSL/1.0.1e PHP/5.5.9 Server at www.youhui.com Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.7 (Win32) OpenSSL/1.0.1e PHP/5.5.9'
+    'SERVER_NAME' => 'www.youhui.com'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'D:/youhui/'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'D:/youhui/'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'D:/youhui/backend/web/index.php'
+    'REMOTE_PORT' => '60481'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=link/link_add'
+    'REQUEST_URI' => '/backend/web/?r=link/link_add'
+    'SCRIPT_NAME' => '/backend/web/index.php'
+    'PHP_SELF' => '/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1422603455.46
+    'REQUEST_TIME' => 1422603455
+]
+2015-01-30 08:38:05 [127.0.0.1][-][-][error][yii\web\HttpException:404] exception 'yii\base\InvalidRouteException' with message 'Unable to resolve the request: link/link_add' in D:\youhui\vendor\yiisoft\yii2\base\Controller.php:122
+Stack trace:
+#0 D:\youhui\vendor\yiisoft\yii2\base\Module.php(455): yii\base\Controller->runAction('link_add', Array)
+#1 D:\youhui\vendor\yiisoft\yii2\web\Application.php(83): yii\base\Module->runAction('link/link_add', Array)
+#2 D:\youhui\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#3 D:\youhui\backend\web\index.php(18): yii\base\Application->run()
+#4 {main}
+
+Next exception 'yii\web\NotFoundHttpException' with message 'Unable to resolve the request: link/link_add' in D:\youhui\vendor\yiisoft\yii2\web\Application.php:95
+Stack trace:
+#0 D:\youhui\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 D:\youhui\backend\web\index.php(18): yii\base\Application->run()
+#2 {main}
+2015-01-30 08:38:05 [127.0.0.1][-][-][info][application] $_GET = [
+    'r' => 'link/link_add'
+]
+
+$_COOKIE = [
+    'bdshare_firstime' => '1422512739434'
+    'PHPSESSID' => '6r52oeos5sh8661432dq2cupq5'
+    '_csrf' => 'e33142692c78aaf2499c4da6b3e0997e080532e3d69a1b30f9776571bbbea01ds:32:\"hKwhwsXmjGjQaBfFOAAIAmFMbzaNkUZq\";'
+]
+
+$_SERVER = [
+    'MIBDIRS' => 'D:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'D:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'www.youhui.com'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/39.0.2171.95 Safari/537.36'
+    'HTTP_REFERER' => 'http://www.youhui.com/backend/web/?r=site/left&act=2'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8'
+    'HTTP_COOKIE' => 'bdshare_firstime=1422512739434; PHPSESSID=6r52oeos5sh8661432dq2cupq5; _csrf=e33142692c78aaf2499c4da6b3e0997e080532e3d69a1b30f9776571bbbea01ds%3A32%3A%22hKwhwsXmjGjQaBfFOAAIAmFMbzaNkUZq%22%3B'
+    'PATH' => 'C:\\Program Files\\360\\360Desktop;C:\\Program Files\\Common Files\\NetSarang;C:\\ProgramData\\Oracle\\Java\\javapath;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;D:\\Git\\bin;%JAVA_HOME%\\bin;D:\\node\\;C:\\Users\\Administrator\\AppData\\Roaming\\npm'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.7 (Win32) OpenSSL/1.0.1e PHP/5.5.9 Server at www.youhui.com Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.7 (Win32) OpenSSL/1.0.1e PHP/5.5.9'
+    'SERVER_NAME' => 'www.youhui.com'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'D:/youhui/'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'D:/youhui/'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'D:/youhui/backend/web/index.php'
+    'REMOTE_PORT' => '60502'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=link/link_add'
+    'REQUEST_URI' => '/backend/web/?r=link/link_add'
+    'SCRIPT_NAME' => '/backend/web/index.php'
+    'PHP_SELF' => '/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1422603485.661
+    'REQUEST_TIME' => 1422603485
+]
+2015-01-30 08:38:06 [127.0.0.1][-][-][error][yii\web\HttpException:404] exception 'yii\base\InvalidRouteException' with message 'Unable to resolve the request: link/link_add' in D:\youhui\vendor\yiisoft\yii2\base\Controller.php:122
+Stack trace:
+#0 D:\youhui\vendor\yiisoft\yii2\base\Module.php(455): yii\base\Controller->runAction('link_add', Array)
+#1 D:\youhui\vendor\yiisoft\yii2\web\Application.php(83): yii\base\Module->runAction('link/link_add', Array)
+#2 D:\youhui\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#3 D:\youhui\backend\web\index.php(18): yii\base\Application->run()
+#4 {main}
+
+Next exception 'yii\web\NotFoundHttpException' with message 'Unable to resolve the request: link/link_add' in D:\youhui\vendor\yiisoft\yii2\web\Application.php:95
+Stack trace:
+#0 D:\youhui\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 D:\youhui\backend\web\index.php(18): yii\base\Application->run()
+#2 {main}
+2015-01-30 08:38:06 [127.0.0.1][-][-][info][application] $_GET = [
+    'r' => 'link/link_add'
+]
+
+$_COOKIE = [
+    'bdshare_firstime' => '1422512739434'
+    'PHPSESSID' => '6r52oeos5sh8661432dq2cupq5'
+    '_csrf' => 'e33142692c78aaf2499c4da6b3e0997e080532e3d69a1b30f9776571bbbea01ds:32:\"hKwhwsXmjGjQaBfFOAAIAmFMbzaNkUZq\";'
+]
+
+$_SERVER = [
+    'MIBDIRS' => 'D:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'D:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'www.youhui.com'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/39.0.2171.95 Safari/537.36'
+    'HTTP_REFERER' => 'http://www.youhui.com/backend/web/?r=site/left&act=2'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8'
+    'HTTP_COOKIE' => 'bdshare_firstime=1422512739434; PHPSESSID=6r52oeos5sh8661432dq2cupq5; _csrf=e33142692c78aaf2499c4da6b3e0997e080532e3d69a1b30f9776571bbbea01ds%3A32%3A%22hKwhwsXmjGjQaBfFOAAIAmFMbzaNkUZq%22%3B'
+    'PATH' => 'C:\\Program Files\\360\\360Desktop;C:\\Program Files\\Common Files\\NetSarang;C:\\ProgramData\\Oracle\\Java\\javapath;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;D:\\Git\\bin;%JAVA_HOME%\\bin;D:\\node\\;C:\\Users\\Administrator\\AppData\\Roaming\\npm'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.7 (Win32) OpenSSL/1.0.1e PHP/5.5.9 Server at www.youhui.com Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.7 (Win32) OpenSSL/1.0.1e PHP/5.5.9'
+    'SERVER_NAME' => 'www.youhui.com'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'D:/youhui/'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'D:/youhui/'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'D:/youhui/backend/web/index.php'
+    'REMOTE_PORT' => '60502'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=link/link_add'
+    'REQUEST_URI' => '/backend/web/?r=link/link_add'
+    'SCRIPT_NAME' => '/backend/web/index.php'
+    'PHP_SELF' => '/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1422603486.865
+    'REQUEST_TIME' => 1422603486
+]
+2015-01-30 08:38:09 [127.0.0.1][-][-][error][yii\web\HttpException:404] exception 'yii\base\InvalidRouteException' with message 'Unable to resolve the request: link/link_add' in D:\youhui\vendor\yiisoft\yii2\base\Controller.php:122
+Stack trace:
+#0 D:\youhui\vendor\yiisoft\yii2\base\Module.php(455): yii\base\Controller->runAction('link_add', Array)
+#1 D:\youhui\vendor\yiisoft\yii2\web\Application.php(83): yii\base\Module->runAction('link/link_add', Array)
+#2 D:\youhui\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#3 D:\youhui\backend\web\index.php(18): yii\base\Application->run()
+#4 {main}
+
+Next exception 'yii\web\NotFoundHttpException' with message 'Unable to resolve the request: link/link_add' in D:\youhui\vendor\yiisoft\yii2\web\Application.php:95
+Stack trace:
+#0 D:\youhui\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 D:\youhui\backend\web\index.php(18): yii\base\Application->run()
+#2 {main}
+2015-01-30 08:38:09 [127.0.0.1][-][-][info][application] $_GET = [
+    'r' => 'link/link_add'
+]
+
+$_COOKIE = [
+    'bdshare_firstime' => '1422512739434'
+    'PHPSESSID' => '6r52oeos5sh8661432dq2cupq5'
+    '_csrf' => 'e33142692c78aaf2499c4da6b3e0997e080532e3d69a1b30f9776571bbbea01ds:32:\"hKwhwsXmjGjQaBfFOAAIAmFMbzaNkUZq\";'
+]
+
+$_SERVER = [
+    'MIBDIRS' => 'D:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'D:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'www.youhui.com'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/39.0.2171.95 Safari/537.36'
+    'HTTP_REFERER' => 'http://www.youhui.com/backend/web/?r=site/left&act=2'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8'
+    'HTTP_COOKIE' => 'bdshare_firstime=1422512739434; PHPSESSID=6r52oeos5sh8661432dq2cupq5; _csrf=e33142692c78aaf2499c4da6b3e0997e080532e3d69a1b30f9776571bbbea01ds%3A32%3A%22hKwhwsXmjGjQaBfFOAAIAmFMbzaNkUZq%22%3B'
+    'PATH' => 'C:\\Program Files\\360\\360Desktop;C:\\Program Files\\Common Files\\NetSarang;C:\\ProgramData\\Oracle\\Java\\javapath;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;D:\\Git\\bin;%JAVA_HOME%\\bin;D:\\node\\;C:\\Users\\Administrator\\AppData\\Roaming\\npm'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.7 (Win32) OpenSSL/1.0.1e PHP/5.5.9 Server at www.youhui.com Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.7 (Win32) OpenSSL/1.0.1e PHP/5.5.9'
+    'SERVER_NAME' => 'www.youhui.com'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'D:/youhui/'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'D:/youhui/'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'D:/youhui/backend/web/index.php'
+    'REMOTE_PORT' => '60502'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=link/link_add'
+    'REQUEST_URI' => '/backend/web/?r=link/link_add'
+    'SCRIPT_NAME' => '/backend/web/index.php'
+    'PHP_SELF' => '/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1422603489.849
+    'REQUEST_TIME' => 1422603489
+]
+2015-01-30 08:39:15 [127.0.0.1][-][-][error][yii\web\HttpException:404] exception 'yii\base\InvalidRouteException' with message 'Unable to resolve the request: link/link_add' in D:\youhui\vendor\yiisoft\yii2\base\Controller.php:122
+Stack trace:
+#0 D:\youhui\vendor\yiisoft\yii2\base\Module.php(455): yii\base\Controller->runAction('link_add', Array)
+#1 D:\youhui\vendor\yiisoft\yii2\web\Application.php(83): yii\base\Module->runAction('link/link_add', Array)
+#2 D:\youhui\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#3 D:\youhui\backend\web\index.php(18): yii\base\Application->run()
+#4 {main}
+
+Next exception 'yii\web\NotFoundHttpException' with message 'Unable to resolve the request: link/link_add' in D:\youhui\vendor\yiisoft\yii2\web\Application.php:95
+Stack trace:
+#0 D:\youhui\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 D:\youhui\backend\web\index.php(18): yii\base\Application->run()
+#2 {main}
+2015-01-30 08:39:15 [127.0.0.1][-][-][info][application] $_GET = [
+    'r' => 'link/link_add'
+]
+
+$_COOKIE = [
+    'bdshare_firstime' => '1422512739434'
+    'PHPSESSID' => '6r52oeos5sh8661432dq2cupq5'
+    '_csrf' => 'e33142692c78aaf2499c4da6b3e0997e080532e3d69a1b30f9776571bbbea01ds:32:\"hKwhwsXmjGjQaBfFOAAIAmFMbzaNkUZq\";'
+]
+
+$_SERVER = [
+    'MIBDIRS' => 'D:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'D:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'www.youhui.com'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/39.0.2171.95 Safari/537.36'
+    'HTTP_REFERER' => 'http://www.youhui.com/backend/web/?r=site/left&act=2'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8'
+    'HTTP_COOKIE' => 'bdshare_firstime=1422512739434; PHPSESSID=6r52oeos5sh8661432dq2cupq5; _csrf=e33142692c78aaf2499c4da6b3e0997e080532e3d69a1b30f9776571bbbea01ds%3A32%3A%22hKwhwsXmjGjQaBfFOAAIAmFMbzaNkUZq%22%3B'
+    'PATH' => 'C:\\Program Files\\360\\360Desktop;C:\\Program Files\\Common Files\\NetSarang;C:\\ProgramData\\Oracle\\Java\\javapath;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;D:\\Git\\bin;%JAVA_HOME%\\bin;D:\\node\\;C:\\Users\\Administrator\\AppData\\Roaming\\npm'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.7 (Win32) OpenSSL/1.0.1e PHP/5.5.9 Server at www.youhui.com Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.7 (Win32) OpenSSL/1.0.1e PHP/5.5.9'
+    'SERVER_NAME' => 'www.youhui.com'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'D:/youhui/'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'D:/youhui/'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'D:/youhui/backend/web/index.php'
+    'REMOTE_PORT' => '60517'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=link/link_add'
+    'REQUEST_URI' => '/backend/web/?r=link/link_add'
+    'SCRIPT_NAME' => '/backend/web/index.php'
+    'PHP_SELF' => '/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1422603555.691
+    'REQUEST_TIME' => 1422603555
+]
+2015-01-30 08:39:17 [127.0.0.1][-][-][error][yii\web\HttpException:404] exception 'yii\base\InvalidRouteException' with message 'Unable to resolve the request: link/link_add' in D:\youhui\vendor\yiisoft\yii2\base\Controller.php:122
+Stack trace:
+#0 D:\youhui\vendor\yiisoft\yii2\base\Module.php(455): yii\base\Controller->runAction('link_add', Array)
+#1 D:\youhui\vendor\yiisoft\yii2\web\Application.php(83): yii\base\Module->runAction('link/link_add', Array)
+#2 D:\youhui\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#3 D:\youhui\backend\web\index.php(18): yii\base\Application->run()
+#4 {main}
+
+Next exception 'yii\web\NotFoundHttpException' with message 'Unable to resolve the request: link/link_add' in D:\youhui\vendor\yiisoft\yii2\web\Application.php:95
+Stack trace:
+#0 D:\youhui\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 D:\youhui\backend\web\index.php(18): yii\base\Application->run()
+#2 {main}
+2015-01-30 08:39:17 [127.0.0.1][-][-][info][application] $_GET = [
+    'r' => 'link/link_add'
+]
+
+$_COOKIE = [
+    'bdshare_firstime' => '1422512739434'
+    'PHPSESSID' => '6r52oeos5sh8661432dq2cupq5'
+    '_csrf' => 'e33142692c78aaf2499c4da6b3e0997e080532e3d69a1b30f9776571bbbea01ds:32:\"hKwhwsXmjGjQaBfFOAAIAmFMbzaNkUZq\";'
+]
+
+$_SERVER = [
+    'MIBDIRS' => 'D:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'D:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'www.youhui.com'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/39.0.2171.95 Safari/537.36'
+    'HTTP_REFERER' => 'http://www.youhui.com/backend/web/?r=site/left&act=2'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8'
+    'HTTP_COOKIE' => 'bdshare_firstime=1422512739434; PHPSESSID=6r52oeos5sh8661432dq2cupq5; _csrf=e33142692c78aaf2499c4da6b3e0997e080532e3d69a1b30f9776571bbbea01ds%3A32%3A%22hKwhwsXmjGjQaBfFOAAIAmFMbzaNkUZq%22%3B'
+    'PATH' => 'C:\\Program Files\\360\\360Desktop;C:\\Program Files\\Common Files\\NetSarang;C:\\ProgramData\\Oracle\\Java\\javapath;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;D:\\Git\\bin;%JAVA_HOME%\\bin;D:\\node\\;C:\\Users\\Administrator\\AppData\\Roaming\\npm'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.7 (Win32) OpenSSL/1.0.1e PHP/5.5.9 Server at www.youhui.com Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.7 (Win32) OpenSSL/1.0.1e PHP/5.5.9'
+    'SERVER_NAME' => 'www.youhui.com'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'D:/youhui/'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'D:/youhui/'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'D:/youhui/backend/web/index.php'
+    'REMOTE_PORT' => '60517'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=link/link_add'
+    'REQUEST_URI' => '/backend/web/?r=link/link_add'
+    'SCRIPT_NAME' => '/backend/web/index.php'
+    'PHP_SELF' => '/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1422603557.138
+    'REQUEST_TIME' => 1422603557
+]
+2015-01-30 08:39:18 [127.0.0.1][-][-][error][yii\web\HttpException:404] exception 'yii\base\InvalidRouteException' with message 'Unable to resolve the request: link/link_add' in D:\youhui\vendor\yiisoft\yii2\base\Controller.php:122
+Stack trace:
+#0 D:\youhui\vendor\yiisoft\yii2\base\Module.php(455): yii\base\Controller->runAction('link_add', Array)
+#1 D:\youhui\vendor\yiisoft\yii2\web\Application.php(83): yii\base\Module->runAction('link/link_add', Array)
+#2 D:\youhui\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#3 D:\youhui\backend\web\index.php(18): yii\base\Application->run()
+#4 {main}
+
+Next exception 'yii\web\NotFoundHttpException' with message 'Unable to resolve the request: link/link_add' in D:\youhui\vendor\yiisoft\yii2\web\Application.php:95
+Stack trace:
+#0 D:\youhui\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 D:\youhui\backend\web\index.php(18): yii\base\Application->run()
+#2 {main}
+2015-01-30 08:39:18 [127.0.0.1][-][-][info][application] $_GET = [
+    'r' => 'link/link_add'
+]
+
+$_COOKIE = [
+    'bdshare_firstime' => '1422512739434'
+    'PHPSESSID' => '6r52oeos5sh8661432dq2cupq5'
+    '_csrf' => 'e33142692c78aaf2499c4da6b3e0997e080532e3d69a1b30f9776571bbbea01ds:32:\"hKwhwsXmjGjQaBfFOAAIAmFMbzaNkUZq\";'
+]
+
+$_SERVER = [
+    'MIBDIRS' => 'D:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'D:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'www.youhui.com'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/39.0.2171.95 Safari/537.36'
+    'HTTP_REFERER' => 'http://www.youhui.com/backend/web/?r=site/left&act=2'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8'
+    'HTTP_COOKIE' => 'bdshare_firstime=1422512739434; PHPSESSID=6r52oeos5sh8661432dq2cupq5; _csrf=e33142692c78aaf2499c4da6b3e0997e080532e3d69a1b30f9776571bbbea01ds%3A32%3A%22hKwhwsXmjGjQaBfFOAAIAmFMbzaNkUZq%22%3B'
+    'PATH' => 'C:\\Program Files\\360\\360Desktop;C:\\Program Files\\Common Files\\NetSarang;C:\\ProgramData\\Oracle\\Java\\javapath;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;D:\\Git\\bin;%JAVA_HOME%\\bin;D:\\node\\;C:\\Users\\Administrator\\AppData\\Roaming\\npm'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.7 (Win32) OpenSSL/1.0.1e PHP/5.5.9 Server at www.youhui.com Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.7 (Win32) OpenSSL/1.0.1e PHP/5.5.9'
+    'SERVER_NAME' => 'www.youhui.com'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'D:/youhui/'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'D:/youhui/'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'D:/youhui/backend/web/index.php'
+    'REMOTE_PORT' => '60517'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=link/link_add'
+    'REQUEST_URI' => '/backend/web/?r=link/link_add'
+    'SCRIPT_NAME' => '/backend/web/index.php'
+    'PHP_SELF' => '/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1422603558.226
+    'REQUEST_TIME' => 1422603558
+]
+2015-01-30 09:31:24 [127.0.0.1][-][-][error][yii\base\ErrorException:4] exception 'yii\base\ErrorException' with message 'syntax error, unexpected '->' (T_OBJECT_OPERATOR)' in D:\youhui\backend\controllers\LinkController.php:45
+Stack trace:
+#0 [internal function]: yii\base\ErrorHandler->handleFatalError()
+#1 {main}
+2015-01-30 09:31:24 [127.0.0.1][-][-][info][application] $_GET = [
+    'r' => 'link/link_list'
+]
+
+$_COOKIE = [
+    'bdshare_firstime' => '1422512739434'
+    'PHPSESSID' => '6r52oeos5sh8661432dq2cupq5'
+    '_csrf' => 'e33142692c78aaf2499c4da6b3e0997e080532e3d69a1b30f9776571bbbea01ds:32:\"hKwhwsXmjGjQaBfFOAAIAmFMbzaNkUZq\";'
+]
+
+$_SERVER = [
+    'MIBDIRS' => 'D:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'D:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'www.youhui.com'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/39.0.2171.95 Safari/537.36'
+    'HTTP_REFERER' => 'http://www.youhui.com/backend/web/?r=site/left&act=2'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8'
+    'HTTP_COOKIE' => 'bdshare_firstime=1422512739434; PHPSESSID=6r52oeos5sh8661432dq2cupq5; _csrf=e33142692c78aaf2499c4da6b3e0997e080532e3d69a1b30f9776571bbbea01ds%3A32%3A%22hKwhwsXmjGjQaBfFOAAIAmFMbzaNkUZq%22%3B'
+    'PATH' => 'C:\\Program Files\\360\\360Desktop;C:\\Program Files\\Common Files\\NetSarang;C:\\ProgramData\\Oracle\\Java\\javapath;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;D:\\Git\\bin;%JAVA_HOME%\\bin;D:\\node\\;C:\\Users\\Administrator\\AppData\\Roaming\\npm'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.7 (Win32) OpenSSL/1.0.1e PHP/5.5.9 Server at www.youhui.com Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.7 (Win32) OpenSSL/1.0.1e PHP/5.5.9'
+    'SERVER_NAME' => 'www.youhui.com'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'D:/youhui/'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'D:/youhui/'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'D:/youhui/backend/web/index.php'
+    'REMOTE_PORT' => '61859'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=link/link_list'
+    'REQUEST_URI' => '/backend/web/?r=link/link_list'
+    'SCRIPT_NAME' => '/backend/web/index.php'
+    'PHP_SELF' => '/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1422606684.018
+    'REQUEST_TIME' => 1422606684
+]
+2015-01-30 09:31:24 [127.0.0.1][-][-][error][yii\base\ErrorException:4] exception 'yii\base\ErrorException' with message 'syntax error, unexpected '->' (T_OBJECT_OPERATOR)' in D:\youhui\backend\controllers\LinkController.php:45
+Stack trace:
+#0 [internal function]: yii\base\ErrorHandler->handleFatalError()
+#1 {main}
+2015-01-30 09:31:24 [127.0.0.1][-][-][info][application] $_GET = [
+    'r' => 'link/link_add'
+]
+
+$_COOKIE = [
+    'bdshare_firstime' => '1422512739434'
+    'PHPSESSID' => '6r52oeos5sh8661432dq2cupq5'
+    '_csrf' => 'e33142692c78aaf2499c4da6b3e0997e080532e3d69a1b30f9776571bbbea01ds:32:\"hKwhwsXmjGjQaBfFOAAIAmFMbzaNkUZq\";'
+]
+
+$_SERVER = [
+    'MIBDIRS' => 'D:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'D:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'www.youhui.com'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/39.0.2171.95 Safari/537.36'
+    'HTTP_REFERER' => 'http://www.youhui.com/backend/web/?r=site/left&act=2'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8'
+    'HTTP_COOKIE' => 'bdshare_firstime=1422512739434; PHPSESSID=6r52oeos5sh8661432dq2cupq5; _csrf=e33142692c78aaf2499c4da6b3e0997e080532e3d69a1b30f9776571bbbea01ds%3A32%3A%22hKwhwsXmjGjQaBfFOAAIAmFMbzaNkUZq%22%3B'
+    'PATH' => 'C:\\Program Files\\360\\360Desktop;C:\\Program Files\\Common Files\\NetSarang;C:\\ProgramData\\Oracle\\Java\\javapath;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;D:\\Git\\bin;%JAVA_HOME%\\bin;D:\\node\\;C:\\Users\\Administrator\\AppData\\Roaming\\npm'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.7 (Win32) OpenSSL/1.0.1e PHP/5.5.9 Server at www.youhui.com Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.7 (Win32) OpenSSL/1.0.1e PHP/5.5.9'
+    'SERVER_NAME' => 'www.youhui.com'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'D:/youhui/'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'D:/youhui/'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'D:/youhui/backend/web/index.php'
+    'REMOTE_PORT' => '61860'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=link/link_add'
+    'REQUEST_URI' => '/backend/web/?r=link/link_add'
+    'SCRIPT_NAME' => '/backend/web/index.php'
+    'PHP_SELF' => '/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1422606684.797
+    'REQUEST_TIME' => 1422606684
+]
+2015-01-30 09:31:53 [127.0.0.1][-][-][error][yii\web\HttpException:400] exception 'yii\web\BadRequestHttpException' with message 'Unable to verify your data submission.' in D:\youhui\vendor\yiisoft\yii2\web\Controller.php:110
+Stack trace:
+#0 D:\youhui\vendor\yiisoft\yii2\base\Controller.php(149): yii\web\Controller->beforeAction(Object(yii\base\InlineAction))
+#1 D:\youhui\vendor\yiisoft\yii2\base\Module.php(455): yii\base\Controller->runAction('link_add_do', Array)
+#2 D:\youhui\vendor\yiisoft\yii2\web\Application.php(83): yii\base\Module->runAction('link/link_add_d...', Array)
+#3 D:\youhui\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#4 D:\youhui\backend\web\index.php(18): yii\base\Application->run()
+#5 {main}
+2015-01-30 09:31:53 [127.0.0.1][-][-][info][application] $_GET = [
+    'r' => 'link/link_add_do'
+]
+
+$_POST = [
+    'site_name' => 'asdasdasd'
+    'position_id' => '102'
+    'link_type' => '1'
+    'link_url' => 'http://www.badu.com'
+    'sort_order' => '12'
+    'link_text' => '啊实打实大'
+    'logo_url' => ''
+]
+
+$_FILES = [
+    'link_logo' => [
+        'name' => ''
+        'type' => ''
+        'tmp_name' => ''
+        'error' => 4
+        'size' => 0
+    ]
+]
+
+$_COOKIE = [
+    'bdshare_firstime' => '1422512739434'
+    'PHPSESSID' => '6r52oeos5sh8661432dq2cupq5'
+    '_csrf' => 'e33142692c78aaf2499c4da6b3e0997e080532e3d69a1b30f9776571bbbea01ds:32:\"hKwhwsXmjGjQaBfFOAAIAmFMbzaNkUZq\";'
+]
+
+$_SERVER = [
+    'MIBDIRS' => 'D:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'D:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'www.youhui.com'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'CONTENT_LENGTH' => '915'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_ORIGIN' => 'http://www.youhui.com'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/39.0.2171.95 Safari/537.36'
+    'CONTENT_TYPE' => 'multipart/form-data; boundary=----WebKitFormBoundaryqv3INgpBTYJq0tbY'
+    'HTTP_REFERER' => 'http://www.youhui.com/backend/web/?r=link/link_add'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8'
+    'HTTP_COOKIE' => 'bdshare_firstime=1422512739434; PHPSESSID=6r52oeos5sh8661432dq2cupq5; _csrf=e33142692c78aaf2499c4da6b3e0997e080532e3d69a1b30f9776571bbbea01ds%3A32%3A%22hKwhwsXmjGjQaBfFOAAIAmFMbzaNkUZq%22%3B'
+    'PATH' => 'C:\\Program Files\\360\\360Desktop;C:\\Program Files\\Common Files\\NetSarang;C:\\ProgramData\\Oracle\\Java\\javapath;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;D:\\Git\\bin;%JAVA_HOME%\\bin;D:\\node\\;C:\\Users\\Administrator\\AppData\\Roaming\\npm'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.7 (Win32) OpenSSL/1.0.1e PHP/5.5.9 Server at www.youhui.com Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.7 (Win32) OpenSSL/1.0.1e PHP/5.5.9'
+    'SERVER_NAME' => 'www.youhui.com'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'D:/youhui/'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'D:/youhui/'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'D:/youhui/backend/web/index.php'
+    'REMOTE_PORT' => '61867'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'POST'
+    'QUERY_STRING' => 'r=link/link_add_do'
+    'REQUEST_URI' => '/backend/web/?r=link/link_add_do'
+    'SCRIPT_NAME' => '/backend/web/index.php'
+    'PHP_SELF' => '/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1422606713.682
+    'REQUEST_TIME' => 1422606713
+]
+2015-01-30 09:42:12 [127.0.0.1][-][-][error][yii\base\ErrorException:8] exception 'yii\base\ErrorException' with message 'Undefined index: link_logo' in D:\youhui\backend\controllers\LinkController.php:38
+Stack trace:
+#0 D:\youhui\backend\controllers\LinkController.php(38): yii\base\ErrorHandler->handleError(8, 'Undefined index...', 'D:\youhui\backe...', 38, Array)
+#1 [internal function]: backend\controllers\LinkController->actionLink_add_do()
+#2 D:\youhui\vendor\yiisoft\yii2\base\InlineAction.php(55): call_user_func_array(Array, Array)
+#3 D:\youhui\vendor\yiisoft\yii2\base\Controller.php(151): yii\base\InlineAction->runWithParams(Array)
+#4 D:\youhui\vendor\yiisoft\yii2\base\Module.php(455): yii\base\Controller->runAction('link_add_do', Array)
+#5 D:\youhui\vendor\yiisoft\yii2\web\Application.php(83): yii\base\Module->runAction('link/link_add_d...', Array)
+#6 D:\youhui\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#7 D:\youhui\backend\web\index.php(18): yii\base\Application->run()
+#8 {main}
+2015-01-30 09:42:12 [127.0.0.1][-][-][info][application] $_GET = [
+    'r' => 'link/link_add_do'
+]
+
+$_POST = [
+    'site_name' => '啊实打实大'
+    'position_id' => '101'
+    'link_type' => '2'
+    'link_url' => 'http://www.badu.com'
+    'sort_order' => '2'
+    'link_text' => ''
+    'logo_url' => ''
+]
+
+$_FILES = [
+    'link_logo' => [
+        'name' => '4.png'
+        'type' => 'image/png'
+        'tmp_name' => 'D:\\xampp\\tmp\\php8547.tmp'
+        'error' => 0
+        'size' => 405384
+    ]
+]
+
+$_COOKIE = [
+    'bdshare_firstime' => '1422512739434'
+    'PHPSESSID' => '6r52oeos5sh8661432dq2cupq5'
+    '_csrf' => 'e33142692c78aaf2499c4da6b3e0997e080532e3d69a1b30f9776571bbbea01ds:32:\"hKwhwsXmjGjQaBfFOAAIAmFMbzaNkUZq\";'
+]
+
+$_SERVER = [
+    'MIBDIRS' => 'D:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'D:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'www.youhui.com'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'CONTENT_LENGTH' => '406279'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_ORIGIN' => 'http://www.youhui.com'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/39.0.2171.95 Safari/537.36'
+    'CONTENT_TYPE' => 'multipart/form-data; boundary=----WebKitFormBoundaryi7a3105hCYbcwl2S'
+    'HTTP_REFERER' => 'http://www.youhui.com/backend/web/?r=link/link_add'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8'
+    'HTTP_COOKIE' => 'bdshare_firstime=1422512739434; PHPSESSID=6r52oeos5sh8661432dq2cupq5; _csrf=e33142692c78aaf2499c4da6b3e0997e080532e3d69a1b30f9776571bbbea01ds%3A32%3A%22hKwhwsXmjGjQaBfFOAAIAmFMbzaNkUZq%22%3B'
+    'PATH' => 'C:\\Program Files\\360\\360Desktop;C:\\Program Files\\Common Files\\NetSarang;C:\\ProgramData\\Oracle\\Java\\javapath;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;D:\\Git\\bin;%JAVA_HOME%\\bin;D:\\node\\;C:\\Users\\Administrator\\AppData\\Roaming\\npm'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.7 (Win32) OpenSSL/1.0.1e PHP/5.5.9 Server at www.youhui.com Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.7 (Win32) OpenSSL/1.0.1e PHP/5.5.9'
+    'SERVER_NAME' => 'www.youhui.com'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'D:/youhui/'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'D:/youhui/'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'D:/youhui/backend/web/index.php'
+    'REMOTE_PORT' => '62053'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'POST'
+    'QUERY_STRING' => 'r=link/link_add_do'
+    'REQUEST_URI' => '/backend/web/?r=link/link_add_do'
+    'SCRIPT_NAME' => '/backend/web/index.php'
+    'PHP_SELF' => '/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1422607332.467
+    'REQUEST_TIME' => 1422607332
+]
+2015-01-30 10:03:53 [127.0.0.1][-][-][error][yii\base\ErrorException:4] exception 'yii\base\ErrorException' with message 'syntax error, unexpected '=', expecting ')'' in D:\youhui\backend\views\link\link_list.php:100
+Stack trace:
+#0 [internal function]: yii\base\ErrorHandler->handleFatalError()
+#1 {main}
+2015-01-30 10:03:53 [127.0.0.1][-][-][info][application] $_GET = [
+    'r' => 'link/link_list'
+]
+
+$_COOKIE = [
+    'bdshare_firstime' => '1422512739434'
+    'PHPSESSID' => '6r52oeos5sh8661432dq2cupq5'
+    '_csrf' => 'e33142692c78aaf2499c4da6b3e0997e080532e3d69a1b30f9776571bbbea01ds:32:\"hKwhwsXmjGjQaBfFOAAIAmFMbzaNkUZq\";'
+]
+
+$_SERVER = [
+    'MIBDIRS' => 'D:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'D:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'www.youhui.com'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/39.0.2171.95 Safari/537.36'
+    'HTTP_REFERER' => 'http://www.youhui.com/backend/web/?r=site/left&act=2'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8'
+    'HTTP_COOKIE' => 'bdshare_firstime=1422512739434; PHPSESSID=6r52oeos5sh8661432dq2cupq5; _csrf=e33142692c78aaf2499c4da6b3e0997e080532e3d69a1b30f9776571bbbea01ds%3A32%3A%22hKwhwsXmjGjQaBfFOAAIAmFMbzaNkUZq%22%3B'
+    'PATH' => 'C:\\Program Files\\360\\360Desktop;C:\\Program Files\\Common Files\\NetSarang;C:\\ProgramData\\Oracle\\Java\\javapath;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;D:\\Git\\bin;%JAVA_HOME%\\bin;D:\\node\\;C:\\Users\\Administrator\\AppData\\Roaming\\npm'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.7 (Win32) OpenSSL/1.0.1e PHP/5.5.9 Server at www.youhui.com Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.7 (Win32) OpenSSL/1.0.1e PHP/5.5.9'
+    'SERVER_NAME' => 'www.youhui.com'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'D:/youhui/'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'D:/youhui/'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'D:/youhui/backend/web/index.php'
+    'REMOTE_PORT' => '62363'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=link/link_list'
+    'REQUEST_URI' => '/backend/web/?r=link/link_list'
+    'SCRIPT_NAME' => '/backend/web/index.php'
+    'PHP_SELF' => '/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1422608633.047
+    'REQUEST_TIME' => 1422608633
+]
+2015-01-30 10:04:22 [127.0.0.1][-][-][error][yii\base\ErrorException:4] exception 'yii\base\ErrorException' with message 'syntax error, unexpected '<'' in D:\youhui\backend\views\link\link_list.php:116
+Stack trace:
+#0 [internal function]: yii\base\ErrorHandler->handleFatalError()
+#1 {main}
+2015-01-30 10:04:22 [127.0.0.1][-][-][info][application] $_GET = [
+    'r' => 'link/link_list'
+]
+
+$_COOKIE = [
+    'bdshare_firstime' => '1422512739434'
+    'PHPSESSID' => '6r52oeos5sh8661432dq2cupq5'
+    '_csrf' => 'e33142692c78aaf2499c4da6b3e0997e080532e3d69a1b30f9776571bbbea01ds:32:\"hKwhwsXmjGjQaBfFOAAIAmFMbzaNkUZq\";'
+]
+
+$_SERVER = [
+    'MIBDIRS' => 'D:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'D:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'www.youhui.com'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/39.0.2171.95 Safari/537.36'
+    'HTTP_REFERER' => 'http://www.youhui.com/backend/web/?r=site/left&act=2'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8'
+    'HTTP_COOKIE' => 'bdshare_firstime=1422512739434; PHPSESSID=6r52oeos5sh8661432dq2cupq5; _csrf=e33142692c78aaf2499c4da6b3e0997e080532e3d69a1b30f9776571bbbea01ds%3A32%3A%22hKwhwsXmjGjQaBfFOAAIAmFMbzaNkUZq%22%3B'
+    'PATH' => 'C:\\Program Files\\360\\360Desktop;C:\\Program Files\\Common Files\\NetSarang;C:\\ProgramData\\Oracle\\Java\\javapath;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;D:\\Git\\bin;%JAVA_HOME%\\bin;D:\\node\\;C:\\Users\\Administrator\\AppData\\Roaming\\npm'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.7 (Win32) OpenSSL/1.0.1e PHP/5.5.9 Server at www.youhui.com Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.7 (Win32) OpenSSL/1.0.1e PHP/5.5.9'
+    'SERVER_NAME' => 'www.youhui.com'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'D:/youhui/'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'D:/youhui/'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'D:/youhui/backend/web/index.php'
+    'REMOTE_PORT' => '62367'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=link/link_list'
+    'REQUEST_URI' => '/backend/web/?r=link/link_list'
+    'SCRIPT_NAME' => '/backend/web/index.php'
+    'PHP_SELF' => '/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1422608662.188
+    'REQUEST_TIME' => 1422608662
+]
+2015-01-30 10:26:15 [127.0.0.1][-][-][error][yii\base\ErrorException:4] exception 'yii\base\ErrorException' with message 'syntax error, unexpected '}'' in D:\youhui\backend\views\link\link_upd.php:66
+Stack trace:
+#0 [internal function]: yii\base\ErrorHandler->handleFatalError()
+#1 {main}
+2015-01-30 10:26:14 [127.0.0.1][-][-][info][application] $_GET = [
+    'r' => 'link/link_upd'
+    'id' => '14'
+]
+
+$_COOKIE = [
+    'bdshare_firstime' => '1422512739434'
+    'PHPSESSID' => '6r52oeos5sh8661432dq2cupq5'
+    '_csrf' => 'e33142692c78aaf2499c4da6b3e0997e080532e3d69a1b30f9776571bbbea01ds:32:\"hKwhwsXmjGjQaBfFOAAIAmFMbzaNkUZq\";'
+]
+
+$_SERVER = [
+    'MIBDIRS' => 'D:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'D:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'www.youhui.com'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/39.0.2171.95 Safari/537.36'
+    'HTTP_REFERER' => 'http://www.youhui.com/backend/web/?r=link/link_list'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8'
+    'HTTP_COOKIE' => 'bdshare_firstime=1422512739434; PHPSESSID=6r52oeos5sh8661432dq2cupq5; _csrf=e33142692c78aaf2499c4da6b3e0997e080532e3d69a1b30f9776571bbbea01ds%3A32%3A%22hKwhwsXmjGjQaBfFOAAIAmFMbzaNkUZq%22%3B'
+    'PATH' => 'C:\\Program Files\\360\\360Desktop;C:\\Program Files\\Common Files\\NetSarang;C:\\ProgramData\\Oracle\\Java\\javapath;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;D:\\Git\\bin;%JAVA_HOME%\\bin;D:\\node\\;C:\\Users\\Administrator\\AppData\\Roaming\\npm'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.7 (Win32) OpenSSL/1.0.1e PHP/5.5.9 Server at www.youhui.com Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.7 (Win32) OpenSSL/1.0.1e PHP/5.5.9'
+    'SERVER_NAME' => 'www.youhui.com'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'D:/youhui/'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'D:/youhui/'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'D:/youhui/backend/web/index.php'
+    'REMOTE_PORT' => '62836'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=link/link_upd&id=14'
+    'REQUEST_URI' => '/backend/web/?r=link/link_upd&id=14'
+    'SCRIPT_NAME' => '/backend/web/index.php'
+    'PHP_SELF' => '/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1422609974.955
+    'REQUEST_TIME' => 1422609974
+]
+2015-01-30 10:26:55 [127.0.0.1][-][-][error][yii\base\UnknownPropertyException] exception 'yii\base\UnknownPropertyException' with message 'Getting unknown property: app\models\DbsFriendLink::' in D:\youhui\vendor\yiisoft\yii2\base\Component.php:143
+Stack trace:
+#0 D:\youhui\vendor\yiisoft\yii2\db\BaseActiveRecord.php(246): yii\base\Component->__get('')
+#1 D:\youhui\vendor\yiisoft\yii2\base\Model.php(898): yii\db\BaseActiveRecord->__get('')
+#2 D:\youhui\backend\views\link\link_upd.php(66): yii\base\Model->offsetGet(false)
+#3 D:\youhui\vendor\yiisoft\yii2\base\View.php(325): require('D:\youhui\backe...')
+#4 D:\youhui\vendor\yiisoft\yii2\base\View.php(247): yii\base\View->renderPhpFile('D:\youhui\backe...', Array)
+#5 D:\youhui\vendor\yiisoft\yii2\base\View.php(149): yii\base\View->renderFile('D:\youhui\backe...', Array, Object(backend\controllers\LinkController))
+#6 D:\youhui\vendor\yiisoft\yii2\base\Controller.php(367): yii\base\View->render('link_upd', Array, Object(backend\controllers\LinkController))
+#7 D:\youhui\backend\controllers\LinkController.php(81): yii\base\Controller->render('link_upd', Array)
+#8 [internal function]: backend\controllers\LinkController->actionLink_upd()
+#9 D:\youhui\vendor\yiisoft\yii2\base\InlineAction.php(55): call_user_func_array(Array, Array)
+#10 D:\youhui\vendor\yiisoft\yii2\base\Controller.php(151): yii\base\InlineAction->runWithParams(Array)
+#11 D:\youhui\vendor\yiisoft\yii2\base\Module.php(455): yii\base\Controller->runAction('link_upd', Array)
+#12 D:\youhui\vendor\yiisoft\yii2\web\Application.php(83): yii\base\Module->runAction('link/link_upd', Array)
+#13 D:\youhui\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#14 D:\youhui\backend\web\index.php(18): yii\base\Application->run()
+#15 {main}
+2015-01-30 10:26:55 [127.0.0.1][-][-][info][application] $_GET = [
+    'r' => 'link/link_upd'
+    'id' => '14'
+]
+
+$_COOKIE = [
+    'bdshare_firstime' => '1422512739434'
+    'PHPSESSID' => '6r52oeos5sh8661432dq2cupq5'
+    '_csrf' => 'e33142692c78aaf2499c4da6b3e0997e080532e3d69a1b30f9776571bbbea01ds:32:\"hKwhwsXmjGjQaBfFOAAIAmFMbzaNkUZq\";'
+]
+
+$_SERVER = [
+    'MIBDIRS' => 'D:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'D:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'www.youhui.com'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/39.0.2171.95 Safari/537.36'
+    'HTTP_REFERER' => 'http://www.youhui.com/backend/web/?r=link/link_list'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8'
+    'HTTP_COOKIE' => 'bdshare_firstime=1422512739434; PHPSESSID=6r52oeos5sh8661432dq2cupq5; _csrf=e33142692c78aaf2499c4da6b3e0997e080532e3d69a1b30f9776571bbbea01ds%3A32%3A%22hKwhwsXmjGjQaBfFOAAIAmFMbzaNkUZq%22%3B'
+    'PATH' => 'C:\\Program Files\\360\\360Desktop;C:\\Program Files\\Common Files\\NetSarang;C:\\ProgramData\\Oracle\\Java\\javapath;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;D:\\Git\\bin;%JAVA_HOME%\\bin;D:\\node\\;C:\\Users\\Administrator\\AppData\\Roaming\\npm'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.7 (Win32) OpenSSL/1.0.1e PHP/5.5.9 Server at www.youhui.com Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.7 (Win32) OpenSSL/1.0.1e PHP/5.5.9'
+    'SERVER_NAME' => 'www.youhui.com'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'D:/youhui/'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'D:/youhui/'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'D:/youhui/backend/web/index.php'
+    'REMOTE_PORT' => '62851'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=link/link_upd&id=14'
+    'REQUEST_URI' => '/backend/web/?r=link/link_upd&id=14'
+    'SCRIPT_NAME' => '/backend/web/index.php'
+    'PHP_SELF' => '/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1422610015.099
+    'REQUEST_TIME' => 1422610015
+]
+2015-01-30 10:27:12 [127.0.0.1][-][-][error][yii\base\UnknownPropertyException] exception 'yii\base\UnknownPropertyException' with message 'Getting unknown property: app\models\DbsFriendLink::' in D:\youhui\vendor\yiisoft\yii2\base\Component.php:143
+Stack trace:
+#0 D:\youhui\vendor\yiisoft\yii2\db\BaseActiveRecord.php(246): yii\base\Component->__get('')
+#1 D:\youhui\vendor\yiisoft\yii2\base\Model.php(898): yii\db\BaseActiveRecord->__get('')
+#2 D:\youhui\backend\views\link\link_upd.php(66): yii\base\Model->offsetGet(false)
+#3 D:\youhui\vendor\yiisoft\yii2\base\View.php(325): require('D:\youhui\backe...')
+#4 D:\youhui\vendor\yiisoft\yii2\base\View.php(247): yii\base\View->renderPhpFile('D:\youhui\backe...', Array)
+#5 D:\youhui\vendor\yiisoft\yii2\base\View.php(149): yii\base\View->renderFile('D:\youhui\backe...', Array, Object(backend\controllers\LinkController))
+#6 D:\youhui\vendor\yiisoft\yii2\base\Controller.php(367): yii\base\View->render('link_upd', Array, Object(backend\controllers\LinkController))
+#7 D:\youhui\backend\controllers\LinkController.php(81): yii\base\Controller->render('link_upd', Array)
+#8 [internal function]: backend\controllers\LinkController->actionLink_upd()
+#9 D:\youhui\vendor\yiisoft\yii2\base\InlineAction.php(55): call_user_func_array(Array, Array)
+#10 D:\youhui\vendor\yiisoft\yii2\base\Controller.php(151): yii\base\InlineAction->runWithParams(Array)
+#11 D:\youhui\vendor\yiisoft\yii2\base\Module.php(455): yii\base\Controller->runAction('link_upd', Array)
+#12 D:\youhui\vendor\yiisoft\yii2\web\Application.php(83): yii\base\Module->runAction('link/link_upd', Array)
+#13 D:\youhui\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#14 D:\youhui\backend\web\index.php(18): yii\base\Application->run()
+#15 {main}
+2015-01-30 10:27:12 [127.0.0.1][-][-][info][application] $_GET = [
+    'r' => 'link/link_upd'
+    'id' => '16'
+]
+
+$_COOKIE = [
+    'bdshare_firstime' => '1422512739434'
+    'PHPSESSID' => '6r52oeos5sh8661432dq2cupq5'
+    '_csrf' => 'e33142692c78aaf2499c4da6b3e0997e080532e3d69a1b30f9776571bbbea01ds:32:\"hKwhwsXmjGjQaBfFOAAIAmFMbzaNkUZq\";'
+]
+
+$_SERVER = [
+    'MIBDIRS' => 'D:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'D:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'www.youhui.com'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/39.0.2171.95 Safari/537.36'
+    'HTTP_REFERER' => 'http://www.youhui.com/backend/web/?r=link/link_list'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8'
+    'HTTP_COOKIE' => 'bdshare_firstime=1422512739434; PHPSESSID=6r52oeos5sh8661432dq2cupq5; _csrf=e33142692c78aaf2499c4da6b3e0997e080532e3d69a1b30f9776571bbbea01ds%3A32%3A%22hKwhwsXmjGjQaBfFOAAIAmFMbzaNkUZq%22%3B'
+    'PATH' => 'C:\\Program Files\\360\\360Desktop;C:\\Program Files\\Common Files\\NetSarang;C:\\ProgramData\\Oracle\\Java\\javapath;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;D:\\Git\\bin;%JAVA_HOME%\\bin;D:\\node\\;C:\\Users\\Administrator\\AppData\\Roaming\\npm'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.7 (Win32) OpenSSL/1.0.1e PHP/5.5.9 Server at www.youhui.com Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.7 (Win32) OpenSSL/1.0.1e PHP/5.5.9'
+    'SERVER_NAME' => 'www.youhui.com'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'D:/youhui/'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'D:/youhui/'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'D:/youhui/backend/web/index.php'
+    'REMOTE_PORT' => '62861'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=link/link_upd&id=16'
+    'REQUEST_URI' => '/backend/web/?r=link/link_upd&id=16'
+    'SCRIPT_NAME' => '/backend/web/index.php'
+    'PHP_SELF' => '/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1422610032.561
+    'REQUEST_TIME' => 1422610032
+]
+2015-01-30 10:27:49 [127.0.0.1][-][-][error][yii\base\UnknownPropertyException] exception 'yii\base\UnknownPropertyException' with message 'Getting unknown property: app\models\DbsFriendLink::' in D:\youhui\vendor\yiisoft\yii2\base\Component.php:143
+Stack trace:
+#0 D:\youhui\vendor\yiisoft\yii2\db\BaseActiveRecord.php(246): yii\base\Component->__get('')
+#1 D:\youhui\vendor\yiisoft\yii2\base\Model.php(898): yii\db\BaseActiveRecord->__get('')
+#2 D:\youhui\backend\views\link\link_upd.php(66): yii\base\Model->offsetGet(false)
+#3 D:\youhui\vendor\yiisoft\yii2\base\View.php(325): require('D:\youhui\backe...')
+#4 D:\youhui\vendor\yiisoft\yii2\base\View.php(247): yii\base\View->renderPhpFile('D:\youhui\backe...', Array)
+#5 D:\youhui\vendor\yiisoft\yii2\base\View.php(149): yii\base\View->renderFile('D:\youhui\backe...', Array, Object(backend\controllers\LinkController))
+#6 D:\youhui\vendor\yiisoft\yii2\base\Controller.php(367): yii\base\View->render('link_upd', Array, Object(backend\controllers\LinkController))
+#7 D:\youhui\backend\controllers\LinkController.php(81): yii\base\Controller->render('link_upd', Array)
+#8 [internal function]: backend\controllers\LinkController->actionLink_upd()
+#9 D:\youhui\vendor\yiisoft\yii2\base\InlineAction.php(55): call_user_func_array(Array, Array)
+#10 D:\youhui\vendor\yiisoft\yii2\base\Controller.php(151): yii\base\InlineAction->runWithParams(Array)
+#11 D:\youhui\vendor\yiisoft\yii2\base\Module.php(455): yii\base\Controller->runAction('link_upd', Array)
+#12 D:\youhui\vendor\yiisoft\yii2\web\Application.php(83): yii\base\Module->runAction('link/link_upd', Array)
+#13 D:\youhui\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#14 D:\youhui\backend\web\index.php(18): yii\base\Application->run()
+#15 {main}
+2015-01-30 10:27:49 [127.0.0.1][-][-][info][application] $_GET = [
+    'r' => 'link/link_upd'
+    'id' => '16'
+]
+
+$_COOKIE = [
+    'bdshare_firstime' => '1422512739434'
+    'PHPSESSID' => '6r52oeos5sh8661432dq2cupq5'
+    '_csrf' => 'e33142692c78aaf2499c4da6b3e0997e080532e3d69a1b30f9776571bbbea01ds:32:\"hKwhwsXmjGjQaBfFOAAIAmFMbzaNkUZq\";'
+]
+
+$_SERVER = [
+    'MIBDIRS' => 'D:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'D:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'www.youhui.com'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/39.0.2171.95 Safari/537.36'
+    'HTTP_REFERER' => 'http://www.youhui.com/backend/web/?r=link/link_list'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8'
+    'HTTP_COOKIE' => 'bdshare_firstime=1422512739434; PHPSESSID=6r52oeos5sh8661432dq2cupq5; _csrf=e33142692c78aaf2499c4da6b3e0997e080532e3d69a1b30f9776571bbbea01ds%3A32%3A%22hKwhwsXmjGjQaBfFOAAIAmFMbzaNkUZq%22%3B'
+    'PATH' => 'C:\\Program Files\\360\\360Desktop;C:\\Program Files\\Common Files\\NetSarang;C:\\ProgramData\\Oracle\\Java\\javapath;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;D:\\Git\\bin;%JAVA_HOME%\\bin;D:\\node\\;C:\\Users\\Administrator\\AppData\\Roaming\\npm'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.7 (Win32) OpenSSL/1.0.1e PHP/5.5.9 Server at www.youhui.com Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.7 (Win32) OpenSSL/1.0.1e PHP/5.5.9'
+    'SERVER_NAME' => 'www.youhui.com'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'D:/youhui/'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'D:/youhui/'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'D:/youhui/backend/web/index.php'
+    'REMOTE_PORT' => '62882'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=link/link_upd&id=16'
+    'REQUEST_URI' => '/backend/web/?r=link/link_upd&id=16'
+    'SCRIPT_NAME' => '/backend/web/index.php'
+    'PHP_SELF' => '/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1422610069.018
+    'REQUEST_TIME' => 1422610069
+]
+2015-01-30 10:49:06 [127.0.0.1][-][-][error][yii\base\UnknownPropertyException] exception 'yii\base\UnknownPropertyException' with message 'Getting unknown property: app\models\DbsFriendLink::list_id' in D:\youhui\vendor\yiisoft\yii2\base\Component.php:143
+Stack trace:
+#0 D:\youhui\vendor\yiisoft\yii2\db\BaseActiveRecord.php(246): yii\base\Component->__get('list_id')
+#1 D:\youhui\vendor\yiisoft\yii2\base\Model.php(898): yii\db\BaseActiveRecord->__get('list_id')
+#2 D:\youhui\backend\views\link\link_upd.php(48): yii\base\Model->offsetGet('list_id')
+#3 D:\youhui\vendor\yiisoft\yii2\base\View.php(325): require('D:\youhui\backe...')
+#4 D:\youhui\vendor\yiisoft\yii2\base\View.php(247): yii\base\View->renderPhpFile('D:\youhui\backe...', Array)
+#5 D:\youhui\vendor\yiisoft\yii2\base\View.php(149): yii\base\View->renderFile('D:\youhui\backe...', Array, Object(backend\controllers\LinkController))
+#6 D:\youhui\vendor\yiisoft\yii2\base\Controller.php(367): yii\base\View->render('link_upd', Array, Object(backend\controllers\LinkController))
+#7 D:\youhui\backend\controllers\LinkController.php(81): yii\base\Controller->render('link_upd', Array)
+#8 [internal function]: backend\controllers\LinkController->actionLink_upd()
+#9 D:\youhui\vendor\yiisoft\yii2\base\InlineAction.php(55): call_user_func_array(Array, Array)
+#10 D:\youhui\vendor\yiisoft\yii2\base\Controller.php(151): yii\base\InlineAction->runWithParams(Array)
+#11 D:\youhui\vendor\yiisoft\yii2\base\Module.php(455): yii\base\Controller->runAction('link_upd', Array)
+#12 D:\youhui\vendor\yiisoft\yii2\web\Application.php(83): yii\base\Module->runAction('link/link_upd', Array)
+#13 D:\youhui\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#14 D:\youhui\backend\web\index.php(18): yii\base\Application->run()
+#15 {main}
+2015-01-30 10:49:06 [127.0.0.1][-][-][info][application] $_GET = [
+    'r' => 'link/link_upd'
+    'id' => '15'
+]
+
+$_COOKIE = [
+    'bdshare_firstime' => '1422512739434'
+    'PHPSESSID' => '6r52oeos5sh8661432dq2cupq5'
+    '_csrf' => 'e33142692c78aaf2499c4da6b3e0997e080532e3d69a1b30f9776571bbbea01ds:32:\"hKwhwsXmjGjQaBfFOAAIAmFMbzaNkUZq\";'
+]
+
+$_SERVER = [
+    'MIBDIRS' => 'D:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'D:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'www.youhui.com'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/39.0.2171.95 Safari/537.36'
+    'HTTP_REFERER' => 'http://www.youhui.com/backend/web/?r=link/link_list'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8'
+    'HTTP_COOKIE' => 'bdshare_firstime=1422512739434; PHPSESSID=6r52oeos5sh8661432dq2cupq5; _csrf=e33142692c78aaf2499c4da6b3e0997e080532e3d69a1b30f9776571bbbea01ds%3A32%3A%22hKwhwsXmjGjQaBfFOAAIAmFMbzaNkUZq%22%3B'
+    'PATH' => 'C:\\Program Files\\360\\360Desktop;C:\\Program Files\\Common Files\\NetSarang;C:\\ProgramData\\Oracle\\Java\\javapath;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;D:\\Git\\bin;%JAVA_HOME%\\bin;D:\\node\\;C:\\Users\\Administrator\\AppData\\Roaming\\npm'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.7 (Win32) OpenSSL/1.0.1e PHP/5.5.9 Server at www.youhui.com Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.7 (Win32) OpenSSL/1.0.1e PHP/5.5.9'
+    'SERVER_NAME' => 'www.youhui.com'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'D:/youhui/'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'D:/youhui/'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'D:/youhui/backend/web/index.php'
+    'REMOTE_PORT' => '63128'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=link/link_upd&id=15'
+    'REQUEST_URI' => '/backend/web/?r=link/link_upd&id=15'
+    'SCRIPT_NAME' => '/backend/web/index.php'
+    'PHP_SELF' => '/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1422611346.633
+    'REQUEST_TIME' => 1422611346
+]
+2015-01-30 10:50:13 [127.0.0.1][-][-][error][yii\base\ErrorException:8] exception 'yii\base\ErrorException' with message 'Undefined index: link_logo' in D:\youhui\backend\controllers\LinkController.php:96
+Stack trace:
+#0 D:\youhui\backend\controllers\LinkController.php(96): yii\base\ErrorHandler->handleError(8, 'Undefined index...', 'D:\youhui\backe...', 96, Array)
+#1 [internal function]: backend\controllers\LinkController->actionLink_upd_do()
+#2 D:\youhui\vendor\yiisoft\yii2\base\InlineAction.php(55): call_user_func_array(Array, Array)
+#3 D:\youhui\vendor\yiisoft\yii2\base\Controller.php(151): yii\base\InlineAction->runWithParams(Array)
+#4 D:\youhui\vendor\yiisoft\yii2\base\Module.php(455): yii\base\Controller->runAction('link_upd_do', Array)
+#5 D:\youhui\vendor\yiisoft\yii2\web\Application.php(83): yii\base\Module->runAction('link/link_upd_d...', Array)
+#6 D:\youhui\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#7 D:\youhui\backend\web\index.php(18): yii\base\Application->run()
+#8 {main}
+2015-01-30 10:50:13 [127.0.0.1][-][-][info][application] $_GET = [
+    'r' => 'link/link_upd_do'
+]
+
+$_POST = [
+    'site_name' => '极好居'
+    'link_id' => '2'
+    'position_id' => '101'
+    'link_type' => '2'
+    'link_url' => 'http://www.ijiaqu1.com'
+    'sort_order' => '2'
+    'link_text' => '嫁娶网'
+    'logo_url' => ''
+]
+
+$_FILES = [
+    'link_logo' => [
+        'name' => 'as.png'
+        'type' => 'image/png'
+        'tmp_name' => 'D:\\xampp\\tmp\\phpCC0E.tmp'
+        'error' => 0
+        'size' => 949670
+    ]
+]
+
+$_COOKIE = [
+    'bdshare_firstime' => '1422512739434'
+    'PHPSESSID' => '6r52oeos5sh8661432dq2cupq5'
+    '_csrf' => 'e33142692c78aaf2499c4da6b3e0997e080532e3d69a1b30f9776571bbbea01ds:32:\"hKwhwsXmjGjQaBfFOAAIAmFMbzaNkUZq\";'
+]
+
+$_SERVER = [
+    'MIBDIRS' => 'D:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'D:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'www.youhui.com'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'CONTENT_LENGTH' => '950667'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_ORIGIN' => 'http://www.youhui.com'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/39.0.2171.95 Safari/537.36'
+    'CONTENT_TYPE' => 'multipart/form-data; boundary=----WebKitFormBoundaryXyuVkyffQMylejbb'
+    'HTTP_REFERER' => 'http://www.youhui.com/backend/web/?r=link/link_upd&id=2'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8'
+    'HTTP_COOKIE' => 'bdshare_firstime=1422512739434; PHPSESSID=6r52oeos5sh8661432dq2cupq5; _csrf=e33142692c78aaf2499c4da6b3e0997e080532e3d69a1b30f9776571bbbea01ds%3A32%3A%22hKwhwsXmjGjQaBfFOAAIAmFMbzaNkUZq%22%3B'
+    'PATH' => 'C:\\Program Files\\360\\360Desktop;C:\\Program Files\\Common Files\\NetSarang;C:\\ProgramData\\Oracle\\Java\\javapath;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;D:\\Git\\bin;%JAVA_HOME%\\bin;D:\\node\\;C:\\Users\\Administrator\\AppData\\Roaming\\npm'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.7 (Win32) OpenSSL/1.0.1e PHP/5.5.9 Server at www.youhui.com Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.7 (Win32) OpenSSL/1.0.1e PHP/5.5.9'
+    'SERVER_NAME' => 'www.youhui.com'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'D:/youhui/'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'D:/youhui/'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'D:/youhui/backend/web/index.php'
+    'REMOTE_PORT' => '63149'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'POST'
+    'QUERY_STRING' => 'r=link/link_upd_do'
+    'REQUEST_URI' => '/backend/web/?r=link/link_upd_do'
+    'SCRIPT_NAME' => '/backend/web/index.php'
+    'PHP_SELF' => '/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1422611413.761
+    'REQUEST_TIME' => 1422611413
+]

@@ -59,13 +59,13 @@
                      </dl>
          		<dl>
 			<dt><div><strong>广告位管理</strong></div></dt>
-            			<dd><p><a href="?g=Admin&m=AdvPosition&a=index" target="mainFrame">广告位列表</a></p></dd>
-            			<dd><p><a href="?g=Admin&m=AdvPosition&a=add" target="mainFrame">添加广告位</a></p></dd>
+            			<dd><p><a href="?r=location/location_list" target="mainFrame">广告位列表</a></p></dd>
+            			<dd><p><a href="?r=location/location_add" target="mainFrame">添加广告位</a></p></dd>
                      </dl>
          		<dl>
 			<dt><div><strong>友情链接管理</strong></div></dt>
-            			<dd><p><a href="?g=Admin&m=FriendLink&a=index" target="mainFrame">链接列表</a></p></dd>
-            			<dd><p><a href="?g=Admin&m=FriendLink&a=add" target="mainFrame">添加链接</a></p></dd>
+            			<dd><p><a href="?r=link/link_list" target="mainFrame">链接列表</a></p></dd>
+            			<dd><p><a href="?r=link/link_add" target="mainFrame">添加链接</a></p></dd>
                      </dl>
          	</div>
                 <?php } ?>

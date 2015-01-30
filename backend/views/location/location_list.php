@@ -28,7 +28,7 @@
 
 </script>
 	<div class="fanwe-body">
-		<div class="fb-title"><div><p><span>广告管理 &gt; 广告列表</span></p></div></div>
+		<div class="fb-title"><div><p><span>广告位管理 &gt; 广告位列表</span></p></div></div>
 		<div class="fb-body">
 			<table class="body-table" cellpadding="0" cellspacing="1" border="0">
 				<tr>
@@ -37,19 +37,19 @@
 <script type="text/javascript" src="Public/Js/jquery.SetTableBgColor.js"></script>
 <script type="text/javascript">
 var g = 'Admin';
-var m = 'Adv';
-var _hash_ = '2ac6d4bcce8f257f817e0beb2ed8c2a7';
+var m = 'AdvPosition';
+var _hash_ = '2af0995104a8c3d54952164364669c87';
 
 function del(id)
 {
-	$('#dialog>p').html('确定要删除吗？');
+	$('#dialog>p').html('确定要删除吗？<br />将同时删除相关的广告');
 	$('#dialog').dialog('open');
 	$('#dialog').dialog({
 					autoOpen: false,
 					width: 300,
 					buttons: {
 						"确定": function() { 
-							var url = "?g="+g+"&m="+m+"&a=del&ad_id="+id+"&ajax=1&_hash_="+_hash_;
+							var url = "?g="+g+"&m="+m+"&a=del&id="+id+"&ajax=1&_hash_="+_hash_;
 							$.getJSON(url, function(data){
 													if(data.status == 0){
 														$('#dialog>p').html('删除失败');
@@ -79,47 +79,33 @@ $(document).ready(function(){
 
 </script>
 <div class="handle-btns">
-	<div class="img-button "><p><input type="button" class="addData" onclick="window.location.href='?g=Admin&m=Adv&a=add'" value="添加" name="addData" id="addData"></p></div>
+	<div class="img-button "><p><input type="button" class="addData" onclick="window.location.href='?r=location/location_add'" value="添加" name="addData" id="addData"></p></div>
 	</div>
 <div class="search-box">
 </div>
 <table cellspacing="0" cellpadding="0" border="0" class="table-list list" id="checkList">
 <thead>
 <tr>
-<th width="30" class="first"><input type="checkbox" onclick="check_all('ad_id[]', this)"></th>
+<th width="30" class="first"><input type="checkbox" onclick="check_all('position_id[]', this)"></th>
 <th width="50">ID</th>
-<th>广告名称</th>
-<th width="200">广告位置</th>
-<th width="80">广告类型</th>
-<th width="120">开始时间</th>
-<th width="120">结束时间</th>
-<th width="80">点击次数</th>
-<th>调用代码</th>
+<th>广告位名称</th>
+<th width="80">广告位宽度</th>
+<th width="80">广告位高度</th>
+<th>广告位描述</th>
 <th width="100">操作</th>
 </tr>
 </thead>
 <tbody>
-<?php foreach($data as $k=>$v){?>
-<tr id="tr<?php echo $v['ad_id']?>">
-<td class="first"><input type="checkbox" value="<?php echo $v['ad_id']?>" name="ad_id[]"></td>
-<td><?php echo $v['ad_id']?></td>
-<td align="left"><?php echo $v['ad_name']?></td>
+<?php foreach($list as $k=>$v){?>
+<tr id="tr<?php echo $v['position_id']?>">
+<td class="first"><input type="checkbox" value="<?php echo $v['position_id']?>" name="position_id[]"></td>
+<td><?php echo $v['position_id']?></td>
 <td align="left"><?php echo $v['position_name']?></td>
-<td align="left"><?php if($v['media_type']==101){
-	echo "图片";
-}else if($v['media_type']==102){
-	echo "Flash";
-}else if($v['media_type']==103){
-	echo "代码";
-}else if($v['media_type']==104){
-	echo "文字";
-}?></td>
-<td align="left"><?php echo date("Y-m-d H:i:s",$v['start_time'])?></td>
-<td align="left"><?php echo date("Y-m-d H:i:s",$v['end_time'])?></td>
-<td align="left"><?php echo $v['click_count']?></td>
-<td align="left">&lt;script type="text/javascript" src="/end/TP-COUPON/index.php?m=Adv&a=show&id=7"&gt;&lt;/script&gt;</td>
-<td align="center"><a href="?r=advertising/guang_upd&id=<?php echo $v['ad_id']?>">编辑</a>
-&nbsp;&nbsp;<a onclick="del(<?php echo $v['ad_id']?>)" href="javascript:;">删除</a>
+<td align="left"><?php echo $v['ad_width']?> 像素</td>
+<td align="left"><?php echo $v['ad_height']?>  像素</td>
+<td align="left"><?php echo $v['position_desc']?></td>
+<td align="center"><a href="?r=location/location_upd&id=<?php echo $v['position_id']?>">编辑</a>
+&nbsp;&nbsp;<a onclick="del(<?php echo $v['position_id']?>)" href="javascript:;">删除</a>
 </td>
 </tr>
 <?php
@@ -139,20 +125,18 @@ $(document).ready(function(){
 <script type="text/javascript">
 function del(id){
 	$.ajax({
-            url:"?r=advertising/guang_del",
-            data:{"id":id},
-            type:"post",
-            success:function(res){
-                if(res==1){
-                    $("#tr"+id).remove();
-                }else{
-                    alert("删除失败");
-                }
-                
-            }	
-})
+		url:"?r=location/location_del",
+		data:{"id":id},
+		type:"post",
+		success:function(res){
+				if(res==1){
+					$("#tr"+id).remove();
+				}else{
+					alert("删除失败");
+				}
+		}
+	})
 }
-
 
 jQuery(function($){
 	updateBodyDivHeight();
