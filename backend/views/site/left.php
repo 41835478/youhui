@@ -15,8 +15,8 @@
         		<dl>
 			<dt><div><strong>优惠券管理</strong></div></dt>
             			<dd><p><a href="?r=youhui/index" target="mainFrame">优惠券列表</a></p></dd>
-            			<dd><p><a href="?g=Admin&m=CouponCode&a=best" target="mainFrame">每日精选优惠券</a></p></dd>
-            			<dd><p><a href="?g=Admin&m=CouponCode&a=add" target="mainFrame">添加优惠券</a></p></dd>
+            			<dd><p><a href="?r=youhui/best" target="mainFrame">每日精选优惠券</a></p></dd>
+            			<dd><p><a href="?r=youhui/add" target="mainFrame">添加优惠券</a></p></dd>
                      </dl>
          		<dl>
 			<dt><div><strong>商家管理</strong></div></dt>
@@ -59,13 +59,13 @@
                      </dl>
          		<dl>
 			<dt><div><strong>广告位管理</strong></div></dt>
-            			<dd><p><a href="?g=Admin&m=AdvPosition&a=index" target="mainFrame">广告位列表</a></p></dd>
-            			<dd><p><a href="?g=Admin&m=AdvPosition&a=add" target="mainFrame">添加广告位</a></p></dd>
+            			<dd><p><a href="?r=location/location_list" target="mainFrame">广告位列表</a></p></dd>
+            			<dd><p><a href="?r=location/location_add" target="mainFrame">添加广告位</a></p></dd>
                      </dl>
          		<dl>
 			<dt><div><strong>友情链接管理</strong></div></dt>
-            			<dd><p><a href="?g=Admin&m=FriendLink&a=index" target="mainFrame">链接列表</a></p></dd>
-            			<dd><p><a href="?g=Admin&m=FriendLink&a=add" target="mainFrame">添加链接</a></p></dd>
+            			<dd><p><a href="?r=link/link_list" target="mainFrame">链接列表</a></p></dd>
+            			<dd><p><a href="?r=link/link_add" target="mainFrame">添加链接</a></p></dd>
                      </dl>
          	</div>
                 <?php } ?>
@@ -77,7 +77,7 @@
                      </dl>
          		<dl>
 			<dt><div><strong>充值管理</strong></div></dt>
-            			<dd><p><a href="?g=Admin&m=Payment&a=index" target="mainFrame">充值记录</a></p></dd>
+            			<dd><p><a href="?r=huiyuan/chongzhi" target="mainFrame">充值记录</a></p></dd>
                      </dl>
          	</div>
      <?php } ?>
@@ -107,13 +107,13 @@
             <div class="fanwe-menu" valign="top">
         		<dl>
 			<dt><div><strong>管理员管理</strong></div></dt>
-            			<dd><p><a href="?g=Admin&m=Admin&a=index" target="mainFrame">管理员列表</a></p></dd>
-            			<dd><p><a href="?g=Admin&m=Admin&a=add" target="mainFrame">添加管理员</a></p></dd>
+            			<dd><p><a href="index.php?r=guanliyuan/list_gly" target="mainFrame">管理员列表</a></p></dd>
+            			<dd><p><a href="index.php?r=guanliyuan/add_gly" target="mainFrame">添加管理员</a></p></dd>
                      </dl>
          		<dl>
 			<dt><div><strong>角色管理</strong></div></dt>
-            			<dd><p><a href="?g=Admin&m=Role&a=index" target="mainFrame">角色列表</a></p></dd>
-            			<dd><p><a href="?g=Admin&m=Role&a=add" target="mainFrame">添加角色</a></p></dd>
+            			<dd><p><a href="index.php?r=guanliyuan/list" target="mainFrame">角色列表</a></p></dd>
+            			<dd><p><a href="index.php?r=guanliyuan/add" target="mainFrame">添加角色</a></p></dd>
                      </dl>
          	</div>
 

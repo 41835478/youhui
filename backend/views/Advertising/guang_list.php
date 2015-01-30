@@ -99,20 +99,32 @@ $(document).ready(function(){
 </tr>
 </thead>
 <tbody>
-<tr id="tt-item-1">
-<td class="first"><input type="checkbox" value="1" name="ad_id[]"></td>
-<td>1</td>
-<td align="left">11</td>
-<td align="left">天天</td>
-<td align="left">图片</td>
-<td align="left">2015-01-31 16:41:00</td>
-<td align="left">2015-02-02 16:42:00</td>
-<td align="left">0</td>
-<td align="left">&lt;script type="text/javascript" src="index.php?m=Adv&a=show&id=1"&gt;&lt;/script&gt;</td>
-<td align="center"><a href="?g=Admin&m=Adv&a=edit&ad_id=1">编辑</a>
-&nbsp;&nbsp;<a onclick="del(1)" href="javascript:;">删除</a>
+<?php foreach($data as $k=>$v){?>
+<tr id="tr<?php echo $v['ad_id']?>">
+<td class="first"><input type="checkbox" value="<?php echo $v['ad_id']?>" name="ad_id[]"></td>
+<td><?php echo $v['ad_id']?></td>
+<td align="left"><?php echo $v['ad_name']?></td>
+<td align="left"><?php echo $v['position_name']?></td>
+<td align="left"><?php if($v['media_type']==101){
+	echo "图片";
+}else if($v['media_type']==102){
+	echo "Flash";
+}else if($v['media_type']==103){
+	echo "代码";
+}else if($v['media_type']==104){
+	echo "文字";
+}?></td>
+<td align="left"><?php echo date("Y-m-d H:i:s",$v['start_time'])?></td>
+<td align="left"><?php echo date("Y-m-d H:i:s",$v['end_time'])?></td>
+<td align="left"><?php echo $v['click_count']?></td>
+<td align="left">&lt;script type="text/javascript" src="/end/TP-COUPON/index.php?m=Adv&a=show&id=7"&gt;&lt;/script&gt;</td>
+<td align="center"><a href="?r=advertising/guang_upd&id=<?php echo $v['ad_id']?>">编辑</a>
+&nbsp;&nbsp;<a onclick="del(<?php echo $v['ad_id']?>)" href="javascript:;">删除</a>
 </td>
 </tr>
+<?php
+}
+?>
 </tbody></table>
 <div class="pager"><span class="page_left_1_1">首页</span> <span class="page_left_2_2">上一页</span>  <span class="page_now">1</span> <span class="page_right_2_2">下一页</span> <span class="page_right_1_1">尾页</span></div>
 						</div>
@@ -123,7 +135,24 @@ $(document).ready(function(){
 	</div>
 	<div class="ajax-loading"></div>
 </body>
+<script type="text/javascript" src="Public/Js/jquery.js"></script>
 <script type="text/javascript">
+function del(id){
+	$.ajax({
+            url:"?r=advertising/guang_del",
+            data:{"id":id},
+            type:"post",
+            success:function(res){
+                if(res==1){
+                    $("#tr"+id).remove();
+                }else{
+                    alert("删除失败");
+                }
+                
+            }	
+})
+}
+
 
 jQuery(function($){
 	updateBodyDivHeight();
