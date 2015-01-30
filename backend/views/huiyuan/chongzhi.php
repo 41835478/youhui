@@ -4,7 +4,7 @@
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <title></title>
 <link href="Public/Css/Admin/style.css" rel="stylesheet" type="text/css" />
-<script type="text/javascript">var _public_='/end/tp-coupon/Public';</script>
+<script type="text/javascript">var _public_='Public';</script>
 <script type="text/javascript" src="Public/Js/common.js"></script>
 <script type="text/javascript" src="Public/Js/jquery.pngFix.js"></script>
 </head>
@@ -27,7 +27,7 @@
 
 </script>
 	<div class="fanwe-body">
-		<div class="fb-title"><div><p><span>会员管理 &gt; 会员列表</span></p></div></div>
+		<div class="fb-title"><div><p><span>充值管理 &gt; 充值记录</span></p></div></div>
 		<div class="fb-body">
 			<table class="body-table" cellpadding="0" cellspacing="1" border="0">
 				<tr>
@@ -37,9 +37,62 @@
 <script type="text/javascript" src="Public/Js/dataList.js"></script>
 <script type="text/javascript">
 var g = 'Admin';
-var m = 'Member';
-var _hash_ = '09b0718bf66502cb92ecdd1083b6716e';
+var m = 'Payment';
+var _hash_ = '86ad9271734069a9a8e5494d43b1559c';
 
+function single_action(action, id)
+{
+	$('#dialog>p').html('确定要进行此操作吗？');
+	$('#dialog').dialog('open');
+	$('#dialog').dialog({
+					autoOpen: false,
+					width: 300,
+					buttons: {
+						"确定": function() { 
+							var url = "?g="+g+"&m="+m+"&a="+action+"&id="+id+"&ajax=1&_hash_="+_hash_;
+							$.getJSON(url, function(data){
+													if(data.status == 0){
+														$('#dialog>p').html('操作失败');
+														$('#dialog').dialog('open');
+													}else{
+														window.location.href = document.URL;
+													}
+													});
+						},
+						"取消": function() { 
+							$(this).dialog("close"); 
+						}
+					}
+				});
+}
+function del(p_id){
+	//alert(p_id);
+                if(confirm('确认删除么?')){
+                    $.ajax({
+                        type: "get",
+                        url: "index.php?r=huiyuan/chongzhi_del",
+                        data: "p_id="+p_id,
+                        success: function(e){  
+							//alert(e);
+                          if(e==1){
+
+							
+                              $("#tr"+p_id).remove()
+                          }else{
+                              alert('删除失败');
+                          }
+                        }
+                     }); 
+                }
+            }
+function send_goods(id)
+{
+	single_action('send_goods', id)
+}
+function finish(id)
+{
+	single_action('finish', id)
+}
 $(document).ready(function(){
 	$(".table-list").SetTableBgColor({
             odd:"even",
@@ -53,47 +106,50 @@ $(document).ready(function(){
 <div class="handle-btns">
 </div>
 <div class="search-box">
-    <form action="index.php?r=huiyuan/seach" method="post">
+    <form action="?">
         <span>昵称</span>
         <input type="text" size="12" name="nick" value="" class="textinput">
 		<small></small>
 		<input type="submit" value="搜索" class="submit_btn">
-     </form>
+        <input type="hidden" value="Admin" name="g">
+		<input type="hidden" value="Payment" name="m">
+		<input type="hidden" value="index" name="a">
+  <input type="hidden" name="__hash__" value="e5e88a1b337e597ee8be31ed174f2c75_5b9b926b0db22417eed71e767edee702" /></form>
 </div>
 <table cellspacing="0" cellpadding="0" border="0" class="table-list list" id="checkList">
 <thead>
 <tr>
 <th width="30" class="first"><input type="checkbox" onclick="check_all('id[]', this)"></th>
 <th>昵称</th>
-<th width="150">E-mail</th>
-<th width="60">积分</th>
+<th width="200">交易号</th>
+<th width="200">支付宝交易号</th>
 <th width="80">金钱(:元)</th>
-<th width="150">最后登陆时间</th>
-<th width="100">最后登陆IP</th>
-<th width="60">锁定</th>
-<th width="130">操作</th>
+<th width="150">说明</th>
+<th width="150">充值时间</th>
+<th width="150">状态</th>
+<th width="100">操作</th>
 </tr>
 </thead>
 <?php
-foreach($rows as $k=>$v){
-?>
+foreach($arr as $k=>$v){
+	?>
 <tbody>
-<tr id="tt-item-4">
-<td class="first"><input type="checkbox" value="4" name="id[]"></td>
+<tr id="tr<?php echo $v['p_id'];?>">
+<td class="first"><input type="checkbox" value="<?php echo $v['p_id'];?>" name="id[]"></td>
 <td align="left"><?php echo $v['nick'];?></td>
-<td align="left"><?php echo $v['email'];?></td>
-<td align="left"><span class="pointer" module="Member" group="Admin" model="User" pk="" href="javascript:;" onclick="textEdit(this,'4','credit')"><?php echo $v['credit'];?></span></td>
-<td align="left"><span class="pointer" module="Member" group="Admin" model="User" pk="" href="javascript:;" onclick="textEdit(this,'4','money')"><?php echo $v['money'];?></span></td>
-<td align="center"><?php echo date('Y-m-d H:i:s',$v['last_login']);?></td>
-<td align="center"><?php echo $v['last_ip'];?></td>
-<td align="center"><span class="pointer" module="Member" group="Admin" model="User" pk="" href="javascript:;" onclick="toggleStatus(this,'4','is_locked')"><img src="Public/Css/Admin/Images/status-0.gif" class="status" status="0" /></span></td>
-<td align="center"><a href="index.php?r=huiyuan/jilu&user_id=<?php echo $v['user_id'];?>">充值记录</a>
-</td>
+<td align="left"><?php echo $v['out_trade_no'];?></td>
+<td align="left"></td>
+<td align="left"><?php echo $v['amount'];?></td>
+<td align="center"><?php echo $v['content'];?></td>
+<td align="center"><?php echo date('Y-m-d H:i:s',$v['addtime']);?></td>
+<td align="center"><?php if($v['status']==103){ echo "等待买家付款";}else{ echo "等待卖家发货";}?></td>
+<td align="center"><a href="javascript:;" onclick="del(<?php echo $v['p_id'];?>);">删除</a></td>
 </tr>
 </tbody>
 <?php
 }
-?></table>
+?>
+</table>
 <div class="pager"><span class="page_left_1_1">首页</span> <span class="page_left_2_2">上一页</span>  <span class="page_now">1</span> <span class="page_right_2_2">下一页</span> <span class="page_right_1_1">尾页</span></div>
 						</div>
 					</td>

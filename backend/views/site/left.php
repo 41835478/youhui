@@ -77,7 +77,7 @@
                      </dl>
          		<dl>
 			<dt><div><strong>充值管理</strong></div></dt>
-            			<dd><p><a href="?g=Admin&m=Payment&a=index" target="mainFrame">充值记录</a></p></dd>
+            			<dd><p><a href="?r=huiyuan/chongzhi" target="mainFrame">充值记录</a></p></dd>
                      </dl>
          	</div>
      <?php } ?>
@@ -107,13 +107,13 @@
             <div class="fanwe-menu" valign="top">
         		<dl>
 			<dt><div><strong>管理员管理</strong></div></dt>
-            			<dd><p><a href="?g=Admin&m=Admin&a=index" target="mainFrame">管理员列表</a></p></dd>
-            			<dd><p><a href="?g=Admin&m=Admin&a=add" target="mainFrame">添加管理员</a></p></dd>
+            			<dd><p><a href="index.php?r=guanliyuan/list_gly" target="mainFrame">管理员列表</a></p></dd>
+            			<dd><p><a href="index.php?r=guanliyuan/add_gly" target="mainFrame">添加管理员</a></p></dd>
                      </dl>
          		<dl>
 			<dt><div><strong>角色管理</strong></div></dt>
-            			<dd><p><a href="?g=Admin&m=Role&a=index" target="mainFrame">角色列表</a></p></dd>
-            			<dd><p><a href="?g=Admin&m=Role&a=add" target="mainFrame">添加角色</a></p></dd>
+            			<dd><p><a href="index.php?r=guanliyuan/list" target="mainFrame">角色列表</a></p></dd>
+            			<dd><p><a href="index.php?r=guanliyuan/add" target="mainFrame">添加角色</a></p></dd>
                      </dl>
          	</div>
 
