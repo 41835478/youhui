@@ -83,6 +83,12 @@ class ZhekouController extends Controller
                 $this->redirect("?r=zhekou/cat_list");
            }
     }
+       public function actionDel(){
+        $res=MallZhekou::deleteAll(['id'=>$_GET['id']]);
+           if($res){
+                $this->redirect("?r=zhekou/list");
+           }
+    }
     public function actionAdd_cat_do(){
         $model = new ZhekouCategory;
         $model->name = $_POST['name'];
