@@ -18,10 +18,8 @@ use yii\filters\AccessControl;
  */
 class ZhekouController extends Controller{
 	public function actionIndex(){
-	  
+		
 	  return $this->render("index");
-
-	
 	 }
    
    
