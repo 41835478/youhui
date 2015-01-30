@@ -12,7 +12,8 @@ use yii\web\BadRequestHttpException;
 use yii\web\Controller;
 use yii\filters\VerbFilter;
 use yii\filters\AccessControl;
-
+use app\models\MallPromotion;
+use app\models\CouponCodeCategory;
 /**
  * Site controller
  */
@@ -20,7 +21,11 @@ use yii\filters\AccessControl;
 class PromotionController extends Controller{
 	public function actionIndex(){
 	  
-	  return $this->render("index");
+            
+            $pro=MallPromotion::find()->all();
+            //var_dump($pro);die;
+            $cate= CouponCodeCategory::find()->all();
+	  return $this->render("index",['pro'=>$pro,'cate'=>$cate]);
 
 	
 	 }
