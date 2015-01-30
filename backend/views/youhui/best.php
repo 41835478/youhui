@@ -1,15 +1,7 @@
-<?php
-use yii\widgets\LinkPager;
-?>
 
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
- <style>
-.pager{float:right;}
-.pager li{float:left;}
-.pager li{margin:5px;}
-</style>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <title></title>
 <link href="Public/Css/Admin/style.css" rel="stylesheet" type="text/css" />
@@ -36,7 +28,7 @@ use yii\widgets\LinkPager;
 
 </script>
 	<div class="fanwe-body">
-		<div class="fb-title"><div><p><span>分类管理 &gt; 分类列表</span></p></div></div>
+		<div class="fb-title"><div><p><span>优惠券管理 &gt; 每日精选优惠券</span></p></div></div>
 		<div class="fb-body">
 			<table class="body-table" cellpadding="0" cellspacing="1" border="0">
 				<tr>
@@ -46,8 +38,8 @@ use yii\widgets\LinkPager;
 <script type="text/javascript" src="Public/Js/dataList.js"></script>
 <script type="text/javascript">
 var g = 'Admin';
-var m = 'CouponCodeCategory';
-var _hash_ = '1c5b8b3e52afa8c9e61bd91e571e6fa8';
+var m = 'CouponCode';
+var _hash_ = '0443feb091ca1831fe524de4641928d8';
 
 function del(id)
 {
@@ -58,13 +50,15 @@ function del(id)
 					width: 300,
 					buttons: {
 						"确定": function() { 
-							var url = "?g="+g+"&m="+m+"&a=del&id="+id+"&ajax=1&_hash_="+_hash_;
+							var url = "?g="+g+"&m="+m+"&a=unbest&id="+id+"&ajax=1&_hash_="+_hash_;
 							$.getJSON(url, function(data){
 													if(data.status == 0){
 														$('#dialog>p').html('删除失败');
 														$('#dialog').dialog('open');
 													}else{
-														window.location.href = document.URL;
+														$('#tt-item-'+id).remove();
+														_hash_ = data.info;
+														$('#dialog').dialog("close"); 
 													}
 													});
 						},
@@ -74,7 +68,6 @@ function del(id)
 					}
 				});
 }
-
 $(document).ready(function(){
 	$(".table-list").SetTableBgColor({
             odd:"even",
@@ -85,57 +78,28 @@ $(document).ready(function(){
 });
 
 </script>
-<div class="handle-btns">
-	<div class="img-button "><p><input type="button" class="addData" onclick="window.location.href='?r=cate/add'" value="添加分类" name="addData" id="addData"></p></div>
-	</div>
 <div class="search-box">
 </div>
 <table cellspacing="0" cellpadding="0" border="0" class="table-list list" id="checkList">
 <thead>
 <tr>
-<th width="30" class="first"><input type="checkbox" onclick="check_all('id[]', this)"></th>
-<th>分类名称</th>
-<th width="80">首页显示</th>
+<th>名称</th>
+<th width="150">有效期</th>
 <th width="60">排序</th>
-<th width="100">操作</th>
+<th width="130">操作</th>
 </tr>
 </thead>
 <tbody>
-    <?php foreach($list as $k=>$v){?>
-    
-<tr  id="tr<?php echo $v['id']?>">
-<td class="first"><input type="checkbox" value="1" name="id[]"></td>
-<td align="left"><?php echo $v['name'] ?></td>
-<td align="center"><?php if($v['show_index']==1){?><span class="pointer" module="CouponCodeCategory" group="Admin" model="coupon_code_category" pk="id" href="javascript:;" onclick="toggleStatus(this,'1','show_index')"><img src="Public/Css/Admin/Images/status-1.gif" class="status" status="0" /></span><?php }else{?><span class="pointer" module="CouponCodeCategory" group="Admin" model="coupon_code_category" pk="id" href="javascript:;" onclick="toggleStatus(this,'1','show_index')"><img src="Public/Css/Admin/Images/status-0.gif" class="status" status="0" /></span><?php }?></td>
-<td align="left"><span class="pointer" module="CouponCodeCategory" group="Admin" model="" pk="" href="javascript:;" onclick="textEdit(this,'1','sort_order')"><?php echo $v['sort_order']?></span></td>
-<td align="center"><a href="?r=cate/edit&id=<?php echo $v['id']?>">编辑</a>
-&nbsp;&nbsp;<a href="#" onclick="del('<?php echo $v['id']?>')">删除</a>
+<tr id="tt-item-5">
+<td align="left">啊实打实满122减22元优惠券</a></td>
+<td align="left">2015-02-06</td>
+<td align="center"><span class="pointer" module="CouponCode" group="Admin" model="coupon_code_best" pk="c_id" href="javascript:;" onclick="textEdit(this,'5','sort_order')">10000</span></td>
+<td align="center"><a href="?g=Admin&m=CouponCode&a=edit_best&id=5">编辑</a>
+&nbsp;&nbsp;<a onclick="del(5)" href="javascript:;">删除</a>
 </td>
 </tr>
-   <?php } ?>
 </tbody></table>
-   <script >
-       
-             function del(id){
-
-                if(confirm('确认删除么?')){
-                    $.ajax({
-                        type: "POST",
-                        url: "index.php?r=cate/del",
-                        data: "id="+id,
-                        success: function(msg){ 
-                          if(msg){
-                              $("#tr"+id).remove()
-                          }else{
-                              alert('删除失败');
-                          }
-                        }
-                     }); 
-                }
-            }
-        </script>
-       <div> <center><ul class="pager"> <li><?= LinkPager::widget(['pagination' => $pages]); ?><li></ul></center><div>
-
+<div class="pager"><span class="page_left_1_1">首页</span> <span class="page_left_2_2">上一页</span>  <span class="page_now">1</span> <span class="page_right_2_2">下一页</span> <span class="page_right_1_1">尾页</span></div>
 						</div>
 					</td>
 				</tr>
