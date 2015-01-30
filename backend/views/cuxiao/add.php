@@ -3,10 +3,10 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <title></title>
-<link href="./resource/Css/Admin/style.css" rel="stylesheet" type="text/css" />
-<script type="text/javascript">var _public_='./resource';</script>
-<script type="text/javascript" src="./resource/Js/common.js"></script>
-<script type="text/javascript" src="./resource/Js/jquery.pngFix.js"></script>
+<link href="./Public/Css/Admin/style.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript">var _public_='./Public';</script>
+<script type="text/javascript" src="./Public/Js/common.js"></script>
+<script type="text/javascript" src="./Public/Js/jquery.pngFix.js"></script>
 </head>
 <body>
 <div id="dialog" title="信息提示">
@@ -33,21 +33,21 @@
 				<tr>
 					<td class="body-table-td">
 						<div class="body-table-div">
-<script type="text/javascript" src="./resource/Js/jquery.validate.min.js"></script>
-<script type="text/javascript" src="./resource/Js/jQuery.validate.message_cn.js"></script>
-<link rel="stylesheet" type="text/css" href="./resource/Js/WdatePicker/skin/WdatePicker.css" />
-<script type="text/javascript" src="./resource/Js/WdatePicker/WdatePicker.js"></script>
-<script type="text/javascript" src="./resource/Js/thickbox/thickbox.js"></script>
-<link href="./resource/Js/thickbox/thickbox.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript" src="./Public/Js/jquery.validate.min.js"></script>
+<script type="text/javascript" src="./Public/Js/jQuery.validate.message_cn.js"></script>
+<link rel="stylesheet" type="text/css" href="./Public/Js/WdatePicker/skin/WdatePicker.css" />
+<script type="text/javascript" src="./Public/Js/WdatePicker/WdatePicker.js"></script>
+<script type="text/javascript" src="./Public/Js/thickbox/thickbox.js"></script>
+<link href="./Public/Js/thickbox/thickbox.css" rel="stylesheet" type="text/css" />
 <div class="handle-btns">
 	<div class="link-button"><p><a class="" href="?r=chuxiao/index" name="" id="">返回列表</a></p></div>
 </div>
-<form action="?r=chuxiao/add" method="post" name="form_post" id="form_post" enctype="multipart/form-data">
+<form action="?r=cuxiao/add_do" method="post" name="form_post" id="form_post" enctype="multipart/form-data">
 <table cellspacing="0" cellpadding="4" border="0" class="table-form">
 	<tbody>
 	<tr>
 		<th width="200" class="first">商家：</th>
-		<td><input name="m_name" id="m_name" type="text"  size="40" class="textinput requireinput required" value="" readonly="readonly" /><input name="m_id" id="m_id" type="hidden" value="0" />&nbsp;<a href="?r=chuxiao/select&is_iframe=1&keepThis=true&TB_iframe=true&height=440&width=750" title="选择商家" class="thickbox">选择商家</a></td>
+		<td><input name="m_name" id="m_name" type="text"  size="40" class="textinput requireinput required" value="" readonly="readonly" /><input name="m_id" id="m_id" type="hidden" value="0" />&nbsp;<a href="?r=zhekou/shangjia&is_iframe=1&keepThis=true&TB_iframe=true&height=440&width=750" title="选择商家" class="thickbox">选择商家</a></td>
 	</tr>
     <tr>
 		<th width="200" class="first">活动名称：</th>
@@ -56,7 +56,10 @@
     <tr>
 		<th width="200" class="first">活动类型：</th>
 		<td><select name="cate_id" class="requireinput required">
-						<option value="1" >电子</option>
+                        
+						     <?php foreach($list as $v){?>
+                        <option value="<?php echo $v['id']?>" ><?php echo $v['name']?></option>
+                        <?php }?>
 						</select></td>
 	</tr>
     <tr>
@@ -94,7 +97,7 @@
 var g = 'Admin';
 var m = 'MallPromotion';
 var a = 'add';
-var tb_pathToImage = "./resource/Js/thickbox/loadingAnimation.gif";
+var tb_pathToImage = "./Public/Js/thickbox/loadingAnimation.gif";
 
 function pick_mall_handler(mall)
 {

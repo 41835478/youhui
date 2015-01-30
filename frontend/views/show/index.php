@@ -173,5 +173,10 @@
 <script type="text/javascript" id="bdshare_js" data="type=tools" ></script>
 <script type="text/javascript" id="bdshell_js"></script>
 <script type="text/javascript">
+<<<<<<< HEAD
+var id=$("#kk").html();
+</script>
+=======
 	document.getElementById("bdshell_js").src = "http://bdimg.share.baidu.com/static/js/shell_v2.js?cdnversion=" + new Date().getHours();
 </script>
+>>>>>>> 2ed6aeef918f98d74e12b7bb0a1e04a3898589ea

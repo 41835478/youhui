@@ -34,19 +34,25 @@ class CuxiaoController extends Controller
         foreach($list as $k=>$v){
             
              $list1=CouponCodeCategory::find()->andWhere(array('id'=>$v['cate_id']))->one();
-             //var_dump($list1);die;
+            // var_dump($list1);die;
             $list[$k]['cate_id']=$list1['name'];
         }
-        //var_dump($list);die;
+       // var_dump($list);die;
          return $this->render('list',['list'=>$list]);
     }
     public function actionAdd(){
         $list=CouponCodeCategory::find()->all();
          return $this->render('add',['list'=>$list]);
     }
+      public function actionDel(){
+        $res=MallPromotion::deleteAll(['id'=>$_GET['id']]);
+           if($res){
+                $this->redirect("?r=cuxiao/list");
+           }
+    }
     public function actionAdd_do(){
-       // var_dump($_FILES);die;
-        $model= new MallZhekou;
+        //var_dump($_POST);die;
+        $model= new MallPromotion;
         $ty=explode('.', $_FILES['logo']['name']);
         $path = "../upload/".time().'_'.rand().'.'.$ty[1];
         //echo $path;
@@ -58,11 +64,11 @@ class CuxiaoController extends Controller
         $model->sort_order=$_POST['sort_order'];
         $model->title=$_POST['title'];
         $model->description=$_POST['description'];
-        $model->price=$_POST['price'];        
+        $model->expiry=  strtotime($_POST['expiry']);        
         $model->logo=$path;
         $model->addtime=time();
         if($model->insert()){
-             $this->redirect("?r=zhekou/list");
+             $this->redirect("?r=cuxiao/list");
         }
        //  return $this->render('add');
     }
