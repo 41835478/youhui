@@ -20,9 +20,9 @@
                      </dl>
          		<dl>
 			<dt><div><strong>商家管理</strong></div></dt>
-            			<dd><p><a href="?g=Admin&m=CouponCodeMall&a=index" target="mainFrame">商家列表</a></p></dd>
+            			<dd><p><a href="?r=mall/index" target="mainFrame">商家列表</a></p></dd>
             			<dd><p><a href="?g=Admin&m=CouponCodeMall&a=recs" target="mainFrame">推荐商家列表</a></p></dd>
-            			<dd><p><a href="?g=Admin&m=CouponCodeMall&a=add" target="mainFrame">添加商家</a></p></dd>
+            			<dd><p><a href="?r=mall/add" target="mainFrame">添加商家</a></p></dd>
                      </dl>
          		<dl>
 			<dt><div><strong>促销活动管理</strong></div></dt>
@@ -37,8 +37,8 @@
                      </dl>
          		<dl>
 			<dt><div><strong>分类管理</strong></div></dt>
-            			<dd><p><a href="?g=Admin&m=CouponCodeCategory&a=index" target="mainFrame">分类列表</a></p></dd>
-            			<dd><p><a href="?g=Admin&m=CouponCodeCategory&a=add" target="mainFrame">添加分类</a></p></dd>
+            			<dd><p><a href="?r=cate/index" target="mainFrame">分类列表</a></p></dd>
+            			<dd><p><a href="?r=cate/add" target="mainFrame">添加分类</a></p></dd>
                      </dl>
          	</div>
             <?php } ?>
