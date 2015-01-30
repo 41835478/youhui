@@ -17,7 +17,7 @@
 			<a class="edit-pwd" href="?g=Admin&m=User&a=edit_pwd" target="mainFrame">修改密码</a>
 			<a class="browse-index" href="/end/tp-coupon/" target="brank">浏览首页</a>
 			<a href="?g=Admin&m=Cache&a=clear" target="mainFrame">更新缓存</a>
-			<a href="?g=Admin&m=User&a=logout" target="mainFrame">退出</a>
+			<a href="?r=site/logout" target="mainFrame">退出</a>
 		</div>
 		<div class="fht-navs">
         				<div class="active">

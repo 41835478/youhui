@@ -5,7 +5,7 @@
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <title></title>
 <link href="./Public/Css/Admin/style.css" rel="stylesheet" type="text/css" />
-<script type="text/javascript">var _public_='/end/tp-coupon/Public';</script>
+<script type="text/javascript">var _public_='Public';</script>
 <script type="text/javascript" src="./Public/Js/common.js"></script>
 </head>
 <body style="background:#DEE4ED;padding:0; overflow:hidden; overflow-y:scroll;">
@@ -26,14 +26,14 @@
                      </dl>
          		<dl>
 			<dt><div><strong>促销活动管理</strong></div></dt>
-            			<dd><p><a href="?g=Admin&m=MallPromotion&a=index" target="mainFrame">活动列表</a></p></dd>
-            			<dd><p><a href="?g=Admin&m=MallPromotion&a=add" target="mainFrame">添加活动</a></p></dd>
+            			<dd><p><a href="?r=cuxiao/list" target="mainFrame">活动列表</a></p></dd>
+            			<dd><p><a href="?r=cuxiao/add" target="mainFrame">添加活动</a></p></dd>
                      </dl>
          		<dl>
 			<dt><div><strong>折扣商品管理</strong></div></dt>
-            			<dd><p><a href="?g=Admin&m=MallZhekou&a=index" target="mainFrame">折扣列表</a></p></dd>
-            			<dd><p><a href="?g=Admin&m=MallZhekou&a=category" target="mainFrame">折扣分类列表</a></p></dd>
-            			<dd><p><a href="?g=Admin&m=MallZhekou&a=add" target="mainFrame">添加折扣商品</a></p></dd>
+            			<dd><p><a href="?r=zhekou/list" target="mainFrame">折扣列表</a></p></dd>
+            			<dd><p><a href="?r=zhekou/cat_list" target="mainFrame">折扣分类列表</a></p></dd>
+            			<dd><p><a href="?r=zhekou/add" target="mainFrame">添加折扣商品</a></p></dd>
                      </dl>
          		<dl>
 			<dt><div><strong>分类管理</strong></div></dt>
