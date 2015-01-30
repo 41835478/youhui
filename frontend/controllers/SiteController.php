@@ -13,6 +13,7 @@ use yii\web\Controller;
 use yii\filters\VerbFilter;
 use yii\filters\AccessControl;
 use app\models\CouponCodeMall;
+use app\models\CouponCode;
 
 /**
  * Site controller
@@ -20,10 +21,13 @@ use app\models\CouponCodeMall;
 class SiteController extends Controller{
 	public function actionIndex(){
             $mall=CouponCodeMall::find()->all();
-	    return $this->render("index",['mall'=>$mall]);
+            $code=  CouponCode::find()->all();
+            //var_dump($code);die;
+	    return $this->render("index",['mall'=>$mall,'code'=>$code]);
 
 	
 	 }
+         
    
    
    }

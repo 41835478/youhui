@@ -33,12 +33,13 @@
 <span>&nbsp;</span>
 <div class="clear">&nbsp;</div>
                 <div class="main_l_i">
-                    <ul class="coupons-list" id="J_CouponsList" style="margin-left: 5px;">          
+                    <ul class="coupons-list" id="J_CouponsList" style="margin-left: 5px;">    
+                        <?php foreach ($code as $v){?>
 <li>
     <div class="coupon-wrapper">
         <div class="scissors">
         </div>
-        <h2><a href="/end/tp-coupon/index.php?a=view&m=code&id=2" title="0000" target="_blank">0000</a><!--<i class="hot">hot</i>--></h2>
+        <h2><a href="/end/tp-coupon/index.php?a=view&m=code&id=2" title="0000" target="_blank"><?php echo $v['title']?></a><!--<i class="hot">hot</i>--></h2>
         <a title="0000" href="/end/tp-coupon/index.php?a=view&m=code&id=2" class="coupon" target="_blank">
             <span class="left"><span class="description">满<em>100</em>减<em>20</em></span><span class="store-logo">
                 <img src="/end/tp-coupon/Public/Uploads/201501/7bea0e5bd7bb3833ac106fdde5625b90.jpg" style="display: block;"></span> </span>
@@ -59,31 +60,9 @@
         
     </div>
 </li>          
-<li>
-    <div class="coupon-wrapper">
-        <div class="scissors">
-        </div>
-        <h2><a href="/end/tp-coupon/index.php?a=view&m=code&id=1" title="asdsad" target="_blank">asdsad</a><!--<i class="hot">hot</i>--></h2>
-        <a title="asdsad" href="/end/tp-coupon/index.php?a=view&m=code&id=1" class="coupon" target="_blank">
-            <span class="left"><span class="description">满<em>1</em>减<em>1</em></span><span class="store-logo">
-                <img src="/end/tp-coupon/Public/Uploads/201501/7bea0e5bd7bb3833ac106fdde5625b90.jpg" style="display: block;"></span> </span>
-            <span class="right">
-                
-                <em class="free">免费</em>
-                
-                <span class="pulled"><b></b>立即领取</span>
-                
-            </span></a>
-        
-        <div class="info">
-            
-            <span>还剩 <i>2</i> 天 </span><span>已领数量：<i>0</i></span><span>收录券</span>
-            
-            <span><a class="store-from" href="/end/tp-coupon/index.php?a=view&m=mall&id=1">123优惠券</a></span>
-        </div>
-        
-    </div>
-</li></ul>
+                        <?php } ?>
+
+                    </ul>
 <ul class="pager"><span class="page_left_1_1">首页</span> <span class="page_left_2_2">上一页</span>  <span class="page_now">1</span> <span class="page_right_2_2">下一页</span> <span class="page_right_1_1">尾页</span></ul>
 </div>
 </div>
