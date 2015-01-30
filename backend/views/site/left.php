@@ -48,14 +48,14 @@
             		<div class="fanwe-menu" valign="top">
         		<dl>
 			<dt><div><strong>文章管理</strong></div></dt>
-            			<dd><p><a href="?g=Admin&m=Article&a=index" target="mainFrame">文章列表</a></p></dd>
-            			<dd><p><a href="?g=Admin&m=Article&a=add" target="mainFrame">添加文章</a></p></dd>
-            			<dd><p><a href="?g=Admin&m=Article&a=category" target="mainFrame">文章分类</a></p></dd>
+            			<dd><p><a href="?r=article/article" target="mainFrame">文章列表</a></p></dd>
+            			<dd><p><a href="?r=article/article_add" target="mainFrame">添加文章</a></p></dd>
+            			<dd><p><a href="?r=article/article_type" target="mainFrame">文章分类</a></p></dd>
                      </dl>
          		<dl>
 			<dt><div><strong>广告管理</strong></div></dt>
-            			<dd><p><a href="?g=Admin&m=Adv&a=index" target="mainFrame">广告列表</a></p></dd>
-            			<dd><p><a href="?g=Admin&m=Adv&a=add" target="mainFrame">添加广告</a></p></dd>
+            			<dd><p><a href="?r=advertising/guang_list" target="mainFrame">广告列表</a></p></dd>
+            			<dd><p><a href="?r=advertising/guang_add" target="mainFrame">添加广告</a></p></dd>
                      </dl>
          		<dl>
 			<dt><div><strong>广告位管理</strong></div></dt>
