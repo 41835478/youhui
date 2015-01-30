@@ -39,4 +39,10 @@ class LoginController extends Controller{
                     $this->redirect("?r=site/index");
              }
 	 } 
+         public function actionLogout(){
+               $session = new Session();
+               $session->open();
+               unset($session['user']);
+               $this->redirect("?r=site/index");
+         }
    }

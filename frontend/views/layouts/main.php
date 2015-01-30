@@ -177,7 +177,7 @@ jQuery(function() {
                 <li><a href="/end/tp-coupon/index.php?a=consume_records&m=user">消费记录</a></li>
                 <li><a href="/end/tp-coupon/index.php?a=invite&m=user">邀请好友</a></li>
                 <li><a href="/end/tp-coupon/index.php?a=editpwd&m=user">修改密码</a></li>
-                <li><a href="/end/tp-coupon/index.php?a=logout&m=user">注销登录</a></li>
+                <li><a href="?r=login/logout">注销登录</a></li>
             </ul>
         </div>
     </li>
