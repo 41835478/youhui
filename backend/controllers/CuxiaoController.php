@@ -54,7 +54,7 @@ class CuxiaoController extends Controller
         //var_dump($_POST);die;
         $model= new MallPromotion;
         $ty=explode('.', $_FILES['logo']['name']);
-        $path = "../upload/".time().'_'.rand().'.'.$ty[1];
+        $path = "upload/".time().'_'.rand().'.'.$ty[1];
         //echo $path;
         move_uploaded_file($_FILES['logo']['tmp_name'],$path);
         $model->cate_id=$_POST['cate_id'];
