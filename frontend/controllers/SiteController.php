@@ -12,14 +12,15 @@ use yii\web\BadRequestHttpException;
 use yii\web\Controller;
 use yii\filters\VerbFilter;
 use yii\filters\AccessControl;
+use app\models\CouponCodeMall;
 
 /**
  * Site controller
  */
 class SiteController extends Controller{
 	public function actionIndex(){
-	  
-	  return $this->render("index");
+            $mall=CouponCodeMall::find()->all();
+	    return $this->render("index",['mall'=>$mall]);
 
 	
 	 }

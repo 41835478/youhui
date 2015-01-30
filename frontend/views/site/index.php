@@ -1,8 +1,9 @@
 <div class="clear"></div><div class="w990 clear">
 		<ul id="category-tabs">
                     <li class="current"><a href="/end/tp-coupon/">知名商城</a></li>
-                                                                                                    <li><a href="/end/tp-coupon/index.php?a=latest&m=code&cate_id=1&t_type=0&cate_id2=0&p=1">123</a></li>
-                                                                                                    <li><a href="/end/tp-coupon/index.php?a=latest&m=code&cate_id=2&t_type=0&cate_id2=0&p=1">456</a></li>
+                    <?php foreach ($mall as $v){?>
+                                                                                                    <li><a href="/end/tp-coupon/index.php?a=latest&m=code&cate_id=1&t_type=0&cate_id2=0&p=1"><?php echo $v['m_name']?></a></li>
+                    <?php }?>         
                                                                             </ul>
         <div class="gray" id="indexshop">
             <ul>

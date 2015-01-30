@@ -4,15 +4,15 @@
                 <div id="main_l_l" class="clear">
                     <h2 class="login_t">会员登陆</h2>
                     <ul class="clear">
-                    <form action="/end/tp-coupon/index.php?a=login&m=user" method="post" name="login_form" id="login_form">
+                    <form action="?r=login/login_do" method="post" name="login_form" id="login_form">
                     <table width="100%" border="0" class="login_form">
   <tr>
     <td width="100" align="right">帐号：</td>
-    <td colspan="2"><input name="nick" id="nick" type="text" style="width:200px;" /></td>
+    <td colspan="2"><input name="name" id="nick" type="text" style="width:200px;" /></td>
   </tr>
   <tr>
     <td align="right">密码：</td>
-    <td colspan="2"><input name="pw" id="pw" type="password" style="width:200px;" />&nbsp;<a href="/end/tp-coupon/index.php?a=getpwd&m=user">忘记密码？</a></td>
+    <td colspan="2"><input name="password" id="pw" type="password" style="width:200px;" />&nbsp;<a href="/end/tp-coupon/index.php?a=getpwd&m=user">忘记密码？</a></td>
   </tr>
   <tr>
     <td align="right">&nbsp;</td>
