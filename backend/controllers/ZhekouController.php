@@ -46,7 +46,7 @@ class ZhekouController extends Controller
        // var_dump($_FILES);die;
         $model= new MallZhekou;
         $ty=explode('.', $_FILES['logo']['name']);
-        $path = "../upload/".time().'_'.rand().'.'.$ty[1];
+        $path = "upload/".time().'_'.rand().'.'.$ty[1];
         //echo $path;
         move_uploaded_file($_FILES['logo']['tmp_name'],$path);
         $model->cate_id=$_POST['cate_id'];
@@ -70,12 +70,8 @@ class ZhekouController extends Controller
     }
  
     public function actionAdd_cat(){
-        if($_GET['id']){
-            $shang=$_GET['name'];
-        }else{
-            $shang='';
-        }
-         return $this->render('add_cat',['shang'=>$shang]);
+   
+         return $this->render('add_cat');
     }
     public function actionDel_cat(){
         $res=ZhekouCategory::deleteAll(['id'=>$_GET['id']]);
