@@ -12,7 +12,9 @@ use yii\web\BadRequestHttpException;
 use yii\web\Controller;
 use yii\filters\VerbFilter;
 use yii\filters\AccessControl;
-
+use app\models\DbsCouponCode;
+use app\models\DbsCouponCodeMall;
+use app\models\DbsCouponCodeCategory;
 /**
  * Site controller
  */
@@ -21,11 +23,12 @@ class HotController extends Controller
     /**
      * @inheritdoc
      */
-   
-
     public function actionIndex()
     {
-        return $this->render('index');
+		$rows=DbsCouponCode::find()->all();
+		$list=DbsCouponCodeCategory::find()->all();
+		return $this->render("index",array('rows'=>$rows,'list'=>$list));
     }
+	
 
 }
