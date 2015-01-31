@@ -30,7 +30,7 @@ class UserController extends Controller{
 	} 
         public function actionPay_success(){
 	  
-            echo $_GET['pid'];
+            echo $_GET['pid'];    
 	} 
         //支付
         public function actionPay_do(){
