@@ -7,7 +7,11 @@ use Yii;
 /**
  * This is the model class for table "dbs_coupon_code".
  *
+<<<<<<< HEAD
  * @property string $y_id
+=======
+ * @property string $c_id
+>>>>>>> 649fb63a996dc3547df8ad157be2d3fe29c5f01a
  * @property string $title
  * @property string $m_id
  * @property string $m_name
@@ -54,7 +58,11 @@ class DbsCouponCode extends \yii\db\ActiveRecord
     public function attributeLabels()
     {
         return [
+<<<<<<< HEAD
             'y_id' => 'Y ID',
+=======
+            'c_id' => 'C ID',
+>>>>>>> 649fb63a996dc3547df8ad157be2d3fe29c5f01a
             'title' => 'Title',
             'm_id' => 'M ID',
             'm_name' => 'M Name',
