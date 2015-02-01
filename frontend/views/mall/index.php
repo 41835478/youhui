@@ -13,8 +13,7 @@
                 <?php foreach($cate as $v){?>
     <dd <?php if($cat==$v['id']){ ?>class="current"<?php } ?> ><a href="?r=mall/search&cate_id=<?php echo $v['id']?>"><?php echo $v['name']?></a></dd>
                 <?php } ?>                                                                     
-                                                                                                                                               
-                                                            </dl>
+              </dl>
                         
             
             <ul style="margin-bottom:15px;" class="blist bshop clear">
