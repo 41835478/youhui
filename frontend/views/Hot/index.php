@@ -5,11 +5,11 @@
                     <h2>热门优惠券</h2>
                     <dl class="filter clear">
                         <dt style="height: 40px;">商家类型：</dt>
-                        <dd class="current"><a href="index.php?a=hot&m=code&cate_id=0&type=2&cate_id2=0&p=1">全部</a></dd>
+                      <dd <?php if($cat==0){ ?>class="current"<?php } ?> ><a href="?r=hot/search&cate_id=0">全部</a></dd>
 						<?php
-						foreach($list as $k=>$v){
+						foreach($cate as $v){
 							?>
-                                                                        <dd ><a href="index.php?a=hot&m=code&cate_id=1&type=2&cate_id2=0&p=1"><?php echo $v['name'];?></a></dd>
+                                                                        <dd <?php if($cat==$v['id']){ ?>class="current"<?php } ?> ><a href="?r=hot/search&cate_id=<?php echo $v['id']?>"><?php echo $v['name']?></a></dd>
 																		<?php
 																			}
 							                                              ?>
@@ -20,7 +20,7 @@
                     </dl>
                     <ul class="coupons-list" id="J_CouponsList" style="margin-left: 5px;">     
 	<?php
-	foreach($rows as $k=>$v){
+	foreach($mall as $v){
 		?>
 <li>
     <div class="coupon-wrapper">
