@@ -10,7 +10,7 @@
 	<frameset id="bodyFrameset" cols="190,14,*" frameborder="no" border="0" framespacing="0">
             <frame src="?r=site/left&act=<?php echo $act?>" name="leftFrame" id="leftFrame" noresize="noresize" />
 		<frame src="?r=site/change" name="changeFrame" noresize="noresize" id="changeFrame"  frameborder="no"  scrolling="no" marginwidth="0" marginheight="0"/>
-		<frame src="?r=site/main" name="mainFrame" id="mainFrame"   frameborder="no"  scrolling="no" marginwidth="0" marginheight="0" />
+		<frame src="?r=youhui/index" name="mainFrame" id="mainFrame"   frameborder="no"  scrolling="no" marginwidth="0" marginheight="0" />
 	</frameset>
 	<frame src="?r=site/footer" name="bottomFrame" scrolling="no" noresize="noresize" />
 </frameset>

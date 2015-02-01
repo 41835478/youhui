@@ -30,17 +30,24 @@
         <div class="scissors">
         </div>
         <h2>
-            <a title="<?php echo $v['title']?>" href="/end/tp-coupon/index.php?a=view&m=code&id=8" target="_blank"><?php echo $v['title']?></a>
+            <a title="<?php echo $v['title']?>" href="?r=new/list&y_id=<?php echo $v['y_id']?>" target="_blank"><?php echo $v['title']?></a>
             
             <!--<i class="hot">hot</i>-->
             
         </h2>
-        <a title="<?php echo $v['title']?>" href="/end/tp-coupon/index.php?a=view&m=code&id=8" class="coupon" target="_blank">
-            <span class="left"><span class="description"><em>1111</em>元代金券            </span><span class="store-logo">
-                <img src="/end/TP-COUPON/Public/Uploads/201501/6787e859227d90d97aa8addef7d90b37.jpg" style="display: block;"></span> </span>
+        <a title="<?php echo $v['title']?>" href="?r=new/list&y_id=<?php echo $v['y_id']?>" class="coupon" target="_blank">
+            <?php if($v['c_type']==1){?>
+         <span class="left"><span class="description">满<em><?php echo $v['money_max']?></em>减<em><?php echo $v['money_reduce']?></em>            </span><span class="store-logo">
+                <img src="Public/Uploads/201501/a5561895a0574990de4dc3bd5f505401.png" style="display: block;"></span> </span>
+          
+            <?php } ?>
+                 <?php if($v['c_type']==2){?>
+            <span class="left"><span class="description"><em><?php echo $v['money_amount']?></em>元代金券            </span><span class="store-logo">
+                <img src="Public/Uploads/201501/6787e859227d90d97aa8addef7d90b37.jpg" style="display: block;"></span> </span>
+          
+            <?php } ?>  
             <span class="right">
-                
-                <em class="free">111积分</em>
+                <em class="free"><?php echo $v['price']?>元</em>
                 
                 <span class="get"><b></b>立即领取</span>
                 
