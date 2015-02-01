@@ -40,7 +40,7 @@ var user = {'user_id':user_id,'nick':user_nick};
 jQuery(function() {
 		    window.mainObj = window.mainObj ? window.mainObj : $("#main");
 							if (mainObj.length > 0) {
-                                var goWeibo = jQuery('<div id="go_weibo" class="float_bar"><a href="http://weibo.com/'+weibo_sina+'" target="_blank"><img src="'+images+'sina.gif" title="新浪微博" /></a><a href="http://t.qq.com/'+weibo_qq+'" target="_blank"><img src="'+images+'tencent.gif" title="腾讯微博" /></a><a href="http://wpa.qq.com/msgrd?v=3&amp;uin='+service_qq+'&amp;site=qq&amp;menu=yes" target="_blank"><img src="'+images+'qq.gif" title="联系在线客服" /></a></div>').appendTo(document.body);
+                                var goWeibo = jQuery('<div id="go_weibo" class="float_bar"><a href="http://weibo.com/'+weibo_sina+'" target="_blank"><img src="'+images+'sina.gif" title="新浪微博" /></a><a href="http://t.qq.com/'+weibo_qq+'" target="_blank"><img src="'+images+'tencent.gif" title="腾讯微博" /></a><a href="http://wpa.qq.com/msgrd?v=3&amp;uin='+237428417+'&amp;site=qq&amp;menu=yes" target="_blank"><img src="'+images+'qq.gif" title="联系在线客服" /></a></div>').appendTo(document.body);
                                 var goTopObj = jQuery('<div id="go_top" class="float_bar"><div class="return"><a href="javascript:;" title="回到顶部">回顶部</a></div></div>').appendTo(document.body);
                                 jQuery(".return a,a.return").live("click", function() {
                                     jQuery("html,body").animate({

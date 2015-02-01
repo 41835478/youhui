@@ -6,8 +6,9 @@
  */
 
 namespace yii\base;
-
 use Yii;
+use app\models\DbsPv;
+use yii\db\Query;
 
 /**
  * Controller is the base class for classes containing controller logic.
@@ -78,8 +79,42 @@ class Controller extends Component implements ViewContextInterface
     {
         $this->id = $id;
         $this->module = $module;
+		$this->UpdatePageView();
         parent::__construct($config);
     }
+
+
+  function UpdatePageView(){
+	
+$time=date("Y-m-d",time());
+         //echo $time;
+		 //die;
+         $model= new DbsPv();
+         #获取当前不带参数的url
+        $CurrentUrl='http://'.$_SERVER['HTTP_HOST'].$_SERVER['PHP_SELF']; 
+       //echo $CurrentUrl;
+	   //die;
+        $list=DbsPv::findBySql("select * from dbs_pv where time='$time'")->one();
+        //var_dump($list);
+        //die;
+        if(!empty($list)&&$list["time"]==$time){
+             $b=DbsPv::findBySql("select * from dbs_pv where time='$time'")->one();
+              $pvp=$b["pv"]+1;
+              
+              $c=DbsPv::findBySql("select * from dbs_pv where id=4")->one();
+              $pv=$c["pv"]+1;
+              
+             $d=$model->updateall(['pv'=>$pv],["id"=>4]);
+             $a=$model->updateall(['pv'=>$pvp],["time"=>$time]);
+             //echo $a;
+             //die;
+        }else if($list["time"]<$time){
+            $model = new DbsPv();
+             $model->url=$CurrentUrl;
+             $model->time=$time;
+           $model->insert();
+        }
+  }
 
     /**
      * Declares external actions for the controller.
