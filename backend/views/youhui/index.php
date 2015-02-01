@@ -133,7 +133,7 @@ $(document).ready(function(){
 </thead>
 <tbody>
 <?php foreach($list as $k=>$v){?>
-<tr id="tr<?php echo $v['c_id']?>">
+<tr id="tr<?php echo $v['y_id']?>">
 <td class="first"><input type="checkbox" value="5" name="id[]"></td>
 <td align="left"><a href=""><?php echo $v['title']?></a></td>
 <td align="left">无限制</td>
@@ -143,7 +143,7 @@ $(document).ready(function(){
 <td align="center"><span class="pointer" module="CouponCode" group="Admin" model="" pk="" href="javascript:;" onclick="textEdit(this,'5','sort_order')">9999</span></td>
 <td align="center"><span class="pointer" module="CouponCode" group="Admin" model="" pk="" href="javascript:;" onclick="toggleStatus(this,'5','is_active')"><img src="Public/Css/Admin/Images/status-0.gif" class="status" status="0" /></span></td>
 <td align="center"><a href="?g=Admin&m=CouponCode&a=code&c_id=5">优惠码管理</a>&nbsp;&nbsp;<a href="?g=Admin&m=CouponCode&a=edit&c_id=5">编辑</a>
-&nbsp;&nbsp;<a href="#" onclick="del('<?php echo $v['c_id']?>')">删除</a>
+&nbsp;&nbsp;<a href="#" onclick="del('<?php echo $v['y_id']?>')">删除</a>
 </td>
 </tr>
 <?php }?>

@@ -20,6 +20,7 @@ class YouhuiController extends Controller{
 	public $enableCsrfValidation = false;
     //列表
     public function actionIndex(){
+        //die;
 		  $info= DbsCouponCode::find();
         $pages = new Pagination(['totalCount' =>$info->count(), 'pageSize' => '3']);
         $list = $info->offset($pages->offset)->limit($pages->limit)->all();
@@ -41,13 +42,15 @@ class YouhuiController extends Controller{
 	public function actionAdd_do(){
 		$model = new DbsCouponCode();
          $m_name=$_POST['m_name'];
-		 $m_id=$_POST['m_id'];
+        $m_id=$_POST['m_id'];
          $title=$_POST['title'];
          $expiry_type=$_POST['expiry_type'];
-		 $amount=$_POST['amount'];
-		 $price=$_POST['price'];
+        $amount=$_POST['amount'];
+        $price=$_POST['price'];
 		 //$directions=$_POST['directions'];
 		 //$prompt=$_POST['prompt'];
+         $model->money_max=$_POST['money_max'];
+         $model->money_reduce=$_POST['money_reduce'];
          $model->m_name= $m_name;
          $model->m_id=$m_id;
          $model->title=$title;
@@ -71,7 +74,7 @@ class YouhuiController extends Controller{
     }  //删除
     public function actionDel(){
            $id=$_POST['id'];
-	   $res=DbsCouponCode::deleteAll(['c_id'=>$id]);
+	   $res=DbsCouponCode::deleteAll(['y_id'=>$id]);
 	   if($res){
 	    echo 1;
           }else{

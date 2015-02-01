@@ -115,15 +115,17 @@ jQuery(function() {
                         <img alt="TP-COUPON" style="width: 303px; height: 82px;" src="Public/Images/Home/logo.jpg"></a></div>
                 <div class="search">
                     <div class="search_f">
-                        <form action="/end/TP-COUPON/index.php" method="get" id="searchform" name="searchform" onSubmit="if(this.kw.value==this.kw.defaultValue)return false;">
+                        
+                         <form action="index.php?r=site/search" method="post" id="searchform" name="searchform" onSubmit="if(this.kw.value==this.kw.defaultValue)return false;">
                         <ul>
                             <li id="search_c">
                                 <input type="text" value="输入要搜索的商家名称，比如：京东或当当" autocomplete="off" id="search_i" name="kw" onFocus="if(this.value==this.defaultValue)this.value=''" onBlur="if(!this.value.length)this.value=this.defaultValue"></li>
                         </ul>
                         <div id="search_b"><input name="sub" type="image" value="搜索" src="Public/Images/Home/search.jpg"></div>
-                        <input name="m" type="hidden" value="mall">
-                        <input name="a" type="hidden" value="search">
-                        <input type="hidden" name="__hash__" value="b3d3a32f4ea83b8d9a9e87efaa56c64f_d16b138aff5a13c06becf8cb5217d0de" /></form>
+                        </form>
+                        
+                        
+                        
                     </div>
                     <div class="search_t">
                                                             </div>
@@ -158,7 +160,7 @@ jQuery(function() {
                     <?php if(empty($session['user'])){?>
         <li id="userweibo"><a href="?r=login/login">登陆</a><a href="?r=registered/regis">注册</a></li>
                     <?php }else{ ?>
-        <li id="usercenter"><a href="/end/tp-coupon/index.php?a=codes&m=user" class=""><span></span>账号中心</a>
+        <li id="usercenter"><a href="?r=user/codes" class=""><span></span>账号中心</a>
                     <?php }?>
         <div style="display: none;" class="nav_i">
             <div class="nav_i_u">
@@ -172,11 +174,11 @@ jQuery(function() {
                 </div>
             </div>
             <ul>
-                <li><a href="/end/tp-coupon/index.php?a=codes&m=user" style="color: #f00">我领取的优惠券</a></li>
-                <li><a href="/end/tp-coupon/index.php?a=pay&m=payment">账号充值</a></li>
-                <li><a href="/end/tp-coupon/index.php?a=consume_records&m=user">消费记录</a></li>
-                <li><a href="/end/tp-coupon/index.php?a=invite&m=user">邀请好友</a></li>
-                <li><a href="/end/tp-coupon/index.php?a=editpwd&m=user">修改密码</a></li>
+                <li><a href="?r=user/codes" style="color: #f00">我领取的优惠券</a></li>
+                <li><a href="?r=user/pay">账号充值</a></li>
+                <li><a href="?r=user/recodes">消费记录</a></li>
+                <li><a href="?r=user/friend">邀请好友</a></li>
+                <li><a href="?r=user/upd_pass">修改密码</a></li>
                 <li><a href="?r=login/logout">注销登录</a></li>
             </ul>
         </div>

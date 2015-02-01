@@ -4,7 +4,7 @@
                 <div id="main_l_l" class="clear">
                     <h2 class="login_t">会员注册</h2>
                     <ul class="clear">
-                    <form action="/end/tp-coupon/index.php?a=reg&m=user" method="post" id="reg_form" name="reg_form">
+                    <form action="?r=registered/regist" method="post" id="reg_form" name="reg_form">
                     <table width="100%" border="0" class="login_form">
   <tr>
     <td width="100" align="right">帐号：</td>
@@ -20,7 +20,7 @@
   </tr>
   <tr>
     <td align="right">确认密码：</td>
-    <td><input name="confirm_pw" id="confirm_pw" type="password" style="width:200px;" /></td>
+    <td><input id="confirm_pw" type="password" style="width:200px;" /></td>
   </tr>
   <tr>
     <td align="right">&nbsp;</td>
@@ -28,11 +28,10 @@
   </tr>
   <tr>
     <td align="right">&nbsp;</td>
-    <td><input type="submit" value="注册" name="commit" id="signup-submit" class="formbutton"></td>
+    <td><input type="submit" value="注册" id="signup-submit" class="formbutton"></td>
   </tr>
 </table>
-<input name="hash" type="hidden" value="e48059d8abee80635cf3c04cde9a5281" />
-<input type="hidden" name="__hash__" value="a0ad7a5a68d74168fe5f71c804007301_a9b3a6f097a605fe992a73713721641e" /></form>
+</form>
 				</ul>
                 </div>
             </div>

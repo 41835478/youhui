@@ -25,10 +25,17 @@ class PromotionController extends Controller{
             $pro=MallPromotion::find()->all();
             //var_dump($pro);die;
             $cate= CouponCodeCategory::find()->all();
-	  return $this->render("index",['pro'=>$pro,'cate'=>$cate]);
+           
+	  return $this->render("index",['pro'=>$pro,'cate'=>$cate,'cat'=>0]);
 
 	
 	 }
+         public function actionSearch(){
+             
+             $cate= CouponCodeCategory::find()->all();
+             $pro=MallPromotion::find()->where("cate_id=".$_GET['cate_id'])->all();
+             return $this->render("index",['pro'=>$pro,'cate'=>$cate,'cat'=>0,'cat'=>$_GET['cate_id']]);
+         }
    
    
    }
