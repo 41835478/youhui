@@ -28,7 +28,7 @@ class UserController extends Controller{
             $session->open();
             $codes=CouponCodeCodes::find()->where("user_id=".$session['user']['user_id'])->all();
            
-	   return $this->render("code",['codes'=>$codes]);
+	        return $this->render("code",['codes'=>$codes]);
 	} 
         //账号充值
         public function actionPay(){
