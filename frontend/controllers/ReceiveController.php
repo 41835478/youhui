@@ -12,13 +12,18 @@ use yii\web\BadRequestHttpException;
 use yii\web\Controller;
 use yii\filters\VerbFilter;
 use yii\filters\AccessControl;
+use yii\web\Session;
+use app\models\CouponCodeCodes;
 
 /**
  * Site controller
  */
 class ReceiveController extends Controller{
 	public function actionIndex(){
-	   return $this->render("index");
+             $session=new Session();
+            $session->open();
+            $codes=CouponCodeCodes::find()->where("user_id=".$session['user']['user_id'])->all();
+	   return $this->render("index",['codes'=>$codes]);
 	 } 
    }
    

@@ -7,7 +7,7 @@ use Yii;
 /**
  * This is the model class for table "dbs_user".
  *
- * @property integer $user_id
+ * @property string $user_id
  * @property string $email
  * @property string $nick
  * @property string $name
@@ -41,7 +41,6 @@ class User extends \yii\db\ActiveRecord
     public function rules()
     {
         return [
-            [['name', 'password', 'msn', 'qq', 'tel_phone', 'mobile_phone', 'addr'], 'required'],
             [['last_login', 'is_locked', 'credit', 'addtime', 'invite'], 'integer'],
             [['money'], 'number'],
             [['email', 'nick', 'msn'], 'string', 'max' => 60],
