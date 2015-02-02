@@ -8,7 +8,13 @@
             <div class="main_l">
                 <div id="main_l_l" class="clear">
                     <h2>最近被领取的优惠券</h2>
-                    <ul class="coupons-list" id="J_CouponsList" style="margin-left: 5px;"></ul>
+                    <ul class="coupons-list" id="J_CouponsList" style="margin-left: 5px;">    
+                       <?php foreach($codes as $v){?>
+                        <li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<?php echo $v['code']?>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<em><?php echo date('Y-m-d H:i:s',$v['fetch_time'])?></em></li>
+                        <?php }?>
+ 
+ 
+</ul>
 <ul class="pager"><span class="page_left_1_1">首页</span> <span class="page_left_2_2">上一页</span>  <span class="page_now">1</span> <span class="page_right_2_2">下一页</span> <span class="page_right_1_1">尾页</span></ul>
                 </div>
             </div>

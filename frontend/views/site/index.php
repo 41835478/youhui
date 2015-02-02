@@ -34,15 +34,15 @@
 <div class="clear">&nbsp;</div>
                 <div class="main_l_i">
                     <ul class="coupons-list" id="J_CouponsList" style="margin-left: 5px;">    
-                        <?php foreach ($code as $v){?>
+                        <?php foreach ($info as $v){?>
 <li>
     <div class="coupon-wrapper">
         <div class="scissors">
         </div>
-        <h2><a href="/end/tp-coupon/index.php?a=view&m=code&id=2" title="0000" target="_blank"><?php echo $v['title']?></a><!--<i class="hot">hot</i>--></h2>
-        <a title="0000" href="/end/tp-coupon/index.php?a=view&m=code&id=2" class="coupon" target="_blank">
-            <span class="left"><span class="description">满<em>100</em>减<em>20</em></span><span class="store-logo">
-                <img src="/end/tp-coupon/Public/Uploads/201501/7bea0e5bd7bb3833ac106fdde5625b90.jpg" style="display: block;"></span> </span>
+        <h2><a href="?r=new/list&y_id=<?php echo $v['y_id']?>" title="0000" target="_blank"><?php echo $v['title']?></a><!--<i class="hot">hot</i>--></h2>
+        <a title="0000" href="?r=new/list&y_id=<?php echo $v['y_id']?>" class="coupon" target="_blank">
+            <span class="left"><span class="description">满<em><?php echo $v["money_max"]?></em>减<em><?php echo $v['money_reduce']?></em></span><span class="store-logo">
+                <img src="<?php echo $v['logo']?>" style="display: block;"></span> </span> 
             <span class="right">
                 
                 <em class="free">90元</em>
@@ -117,8 +117,12 @@
                         <h3>
                             最新发布优惠券</h3>
                         <ol class="rank_coupon">
+                           <?php foreach($data as $k=>$v){?>
                              
-                                                        <li><a title="asdsad" href="/end/tp-coupon/index.php?a=view&m=code&id=1">asdsad</a></li>
+                                                        <li><a title="<?php echo $v['title']?>" href="?r=new/list&y_id=<?php echo $v['y_id']?>"><?php echo $v['title']?></a></li>
+                                                        <?php
+                           }
+                                                        ?>
                                                         
                         </ol>
                     </li>
@@ -132,10 +136,13 @@
                     <li class="gray">
                         <h3>友情链接</h3>
                         <ul class="threecol">
-                                                                                    <li><a href="http://www.ijiaqu.com" target="_blank">嫁娶网</a></li>
-                                                                                                                <li><a href="http://www.jihaoju.com" target="_blank">极好居</a></li>
-                                                                                                                <li><a href="http://www.qfanqie.com" target="_blank">青番茄</a></li>
-                                                                                                                <li><a href="http://www.tp-coupon.com" target="_blank">TP-COUPON</a></li>
+                            <?php
+                            foreach($list as $k=>$v){
+                            ?>
+                 <li><a href="<?php echo $v['link_url']?>" target="_blank"><?php echo $v['site_name']?></a></li>
+                                                                                                                <?php
+                            }
+                                                                                                                ?>
                                                                                     <div class="clear">
                             </div>
                         </ul>
