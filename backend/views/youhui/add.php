@@ -56,6 +56,10 @@
 		<th width="200" class="first">名称：</th>
 		<td><input name="title" type="text"  size="40" class="textinput" value="" />(设定名称后优惠券标题将优先显示为该名称)</td>
 	</tr>
+            <tr>
+		<th width="200" class="first">类型：</th>
+		<td><select name="c_type" onchange="sel_c_type(this.value)"><option value="1">减免券</option></select><span id="c_type_elm_1" style="display: inline;">满<input name="money_max" id="money_max" type="text" size="10" class="textinput requireinput number required" value="">元&nbsp;减<input name="money_reduce" id="money_reduce" type="text" size="10" class="textinput requireinput number required" value="">元</span><span id="c_type_elm_2" style="display: none;">金额：<input name="money_amount" id="money_amount" type="text" size="10" class="textinput requireinput number" value="">元</span></td>
+	</tr>
     <tr>
 		<th width="200" class="first">有效期：</th>
 		<td><select name="expiry_type" onchange="sel_expiry_type(this.value)"><option value="1" >有限制</option><option value="2" >无限制</option></select><span id="expiry_type_elm_1">有效期至<input type="Text" name="expiry" class="Wdate textinput requireinput"  id="expiry" onFocus="WdatePicker({skin:'ext',dateFmt:'yyyy-MM-dd',isShowToday:false,lang:'zh_cn',readOnly:true})" style="cursor: hand; width:160px;" value=""></span></td>

@@ -4,39 +4,43 @@
         <div class="clear" id="main_l_b">
             <h2>超值折扣</h2>
             <dl style="width:950px;" class="filter clear"><dt style="height:20px;">商家类型：</dt>
-                <dd class="current"><a href="/end/tp-coupon/index.php?a=index&m=zhekou&cid=0&t_type=0&p=1">全部</a></dd>
-                                                <dd ><a href="/end/tp-coupon/index.php?a=index&m=zhekou&cid=1&t_type=0&p=1">www</a></dd>
+                <dd <?php if($cat_id==0){ ?>class="current"<?php } ?>><a href="?r=zhekou/search_type&id=0">全部</a></dd>
+               <?php foreach($list as $k=>$v){?>
+                                                <dd <?php if($cat_id==$v['id']){ ?>class="current"<?php } ?>><a href="?r=zhekou/search_type&id=<?php echo $v['id']?>"><?php echo $v['name']?></a></dd>
+                                                <?php
+                                                }
+                                                ?>
                                     </dl>
-            <dl style="width:950px;" class="filter clear"><dt style="height:20px;">发布日期：</dt>
-                <dd class="current"><a href="/end/tp-coupon/index.php?a=index&m=zhekou&cid=0&t_type=0&p=1">不限</a></dd>
-                <dd ><a href="/end/tp-coupon/index.php?a=index&m=zhekou&cid=0&t_type=1&p=1">今天</a></dd>
-                <dd ><a href="/end/tp-coupon/index.php?a=index&m=zhekou&cid=0&t_type=2&p=1">三天内</a></dd>
-                <dd ><a href="/end/tp-coupon/index.php?a=index&m=zhekou&cid=0&t_type=3&p=1">一周内</a></dd>
-                <dd ><a href="/end/tp-coupon/index.php?a=index&m=zhekou&cid=0&t_type=4&p=1">一月内</a></dd>
-            </dl>
             
-            <div class="deal_box">    <div class="deal_a">
+            
+            <div class="deal_box"> 
+          <?php foreach($data as $k=>$v){?>
+                <div class="deal_a">
     <div class="deal_bt">
-      <h2>【<a target="_blank" href="/end/tp-coupon/index.php?a=view&m=mall&id=1"><font color="#660033">123</font></a>】<a target="_blank" rel="nofollow" href="/end/tp-coupon/index.php?a=out&m=zhekou&id=1">wwwwwwwq</a></h2>
+      <h2>【<a target="_blank" href="/end/tp-coupon/index.php?a=view&m=mall&id=3"><font color="#660033"><?php echo $v['m_name']?></font></a>】<a target="_blank" rel="nofollow" href="<?php echo $v['gourl']?>"><?php echo $v['title']?></a></h2>
     </div>
     <div class="deal_img">
-      <a target="_blank" rel="nofollow" title="去抢购" href="/end/tp-coupon/index.php?a=out&m=zhekou&id=1" class="dimg_link">
-        <img class="normal_image" src="/end/tp-coupon/Public/Uploads/201501/b1115a3b24e9514853f71bda77ccfe0b.jpg">
+      <a target="_blank" rel="nofollow" title="去抢购" href="<?php echo $v['gourl']?>" class="dimg_link">
+        <img class="normal_image" src="../../backend/<?php echo $v['logo']?>">
       </a>
           </div>
     <div class="deal_time">
-                <span class="tao_time_div"> 恭喜您，还可以使用<a target="_blank" href="/end/tp-coupon/index.php?a=view&m=mall&id=1"><font color="#660033">123优惠券</font></a>更省钱</span>
+                <span class="tao_time_div"> 恭喜您，还可以使用<a target="_blank" href="/end/tp-coupon/index.php?a=view&m=mall&id=3"><font color="#660033"><?php echo $v['m_name']?>优惠券</font></a>更省钱</span>
                   </div>
     <div class="deal_jg">
       <div class="jg_tuan">
-        <strong>¥12</strong>
-        <a rel="nofollow" href="/end/tp-coupon/index.php?a=out&m=zhekou&id=1" target="_blank" class="deal_qkk"></a>
+        <strong>¥<?php echo $v['price']?></strong>
+        <a rel="nofollow" href="<?php echo $v['gourl']?>" target="_blank" class="deal_qkk"></a>
       </div>
       <div class="m_tao_sb">
                   <span><img src="http://www.quanlaoda.com/static/theme/ev56_xiutuan/css/i/author_image3.png"></span>
-          <em>折扣攻略：</em>111122</div>
+          <em>折扣攻略：</em><?php echo $v['description']?></div>
     </div>
   </div>
+<?php
+}
+?>
+
       <!-- end bd -->
           </div>
             
@@ -55,3 +59,6 @@ $(document).ready(function() {
     });
 });
 </script>
+
+</body>
+</html>

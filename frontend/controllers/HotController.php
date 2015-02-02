@@ -25,10 +25,22 @@ class HotController extends Controller
      */
     public function actionIndex()
     {
-		$rows=DbsCouponCode::find()->all();
-		$list=DbsCouponCodeCategory::find()->all();
-		return $this->render("index",array('rows'=>$rows,'list'=>$list));
+		$mall=DbsCouponCode::find()->all();
+		$cate=DbsCouponCodeCategory::find()->all();
+		return $this->render("index",['mall'=>$mall,'cate'=>$cate,'cat'=>0]);
     }
+	public function actionSearch(){
+            $cate=DbsCouponCodeCategory::find()->all();
+             if($_GET['cate_id']){
+                 $cat=$_GET['cate_id'];
+                 $mall=DbsCouponCode::find()->where("y_id=".$_GET['cate_id'])->all();
+             }else{
+                  $cat=0;
+                  $mall=DbsCouponCode::find()->all();
+             }
+                //var_dump($mall);
+              return $this->render("index",['mall'=>$mall,'cate'=>$cate,'cat'=>$cat]);
+         }
 	
 
 }
