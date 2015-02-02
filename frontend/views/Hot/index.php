@@ -30,7 +30,7 @@
         <a title="<?php echo $v['title'];?>" href="index.php?r=new/list&y_id=<?php echo $v['y_id'];?>" class="coupon" target="_blank">
             <span class="left"><span class="description"><em>立降</em><em>
 			<?php echo $v['price'];?></em></span><span class="store-logo">
-                <img src="Public/Uploads/201501/7bea0e5bd7bb3833ac106fdde5,625b90.jpg" style="display: block;"></span> </span>
+                <img src="Public/photo/1422580078_10331.jpg" style="display: block;"></span> </span>
             <span class="right">
                 
                 <em class="free"><?php echo $v['price'];?></em>
