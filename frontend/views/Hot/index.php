@@ -20,17 +20,17 @@
                     </dl>
                     <ul class="coupons-list" id="J_CouponsList" style="margin-left: 5px;">     
 	<?php
-	foreach($mall as $v){
+	foreach($info as $k=>$v){
 		?>
 <li>
     <div class="coupon-wrapper">
         <div class="scissors">
         </div>
-        <h2><a href="index.php?a=view&m=code&id=2" title="<?php echo $v['title'];?>" target="_blank"><?php echo $v['title'];?></a><!--<i class="hot">hot</i>--></h2>
+        <h2><a href="?r=new/list&y_id=<?php echo $v['y_id']?>" title="<?php echo $v['title'];?>" target="_blank"><?php echo $v['title'];?></a><!--<i class="hot">hot</i>--></h2>
         <a title="<?php echo $v['title'];?>" href="index.php?r=new/list&y_id=<?php echo $v['y_id'];?>" class="coupon" target="_blank">
             <span class="left"><span class="description"><em>立降</em><em>
 			<?php echo $v['price'];?></em></span><span class="store-logo">
-                <img src="Public/photo/1422580078_10331.jpg" style="display: block;"></span> </span>
+                <img src="<?php echo $v['logo']?>" style="display: block;"></span> </span>
             <span class="right">
                 
                 <em class="free"><?php echo $v['price'];?></em>

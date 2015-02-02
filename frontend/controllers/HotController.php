@@ -15,6 +15,7 @@ use yii\filters\AccessControl;
 use app\models\DbsCouponCode;
 use app\models\DbsCouponCodeMall;
 use app\models\DbsCouponCodeCategory;
+use yii\db\Query;
 /**
  * Site controller
  */
@@ -25,9 +26,11 @@ class HotController extends Controller
      */
     public function actionIndex()
     {
+               $model = new Query();
+       $info= $model->from(['dbs_coupon_code','dbs_coupon_code_mall'])->where('dbs_coupon_code.m_id=dbs_coupon_code_mall.m_id')->all();
 		$mall=DbsCouponCode::find()->all();
 		$cate=DbsCouponCodeCategory::find()->all();
-		return $this->render("index",['mall'=>$mall,'cate'=>$cate,'cat'=>0]);
+		return $this->render("index",['mall'=>$mall,'cate'=>$cate,'info'=>$info,'cat'=>0]);
     }
 	public function actionSearch(){
             $cate=DbsCouponCodeCategory::find()->all();
