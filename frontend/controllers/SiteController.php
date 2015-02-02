@@ -17,6 +17,7 @@ use app\models\CouponCode;
 use app\models\CouponCodeCategory;
 use app\models\DbsFriendLink;
 use app\models\DbsCouponCode;
+use yii\db\Query;
 /**
  * Site controller
  */
@@ -24,12 +25,14 @@ class SiteController extends Controller{
     public $enableCsrfValidation = false;
 	public function actionIndex(){
             $data=DbsCouponCode::find()->all();
+              $model = new Query();
+       $info= $model->from(['dbs_coupon_code','dbs_coupon_code_mall'])->where('dbs_coupon_code.m_id=dbs_coupon_code_mall.m_id')->all();
             
             $list=DbsFriendLink::find()->all();
             $mall=CouponCodeMall::find()->all();
             $code=  CouponCode::find()->all();
             //var_dump($code);die;
-	    return $this->render("index",['mall'=>$mall,'code'=>$code,'list'=>$list,"data"=>$data]);
+	    return $this->render("index",['mall'=>$mall,'info'=>$info,'list'=>$list,"data"=>$data]);
 
 	
             

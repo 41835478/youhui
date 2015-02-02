@@ -34,15 +34,15 @@
 <div class="clear">&nbsp;</div>
                 <div class="main_l_i">
                     <ul class="coupons-list" id="J_CouponsList" style="margin-left: 5px;">    
-                        <?php foreach ($code as $v){?>
+                        <?php foreach ($info as $v){?>
 <li>
     <div class="coupon-wrapper">
         <div class="scissors">
         </div>
-        <h2><a href="/end/tp-coupon/index.php?a=view&m=code&id=2" title="0000" target="_blank"><?php echo $v['title']?></a><!--<i class="hot">hot</i>--></h2>
-        <a title="0000" href="/end/tp-coupon/index.php?a=view&m=code&id=2" class="coupon" target="_blank">
-            <span class="left"><span class="description">满<em>100</em>减<em>20</em></span><span class="store-logo">
-                <img src="/end/tp-coupon/Public/Uploads/201501/7bea0e5bd7bb3833ac106fdde5625b90.jpg" style="display: block;"></span> </span>
+        <h2><a href="?r=new/list&y_id=<?php echo $v['y_id']?>" title="0000" target="_blank"><?php echo $v['title']?></a><!--<i class="hot">hot</i>--></h2>
+        <a title="0000" href="?r=new/list&y_id=<?php echo $v['y_id']?>" class="coupon" target="_blank">
+            <span class="left"><span class="description">满<em><?php echo $v["money_max"]?></em>减<em><?php echo $v['money_reduce']?></em></span><span class="store-logo">
+                <img src="<?php echo $v['logo']?>" style="display: block;"></span> </span>
             <span class="right">
                 
                 <em class="free">90元</em>
@@ -119,7 +119,7 @@
                         <ol class="rank_coupon">
                            <?php foreach($data as $k=>$v){?>
                              
-                                                        <li><a title="<?php echo $v['title']?>" href="?r=news/list&y_id=<?php echo $v['y_id']?>"><?php echo $v['title']?></a></li>
+                                                        <li><a title="<?php echo $v['title']?>" href="?r=new/list&y_id=<?php echo $v['y_id']?>"><?php echo $v['title']?></a></li>
                                                         <?php
                            }
                                                         ?>
