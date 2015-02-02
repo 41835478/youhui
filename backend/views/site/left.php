@@ -40,7 +40,12 @@
             			<dd><p><a href="?r=cate/index" target="mainFrame">分类列表</a></p></dd>
             			<dd><p><a href="?r=cate/add" target="mainFrame">添加分类</a></p></dd>
                      </dl>
+					 <dt><div><strong>后台管理</strong></div></dt>
+            			<dd><p><a href="?r=pv/pv" target="mainFrame">pV量</a></p></dd>
+                     </dl>
          	</div>
+         	</div>
+			
             <?php } ?>
             
             

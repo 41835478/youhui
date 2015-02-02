@@ -27,15 +27,15 @@
         <div class="scissors">
         </div>
         <h2><a href="index.php?a=view&m=code&id=2" title="<?php echo $v['title'];?>" target="_blank"><?php echo $v['title'];?></a><!--<i class="hot">hot</i>--></h2>
-        <a title="<?php echo $v['title'];?>" href="index.php?a=view&m=code&id=2" class="coupon" target="_blank">
-            <span class="left"><span class="description">满<em>100</em>减<em>
-			<?php echo $v['money_amount'];?></em></span><span class="store-logo">
-                <img src="Public/Uploads/201501/7bea0e5bd7bb3833ac106fdde5625b90.jpg" style="display: block;"></span> </span>
+        <a title="<?php echo $v['title'];?>" href="index.php?r=new/list&y_id=<?php echo $v['y_id'];?>" class="coupon" target="_blank">
+            <span class="left"><span class="description"><em>立降</em><em>
+			<?php echo $v['price'];?></em></span><span class="store-logo">
+                <img src="Public/Uploads/201501/7bea0e5bd7bb3833ac106fdde5,625b90.jpg" style="display: block;"></span> </span>
             <span class="right">
                 
                 <em class="free"><?php echo $v['price'];?></em>
                 
-                <span class="pulled"><b></b>立即领取</span>
+               <span class="<?php if($v['amount']=='0'){ echo 'pulled'; }else{ echo 'sale'; }?>"><b></b>立即领取</span>
                 
             </span></a>
         
