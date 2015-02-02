@@ -42,7 +42,7 @@
         <h2><a href="?r=new/list&y_id=<?php echo $v['y_id']?>" title="0000" target="_blank"><?php echo $v['title']?></a><!--<i class="hot">hot</i>--></h2>
         <a title="0000" href="?r=new/list&y_id=<?php echo $v['y_id']?>" class="coupon" target="_blank">
             <span class="left"><span class="description">满<em><?php echo $v["money_max"]?></em>减<em><?php echo $v['money_reduce']?></em></span><span class="store-logo">
-                <img src="<?php echo $v['logo']?>" style="display: block;"></span> </span>
+                <img src="<?php echo $v['logo']?>" style="display: block;"></span> </span> 
             <span class="right">
                 
                 <em class="free">90元</em>
