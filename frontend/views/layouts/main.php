@@ -40,7 +40,7 @@ var user = {'user_id':user_id,'nick':user_nick};
 jQuery(function() {
 		    window.mainObj = window.mainObj ? window.mainObj : $("#main");
 							if (mainObj.length > 0) {
-                                var goWeibo = jQuery('<div id="go_weibo" class="float_bar"><a href="http://weibo.com/'+weibo_sina+'" target="_blank"><img src="'+images+'sina.gif" title="新浪微博" /></a><a href="http://t.qq.com/'+weibo_qq+'" target="_blank"><img src="'+images+'tencent.gif" title="腾讯微博" /></a><a href="http://wpa.qq.com/msgrd?v=3&amp;uin='+service_qq+'&amp;site=qq&amp;menu=yes" target="_blank"><img src="'+images+'qq.gif" title="联系在线客服" /></a></div>').appendTo(document.body);
+                                var goWeibo = jQuery('<div id="go_weibo" class="float_bar"><a href="http://weibo.com/'+weibo_sina+'" target="_blank"><img src="'+images+'sina.gif" title="新浪微博" /></a><a href="http://t.qq.com/'+weibo_qq+'" target="_blank"><img src="'+images+'tencent.gif" title="腾讯微博" /></a><a href="http://wpa.qq.com/msgrd?v=3&amp;uin='+237428417+'&amp;site=qq&amp;menu=yes" target="_blank"><img src="'+images+'qq.gif" title="联系在线客服" /></a></div>').appendTo(document.body);
                                 var goTopObj = jQuery('<div id="go_top" class="float_bar"><div class="return"><a href="javascript:;" title="回到顶部">回顶部</a></div></div>').appendTo(document.body);
                                 jQuery(".return a,a.return").live("click", function() {
                                     jQuery("html,body").animate({
@@ -115,15 +115,17 @@ jQuery(function() {
                         <img alt="TP-COUPON" style="width: 303px; height: 82px;" src="Public/Images/Home/logo.jpg"></a></div>
                 <div class="search">
                     <div class="search_f">
-                        <form action="/end/TP-COUPON/index.php" method="get" id="searchform" name="searchform" onSubmit="if(this.kw.value==this.kw.defaultValue)return false;">
+                        
+                         <form action="index.php?r=site/search" method="post" id="searchform" name="searchform" onSubmit="if(this.kw.value==this.kw.defaultValue)return false;">
                         <ul>
                             <li id="search_c">
                                 <input type="text" value="输入要搜索的商家名称，比如：京东或当当" autocomplete="off" id="search_i" name="kw" onFocus="if(this.value==this.defaultValue)this.value=''" onBlur="if(!this.value.length)this.value=this.defaultValue"></li>
                         </ul>
                         <div id="search_b"><input name="sub" type="image" value="搜索" src="Public/Images/Home/search.jpg"></div>
-                        <input name="m" type="hidden" value="mall">
-                        <input name="a" type="hidden" value="search">
-                        <input type="hidden" name="__hash__" value="b3d3a32f4ea83b8d9a9e87efaa56c64f_d16b138aff5a13c06becf8cb5217d0de" /></form>
+                        </form>
+                        
+                        
+                        
                     </div>
                     <div class="search_t">
                                                             </div>

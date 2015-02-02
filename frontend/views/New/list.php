@@ -21,7 +21,7 @@
                                                                 
                                 <li><em>有&nbsp;&nbsp;效&nbsp;&nbsp;期：</em> <i>无限制</i> </li>
                                 
-                                <li><em>领取数量：</em> 已发放 <i><?php echo $list['fetched_amount']?></i> 张</li>
+                                <li><em>领取数量：</em> 已发放 <i><span id='lq'><?php echo $list['fetched_amount']?></i></span>张</li>
                                 
                                 <li><em>更多优惠券：</em>其它<a target="_blank" href="index.php?r=mall/list&m_id=<?php echo $list['m_id']?>"><?php echo $list['m_name']?>优惠券</a></li>
                                 
@@ -30,9 +30,32 @@
                             </ul>
                             <div class="gosale">
                                 
-                                <a href="javascript:;" class="pullbtn" title="立即领取该优惠券" id="pull" cid="8" ptype="3" price="111"><span>立即领取</span></a>
+                                <a href="javascript:;" class="pullbtn" title="立即领取该优惠券" id="pull" cid="8" ptype="3" price="111" onclick="lq()"><span>立即领取</span></a>
+								
                                 
                             </div>
+							<script type="text/javascript">
+							 function lq(){
+								 var y_id=<?php echo $list['y_id']?>;
+								 //alert(y_id);
+								 var user=1;
+							   $.ajax({
+				                    url:"index.php?r=new/lq",
+									type:"get",
+									data:{"y_id":y_id,"user":user},
+									success:function(e){
+											 if(e){
+											  alert("领取成功");
+											  var lq=$('#lq').html(e);  
+											 }else{
+											  alert("领取失败");
+											 }
+										 }
+									
+					          })
+
+							 }
+							</script>
                             <div class="clear">
                             </div>
                             <ul class="normal_m_u clear">
@@ -67,8 +90,8 @@
                             <div id="c_intro" class="tabs_c ">
                                 
                                 <div id="couponShiyongLink">
-                                    <a target="_blank" title="wx优惠码使用方法" href="/end/tp-coupon/index.php?a=how2use&m=mall&id=5">
-                                        wx优惠券使用方法</a>
+                                    <a target="_blank" title=" <?php echo $list['m_name']?>" href="#">
+                                        <?php echo $list['m_name']?></a>
                                 </div>
                                 <br>
                                 <div id="how2use">qwssssssss&nbsp;s&nbsp;</div>

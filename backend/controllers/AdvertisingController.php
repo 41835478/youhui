@@ -18,7 +18,7 @@ class AdvertisingController extends Controller
       public $enableCsrfValidation = false;
 	#广告列表
 	public function actionGuang_list(){
-		$model = new Query();
+    $model = new Query();
 	$data= $model->from(['dbs_ad','dbs_ad_position'])->where("dbs_ad.position_id=dbs_ad_position.position_id")->all();
                             return $this->render('guang_list',array('data'=>$data));
 	}
