@@ -36,14 +36,14 @@
                             </div>
 							<script type="text/javascript">
 							 function lq(){
-								 var y_id=<?php echo $list['y_id']?>;
+								var y_id=<?php echo $list['y_id']?>;
 								 //alert(y_id);
-								 var user=1;
 							   $.ajax({
 				                    url:"index.php?r=new/lq",
 									type:"get",
-									data:{"y_id":y_id,"user":user},
+									data:{"y_id":y_id},
 									success:function(e){
+                                     
 											 if(e){
 											  alert("领取成功");
 											  var lq=$('#lq').html(e);  

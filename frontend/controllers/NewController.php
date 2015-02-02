@@ -15,10 +15,12 @@ use yii\filters\AccessControl;
 use app\models\DbsCouponCodeCategory;
 use app\models\DbsCouponCodeMall;
 use app\models\DbsCouponCode;
+use app\models\DbsCouponCodeCodes;
 use yii\db\Query;
 //分页
 use yii\data\Pagination;
 use yii\data\ActiveDataProvider;
+use yii\web\Session;
 /**
  * Site controller
  */
@@ -70,17 +72,34 @@ class NewController extends Controller{
 	  $model = new Query();
 	  $list=$model->from(['dbs_coupon_code','dbs_coupon_code_mall'])->where('dbs_coupon_code.m_id=dbs_coupon_code_mall.m_id')->andwhere("y_id=".$y_id)->one();
 	 // print_r($list);die;
-	 return $this->render('list',['list'=>$list]);
+	      //当前登陆的用户
+	      $session = new Session();
+          $session->open();
+		  $user=$session['user'];
+		  //$user['user_id'];
+	 return $this->render('list',['list'=>$list,'user'=>$user]);
 	}
 	//领取
 	public function actionLq(){
 	 
 	  $y_id=$_GET['y_id'];
-	  $info = DbsCouponCode::find($y_id)->one();
+	  //echo $y_id;
+	  $info = DbsCouponCode::findone($y_id);
+	  //print_r($info);
 	  //$amount=$info['amount'];
 	  $fetched_amount=$info['fetched_amount']+1;
-	  $model=new DbsCouponCode();
-	  $rows=$model->updateall(['fetched_amount'=>$fetched_amount],["y_id"=>$y_id]);
+	  //当前登陆的用户
+	  $session = new Session();
+	  $session->open();
+	  $user=$session['user'];
+      $model1=new DbsCouponCode();
+	  $rows=$model1->updateall(['fetched_amount'=>$fetched_amount],["y_id"=>$y_id]);
+	  $model = new DbsCouponCodeCodes();
+	  $model->code=$info['title'];
+      $model->user_id=$user['user_id'];
+	  $model->nick=$user['nick'];
+	  $model->fetch_time=time();
+	  $model->insert();
 	  echo $fetched_amount;
 	  
 	 
