@@ -15,6 +15,8 @@ use yii\filters\AccessControl;
 use app\models\ConsumeRecords;
 use yii\web\Session;
 use app\models\Payment;
+use app\models\CouponCodeCodes;
+
 /**
  * Site controller
  */
@@ -22,7 +24,11 @@ class UserController extends Controller{
      public $enableCsrfValidation = false;
         //我领取的优惠券
 	public function actionCodes(){
-	   return $this->render("code");
+            $session=new Session();
+            $session->open();
+            $codes=CouponCodeCodes::find()->where("user_id=".$session['user']['user_id'])->all();
+           
+	   return $this->render("code",['codes'=>$codes]);
 	} 
         //账号充值
         public function actionPay(){
@@ -50,7 +56,7 @@ class UserController extends Controller{
                 $name="充值".$_POST['amount'];
                 $price=$_POST['amount'];
                 $desc='充值金额';
-                include('../web/pay/alipayapi.php');
+                //include('../web/pay/alipayapi.php');
                 
                 //var_dump($_POST);
                 // return $this->render("pay");
