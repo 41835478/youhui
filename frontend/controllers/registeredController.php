@@ -24,11 +24,13 @@ class RegisteredController extends Controller{
 	 public function actionRegist(){
              var_dump($_POST);
              $model=new User;
-           // echo $model->nick=$_POST['nick'];
-           // echo $model->password=md5($_POST['pw']);
-           // echo $model->email=$_POST['email'];
-           // echo $model->addtime=time();
-             var_dump($model->insert($_POST));
+            echo $model->nick=$_POST['nick'];
+            echo $model->password=md5($_POST['pw']);
+            echo $model->email=$_POST['email'];
+            echo $model->addtime=time();
+            if($model->insert($_POST)){
+                $this->redirect("index.php?r=login/login");
+            }
              //var_dump($model->insert());
 	 } 
    }

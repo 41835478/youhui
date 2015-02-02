@@ -46904,3 +46904,564 @@ $_SERVER = [
     'REQUEST_TIME' => 1422791470
 >>>>>>> 7db18d0c2a2ccacda790852cdd3d28d576cffbe2
 ]
+2015-02-02 01:20:26 [127.0.0.1][-][-][error][yii\base\ErrorException:64] exception 'yii\base\ErrorException' with message 'Cannot use yii\web\Session as Session because the name is already in use' in D:\xampp\htdocs\youhuijuan\frontend\controllers\UserController.php:19
+Stack trace:
+#0 [internal function]: yii\base\ErrorHandler->handleFatalError()
+#1 {main}
+2015-02-02 01:20:26 [127.0.0.1][-][-][info][application] $_GET = [
+    'r' => 'user/codes'
+]
+
+$_COOKIE = [
+    'AJSTAT_ok_times' => '1'
+    '_ga' => 'GA1.1.54924247.1416566351'
+    '__zpspc' => '9.2.1416813744.1416814460.10#4|||||#'
+    'bdshare_firstime' => '1418786158546'
+    'CNZZDATA4617777' => 'cnzz_eid=682052683-1418784431-&ntime=1418784197'
+    'CNZZDATA4617788' => 'cnzz_eid=431890627-1419157234-&ntime=1419203501'
+    'CNZZDATA4617784' => 'cnzz_eid=1410397910-1418812097-&ntime=1419983038'
+    'Jjzq_2132_saltkey' => 'wkOPSZrn'
+    'Jjzq_2132_lastvisit' => '1420423935'
+    'Jjzq_2132_ulastactivity' => '3cd47khBmEfAZuKV56v5xcereJG/Dl7C07x2T1XA2znHteTfL3el'
+    'RB5E_2132_saltkey' => 'YR3N3T3T'
+    'RB5E_2132_lastvisit' => '1420425536'
+    'RB5E_2132_ulastactivity' => '7a33yKqJzIUHWbK8a2g4rYyfLxZRCEFiozw4LjGbd97NwT8w9vkf'
+    'VOIr_2132_saltkey' => 'Ot1vtjL1'
+    'VOIr_2132_lastvisit' => '1420426036'
+    'VOIr_2132_ulastactivity' => '40a3geAD9hD7n9MsDQ4l4FnD7q3ymVwknLjv8+KttwvvmeBgf8zp'
+    'VOIr_2132_nofavfid' => '1'
+    'uchome_loginuser' => 'admin'
+    'CNZZDATA2924747' => 'cnzz_eid=1577273435-1420269582-&ntime=1420676356'
+    'CNZZDATA3668490' => 'cnzz_eid=405753816-1420849139-http%3A%2F%2Flocalhost%2F&ntime=1420849139'
+    'CNZZDATA3637100' => 'cnzz_eid=1250976432-1420847467-http%3A%2F%2Flocalhost%2F&ntime=1420847467'
+    'PHPSESSID' => '6hpj3dbql5s5ir4o7e64j4cho4'
+    '_csrf' => '9646b6f686e3ac81bfc7e6319d06d60cc3541c0433498acfcb7cb6b8a8868b3es:32:\"eKpI2BX-8qxywwikxSYgYHCvd-EztYkO\";'
+]
+
+$_SERVER = [
+    'MIBDIRS' => 'D:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'D:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.57 Safari/537.36'
+    'HTTP_REFERER' => 'http://localhost/youhuijuan/frontend/web/index.php?r=new/index'
+    'HTTP_ACCEPT_ENCODING' => 'gzip,deflate,sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8,en;q=0.6'
+    'HTTP_COOKIE' => 'AJSTAT_ok_times=1; _ga=GA1.1.54924247.1416566351; __zpspc=9.2.1416813744.1416814460.10%234%7C%7C%7C%7C%7C%23; bdshare_firstime=1418786158546; CNZZDATA4617777=cnzz_eid%3D682052683-1418784431-%26ntime%3D1418784197; CNZZDATA4617788=cnzz_eid%3D431890627-1419157234-%26ntime%3D1419203501; CNZZDATA4617784=cnzz_eid%3D1410397910-1418812097-%26ntime%3D1419983038; Jjzq_2132_saltkey=wkOPSZrn; Jjzq_2132_lastvisit=1420423935; Jjzq_2132_ulastactivity=3cd47khBmEfAZuKV56v5xcereJG%2FDl7C07x2T1XA2znHteTfL3el; RB5E_2132_saltkey=YR3N3T3T; RB5E_2132_lastvisit=1420425536; RB5E_2132_ulastactivity=7a33yKqJzIUHWbK8a2g4rYyfLxZRCEFiozw4LjGbd97NwT8w9vkf; VOIr_2132_saltkey=Ot1vtjL1; VOIr_2132_lastvisit=1420426036; VOIr_2132_ulastactivity=40a3geAD9hD7n9MsDQ4l4FnD7q3ymVwknLjv8%2BKttwvvmeBgf8zp; VOIr_2132_nofavfid=1; uchome_loginuser=admin; CNZZDATA2924747=cnzz_eid%3D1577273435-1420269582-%26ntime%3D1420676356; CNZZDATA3668490=cnzz_eid%3D405753816-1420849139-http%253A%252F%252Flocalhost%252F%26ntime%3D1420849139; CNZZDATA3637100=cnzz_eid%3D1250976432-1420847467-http%253A%252F%252Flocalhost%252F%26ntime%3D1420847467; PHPSESSID=6hpj3dbql5s5ir4o7e64j4cho4; _csrf=9646b6f686e3ac81bfc7e6319d06d60cc3541c0433498acfcb7cb6b8a8868b3es%3A32%3A%22eKpI2BX-8qxywwikxSYgYHCvd-EztYkO%22%3B'
+    'PATH' => 'C:\\Program Files (x86)\\Common Files\\NetSarang;C:\\ProgramData\\Oracle\\Java\\javapath;C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;D:\\xampp\\php\\php.exe;D:\\Program Files\\Java\\jdk1.8.0_25\\bin;D:\\Program Files\\Java\\jdk1.8.0_25\\jre\\bin;D:\\git\\bin;D:\\xampp\\php;C:\\ProgramData\\ComposerSetup\\bin;C:\\Windows\\system32'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.7 (Win32) OpenSSL/1.0.1e PHP/5.5.9 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.7 (Win32) OpenSSL/1.0.1e PHP/5.5.9'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'D:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'D:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'D:/xampp/htdocs/youhuijuan/frontend/web/index.php'
+    'REMOTE_PORT' => '50066'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=user/codes'
+    'REQUEST_URI' => '/youhuijuan/frontend/web/index.php?r=user/codes'
+    'SCRIPT_NAME' => '/youhuijuan/frontend/web/index.php'
+    'PHP_SELF' => '/youhuijuan/frontend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1422836426.282
+    'REQUEST_TIME' => 1422836426
+]
+2015-02-02 01:23:56 [127.0.0.1][-][-][error][yii\base\UnknownPropertyException] exception 'yii\base\UnknownPropertyException' with message 'Getting unknown property: app\models\CouponCodeCodes::addtime' in D:\xampp\htdocs\youhuijuan\vendor\yiisoft\yii2\base\Component.php:143
+Stack trace:
+#0 D:\xampp\htdocs\youhuijuan\vendor\yiisoft\yii2\db\BaseActiveRecord.php(246): yii\base\Component->__get('addtime')
+#1 D:\xampp\htdocs\youhuijuan\vendor\yiisoft\yii2\base\Model.php(898): yii\db\BaseActiveRecord->__get('addtime')
+#2 D:\xampp\htdocs\youhuijuan\frontend\views\user\code.php(14): yii\base\Model->offsetGet('addtime')
+#3 D:\xampp\htdocs\youhuijuan\vendor\yiisoft\yii2\base\View.php(325): require('D:\xampp\htdocs...')
+#4 D:\xampp\htdocs\youhuijuan\vendor\yiisoft\yii2\base\View.php(247): yii\base\View->renderPhpFile('D:\xampp\htdocs...', Array)
+#5 D:\xampp\htdocs\youhuijuan\vendor\yiisoft\yii2\base\View.php(149): yii\base\View->renderFile('D:\xampp\htdocs...', Array, Object(frontend\controllers\UserController))
+#6 D:\xampp\htdocs\youhuijuan\vendor\yiisoft\yii2\base\Controller.php(367): yii\base\View->render('code', Array, Object(frontend\controllers\UserController))
+#7 D:\xampp\htdocs\youhuijuan\frontend\controllers\UserController.php(31): yii\base\Controller->render('code', Array)
+#8 [internal function]: frontend\controllers\UserController->actionCodes()
+#9 D:\xampp\htdocs\youhuijuan\vendor\yiisoft\yii2\base\InlineAction.php(55): call_user_func_array(Array, Array)
+#10 D:\xampp\htdocs\youhuijuan\vendor\yiisoft\yii2\base\Controller.php(151): yii\base\InlineAction->runWithParams(Array)
+#11 D:\xampp\htdocs\youhuijuan\vendor\yiisoft\yii2\base\Module.php(455): yii\base\Controller->runAction('codes', Array)
+#12 D:\xampp\htdocs\youhuijuan\vendor\yiisoft\yii2\web\Application.php(83): yii\base\Module->runAction('user/codes', Array)
+#13 D:\xampp\htdocs\youhuijuan\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#14 D:\xampp\htdocs\youhuijuan\frontend\web\index.php(18): yii\base\Application->run()
+#15 {main}
+2015-02-02 01:23:56 [127.0.0.1][-][-][info][application] $_GET = [
+    'r' => 'user/codes'
+]
+
+$_COOKIE = [
+    'AJSTAT_ok_times' => '1'
+    '_ga' => 'GA1.1.54924247.1416566351'
+    '__zpspc' => '9.2.1416813744.1416814460.10#4|||||#'
+    'bdshare_firstime' => '1418786158546'
+    'CNZZDATA4617777' => 'cnzz_eid=682052683-1418784431-&ntime=1418784197'
+    'CNZZDATA4617788' => 'cnzz_eid=431890627-1419157234-&ntime=1419203501'
+    'CNZZDATA4617784' => 'cnzz_eid=1410397910-1418812097-&ntime=1419983038'
+    'Jjzq_2132_saltkey' => 'wkOPSZrn'
+    'Jjzq_2132_lastvisit' => '1420423935'
+    'Jjzq_2132_ulastactivity' => '3cd47khBmEfAZuKV56v5xcereJG/Dl7C07x2T1XA2znHteTfL3el'
+    'RB5E_2132_saltkey' => 'YR3N3T3T'
+    'RB5E_2132_lastvisit' => '1420425536'
+    'RB5E_2132_ulastactivity' => '7a33yKqJzIUHWbK8a2g4rYyfLxZRCEFiozw4LjGbd97NwT8w9vkf'
+    'VOIr_2132_saltkey' => 'Ot1vtjL1'
+    'VOIr_2132_lastvisit' => '1420426036'
+    'VOIr_2132_ulastactivity' => '40a3geAD9hD7n9MsDQ4l4FnD7q3ymVwknLjv8+KttwvvmeBgf8zp'
+    'VOIr_2132_nofavfid' => '1'
+    'uchome_loginuser' => 'admin'
+    'CNZZDATA2924747' => 'cnzz_eid=1577273435-1420269582-&ntime=1420676356'
+    'CNZZDATA3668490' => 'cnzz_eid=405753816-1420849139-http%3A%2F%2Flocalhost%2F&ntime=1420849139'
+    'CNZZDATA3637100' => 'cnzz_eid=1250976432-1420847467-http%3A%2F%2Flocalhost%2F&ntime=1420847467'
+    'PHPSESSID' => '6hpj3dbql5s5ir4o7e64j4cho4'
+    '_csrf' => '9646b6f686e3ac81bfc7e6319d06d60cc3541c0433498acfcb7cb6b8a8868b3es:32:\"eKpI2BX-8qxywwikxSYgYHCvd-EztYkO\";'
+]
+
+$_SESSION = [
+    '__flash' => []
+    'user' => app\models\User#1
+    (
+        [yii\db\BaseActiveRecord:_attributes] => [
+            'user_id' => '8'
+            'email' => 'qin'
+            'nick' => 'qin'
+            'name' => null
+            'password' => '46481752d64d9421af3a980bea7f3fad'
+            'last_login' => '0'
+            'last_ip' => ''
+            'msn' => null
+            'qq' => null
+            'tel_phone' => null
+            'mobile_phone' => null
+            'addr' => null
+            'is_locked' => 0
+            'money' => 0
+            'credit' => 0
+            'addtime' => '1422835655'
+            'invite' => '0'
+        ]
+        [yii\db\BaseActiveRecord:_oldAttributes] => [
+            'user_id' => '8'
+            'email' => 'qin'
+            'nick' => 'qin'
+            'name' => null
+            'password' => '46481752d64d9421af3a980bea7f3fad'
+            'last_login' => '0'
+            'last_ip' => ''
+            'msn' => null
+            'qq' => null
+            'tel_phone' => null
+            'mobile_phone' => null
+            'addr' => null
+            'is_locked' => 0
+            'money' => 0
+            'credit' => 0
+            'addtime' => '1422835655'
+            'invite' => '0'
+        ]
+        [yii\db\BaseActiveRecord:_related] => []
+        [yii\base\Model:_errors] => null
+        [yii\base\Model:_validators] => null
+        [yii\base\Model:_scenario] => 'default'
+        [yii\base\Component:_events] => []
+        [yii\base\Component:_behaviors] => []
+    )
+]
+
+$_SERVER = [
+    'MIBDIRS' => 'D:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'D:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.57 Safari/537.36'
+    'HTTP_REFERER' => 'http://localhost/youhuijuan/frontend/web/index.php?r=new/index'
+    'HTTP_ACCEPT_ENCODING' => 'gzip,deflate,sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8,en;q=0.6'
+    'HTTP_COOKIE' => 'AJSTAT_ok_times=1; _ga=GA1.1.54924247.1416566351; __zpspc=9.2.1416813744.1416814460.10%234%7C%7C%7C%7C%7C%23; bdshare_firstime=1418786158546; CNZZDATA4617777=cnzz_eid%3D682052683-1418784431-%26ntime%3D1418784197; CNZZDATA4617788=cnzz_eid%3D431890627-1419157234-%26ntime%3D1419203501; CNZZDATA4617784=cnzz_eid%3D1410397910-1418812097-%26ntime%3D1419983038; Jjzq_2132_saltkey=wkOPSZrn; Jjzq_2132_lastvisit=1420423935; Jjzq_2132_ulastactivity=3cd47khBmEfAZuKV56v5xcereJG%2FDl7C07x2T1XA2znHteTfL3el; RB5E_2132_saltkey=YR3N3T3T; RB5E_2132_lastvisit=1420425536; RB5E_2132_ulastactivity=7a33yKqJzIUHWbK8a2g4rYyfLxZRCEFiozw4LjGbd97NwT8w9vkf; VOIr_2132_saltkey=Ot1vtjL1; VOIr_2132_lastvisit=1420426036; VOIr_2132_ulastactivity=40a3geAD9hD7n9MsDQ4l4FnD7q3ymVwknLjv8%2BKttwvvmeBgf8zp; VOIr_2132_nofavfid=1; uchome_loginuser=admin; CNZZDATA2924747=cnzz_eid%3D1577273435-1420269582-%26ntime%3D1420676356; CNZZDATA3668490=cnzz_eid%3D405753816-1420849139-http%253A%252F%252Flocalhost%252F%26ntime%3D1420849139; CNZZDATA3637100=cnzz_eid%3D1250976432-1420847467-http%253A%252F%252Flocalhost%252F%26ntime%3D1420847467; PHPSESSID=6hpj3dbql5s5ir4o7e64j4cho4; _csrf=9646b6f686e3ac81bfc7e6319d06d60cc3541c0433498acfcb7cb6b8a8868b3es%3A32%3A%22eKpI2BX-8qxywwikxSYgYHCvd-EztYkO%22%3B'
+    'PATH' => 'C:\\Program Files (x86)\\Common Files\\NetSarang;C:\\ProgramData\\Oracle\\Java\\javapath;C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;D:\\xampp\\php\\php.exe;D:\\Program Files\\Java\\jdk1.8.0_25\\bin;D:\\Program Files\\Java\\jdk1.8.0_25\\jre\\bin;D:\\git\\bin;D:\\xampp\\php;C:\\ProgramData\\ComposerSetup\\bin;C:\\Windows\\system32'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.7 (Win32) OpenSSL/1.0.1e PHP/5.5.9 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.7 (Win32) OpenSSL/1.0.1e PHP/5.5.9'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'D:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'D:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'D:/xampp/htdocs/youhuijuan/frontend/web/index.php'
+    'REMOTE_PORT' => '50152'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=user/codes'
+    'REQUEST_URI' => '/youhuijuan/frontend/web/index.php?r=user/codes'
+    'SCRIPT_NAME' => '/youhuijuan/frontend/web/index.php'
+    'PHP_SELF' => '/youhuijuan/frontend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1422836636.271
+    'REQUEST_TIME' => 1422836636
+]
+2015-02-02 01:34:20 [127.0.0.1][-][-][error][yii\base\ErrorException:4] exception 'yii\base\ErrorException' with message 'syntax error, unexpected '=>' (T_DOUBLE_ARROW)' in D:\xampp\htdocs\youhuijuan\frontend\controllers\ReceiveController.php:25
+Stack trace:
+#0 [internal function]: yii\base\ErrorHandler->handleFatalError()
+#1 {main}
+2015-02-02 01:34:20 [127.0.0.1][-][-][info][application] $_GET = [
+    'r' => 'receive/index'
+]
+
+$_COOKIE = [
+    'AJSTAT_ok_times' => '1'
+    '_ga' => 'GA1.1.54924247.1416566351'
+    '__zpspc' => '9.2.1416813744.1416814460.10#4|||||#'
+    'bdshare_firstime' => '1418786158546'
+    'CNZZDATA4617777' => 'cnzz_eid=682052683-1418784431-&ntime=1418784197'
+    'CNZZDATA4617788' => 'cnzz_eid=431890627-1419157234-&ntime=1419203501'
+    'CNZZDATA4617784' => 'cnzz_eid=1410397910-1418812097-&ntime=1419983038'
+    'Jjzq_2132_saltkey' => 'wkOPSZrn'
+    'Jjzq_2132_lastvisit' => '1420423935'
+    'Jjzq_2132_ulastactivity' => '3cd47khBmEfAZuKV56v5xcereJG/Dl7C07x2T1XA2znHteTfL3el'
+    'RB5E_2132_saltkey' => 'YR3N3T3T'
+    'RB5E_2132_lastvisit' => '1420425536'
+    'RB5E_2132_ulastactivity' => '7a33yKqJzIUHWbK8a2g4rYyfLxZRCEFiozw4LjGbd97NwT8w9vkf'
+    'VOIr_2132_saltkey' => 'Ot1vtjL1'
+    'VOIr_2132_lastvisit' => '1420426036'
+    'VOIr_2132_ulastactivity' => '40a3geAD9hD7n9MsDQ4l4FnD7q3ymVwknLjv8+KttwvvmeBgf8zp'
+    'VOIr_2132_nofavfid' => '1'
+    'uchome_loginuser' => 'admin'
+    'CNZZDATA2924747' => 'cnzz_eid=1577273435-1420269582-&ntime=1420676356'
+    'CNZZDATA3668490' => 'cnzz_eid=405753816-1420849139-http%3A%2F%2Flocalhost%2F&ntime=1420849139'
+    'CNZZDATA3637100' => 'cnzz_eid=1250976432-1420847467-http%3A%2F%2Flocalhost%2F&ntime=1420847467'
+    'PHPSESSID' => '6hpj3dbql5s5ir4o7e64j4cho4'
+    '_csrf' => '9646b6f686e3ac81bfc7e6319d06d60cc3541c0433498acfcb7cb6b8a8868b3es:32:\"eKpI2BX-8qxywwikxSYgYHCvd-EztYkO\";'
+]
+
+$_SERVER = [
+    'MIBDIRS' => 'D:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'D:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.57 Safari/537.36'
+    'HTTP_REFERER' => 'http://localhost/youhuijuan/frontend/web/index.php?r=receive/index'
+    'HTTP_ACCEPT_ENCODING' => 'gzip,deflate,sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8,en;q=0.6'
+    'HTTP_COOKIE' => 'AJSTAT_ok_times=1; _ga=GA1.1.54924247.1416566351; __zpspc=9.2.1416813744.1416814460.10%234%7C%7C%7C%7C%7C%23; bdshare_firstime=1418786158546; CNZZDATA4617777=cnzz_eid%3D682052683-1418784431-%26ntime%3D1418784197; CNZZDATA4617788=cnzz_eid%3D431890627-1419157234-%26ntime%3D1419203501; CNZZDATA4617784=cnzz_eid%3D1410397910-1418812097-%26ntime%3D1419983038; Jjzq_2132_saltkey=wkOPSZrn; Jjzq_2132_lastvisit=1420423935; Jjzq_2132_ulastactivity=3cd47khBmEfAZuKV56v5xcereJG%2FDl7C07x2T1XA2znHteTfL3el; RB5E_2132_saltkey=YR3N3T3T; RB5E_2132_lastvisit=1420425536; RB5E_2132_ulastactivity=7a33yKqJzIUHWbK8a2g4rYyfLxZRCEFiozw4LjGbd97NwT8w9vkf; VOIr_2132_saltkey=Ot1vtjL1; VOIr_2132_lastvisit=1420426036; VOIr_2132_ulastactivity=40a3geAD9hD7n9MsDQ4l4FnD7q3ymVwknLjv8%2BKttwvvmeBgf8zp; VOIr_2132_nofavfid=1; uchome_loginuser=admin; CNZZDATA2924747=cnzz_eid%3D1577273435-1420269582-%26ntime%3D1420676356; CNZZDATA3668490=cnzz_eid%3D405753816-1420849139-http%253A%252F%252Flocalhost%252F%26ntime%3D1420849139; CNZZDATA3637100=cnzz_eid%3D1250976432-1420847467-http%253A%252F%252Flocalhost%252F%26ntime%3D1420847467; PHPSESSID=6hpj3dbql5s5ir4o7e64j4cho4; _csrf=9646b6f686e3ac81bfc7e6319d06d60cc3541c0433498acfcb7cb6b8a8868b3es%3A32%3A%22eKpI2BX-8qxywwikxSYgYHCvd-EztYkO%22%3B'
+    'PATH' => 'C:\\Program Files (x86)\\Common Files\\NetSarang;C:\\ProgramData\\Oracle\\Java\\javapath;C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;D:\\xampp\\php\\php.exe;D:\\Program Files\\Java\\jdk1.8.0_25\\bin;D:\\Program Files\\Java\\jdk1.8.0_25\\jre\\bin;D:\\git\\bin;D:\\xampp\\php;C:\\ProgramData\\ComposerSetup\\bin;C:\\Windows\\system32'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.7 (Win32) OpenSSL/1.0.1e PHP/5.5.9 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.7 (Win32) OpenSSL/1.0.1e PHP/5.5.9'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'D:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'D:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'D:/xampp/htdocs/youhuijuan/frontend/web/index.php'
+    'REMOTE_PORT' => '50491'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=receive/index'
+    'REQUEST_URI' => '/youhuijuan/frontend/web/index.php?r=receive/index'
+    'SCRIPT_NAME' => '/youhuijuan/frontend/web/index.php'
+    'PHP_SELF' => '/youhuijuan/frontend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1422837260.258
+    'REQUEST_TIME' => 1422837260
+]
+2015-02-02 01:34:30 [127.0.0.1][-][-][error][yii\base\ErrorException:1] exception 'yii\base\ErrorException' with message 'Class 'frontend\controllers\CouponCodeCodes' not found' in D:\xampp\htdocs\youhuijuan\frontend\controllers\ReceiveController.php:24
+Stack trace:
+#0 [internal function]: yii\base\ErrorHandler->handleFatalError()
+#1 {main}
+2015-02-02 01:34:30 [127.0.0.1][-][-][info][application] $_GET = [
+    'r' => 'receive/index'
+]
+
+$_COOKIE = [
+    'AJSTAT_ok_times' => '1'
+    '_ga' => 'GA1.1.54924247.1416566351'
+    '__zpspc' => '9.2.1416813744.1416814460.10#4|||||#'
+    'bdshare_firstime' => '1418786158546'
+    'CNZZDATA4617777' => 'cnzz_eid=682052683-1418784431-&ntime=1418784197'
+    'CNZZDATA4617788' => 'cnzz_eid=431890627-1419157234-&ntime=1419203501'
+    'CNZZDATA4617784' => 'cnzz_eid=1410397910-1418812097-&ntime=1419983038'
+    'Jjzq_2132_saltkey' => 'wkOPSZrn'
+    'Jjzq_2132_lastvisit' => '1420423935'
+    'Jjzq_2132_ulastactivity' => '3cd47khBmEfAZuKV56v5xcereJG/Dl7C07x2T1XA2znHteTfL3el'
+    'RB5E_2132_saltkey' => 'YR3N3T3T'
+    'RB5E_2132_lastvisit' => '1420425536'
+    'RB5E_2132_ulastactivity' => '7a33yKqJzIUHWbK8a2g4rYyfLxZRCEFiozw4LjGbd97NwT8w9vkf'
+    'VOIr_2132_saltkey' => 'Ot1vtjL1'
+    'VOIr_2132_lastvisit' => '1420426036'
+    'VOIr_2132_ulastactivity' => '40a3geAD9hD7n9MsDQ4l4FnD7q3ymVwknLjv8+KttwvvmeBgf8zp'
+    'VOIr_2132_nofavfid' => '1'
+    'uchome_loginuser' => 'admin'
+    'CNZZDATA2924747' => 'cnzz_eid=1577273435-1420269582-&ntime=1420676356'
+    'CNZZDATA3668490' => 'cnzz_eid=405753816-1420849139-http%3A%2F%2Flocalhost%2F&ntime=1420849139'
+    'CNZZDATA3637100' => 'cnzz_eid=1250976432-1420847467-http%3A%2F%2Flocalhost%2F&ntime=1420847467'
+    'PHPSESSID' => '6hpj3dbql5s5ir4o7e64j4cho4'
+    '_csrf' => '9646b6f686e3ac81bfc7e6319d06d60cc3541c0433498acfcb7cb6b8a8868b3es:32:\"eKpI2BX-8qxywwikxSYgYHCvd-EztYkO\";'
+]
+
+$_SESSION = [
+    '__flash' => []
+    'user' => app\models\User#1
+    (
+        [yii\db\BaseActiveRecord:_attributes] => [
+            'user_id' => '8'
+            'email' => 'qin'
+            'nick' => 'qin'
+            'name' => null
+            'password' => '46481752d64d9421af3a980bea7f3fad'
+            'last_login' => '0'
+            'last_ip' => ''
+            'msn' => null
+            'qq' => null
+            'tel_phone' => null
+            'mobile_phone' => null
+            'addr' => null
+            'is_locked' => 0
+            'money' => 0
+            'credit' => 0
+            'addtime' => '1422835655'
+            'invite' => '0'
+        ]
+        [yii\db\BaseActiveRecord:_oldAttributes] => [
+            'user_id' => '8'
+            'email' => 'qin'
+            'nick' => 'qin'
+            'name' => null
+            'password' => '46481752d64d9421af3a980bea7f3fad'
+            'last_login' => '0'
+            'last_ip' => ''
+            'msn' => null
+            'qq' => null
+            'tel_phone' => null
+            'mobile_phone' => null
+            'addr' => null
+            'is_locked' => 0
+            'money' => 0
+            'credit' => 0
+            'addtime' => '1422835655'
+            'invite' => '0'
+        ]
+        [yii\db\BaseActiveRecord:_related] => []
+        [yii\base\Model:_errors] => null
+        [yii\base\Model:_validators] => null
+        [yii\base\Model:_scenario] => 'default'
+        [yii\base\Component:_events] => []
+        [yii\base\Component:_behaviors] => []
+    )
+]
+
+$_SERVER = [
+    'MIBDIRS' => 'D:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'D:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.57 Safari/537.36'
+    'HTTP_REFERER' => 'http://localhost/youhuijuan/frontend/web/index.php?r=receive/index'
+    'HTTP_ACCEPT_ENCODING' => 'gzip,deflate,sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8,en;q=0.6'
+    'HTTP_COOKIE' => 'AJSTAT_ok_times=1; _ga=GA1.1.54924247.1416566351; __zpspc=9.2.1416813744.1416814460.10%234%7C%7C%7C%7C%7C%23; bdshare_firstime=1418786158546; CNZZDATA4617777=cnzz_eid%3D682052683-1418784431-%26ntime%3D1418784197; CNZZDATA4617788=cnzz_eid%3D431890627-1419157234-%26ntime%3D1419203501; CNZZDATA4617784=cnzz_eid%3D1410397910-1418812097-%26ntime%3D1419983038; Jjzq_2132_saltkey=wkOPSZrn; Jjzq_2132_lastvisit=1420423935; Jjzq_2132_ulastactivity=3cd47khBmEfAZuKV56v5xcereJG%2FDl7C07x2T1XA2znHteTfL3el; RB5E_2132_saltkey=YR3N3T3T; RB5E_2132_lastvisit=1420425536; RB5E_2132_ulastactivity=7a33yKqJzIUHWbK8a2g4rYyfLxZRCEFiozw4LjGbd97NwT8w9vkf; VOIr_2132_saltkey=Ot1vtjL1; VOIr_2132_lastvisit=1420426036; VOIr_2132_ulastactivity=40a3geAD9hD7n9MsDQ4l4FnD7q3ymVwknLjv8%2BKttwvvmeBgf8zp; VOIr_2132_nofavfid=1; uchome_loginuser=admin; CNZZDATA2924747=cnzz_eid%3D1577273435-1420269582-%26ntime%3D1420676356; CNZZDATA3668490=cnzz_eid%3D405753816-1420849139-http%253A%252F%252Flocalhost%252F%26ntime%3D1420849139; CNZZDATA3637100=cnzz_eid%3D1250976432-1420847467-http%253A%252F%252Flocalhost%252F%26ntime%3D1420847467; PHPSESSID=6hpj3dbql5s5ir4o7e64j4cho4; _csrf=9646b6f686e3ac81bfc7e6319d06d60cc3541c0433498acfcb7cb6b8a8868b3es%3A32%3A%22eKpI2BX-8qxywwikxSYgYHCvd-EztYkO%22%3B'
+    'PATH' => 'C:\\Program Files (x86)\\Common Files\\NetSarang;C:\\ProgramData\\Oracle\\Java\\javapath;C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;D:\\xampp\\php\\php.exe;D:\\Program Files\\Java\\jdk1.8.0_25\\bin;D:\\Program Files\\Java\\jdk1.8.0_25\\jre\\bin;D:\\git\\bin;D:\\xampp\\php;C:\\ProgramData\\ComposerSetup\\bin;C:\\Windows\\system32'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.7 (Win32) OpenSSL/1.0.1e PHP/5.5.9 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.7 (Win32) OpenSSL/1.0.1e PHP/5.5.9'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'D:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'D:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'D:/xampp/htdocs/youhuijuan/frontend/web/index.php'
+    'REMOTE_PORT' => '50508'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=receive/index'
+    'REQUEST_URI' => '/youhuijuan/frontend/web/index.php?r=receive/index'
+    'SCRIPT_NAME' => '/youhuijuan/frontend/web/index.php'
+    'PHP_SELF' => '/youhuijuan/frontend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1422837270.81
+    'REQUEST_TIME' => 1422837270
+]
+2015-02-02 01:34:32 [127.0.0.1][-][-][error][yii\base\ErrorException:1] exception 'yii\base\ErrorException' with message 'Class 'frontend\controllers\CouponCodeCodes' not found' in D:\xampp\htdocs\youhuijuan\frontend\controllers\ReceiveController.php:24
+Stack trace:
+#0 [internal function]: yii\base\ErrorHandler->handleFatalError()
+#1 {main}
+2015-02-02 01:34:32 [127.0.0.1][-][-][info][application] $_GET = [
+    'r' => 'receive/index'
+]
+
+$_COOKIE = [
+    'AJSTAT_ok_times' => '1'
+    '_ga' => 'GA1.1.54924247.1416566351'
+    '__zpspc' => '9.2.1416813744.1416814460.10#4|||||#'
+    'bdshare_firstime' => '1418786158546'
+    'CNZZDATA4617777' => 'cnzz_eid=682052683-1418784431-&ntime=1418784197'
+    'CNZZDATA4617788' => 'cnzz_eid=431890627-1419157234-&ntime=1419203501'
+    'CNZZDATA4617784' => 'cnzz_eid=1410397910-1418812097-&ntime=1419983038'
+    'Jjzq_2132_saltkey' => 'wkOPSZrn'
+    'Jjzq_2132_lastvisit' => '1420423935'
+    'Jjzq_2132_ulastactivity' => '3cd47khBmEfAZuKV56v5xcereJG/Dl7C07x2T1XA2znHteTfL3el'
+    'RB5E_2132_saltkey' => 'YR3N3T3T'
+    'RB5E_2132_lastvisit' => '1420425536'
+    'RB5E_2132_ulastactivity' => '7a33yKqJzIUHWbK8a2g4rYyfLxZRCEFiozw4LjGbd97NwT8w9vkf'
+    'VOIr_2132_saltkey' => 'Ot1vtjL1'
+    'VOIr_2132_lastvisit' => '1420426036'
+    'VOIr_2132_ulastactivity' => '40a3geAD9hD7n9MsDQ4l4FnD7q3ymVwknLjv8+KttwvvmeBgf8zp'
+    'VOIr_2132_nofavfid' => '1'
+    'uchome_loginuser' => 'admin'
+    'CNZZDATA2924747' => 'cnzz_eid=1577273435-1420269582-&ntime=1420676356'
+    'CNZZDATA3668490' => 'cnzz_eid=405753816-1420849139-http%3A%2F%2Flocalhost%2F&ntime=1420849139'
+    'CNZZDATA3637100' => 'cnzz_eid=1250976432-1420847467-http%3A%2F%2Flocalhost%2F&ntime=1420847467'
+    'PHPSESSID' => '6hpj3dbql5s5ir4o7e64j4cho4'
+    '_csrf' => '9646b6f686e3ac81bfc7e6319d06d60cc3541c0433498acfcb7cb6b8a8868b3es:32:\"eKpI2BX-8qxywwikxSYgYHCvd-EztYkO\";'
+]
+
+$_SESSION = [
+    '__flash' => []
+    'user' => app\models\User#1
+    (
+        [yii\db\BaseActiveRecord:_attributes] => [
+            'user_id' => '8'
+            'email' => 'qin'
+            'nick' => 'qin'
+            'name' => null
+            'password' => '46481752d64d9421af3a980bea7f3fad'
+            'last_login' => '0'
+            'last_ip' => ''
+            'msn' => null
+            'qq' => null
+            'tel_phone' => null
+            'mobile_phone' => null
+            'addr' => null
+            'is_locked' => 0
+            'money' => 0
+            'credit' => 0
+            'addtime' => '1422835655'
+            'invite' => '0'
+        ]
+        [yii\db\BaseActiveRecord:_oldAttributes] => [
+            'user_id' => '8'
+            'email' => 'qin'
+            'nick' => 'qin'
+            'name' => null
+            'password' => '46481752d64d9421af3a980bea7f3fad'
+            'last_login' => '0'
+            'last_ip' => ''
+            'msn' => null
+            'qq' => null
+            'tel_phone' => null
+            'mobile_phone' => null
+            'addr' => null
+            'is_locked' => 0
+            'money' => 0
+            'credit' => 0
+            'addtime' => '1422835655'
+            'invite' => '0'
+        ]
+        [yii\db\BaseActiveRecord:_related] => []
+        [yii\base\Model:_errors] => null
+        [yii\base\Model:_validators] => null
+        [yii\base\Model:_scenario] => 'default'
+        [yii\base\Component:_events] => []
+        [yii\base\Component:_behaviors] => []
+    )
+]
+
+$_SERVER = [
+    'MIBDIRS' => 'D:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'D:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.57 Safari/537.36'
+    'HTTP_REFERER' => 'http://localhost/youhuijuan/frontend/web/index.php?r=receive/index'
+    'HTTP_ACCEPT_ENCODING' => 'gzip,deflate,sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8,en;q=0.6'
+    'HTTP_COOKIE' => 'AJSTAT_ok_times=1; _ga=GA1.1.54924247.1416566351; __zpspc=9.2.1416813744.1416814460.10%234%7C%7C%7C%7C%7C%23; bdshare_firstime=1418786158546; CNZZDATA4617777=cnzz_eid%3D682052683-1418784431-%26ntime%3D1418784197; CNZZDATA4617788=cnzz_eid%3D431890627-1419157234-%26ntime%3D1419203501; CNZZDATA4617784=cnzz_eid%3D1410397910-1418812097-%26ntime%3D1419983038; Jjzq_2132_saltkey=wkOPSZrn; Jjzq_2132_lastvisit=1420423935; Jjzq_2132_ulastactivity=3cd47khBmEfAZuKV56v5xcereJG%2FDl7C07x2T1XA2znHteTfL3el; RB5E_2132_saltkey=YR3N3T3T; RB5E_2132_lastvisit=1420425536; RB5E_2132_ulastactivity=7a33yKqJzIUHWbK8a2g4rYyfLxZRCEFiozw4LjGbd97NwT8w9vkf; VOIr_2132_saltkey=Ot1vtjL1; VOIr_2132_lastvisit=1420426036; VOIr_2132_ulastactivity=40a3geAD9hD7n9MsDQ4l4FnD7q3ymVwknLjv8%2BKttwvvmeBgf8zp; VOIr_2132_nofavfid=1; uchome_loginuser=admin; CNZZDATA2924747=cnzz_eid%3D1577273435-1420269582-%26ntime%3D1420676356; CNZZDATA3668490=cnzz_eid%3D405753816-1420849139-http%253A%252F%252Flocalhost%252F%26ntime%3D1420849139; CNZZDATA3637100=cnzz_eid%3D1250976432-1420847467-http%253A%252F%252Flocalhost%252F%26ntime%3D1420847467; PHPSESSID=6hpj3dbql5s5ir4o7e64j4cho4; _csrf=9646b6f686e3ac81bfc7e6319d06d60cc3541c0433498acfcb7cb6b8a8868b3es%3A32%3A%22eKpI2BX-8qxywwikxSYgYHCvd-EztYkO%22%3B'
+    'PATH' => 'C:\\Program Files (x86)\\Common Files\\NetSarang;C:\\ProgramData\\Oracle\\Java\\javapath;C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;D:\\xampp\\php\\php.exe;D:\\Program Files\\Java\\jdk1.8.0_25\\bin;D:\\Program Files\\Java\\jdk1.8.0_25\\jre\\bin;D:\\git\\bin;D:\\xampp\\php;C:\\ProgramData\\ComposerSetup\\bin;C:\\Windows\\system32'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.7 (Win32) OpenSSL/1.0.1e PHP/5.5.9 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.7 (Win32) OpenSSL/1.0.1e PHP/5.5.9'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'D:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'D:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'D:/xampp/htdocs/youhuijuan/frontend/web/index.php'
+    'REMOTE_PORT' => '50509'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=receive/index'
+    'REQUEST_URI' => '/youhuijuan/frontend/web/index.php?r=receive/index'
+    'SCRIPT_NAME' => '/youhuijuan/frontend/web/index.php'
+    'PHP_SELF' => '/youhuijuan/frontend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1422837272.713
+    'REQUEST_TIME' => 1422837272
+]
