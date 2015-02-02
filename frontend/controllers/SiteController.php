@@ -15,18 +15,24 @@ use yii\filters\AccessControl;
 use app\models\CouponCodeMall;
 use app\models\CouponCode;
 use app\models\CouponCodeCategory;
+use app\models\DbsFriendLink;
+use app\models\DbsCouponCode;
 /**
  * Site controller
  */
 class SiteController extends Controller{
     public $enableCsrfValidation = false;
 	public function actionIndex(){
+            $data=DbsCouponCode::find()->all();
+            
+            $list=DbsFriendLink::find()->all();
             $mall=CouponCodeMall::find()->all();
             $code=  CouponCode::find()->all();
             //var_dump($code);die;
-	    return $this->render("index",['mall'=>$mall,'code'=>$code]);
+	    return $this->render("index",['mall'=>$mall,'code'=>$code,'list'=>$list,"data"=>$data]);
 
 	
+            
 	 }
          public function actionSearch(){
            $mall=CouponCodeMall::find()->where("m_name like '%".$_POST['kw']."%'")->all();

@@ -117,8 +117,12 @@
                         <h3>
                             最新发布优惠券</h3>
                         <ol class="rank_coupon">
+                           <?php foreach($data as $k=>$v){?>
                              
-                                                        <li><a title="asdsad" href="/end/tp-coupon/index.php?a=view&m=code&id=1">asdsad</a></li>
+                                                        <li><a title="<?php echo $v['title']?>" href="?r=news/list&y_id=<?php echo $v['y_id']?>"><?php echo $v['title']?></a></li>
+                                                        <?php
+                           }
+                                                        ?>
                                                         
                         </ol>
                     </li>
@@ -132,10 +136,13 @@
                     <li class="gray">
                         <h3>友情链接</h3>
                         <ul class="threecol">
-                                                                                    <li><a href="http://www.ijiaqu.com" target="_blank">嫁娶网</a></li>
-                                                                                                                <li><a href="http://www.jihaoju.com" target="_blank">极好居</a></li>
-                                                                                                                <li><a href="http://www.qfanqie.com" target="_blank">青番茄</a></li>
-                                                                                                                <li><a href="http://www.tp-coupon.com" target="_blank">TP-COUPON</a></li>
+                            <?php
+                            foreach($list as $k=>$v){
+                            ?>
+                 <li><a href="<?php echo $v['link_url']?>" target="_blank"><?php echo $v['site_name']?></a></li>
+                                                                                                                <?php
+                            }
+                                                                                                                ?>
                                                                                     <div class="clear">
                             </div>
                         </ul>
